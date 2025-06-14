@@ -1,0 +1,10 @@
+D:\FS\FS\FSExcelCore\bin\Debug\net461\FSExcelCore.dll
+D:\FS\FS\FSExcelCore\bin\Debug\net461\FSExcelCore.pdb
+D:\FS\FS\FSExcelCore\bin\Debug\net461\Microsoft.Office.Interop.Excel.dll
+D:\FS\FS\FSExcelCore\obj\Debug\net461\FSExcelCore.csproj.AssemblyReference.cache
+D:\FS\FS\FSExcelCore\obj\Debug\net461\FSExcelCore.GeneratedMSBuildEditorConfig.editorconfig
+D:\FS\FS\FSExcelCore\obj\Debug\net461\FSExcelCore.csproj.CoreCompileInputs.cache
+D:\FS\FS\FSExcelCore\obj\Debug\net461\FSExcelCore.sourcelink.json
+D:\FS\FS\FSExcelCore\obj\Debug\net461\FSExcelC.CA9B9C0D.Up2Date
+D:\FS\FS\FSExcelCore\obj\Debug\net461\FSExcelCore.dll
+D:\FS\FS\FSExcelCore\obj\Debug\net461\FSExcelCore.pdb

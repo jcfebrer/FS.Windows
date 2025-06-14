@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "dgSpecHash": "i/tFVULjLPo=",
+  "success": false,
+  "projectFilePath": "D:\\FS\\FS.Windows\\FSFirewall\\FSFirewall.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "No se encuentra el proyecto \"D:\\FS\\FS.Windows\\FSException\\FSException.csproj\". Compruebe que la referencia al proyecto sea válida y que exista el archivo de proyecto.",
+      "projectPath": "D:\\FS\\FS.Windows\\FSFirewall\\FSFirewall.csproj",
+      "filePath": "D:\\FS\\FS.Windows\\FSFirewall\\FSFirewall.csproj",
+      "libraryId": "D:\\FS\\FS.Windows\\FSException\\FSException.csproj",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.0",
+        ".NETFramework,Version=v4.5",
+        ".NETFramework,Version=v4.6.1",
+        ".NETFramework,Version=v4.8",
+        "net8.0-windows7.0"
+      ]
+    }
+  ]
+}

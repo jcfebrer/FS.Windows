@@ -1,0 +1,17 @@
+D:\FS\FS\FSFirewallCore\bin\Debug\netcoreapp3.1\FSFirewallCore.deps.json
+D:\FS\FS\FSFirewallCore\bin\Debug\netcoreapp3.1\FSFirewallCore.dll
+D:\FS\FS\FSFirewallCore\bin\Debug\netcoreapp3.1\FSFirewallCore.pdb
+D:\FS\FS\FSFirewallCore\bin\Debug\netcoreapp3.1\FSExceptionCore.dll
+D:\FS\FS\FSFirewallCore\bin\Debug\netcoreapp3.1\FSTraceCore.dll
+D:\FS\FS\FSFirewallCore\bin\Debug\netcoreapp3.1\FSExceptionCore.pdb
+D:\FS\FS\FSFirewallCore\bin\Debug\netcoreapp3.1\FSTraceCore.pdb
+D:\FS\FS\FSFirewallCore\bin\Debug\netcoreapp3.1\Interop.NetFwTypeLib.dll
+D:\FS\FS\FSFirewallCore\obj\Debug\netcoreapp3.1\FSFirewallCore.csproj.AssemblyReference.cache
+D:\FS\FS\FSFirewallCore\obj\Debug\netcoreapp3.1\Interop.NetFwTypeLib.dll
+D:\FS\FS\FSFirewallCore\obj\Debug\netcoreapp3.1\FSFirewallCore.csproj.ResolveComReference.cache
+D:\FS\FS\FSFirewallCore\obj\Debug\netcoreapp3.1\FSFirewallCore.GeneratedMSBuildEditorConfig.editorconfig
+D:\FS\FS\FSFirewallCore\obj\Debug\netcoreapp3.1\FSFirewallCore.csproj.CoreCompileInputs.cache
+D:\FS\FS\FSFirewallCore\obj\Debug\netcoreapp3.1\FSFirewallCore.sourcelink.json
+D:\FS\FS\FSFirewallCore\obj\Debug\netcoreapp3.1\FSFirewa.4BDA5FA8.Up2Date
+D:\FS\FS\FSFirewallCore\obj\Debug\netcoreapp3.1\FSFirewallCore.dll
+D:\FS\FS\FSFirewallCore\obj\Debug\netcoreapp3.1\FSFirewallCore.pdb

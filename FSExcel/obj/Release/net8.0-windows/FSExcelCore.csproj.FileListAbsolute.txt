@@ -1,0 +1,15 @@
+D:\FS\FS\FSExcelCore\bin\Release\net8.0-windows\FSExcelCore.deps.json
+D:\FS\FS\FSExcelCore\bin\Release\net8.0-windows\FSExcelCore.dll
+D:\FS\FS\FSExcelCore\bin\Release\net8.0-windows\FSExcelCore.pdb
+D:\FS\FS\FSExcelCore\bin\Release\net8.0-windows\Microsoft.Office.Interop.Excel.dll
+D:\FS\FS\FSExcelCore\bin\Release\net8.0-windows\Office.dll
+D:\FS\FS\FSExcelCore\bin\Release\net8.0-windows\Microsoft.Vbe.Interop.dll
+D:\FS\FS\FSExcelCore\obj\Release\net8.0-windows\FSExcelCore.csproj.AssemblyReference.cache
+D:\FS\FS\FSExcelCore\obj\Release\net8.0-windows\FSExcelCore.GeneratedMSBuildEditorConfig.editorconfig
+D:\FS\FS\FSExcelCore\obj\Release\net8.0-windows\FSExcelCore.csproj.CoreCompileInputs.cache
+D:\FS\FS\FSExcelCore\obj\Release\net8.0-windows\FSExcelCore.sourcelink.json
+D:\FS\FS\FSExcelCore\obj\Release\net8.0-windows\FSExcelC.CA9B9C0D.Up2Date
+D:\FS\FS\FSExcelCore\obj\Release\net8.0-windows\FSExcelCore.dll
+D:\FS\FS\FSExcelCore\obj\Release\net8.0-windows\refint\FSExcelCore.dll
+D:\FS\FS\FSExcelCore\obj\Release\net8.0-windows\FSExcelCore.pdb
+D:\FS\FS\FSExcelCore\obj\Release\net8.0-windows\ref\FSExcelCore.dll

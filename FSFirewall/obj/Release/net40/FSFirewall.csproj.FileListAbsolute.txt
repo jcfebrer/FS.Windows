@@ -1,0 +1,15 @@
+D:\FS\FS\FSFirewall\bin\Release\net40\FSFirewall.dll
+D:\FS\FS\FSFirewall\bin\Release\net40\FSFirewall.pdb
+D:\FS\FS\FSFirewall\bin\Release\net40\FSException.dll
+D:\FS\FS\FSFirewall\bin\Release\net40\FSTrace.dll
+D:\FS\FS\FSFirewall\bin\Release\net40\FSException.pdb
+D:\FS\FS\FSFirewall\bin\Release\net40\FSTrace.pdb
+D:\FS\FS\FSFirewall\obj\Release\net40\FSFirewall.csproj.AssemblyReference.cache
+D:\FS\FS\FSFirewall\obj\Release\net40\Interop.NetFwTypeLib.dll
+D:\FS\FS\FSFirewall\obj\Release\net40\FSFirewall.csproj.ResolveComReference.cache
+D:\FS\FS\FSFirewall\obj\Release\net40\FSFirewall.GeneratedMSBuildEditorConfig.editorconfig
+D:\FS\FS\FSFirewall\obj\Release\net40\FSFirewall.csproj.CoreCompileInputs.cache
+D:\FS\FS\FSFirewall\obj\Release\net40\FSFirewall.sourcelink.json
+D:\FS\FS\FSFirewall\obj\Release\net40\FSFirewall.csproj.Up2Date
+D:\FS\FS\FSFirewall\obj\Release\net40\FSFirewall.dll
+D:\FS\FS\FSFirewall\obj\Release\net40\FSFirewall.pdb

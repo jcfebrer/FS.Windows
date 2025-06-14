@@ -1,0 +1,12 @@
+D:\FS\FS\FSFirewallCore\bin\Debug\net8.0\FSFirewallCore.deps.json
+D:\FS\FS\FSFirewallCore\bin\Debug\net8.0\FSFirewallCore.dll
+D:\FS\FS\FSFirewallCore\bin\Debug\net8.0\FSFirewallCore.pdb
+D:\FS\FS\FSFirewallCore\obj\Debug\net8.0\Interop.NetFwTypeLib.dll
+D:\FS\FS\FSFirewallCore\obj\Debug\net8.0\FSFirewallCore.csproj.ResolveComReference.cache
+D:\FS\FS\FSFirewallCore\obj\Debug\net8.0\FSFirewallCore.GeneratedMSBuildEditorConfig.editorconfig
+D:\FS\FS\FSFirewallCore\obj\Debug\net8.0\FSFirewallCore.csproj.CoreCompileInputs.cache
+D:\FS\FS\FSFirewallCore\obj\Debug\net8.0\FSFirewallCore.sourcelink.json
+D:\FS\FS\FSFirewallCore\obj\Debug\net8.0\FSFirewallCore.dll
+D:\FS\FS\FSFirewallCore\obj\Debug\net8.0\refint\FSFirewallCore.dll
+D:\FS\FS\FSFirewallCore\obj\Debug\net8.0\FSFirewallCore.pdb
+D:\FS\FS\FSFirewallCore\obj\Debug\net8.0\ref\FSFirewallCore.dll

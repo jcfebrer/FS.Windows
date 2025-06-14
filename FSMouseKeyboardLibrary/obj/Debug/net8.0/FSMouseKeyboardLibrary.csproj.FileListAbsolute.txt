@@ -1,0 +1,4 @@
+D:\FS\FS\FSMouseKeyboardLibrary\obj\Debug\net8.0\FSMouseKeyboardLibrary.csproj.AssemblyReference.cache
+D:\FS\FS\FSMouseKeyboardLibrary\obj\Debug\net8.0\FSMouseKeyboardLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\FS\FS\FSMouseKeyboardLibrary\obj\Debug\net8.0\FSMouseKeyboardLibrary.csproj.CoreCompileInputs.cache
+D:\FS\FS\FSMouseKeyboardLibrary\obj\Debug\net8.0\FSMouseKeyboardLibrary.sourcelink.json

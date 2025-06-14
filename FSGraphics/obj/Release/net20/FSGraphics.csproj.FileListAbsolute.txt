@@ -1,0 +1,16 @@
+D:\FS\FS\FSGraphics\bin\Release\net20\FSGraphics.dll
+D:\FS\FS\FSGraphics\bin\Release\net20\FSGraphics.pdb
+D:\FS\FS\FSGraphics\bin\Release\net20\FSException.dll
+D:\FS\FS\FSGraphics\bin\Release\net20\FSLibrary.dll
+D:\FS\FS\FSGraphics\bin\Release\net20\FSTrace.dll
+D:\FS\FS\FSGraphics\bin\Release\net20\FSException.pdb
+D:\FS\FS\FSGraphics\bin\Release\net20\FSLibrary.pdb
+D:\FS\FS\FSGraphics\bin\Release\net20\FSLibrary.xml
+D:\FS\FS\FSGraphics\bin\Release\net20\FSTrace.pdb
+D:\FS\FS\FSGraphics\obj\Release\net20\FSGraphics.csproj.AssemblyReference.cache
+D:\FS\FS\FSGraphics\obj\Release\net20\FSGraphics.GeneratedMSBuildEditorConfig.editorconfig
+D:\FS\FS\FSGraphics\obj\Release\net20\FSGraphics.csproj.CoreCompileInputs.cache
+D:\FS\FS\FSGraphics\obj\Release\net20\FSGraphics.sourcelink.json
+D:\FS\FS\FSGraphics\obj\Release\net20\FSGraphics.csproj.Up2Date
+D:\FS\FS\FSGraphics\obj\Release\net20\FSGraphics.dll
+D:\FS\FS\FSGraphics\obj\Release\net20\FSGraphics.pdb

@@ -1,0 +1,16 @@
+D:\FS\FS\FSMouseKeyboardLibrary\bin\Release\net461\FSMouseKeyboardLibrary.dll
+D:\FS\FS\FSMouseKeyboardLibrary\bin\Release\net461\FSMouseKeyboardLibrary.pdb
+D:\FS\FS\FSMouseKeyboardLibrary\bin\Release\net461\FSException.dll
+D:\FS\FS\FSMouseKeyboardLibrary\bin\Release\net461\FSLibrary.dll
+D:\FS\FS\FSMouseKeyboardLibrary\bin\Release\net461\FSTrace.dll
+D:\FS\FS\FSMouseKeyboardLibrary\bin\Release\net461\FSException.pdb
+D:\FS\FS\FSMouseKeyboardLibrary\bin\Release\net461\FSLibrary.pdb
+D:\FS\FS\FSMouseKeyboardLibrary\bin\Release\net461\FSLibrary.xml
+D:\FS\FS\FSMouseKeyboardLibrary\bin\Release\net461\FSTrace.pdb
+D:\FS\FS\FSMouseKeyboardLibrary\obj\Release\net461\FSMouseKeyboardLibrary.csproj.AssemblyReference.cache
+D:\FS\FS\FSMouseKeyboardLibrary\obj\Release\net461\FSMouseKeyboardLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\FS\FS\FSMouseKeyboardLibrary\obj\Release\net461\FSMouseKeyboardLibrary.csproj.CoreCompileInputs.cache
+D:\FS\FS\FSMouseKeyboardLibrary\obj\Release\net461\FSMouseKeyboardLibrary.sourcelink.json
+D:\FS\FS\FSMouseKeyboardLibrary\obj\Release\net461\FSMouseK.EC528C5A.Up2Date
+D:\FS\FS\FSMouseKeyboardLibrary\obj\Release\net461\FSMouseKeyboardLibrary.dll
+D:\FS\FS\FSMouseKeyboardLibrary\obj\Release\net461\FSMouseKeyboardLibrary.pdb

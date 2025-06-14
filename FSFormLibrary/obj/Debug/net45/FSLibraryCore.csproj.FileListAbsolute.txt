@@ -1,0 +1,4 @@
+D:\FS\FS\FSLibraryCore\obj\Debug\net45\FSLibraryCore.csproj.AssemblyReference.cache
+D:\FS\FS\FSLibraryCore\obj\Debug\net45\FSLibraryCore.GeneratedMSBuildEditorConfig.editorconfig
+D:\FS\FS\FSLibraryCore\obj\Debug\net45\FSLibraryCore.csproj.CoreCompileInputs.cache
+D:\FS\FS\FSLibraryCore\obj\Debug\net45\FSLibraryCore.sourcelink.json

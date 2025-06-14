@@ -1,0 +1,4 @@
+D:\FS\FS\FSCompressCore\obj\Debug\net462\FSCompressCore.csproj.AssemblyReference.cache
+D:\FS\FS\FSCompressCore\obj\Debug\net462\FSCompressCore.GeneratedMSBuildEditorConfig.editorconfig
+D:\FS\FS\FSCompressCore\obj\Debug\net462\FSCompressCore.csproj.CoreCompileInputs.cache
+D:\FS\FS\FSCompressCore\obj\Debug\net462\FSCompressCore.sourcelink.json

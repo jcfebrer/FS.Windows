@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="DBGridViewCollapse" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DBGridViewCollapse.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DBButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DBButton.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DBChart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DBChart.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DBCheckBox" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DBCheckBox.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DBCombo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DBCombo.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DBControl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DBControl.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DBDate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DBDate.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DBFindTextBox" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DBFindTextBox.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DBFrame" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DBFrame.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DBFullbuttonface" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DBFullbuttonface.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DBFullbuttonfacepressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DBFullbuttonfacepressed.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DBGrid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DBGrid.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DBGridThreePoints" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DBGridThreePoints.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DBGridView" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DBGridView.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DBGroupBoxXPCollapse" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DBGroupBoxXPCollapse.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DBGroupBoxXPCollapse_h" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DBGroupBoxXPCollapse_h.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DBGroupBoxXPExpand" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DBGroupBoxXPExpand.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DBGroupBoxXPExpand_h" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DBGroupBoxXPExpand_h.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DBImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DBImage.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DBLabel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DBLabel.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DBListBox" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DBListBox.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DBListView" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DBListView.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DBOfficeMenu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DBOfficeMenu.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DBPicture" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DBPicture.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DBScroll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DBScroll.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DBShape" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DBShape.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DBStatusBar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DBStatusBar.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DBTabControl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DBTabControl.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DBTextBox" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DBTextBox.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DBToolBar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DBToolBar.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DBTreeView" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DBTreeView.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DBGridViewExpand" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DBGridViewExpand.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="DBGridViewFirst" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        Qk0yAQAAAAAAADYAAAAoAAAACQAAAAkAAAABABgAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAztPWztPW
+        ztPWztPWztPWztPWztPWztPWztPWAM7T1s7T1s7T1s7T1gAAAM7T1gAAAAAAAM7T1gDO09bO09bO09YA
+        AAAAAADO09YAAAAAAADO09YAztPWztPWAAAAAAAAAAAAztPWAAAAAAAAztPWAM7T1gAAAAAAAAAAAAAA
+        AM7T1gAAAAAAAM7T1gDO09bO09YAAAAAAAAAAADO09YAAAAAAADO09YAztPWztPWztPWAAAAAAAAztPW
+        AAAAAAAAztPWAM7T1s7T1s7T1s7T1gAAAM7T1gAAAAAAAM7T1gDO09bO09bO09bO09bO09bO09bO09bO
+        09bO09YA
+</value>
+  </data>
+  <data name="DBGridViewLast" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        Qk0yAQAAAAAAADYAAAAoAAAACQAAAAkAAAABABgAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAztPWztPW
+        ztPWztPWztPWztPWztPWztPWztPWAM7T1gAAAAAAAM7T1gAAAM7T1s7T1s7T1s7T1gDO09YAAAAAAADO
+        09YAAAAAAADO09bO09bO09YAztPWAAAAAAAAztPWAAAAAAAAAAAAztPWztPWAM7T1gAAAAAAAM7T1gAA
+        AAAAAAAAAAAAAM7T1gDO09YAAAAAAADO09YAAAAAAAAAAADO09bO09YAztPWAAAAAAAAztPWAAAAAAAA
+        ztPWztPWztPWAM7T1gAAAAAAAM7T1gAAAM7T1s7T1s7T1s7T1gDO09bO09bO09bO09bO09bO09bO09bO
+        09bO09YA
+</value>
+  </data>
+  <data name="DBGridViewNext" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        Qk0yAQAAAAAAADYAAAAoAAAACQAAAAkAAAABABgAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAztPWztPW
+        ztPWztPWztPWztPWztPWztPWztPWAM7T1s7T1s7T1gAAAM7T1s7T1s7T1s7T1s7T1gDO09bO09bO09YA
+        AAAAAADO09bO09bO09bO09YAztPWztPWztPWAAAAAAAAAAAAztPWztPWztPWAM7T1s7T1s7T1gAAAAAA
+        AAAAAAAAAM7T1s7T1gDO09bO09bO09YAAAAAAAAAAADO09bO09bO09YAztPWztPWztPWAAAAAAAAztPW
+        ztPWztPWztPWAM7T1s7T1s7T1gAAAM7T1s7T1s7T1s7T1s7T1gDO09bO09bO09bO09bO09bO09bO09bO
+        09bO09YA
+</value>
+  </data>
+  <data name="DBGridViewPrevious" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        Qk0yAQAAAAAAADYAAAAoAAAACQAAAAkAAAABABgAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAztPWztPW
+        ztPWztPWztPWztPWztPWztPWztPWAM7T1s7T1s7T1s7T1s7T1gAAAM7T1s7T1s7T1gDO09bO09bO09bO
+        09YAAAAAAADO09bO09bO09YAztPWztPWztPWAAAAAAAAAAAAztPWztPWztPWAM7T1s7T1gAAAAAAAAAA
+        AAAAAM7T1s7T1s7T1gDO09bO09bO09YAAAAAAAAAAADO09bO09bO09YAztPWztPWztPWztPWAAAAAAAA
+        ztPWztPWztPWAM7T1s7T1s7T1s7T1s7T1gAAAM7T1s7T1s7T1gDO09bO09bO09bO09bO09bO09bO09bO
+        09bO09YA
+</value>
+  </data>
+  <data name="DBGridViewRefresh" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAB2UlEQVQ4T21S3ystQRzfP4X/YF90X1d5
+        oNDmVWmLLsXDdh7co6gtD84DGYlWfjTc5CBMUiTOmSJOcTpTdNx4WW63SDGieBuf2TkcHffbp2129/P5
+        fL/zmbGUUnRHaDBeQpqTGPiVuXidzz74YYS1qZLAvJTqTck3Zdd7WC4ePILtpsqEsoBxwXQf3Ur8iSBY
+        PnoCm3Llk8gjMuZ/6wBvAALH9cEmO5LmFGEKAiepaVqwsnuCp/Y201MuhO6wVXhxkpFPldPFbZfi2Tma
+        14Js4ebTW0oV3ZZjmNv+a3eJKpeOpc9tl9R1r1tHxaeWX8egwpiEPAAI+zpkdCuhAaEpsYQ+Vv9McXy1
+        CGPtHduLuAOoFTH0TWSr6onV3He8sn8FA7MHP8WA/8bQ9HP6Rxu1WgeLA1MFGLtJQXnEc5LlJCxBrYgB
+        9kPLl1ZP+FCbOJlczbuBsD02tZ5v7Og3AuNtYuBCJkYYPlq99B9h0kvBXgZpBc3s7j0EoH6NAYLW3gkt
+        2Di8c3yOAwLbC5UbRNBgjJL3RwwY1VwWfQ5rB3e2x3EuYGPQzdNnjA5BEDJ4mxiwsbIAlTl7BBX4vacv
+        pu4gFTbKgTiGSgGqum54KXNt1uML2zUN7d+hlHoHDmg00n7laSgAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="FSInputBoxError" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\fsinputboxerror.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FSInputBoxExclamation" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\fsinputboxexclamation.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FSInputBoxInformation" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\fsinputboxinformation.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FSInputBoxNic80x80" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\fsinputboxnic80x80.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FSInputBoxQuestion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\fsinputboxquestion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

@@ -1,0 +1,344 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\FS\\FS.Windows\\FSPdf\\FSPdf.csproj": {}
+  },
+  "projects": {
+    "D:\\FS\\FS.Windows\\FSPdf\\FSPdf.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\FS\\FS.Windows\\FSPdf\\FSPdf.csproj",
+        "projectName": "FSPdf",
+        "projectPath": "D:\\FS\\FS.Windows\\FSPdf\\FSPdf.csproj",
+        "packagesPath": "C:\\Users\\jcfeb\\.nuget\\packages\\",
+        "outputPath": "D:\\FS\\FS.Windows\\FSPdf\\obj\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jcfeb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net20",
+          "net30",
+          "net35",
+          "net40",
+          "net45",
+          "net461",
+          "net48",
+          "net8.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows7.0": {
+            "targetAlias": "net8.0-windows",
+            "projectReferences": {
+              "D:\\FS\\FS.Windows\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Windows\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj"
+              },
+              "D:\\FS\\FS.Windows\\FSNetwork\\FSNetwork.csproj": {
+                "projectPath": "D:\\FS\\FS.Windows\\FSNetwork\\FSNetwork.csproj"
+              }
+            }
+          },
+          "net20": {
+            "targetAlias": "net20",
+            "projectReferences": {
+              "D:\\FS\\FS.Windows\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Windows\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj"
+              },
+              "D:\\FS\\FS.Windows\\FSNetwork\\FSNetwork.csproj": {
+                "projectPath": "D:\\FS\\FS.Windows\\FSNetwork\\FSNetwork.csproj"
+              }
+            }
+          },
+          "net30": {
+            "targetAlias": "net30",
+            "projectReferences": {
+              "D:\\FS\\FS.Windows\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Windows\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj"
+              },
+              "D:\\FS\\FS.Windows\\FSNetwork\\FSNetwork.csproj": {
+                "projectPath": "D:\\FS\\FS.Windows\\FSNetwork\\FSNetwork.csproj"
+              }
+            }
+          },
+          "net35": {
+            "targetAlias": "net35",
+            "projectReferences": {
+              "D:\\FS\\FS.Windows\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Windows\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj"
+              },
+              "D:\\FS\\FS.Windows\\FSNetwork\\FSNetwork.csproj": {
+                "projectPath": "D:\\FS\\FS.Windows\\FSNetwork\\FSNetwork.csproj"
+              }
+            }
+          },
+          "net40": {
+            "targetAlias": "net40",
+            "projectReferences": {
+              "D:\\FS\\FS.Windows\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Windows\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj"
+              },
+              "D:\\FS\\FS.Windows\\FSNetwork\\FSNetwork.csproj": {
+                "projectPath": "D:\\FS\\FS.Windows\\FSNetwork\\FSNetwork.csproj"
+              }
+            }
+          },
+          "net45": {
+            "targetAlias": "net45",
+            "projectReferences": {
+              "D:\\FS\\FS.Windows\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Windows\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj"
+              },
+              "D:\\FS\\FS.Windows\\FSNetwork\\FSNetwork.csproj": {
+                "projectPath": "D:\\FS\\FS.Windows\\FSNetwork\\FSNetwork.csproj"
+              }
+            }
+          },
+          "net461": {
+            "targetAlias": "net461",
+            "projectReferences": {
+              "D:\\FS\\FS.Windows\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Windows\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj"
+              },
+              "D:\\FS\\FS.Windows\\FSNetwork\\FSNetwork.csproj": {
+                "projectPath": "D:\\FS\\FS.Windows\\FSNetwork\\FSNetwork.csproj"
+              }
+            }
+          },
+          "net48": {
+            "targetAlias": "net48",
+            "projectReferences": {
+              "D:\\FS\\FS.Windows\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Windows\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj"
+              },
+              "D:\\FS\\FS.Windows\\FSNetwork\\FSNetwork.csproj": {
+                "projectPath": "D:\\FS\\FS.Windows\\FSNetwork\\FSNetwork.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "HtmlRenderer.Core": {
+              "target": "Package",
+              "version": "[1.5.0.6, )"
+            },
+            "HtmlRenderer.PdfSharp": {
+              "target": "Package",
+              "version": "[1.5.0.6, )"
+            },
+            "Microsoft.CSharp": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "PDFsharp": {
+              "target": "Package",
+              "version": "[6.1.1, )"
+            },
+            "PdfSharpCore": {
+              "target": "Package",
+              "version": "[1.3.65, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+        },
+        "net20": {
+          "targetAlias": "net20",
+          "dependencies": {
+            "HtmlRenderer": {
+              "target": "Package",
+              "version": "[1.4.6.1, )"
+            },
+            "HtmlRenderer.PdfSharp": {
+              "target": "Package",
+              "version": "[1.5.0, )"
+            },
+            "PDFsharp": {
+              "target": "Package",
+              "version": "[1.32.3057, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+        },
+        "net30": {
+          "targetAlias": "net30",
+          "dependencies": {
+            "HtmlRenderer": {
+              "target": "Package",
+              "version": "[1.4.6.1, )"
+            },
+            "HtmlRenderer.PdfSharp": {
+              "target": "Package",
+              "version": "[1.5.0, )"
+            },
+            "PDFsharp": {
+              "target": "Package",
+              "version": "[1.32.3057, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+        },
+        "net35": {
+          "targetAlias": "net35",
+          "dependencies": {
+            "HtmlRenderer": {
+              "target": "Package",
+              "version": "[1.4.6.1, )"
+            },
+            "HtmlRenderer.PdfSharp": {
+              "target": "Package",
+              "version": "[1.5.0, )"
+            },
+            "PDFsharp": {
+              "target": "Package",
+              "version": "[1.32.3057, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+        },
+        "net40": {
+          "targetAlias": "net40",
+          "dependencies": {
+            "HtmlRenderer": {
+              "target": "Package",
+              "version": "[1.4.6.1, )"
+            },
+            "HtmlRenderer.PdfSharp": {
+              "target": "Package",
+              "version": "[1.5.0, )"
+            },
+            "PDFsharp": {
+              "target": "Package",
+              "version": "[1.32.3057, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+        },
+        "net45": {
+          "targetAlias": "net45",
+          "dependencies": {
+            "HtmlRenderer": {
+              "target": "Package",
+              "version": "[1.4.6.1, )"
+            },
+            "HtmlRenderer.PdfSharp": {
+              "target": "Package",
+              "version": "[1.5.0, )"
+            },
+            "PDFsharp": {
+              "target": "Package",
+              "version": "[1.32.3057, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+        },
+        "net461": {
+          "targetAlias": "net461",
+          "dependencies": {
+            "HtmlRenderer": {
+              "target": "Package",
+              "version": "[1.4.6.1, )"
+            },
+            "HtmlRenderer.PdfSharp": {
+              "target": "Package",
+              "version": "[1.5.0, )"
+            },
+            "PDFsharp": {
+              "target": "Package",
+              "version": "[1.32.3057, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+        },
+        "net48": {
+          "targetAlias": "net48",
+          "dependencies": {
+            "HtmlRenderer": {
+              "target": "Package",
+              "version": "[1.4.6.1, )"
+            },
+            "HtmlRenderer.PdfSharp": {
+              "target": "Package",
+              "version": "[1.5.0, )"
+            },
+            "PDFsharp": {
+              "target": "Package",
+              "version": "[1.32.3057, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

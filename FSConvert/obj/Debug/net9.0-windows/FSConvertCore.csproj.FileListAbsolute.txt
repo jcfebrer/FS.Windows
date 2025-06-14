@@ -1,0 +1,14 @@
+D:\FS\FS\FSConvertCore\bin\Debug\net9.0-windows\FSConvertCore.deps.json
+D:\FS\FS\FSConvertCore\bin\Debug\net9.0-windows\FSConvertCore.dll
+D:\FS\FS\FSConvertCore\bin\Debug\net9.0-windows\FSConvertCore.pdb
+D:\FS\FS\FSConvertCore\bin\Debug\net9.0-windows\FSTraceCore.dll
+D:\FS\FS\FSConvertCore\bin\Debug\net9.0-windows\FSTraceCore.pdb
+D:\FS\FS\FSConvertCore\obj\Debug\net9.0-windows\FSConvertCore.csproj.AssemblyReference.cache
+D:\FS\FS\FSConvertCore\obj\Debug\net9.0-windows\FSConvertCore.GeneratedMSBuildEditorConfig.editorconfig
+D:\FS\FS\FSConvertCore\obj\Debug\net9.0-windows\FSConvertCore.csproj.CoreCompileInputs.cache
+D:\FS\FS\FSConvertCore\obj\Debug\net9.0-windows\FSConvertCore.sourcelink.json
+D:\FS\FS\FSConvertCore\obj\Debug\net9.0-windows\FSConver.0D1C4EBC.Up2Date
+D:\FS\FS\FSConvertCore\obj\Debug\net9.0-windows\FSConvertCore.dll
+D:\FS\FS\FSConvertCore\obj\Debug\net9.0-windows\refint\FSConvertCore.dll
+D:\FS\FS\FSConvertCore\obj\Debug\net9.0-windows\FSConvertCore.pdb
+D:\FS\FS\FSConvertCore\obj\Debug\net9.0-windows\ref\FSConvertCore.dll

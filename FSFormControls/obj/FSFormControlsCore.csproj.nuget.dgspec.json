@@ -1,0 +1,2132 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\FS\\FS\\FSFormControlsCore\\FSFormControlsCore.csproj": {}
+  },
+  "projects": {
+    "D:\\FS\\FS\\FSCertificateCore\\FSCertificate.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\FS\\FS\\FSCertificateCore\\FSCertificate.csproj",
+        "projectName": "FSCertificate",
+        "projectPath": "D:\\FS\\FS\\FSCertificateCore\\FSCertificate.csproj",
+        "packagesPath": "C:\\Users\\jcfeb\\.nuget\\packages\\",
+        "outputPath": "D:\\FS\\FS\\FSCertificateCore\\obj\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jcfeb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net461",
+          "net8.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows7.0": {
+            "targetAlias": "net8.0-windows",
+            "projectReferences": {
+              "D:\\FS\\FS\\FSExceptionCore\\FSExceptionCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSExceptionCore\\FSExceptionCore.csproj"
+              }
+            }
+          },
+          "net461": {
+            "targetAlias": "net461",
+            "projectReferences": {
+              "D:\\FS\\FS\\FSExceptionCore\\FSExceptionCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSExceptionCore\\FSExceptionCore.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "Microsoft.CSharp": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "System.Data.DataSetExtensions": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
+            "System.Security.Cryptography.Xml": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        },
+        "net461": {
+          "targetAlias": "net461",
+          "dependencies": {
+            "Microsoft.CSharp": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "System.Data.DataSetExtensions": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
+            "System.Security.Cryptography.Xml": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\FS\\FS\\FSConvertCore\\FSConvert.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\FS\\FS\\FSConvertCore\\FSConvert.csproj",
+        "projectName": "FSConvert",
+        "projectPath": "D:\\FS\\FS\\FSConvertCore\\FSConvert.csproj",
+        "packagesPath": "C:\\Users\\jcfeb\\.nuget\\packages\\",
+        "outputPath": "D:\\FS\\FS\\FSConvertCore\\obj\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jcfeb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net461",
+          "net8.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows7.0": {
+            "targetAlias": "net8.0-windows",
+            "projectReferences": {
+              "D:\\FS\\FS\\FSTraceCore\\FSTraceCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSTraceCore\\FSTraceCore.csproj"
+              }
+            }
+          },
+          "net461": {
+            "targetAlias": "net461",
+            "projectReferences": {
+              "D:\\FS\\FS\\FSTraceCore\\FSTraceCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSTraceCore\\FSTraceCore.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "Microsoft.CSharp": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "System.Data.DataSetExtensions": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        },
+        "net461": {
+          "targetAlias": "net461",
+          "dependencies": {
+            "Microsoft.CSharp": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "System.Data.DataSetExtensions": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\FS\\FS\\FSCryptoCore\\FSCryptoCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\FS\\FS\\FSCryptoCore\\FSCryptoCore.csproj",
+        "projectName": "FSCryptoCore",
+        "projectPath": "D:\\FS\\FS\\FSCryptoCore\\FSCryptoCore.csproj",
+        "packagesPath": "C:\\Users\\jcfeb\\.nuget\\packages\\",
+        "outputPath": "D:\\FS\\FS\\FSCryptoCore\\obj\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jcfeb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net461",
+          "net8.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows7.0": {
+            "targetAlias": "net8.0-windows",
+            "projectReferences": {
+              "D:\\FS\\FS\\FSExceptionCore\\FSExceptionCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSExceptionCore\\FSExceptionCore.csproj"
+              },
+              "D:\\FS\\FS\\FSLibraryCore\\FSLibraryCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSLibraryCore\\FSLibraryCore.csproj"
+              }
+            }
+          },
+          "net461": {
+            "targetAlias": "net461",
+            "projectReferences": {
+              "D:\\FS\\FS\\FSExceptionCore\\FSExceptionCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSExceptionCore\\FSExceptionCore.csproj"
+              },
+              "D:\\FS\\FS\\FSLibraryCore\\FSLibraryCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSLibraryCore\\FSLibraryCore.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        },
+        "net461": {
+          "targetAlias": "net461",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\FS\\FS\\FSDatabaseCore\\FSDatabaseCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\FS\\FS\\FSDatabaseCore\\FSDatabaseCore.csproj",
+        "projectName": "FSDatabaseCore",
+        "projectPath": "D:\\FS\\FS\\FSDatabaseCore\\FSDatabaseCore.csproj",
+        "packagesPath": "C:\\Users\\jcfeb\\.nuget\\packages\\",
+        "outputPath": "D:\\FS\\FS\\FSDatabaseCore\\obj\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jcfeb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net461",
+          "net8.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows7.0": {
+            "targetAlias": "net8.0-windows",
+            "projectReferences": {
+              "D:\\FS\\FS\\FSDiskCore\\FSDiskCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSDiskCore\\FSDiskCore.csproj"
+              },
+              "D:\\FS\\FS\\FSExceptionCore\\FSExceptionCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSExceptionCore\\FSExceptionCore.csproj"
+              },
+              "D:\\FS\\FS\\FSLibraryCore\\FSLibraryCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSLibraryCore\\FSLibraryCore.csproj"
+              },
+              "D:\\FS\\FS\\FSNetworkCore\\FSNetworkCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSNetworkCore\\FSNetworkCore.csproj"
+              },
+              "D:\\FS\\FS\\FSParserCore\\FSParserCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSParserCore\\FSParserCore.csproj"
+              },
+              "D:\\FS\\FS\\FSQueryBuilderCore\\FSQueryBuilderCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSQueryBuilderCore\\FSQueryBuilderCore.csproj"
+              },
+              "D:\\FS\\FS\\FSSecurityCore\\FSSecurityCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSSecurityCore\\FSSecurityCore.csproj"
+              },
+              "D:\\FS\\FS\\FSSystemInfoCore\\FSSystemInfoCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSSystemInfoCore\\FSSystemInfoCore.csproj"
+              },
+              "D:\\FS\\FS\\FSTraceCore\\FSTraceCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSTraceCore\\FSTraceCore.csproj"
+              }
+            }
+          },
+          "net461": {
+            "targetAlias": "net461",
+            "projectReferences": {
+              "D:\\FS\\FS\\FSDiskCore\\FSDiskCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSDiskCore\\FSDiskCore.csproj"
+              },
+              "D:\\FS\\FS\\FSExceptionCore\\FSExceptionCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSExceptionCore\\FSExceptionCore.csproj"
+              },
+              "D:\\FS\\FS\\FSLibraryCore\\FSLibraryCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSLibraryCore\\FSLibraryCore.csproj"
+              },
+              "D:\\FS\\FS\\FSNetworkCore\\FSNetworkCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSNetworkCore\\FSNetworkCore.csproj"
+              },
+              "D:\\FS\\FS\\FSParserCore\\FSParserCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSParserCore\\FSParserCore.csproj"
+              },
+              "D:\\FS\\FS\\FSQueryBuilderCore\\FSQueryBuilderCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSQueryBuilderCore\\FSQueryBuilderCore.csproj"
+              },
+              "D:\\FS\\FS\\FSSecurityCore\\FSSecurityCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSSecurityCore\\FSSecurityCore.csproj"
+              },
+              "D:\\FS\\FS\\FSSystemInfoCore\\FSSystemInfoCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSSystemInfoCore\\FSSystemInfoCore.csproj"
+              },
+              "D:\\FS\\FS\\FSTraceCore\\FSTraceCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSTraceCore\\FSTraceCore.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "System.Data.OleDb": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        },
+        "net461": {
+          "targetAlias": "net461",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\FS\\FS\\FSDiskCore\\FSDiskCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\FS\\FS\\FSDiskCore\\FSDiskCore.csproj",
+        "projectName": "FSDiskCore",
+        "projectPath": "D:\\FS\\FS\\FSDiskCore\\FSDiskCore.csproj",
+        "packagesPath": "C:\\Users\\jcfeb\\.nuget\\packages\\",
+        "outputPath": "D:\\FS\\FS\\FSDiskCore\\obj\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jcfeb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net461",
+          "net8.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows7.0": {
+            "targetAlias": "net8.0-windows",
+            "projectReferences": {
+              "D:\\FS\\FS\\FSCryptoCore\\FSCryptoCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSCryptoCore\\FSCryptoCore.csproj"
+              },
+              "D:\\FS\\FS\\FSExceptionCore\\FSExceptionCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSExceptionCore\\FSExceptionCore.csproj"
+              },
+              "D:\\FS\\FS\\FSFuzzyStringsCore\\FSFuzzyStringsCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSFuzzyStringsCore\\FSFuzzyStringsCore.csproj"
+              },
+              "D:\\FS\\FS\\FSLibraryCore\\FSLibraryCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSLibraryCore\\FSLibraryCore.csproj"
+              }
+            }
+          },
+          "net461": {
+            "targetAlias": "net461",
+            "projectReferences": {
+              "D:\\FS\\FS\\FSCryptoCore\\FSCryptoCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSCryptoCore\\FSCryptoCore.csproj"
+              },
+              "D:\\FS\\FS\\FSExceptionCore\\FSExceptionCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSExceptionCore\\FSExceptionCore.csproj"
+              },
+              "D:\\FS\\FS\\FSFuzzyStringsCore\\FSFuzzyStringsCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSFuzzyStringsCore\\FSFuzzyStringsCore.csproj"
+              },
+              "D:\\FS\\FS\\FSLibraryCore\\FSLibraryCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSLibraryCore\\FSLibraryCore.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "System.Data.DataSetExtensions": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
+            "System.Security.Permissions": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        },
+        "net461": {
+          "targetAlias": "net461",
+          "dependencies": {
+            "System.Data.DataSetExtensions": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
+            "System.Security.Permissions": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\FS\\FS\\FSExcelCore\\FSExcelCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\FS\\FS\\FSExcelCore\\FSExcelCore.csproj",
+        "projectName": "FSExcelCore",
+        "projectPath": "D:\\FS\\FS\\FSExcelCore\\FSExcelCore.csproj",
+        "packagesPath": "C:\\Users\\jcfeb\\.nuget\\packages\\",
+        "outputPath": "D:\\FS\\FS\\FSExcelCore\\obj\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jcfeb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net461",
+          "net8.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows7.0": {
+            "targetAlias": "net8.0-windows",
+            "projectReferences": {}
+          },
+          "net461": {
+            "targetAlias": "net461",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "Microsoft.Office.Interop.Excel": {
+              "target": "Package",
+              "version": "[12.0.4518.1014, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        },
+        "net461": {
+          "targetAlias": "net461",
+          "dependencies": {
+            "Microsoft.Office.Interop.Excel": {
+              "target": "Package",
+              "version": "[12.0.4518.1014, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\FS\\FS\\FSExceptionCore\\FSExceptionCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\FS\\FS\\FSExceptionCore\\FSExceptionCore.csproj",
+        "projectName": "FSExceptionCore",
+        "projectPath": "D:\\FS\\FS\\FSExceptionCore\\FSExceptionCore.csproj",
+        "packagesPath": "C:\\Users\\jcfeb\\.nuget\\packages\\",
+        "outputPath": "D:\\FS\\FS\\FSExceptionCore\\obj\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jcfeb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net461",
+          "net8.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows7.0": {
+            "targetAlias": "net8.0-windows",
+            "projectReferences": {
+              "D:\\FS\\FS\\FSTraceCore\\FSTraceCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSTraceCore\\FSTraceCore.csproj"
+              }
+            }
+          },
+          "net461": {
+            "targetAlias": "net461",
+            "projectReferences": {
+              "D:\\FS\\FS\\FSTraceCore\\FSTraceCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSTraceCore\\FSTraceCore.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        },
+        "net461": {
+          "targetAlias": "net461",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\FS\\FS\\FSFormControlsCore\\FSFormControlsCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\FS\\FS\\FSFormControlsCore\\FSFormControlsCore.csproj",
+        "projectName": "FSFormControlsCore",
+        "projectPath": "D:\\FS\\FS\\FSFormControlsCore\\FSFormControlsCore.csproj",
+        "packagesPath": "C:\\Users\\jcfeb\\.nuget\\packages\\",
+        "outputPath": "D:\\FS\\FS\\FSFormControlsCore\\obj\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jcfeb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net461",
+          "net8.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows7.0": {
+            "targetAlias": "net8.0-windows",
+            "projectReferences": {
+              "D:\\FS\\FS\\FSConvertCore\\FSConvert.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSConvertCore\\FSConvert.csproj"
+              },
+              "D:\\FS\\FS\\FSDatabaseCore\\FSDatabaseCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSDatabaseCore\\FSDatabaseCore.csproj"
+              },
+              "D:\\FS\\FS\\FSDiskCore\\FSDiskCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSDiskCore\\FSDiskCore.csproj"
+              },
+              "D:\\FS\\FS\\FSExcelCore\\FSExcelCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSExcelCore\\FSExcelCore.csproj"
+              },
+              "D:\\FS\\FS\\FSExceptionCore\\FSExceptionCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSExceptionCore\\FSExceptionCore.csproj"
+              },
+              "D:\\FS\\FS\\FSGraphicsCore\\FSGraphicsCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSGraphicsCore\\FSGraphicsCore.csproj"
+              },
+              "D:\\FS\\FS\\FSLibraryCore\\FSLibraryCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSLibraryCore\\FSLibraryCore.csproj"
+              },
+              "D:\\FS\\FS\\FSMailCore\\FSMailCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSMailCore\\FSMailCore.csproj"
+              },
+              "D:\\FS\\FS\\FSMouseKeyboardLibraryCore\\FSMouseKeyboardLibraryCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSMouseKeyboardLibraryCore\\FSMouseKeyboardLibraryCore.csproj"
+              },
+              "D:\\FS\\FS\\FSNetworkCore\\FSNetworkCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSNetworkCore\\FSNetworkCore.csproj"
+              },
+              "D:\\FS\\FS\\FSQueryBuilderCore\\FSQueryBuilderCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSQueryBuilderCore\\FSQueryBuilderCore.csproj"
+              },
+              "D:\\FS\\FS\\FSSecurityCore\\FSSecurityCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSSecurityCore\\FSSecurityCore.csproj"
+              },
+              "D:\\FS\\FS\\FSSystemInfoCore\\FSSystemInfoCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSSystemInfoCore\\FSSystemInfoCore.csproj"
+              }
+            }
+          },
+          "net461": {
+            "targetAlias": "net461",
+            "projectReferences": {
+              "D:\\FS\\FS\\FSConvertCore\\FSConvert.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSConvertCore\\FSConvert.csproj"
+              },
+              "D:\\FS\\FS\\FSDatabaseCore\\FSDatabaseCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSDatabaseCore\\FSDatabaseCore.csproj"
+              },
+              "D:\\FS\\FS\\FSDiskCore\\FSDiskCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSDiskCore\\FSDiskCore.csproj"
+              },
+              "D:\\FS\\FS\\FSExcelCore\\FSExcelCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSExcelCore\\FSExcelCore.csproj"
+              },
+              "D:\\FS\\FS\\FSExceptionCore\\FSExceptionCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSExceptionCore\\FSExceptionCore.csproj"
+              },
+              "D:\\FS\\FS\\FSGraphicsCore\\FSGraphicsCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSGraphicsCore\\FSGraphicsCore.csproj"
+              },
+              "D:\\FS\\FS\\FSLibraryCore\\FSLibraryCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSLibraryCore\\FSLibraryCore.csproj"
+              },
+              "D:\\FS\\FS\\FSMailCore\\FSMailCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSMailCore\\FSMailCore.csproj"
+              },
+              "D:\\FS\\FS\\FSMouseKeyboardLibraryCore\\FSMouseKeyboardLibraryCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSMouseKeyboardLibraryCore\\FSMouseKeyboardLibraryCore.csproj"
+              },
+              "D:\\FS\\FS\\FSNetworkCore\\FSNetworkCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSNetworkCore\\FSNetworkCore.csproj"
+              },
+              "D:\\FS\\FS\\FSQueryBuilderCore\\FSQueryBuilderCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSQueryBuilderCore\\FSQueryBuilderCore.csproj"
+              },
+              "D:\\FS\\FS\\FSSecurityCore\\FSSecurityCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSSecurityCore\\FSSecurityCore.csproj"
+              },
+              "D:\\FS\\FS\\FSSystemInfoCore\\FSSystemInfoCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSSystemInfoCore\\FSSystemInfoCore.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        },
+        "net461": {
+          "targetAlias": "net461",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\FS\\FS\\FSFuzzyStringsCore\\FSFuzzyStringsCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\FS\\FS\\FSFuzzyStringsCore\\FSFuzzyStringsCore.csproj",
+        "projectName": "FSFuzzyStringsCore",
+        "projectPath": "D:\\FS\\FS\\FSFuzzyStringsCore\\FSFuzzyStringsCore.csproj",
+        "packagesPath": "C:\\Users\\jcfeb\\.nuget\\packages\\",
+        "outputPath": "D:\\FS\\FS\\FSFuzzyStringsCore\\obj\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jcfeb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net461",
+          "net8.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows7.0": {
+            "targetAlias": "net8.0-windows",
+            "projectReferences": {
+              "D:\\FS\\FS\\FSLibraryCore\\FSLibraryCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSLibraryCore\\FSLibraryCore.csproj"
+              }
+            }
+          },
+          "net461": {
+            "targetAlias": "net461",
+            "projectReferences": {
+              "D:\\FS\\FS\\FSLibraryCore\\FSLibraryCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSLibraryCore\\FSLibraryCore.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "Microsoft.CSharp": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "System.Data.DataSetExtensions": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        },
+        "net461": {
+          "targetAlias": "net461",
+          "dependencies": {
+            "Microsoft.CSharp": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "System.Data.DataSetExtensions": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\FS\\FS\\FSGraphicsCore\\FSGraphicsCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\FS\\FS\\FSGraphicsCore\\FSGraphicsCore.csproj",
+        "projectName": "FSGraphicsCore",
+        "projectPath": "D:\\FS\\FS\\FSGraphicsCore\\FSGraphicsCore.csproj",
+        "packagesPath": "C:\\Users\\jcfeb\\.nuget\\packages\\",
+        "outputPath": "D:\\FS\\FS\\FSGraphicsCore\\obj\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jcfeb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net461",
+          "net8.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows7.0": {
+            "targetAlias": "net8.0-windows",
+            "projectReferences": {
+              "D:\\FS\\FS\\FSExceptionCore\\FSExceptionCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSExceptionCore\\FSExceptionCore.csproj"
+              },
+              "D:\\FS\\FS\\FSLibraryCore\\FSLibraryCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSLibraryCore\\FSLibraryCore.csproj"
+              },
+              "D:\\FS\\FS\\FSTraceCore\\FSTraceCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSTraceCore\\FSTraceCore.csproj"
+              }
+            }
+          },
+          "net461": {
+            "targetAlias": "net461",
+            "projectReferences": {
+              "D:\\FS\\FS\\FSExceptionCore\\FSExceptionCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSExceptionCore\\FSExceptionCore.csproj"
+              },
+              "D:\\FS\\FS\\FSLibraryCore\\FSLibraryCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSLibraryCore\\FSLibraryCore.csproj"
+              },
+              "D:\\FS\\FS\\FSTraceCore\\FSTraceCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSTraceCore\\FSTraceCore.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "Microsoft.CSharp": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "System.Data.DataSetExtensions": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        },
+        "net461": {
+          "targetAlias": "net461",
+          "dependencies": {
+            "Microsoft.CSharp": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "System.Data.DataSetExtensions": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\FS\\FS\\FSLibraryCore\\FSLibraryCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\FS\\FS\\FSLibraryCore\\FSLibraryCore.csproj",
+        "projectName": "FSLibraryCore",
+        "projectPath": "D:\\FS\\FS\\FSLibraryCore\\FSLibraryCore.csproj",
+        "packagesPath": "C:\\Users\\jcfeb\\.nuget\\packages\\",
+        "outputPath": "D:\\FS\\FS\\FSLibraryCore\\obj\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jcfeb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net461",
+          "net8.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows7.0": {
+            "targetAlias": "net8.0-windows",
+            "projectReferences": {
+              "D:\\FS\\FS\\FSExceptionCore\\FSExceptionCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSExceptionCore\\FSExceptionCore.csproj"
+              },
+              "D:\\FS\\FS\\FSTraceCore\\FSTraceCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSTraceCore\\FSTraceCore.csproj"
+              }
+            }
+          },
+          "net461": {
+            "targetAlias": "net461",
+            "projectReferences": {
+              "D:\\FS\\FS\\FSExceptionCore\\FSExceptionCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSExceptionCore\\FSExceptionCore.csproj"
+              },
+              "D:\\FS\\FS\\FSTraceCore\\FSTraceCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSTraceCore\\FSTraceCore.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "System.Management": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "System.ServiceProcess.ServiceController": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        },
+        "net461": {
+          "targetAlias": "net461",
+          "dependencies": {
+            "System.Management": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "System.ServiceProcess.ServiceController": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\FS\\FS\\FSMailCore\\FSMailCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\FS\\FS\\FSMailCore\\FSMailCore.csproj",
+        "projectName": "FSMailCore",
+        "projectPath": "D:\\FS\\FS\\FSMailCore\\FSMailCore.csproj",
+        "packagesPath": "C:\\Users\\jcfeb\\.nuget\\packages\\",
+        "outputPath": "D:\\FS\\FS\\FSMailCore\\obj\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jcfeb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net461",
+          "net8.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows7.0": {
+            "targetAlias": "net8.0-windows",
+            "projectReferences": {
+              "D:\\FS\\FS\\FSCertificateCore\\FSCertificate.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSCertificateCore\\FSCertificate.csproj"
+              },
+              "D:\\FS\\FS\\FSCryptoCore\\FSCryptoCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSCryptoCore\\FSCryptoCore.csproj"
+              },
+              "D:\\FS\\FS\\FSExceptionCore\\FSExceptionCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSExceptionCore\\FSExceptionCore.csproj"
+              },
+              "D:\\FS\\FS\\FSLibraryCore\\FSLibraryCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSLibraryCore\\FSLibraryCore.csproj"
+              },
+              "D:\\FS\\FS\\FSTraceCore\\FSTraceCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSTraceCore\\FSTraceCore.csproj"
+              }
+            }
+          },
+          "net461": {
+            "targetAlias": "net461",
+            "projectReferences": {
+              "D:\\FS\\FS\\FSCertificateCore\\FSCertificate.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSCertificateCore\\FSCertificate.csproj"
+              },
+              "D:\\FS\\FS\\FSCryptoCore\\FSCryptoCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSCryptoCore\\FSCryptoCore.csproj"
+              },
+              "D:\\FS\\FS\\FSExceptionCore\\FSExceptionCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSExceptionCore\\FSExceptionCore.csproj"
+              },
+              "D:\\FS\\FS\\FSLibraryCore\\FSLibraryCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSLibraryCore\\FSLibraryCore.csproj"
+              },
+              "D:\\FS\\FS\\FSTraceCore\\FSTraceCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSTraceCore\\FSTraceCore.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        },
+        "net461": {
+          "targetAlias": "net461",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\FS\\FS\\FSMouseKeyboardLibraryCore\\FSMouseKeyboardLibraryCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\FS\\FS\\FSMouseKeyboardLibraryCore\\FSMouseKeyboardLibraryCore.csproj",
+        "projectName": "FSMouseKeyboardLibraryCore",
+        "projectPath": "D:\\FS\\FS\\FSMouseKeyboardLibraryCore\\FSMouseKeyboardLibraryCore.csproj",
+        "packagesPath": "C:\\Users\\jcfeb\\.nuget\\packages\\",
+        "outputPath": "D:\\FS\\FS\\FSMouseKeyboardLibraryCore\\obj\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jcfeb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net461",
+          "net8.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows7.0": {
+            "targetAlias": "net8.0-windows",
+            "projectReferences": {
+              "D:\\FS\\FS\\FSExceptionCore\\FSExceptionCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSExceptionCore\\FSExceptionCore.csproj"
+              },
+              "D:\\FS\\FS\\FSLibraryCore\\FSLibraryCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSLibraryCore\\FSLibraryCore.csproj"
+              }
+            }
+          },
+          "net461": {
+            "targetAlias": "net461",
+            "projectReferences": {
+              "D:\\FS\\FS\\FSExceptionCore\\FSExceptionCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSExceptionCore\\FSExceptionCore.csproj"
+              },
+              "D:\\FS\\FS\\FSLibraryCore\\FSLibraryCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSLibraryCore\\FSLibraryCore.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        },
+        "net461": {
+          "targetAlias": "net461",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\FS\\FS\\FSNetworkCore\\FSNetworkCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\FS\\FS\\FSNetworkCore\\FSNetworkCore.csproj",
+        "projectName": "FSNetworkCore",
+        "projectPath": "D:\\FS\\FS\\FSNetworkCore\\FSNetworkCore.csproj",
+        "packagesPath": "C:\\Users\\jcfeb\\.nuget\\packages\\",
+        "outputPath": "D:\\FS\\FS\\FSNetworkCore\\obj\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jcfeb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net461",
+          "net8.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows7.0": {
+            "targetAlias": "net8.0-windows",
+            "projectReferences": {
+              "D:\\FS\\FS\\FSCryptoCore\\FSCryptoCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSCryptoCore\\FSCryptoCore.csproj"
+              },
+              "D:\\FS\\FS\\FSDiskCore\\FSDiskCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSDiskCore\\FSDiskCore.csproj"
+              },
+              "D:\\FS\\FS\\FSExceptionCore\\FSExceptionCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSExceptionCore\\FSExceptionCore.csproj"
+              },
+              "D:\\FS\\FS\\FSLibraryCore\\FSLibraryCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSLibraryCore\\FSLibraryCore.csproj"
+              },
+              "D:\\FS\\FS\\FSTraceCore\\FSTraceCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSTraceCore\\FSTraceCore.csproj"
+              }
+            }
+          },
+          "net461": {
+            "targetAlias": "net461",
+            "projectReferences": {
+              "D:\\FS\\FS\\FSCryptoCore\\FSCryptoCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSCryptoCore\\FSCryptoCore.csproj"
+              },
+              "D:\\FS\\FS\\FSDiskCore\\FSDiskCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSDiskCore\\FSDiskCore.csproj"
+              },
+              "D:\\FS\\FS\\FSExceptionCore\\FSExceptionCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSExceptionCore\\FSExceptionCore.csproj"
+              },
+              "D:\\FS\\FS\\FSLibraryCore\\FSLibraryCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSLibraryCore\\FSLibraryCore.csproj"
+              },
+              "D:\\FS\\FS\\FSTraceCore\\FSTraceCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSTraceCore\\FSTraceCore.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        },
+        "net461": {
+          "targetAlias": "net461",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\FS\\FS\\FSParserCore\\FSParserCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\FS\\FS\\FSParserCore\\FSParserCore.csproj",
+        "projectName": "FSParserCore",
+        "projectPath": "D:\\FS\\FS\\FSParserCore\\FSParserCore.csproj",
+        "packagesPath": "C:\\Users\\jcfeb\\.nuget\\packages\\",
+        "outputPath": "D:\\FS\\FS\\FSParserCore\\obj\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jcfeb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net461",
+          "net8.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows7.0": {
+            "targetAlias": "net8.0-windows",
+            "projectReferences": {
+              "D:\\FS\\FS\\FSConvertCore\\FSConvert.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSConvertCore\\FSConvert.csproj"
+              },
+              "D:\\FS\\FS\\FSExceptionCore\\FSExceptionCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSExceptionCore\\FSExceptionCore.csproj"
+              },
+              "D:\\FS\\FS\\FSLibraryCore\\FSLibraryCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSLibraryCore\\FSLibraryCore.csproj"
+              }
+            }
+          },
+          "net461": {
+            "targetAlias": "net461",
+            "projectReferences": {
+              "D:\\FS\\FS\\FSConvertCore\\FSConvert.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSConvertCore\\FSConvert.csproj"
+              },
+              "D:\\FS\\FS\\FSExceptionCore\\FSExceptionCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSExceptionCore\\FSExceptionCore.csproj"
+              },
+              "D:\\FS\\FS\\FSLibraryCore\\FSLibraryCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSLibraryCore\\FSLibraryCore.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "Microsoft.CSharp": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "System.Data.DataSetExtensions": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        },
+        "net461": {
+          "targetAlias": "net461",
+          "dependencies": {
+            "Microsoft.CSharp": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "System.Data.DataSetExtensions": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\FS\\FS\\FSQueryBuilderCore\\FSQueryBuilderCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\FS\\FS\\FSQueryBuilderCore\\FSQueryBuilderCore.csproj",
+        "projectName": "FSQueryBuilderCore",
+        "projectPath": "D:\\FS\\FS\\FSQueryBuilderCore\\FSQueryBuilderCore.csproj",
+        "packagesPath": "C:\\Users\\jcfeb\\.nuget\\packages\\",
+        "outputPath": "D:\\FS\\FS\\FSQueryBuilderCore\\obj\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jcfeb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net461",
+          "net8.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows7.0": {
+            "targetAlias": "net8.0-windows",
+            "projectReferences": {
+              "D:\\FS\\FS\\FSLibraryCore\\FSLibraryCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSLibraryCore\\FSLibraryCore.csproj"
+              }
+            }
+          },
+          "net461": {
+            "targetAlias": "net461",
+            "projectReferences": {
+              "D:\\FS\\FS\\FSLibraryCore\\FSLibraryCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSLibraryCore\\FSLibraryCore.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true,
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "System.Data.DataSetExtensions": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        },
+        "net461": {
+          "targetAlias": "net461",
+          "dependencies": {
+            "System.Data.DataSetExtensions": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\FS\\FS\\FSSecurityCore\\FSSecurityCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\FS\\FS\\FSSecurityCore\\FSSecurityCore.csproj",
+        "projectName": "FSSecurityCore",
+        "projectPath": "D:\\FS\\FS\\FSSecurityCore\\FSSecurityCore.csproj",
+        "packagesPath": "C:\\Users\\jcfeb\\.nuget\\packages\\",
+        "outputPath": "D:\\FS\\FS\\FSSecurityCore\\obj\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jcfeb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net461",
+          "net8.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows7.0": {
+            "targetAlias": "net8.0-windows",
+            "projectReferences": {
+              "D:\\FS\\FS\\FSExceptionCore\\FSExceptionCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSExceptionCore\\FSExceptionCore.csproj"
+              },
+              "D:\\FS\\FS\\FSLibraryCore\\FSLibraryCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSLibraryCore\\FSLibraryCore.csproj"
+              },
+              "D:\\FS\\FS\\FSTraceCore\\FSTraceCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSTraceCore\\FSTraceCore.csproj"
+              }
+            }
+          },
+          "net461": {
+            "targetAlias": "net461",
+            "projectReferences": {
+              "D:\\FS\\FS\\FSExceptionCore\\FSExceptionCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSExceptionCore\\FSExceptionCore.csproj"
+              },
+              "D:\\FS\\FS\\FSLibraryCore\\FSLibraryCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSLibraryCore\\FSLibraryCore.csproj"
+              },
+              "D:\\FS\\FS\\FSTraceCore\\FSTraceCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSTraceCore\\FSTraceCore.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "Microsoft.CSharp": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "System.Data.DataSetExtensions": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        },
+        "net461": {
+          "targetAlias": "net461",
+          "dependencies": {
+            "Microsoft.CSharp": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "System.Data.DataSetExtensions": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\FS\\FS\\FSSystemInfoCore\\FSSystemInfoCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\FS\\FS\\FSSystemInfoCore\\FSSystemInfoCore.csproj",
+        "projectName": "FSSystemInfoCore",
+        "projectPath": "D:\\FS\\FS\\FSSystemInfoCore\\FSSystemInfoCore.csproj",
+        "packagesPath": "C:\\Users\\jcfeb\\.nuget\\packages\\",
+        "outputPath": "D:\\FS\\FS\\FSSystemInfoCore\\obj\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jcfeb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net461",
+          "net8.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows7.0": {
+            "targetAlias": "net8.0-windows",
+            "projectReferences": {
+              "D:\\FS\\FS\\FSDiskCore\\FSDiskCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSDiskCore\\FSDiskCore.csproj"
+              },
+              "D:\\FS\\FS\\FSExceptionCore\\FSExceptionCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSExceptionCore\\FSExceptionCore.csproj"
+              },
+              "D:\\FS\\FS\\FSLibraryCore\\FSLibraryCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSLibraryCore\\FSLibraryCore.csproj"
+              }
+            }
+          },
+          "net461": {
+            "targetAlias": "net461",
+            "projectReferences": {
+              "D:\\FS\\FS\\FSDiskCore\\FSDiskCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSDiskCore\\FSDiskCore.csproj"
+              },
+              "D:\\FS\\FS\\FSExceptionCore\\FSExceptionCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSExceptionCore\\FSExceptionCore.csproj"
+              },
+              "D:\\FS\\FS\\FSLibraryCore\\FSLibraryCore.csproj": {
+                "projectPath": "D:\\FS\\FS\\FSLibraryCore\\FSLibraryCore.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "Microsoft.CSharp": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "System.Data.DataSetExtensions": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
+            "System.Management": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        },
+        "net461": {
+          "targetAlias": "net461",
+          "dependencies": {
+            "Microsoft.CSharp": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "System.Data.DataSetExtensions": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
+            "System.Management": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\FS\\FS\\FSTraceCore\\FSTraceCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\FS\\FS\\FSTraceCore\\FSTraceCore.csproj",
+        "projectName": "FSTraceCore",
+        "projectPath": "D:\\FS\\FS\\FSTraceCore\\FSTraceCore.csproj",
+        "packagesPath": "C:\\Users\\jcfeb\\.nuget\\packages\\",
+        "outputPath": "D:\\FS\\FS\\FSTraceCore\\obj\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jcfeb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net461",
+          "net8.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows7.0": {
+            "targetAlias": "net8.0-windows",
+            "projectReferences": {}
+          },
+          "net461": {
+            "targetAlias": "net461",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        },
+        "net461": {
+          "targetAlias": "net461",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

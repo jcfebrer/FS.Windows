@@ -1,0 +1,1 @@
+D:\FS\FS\FSFirewall\obj\Debug\net20\FSFirewall.csproj.AssemblyReference.cache

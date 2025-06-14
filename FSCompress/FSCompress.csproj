@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net45;net461;net48;net8.0-windows</TargetFrameworks>
+    <OutputType>Library</OutputType>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <AssemblyTitle>FSCompress</AssemblyTitle>
+    <Product>FSCompress</Product>
+    <Copyright>Copyright ©  2019</Copyright>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+    <SignAssembly>False</SignAssembly>
+    <AssemblyOriginatorKeyFile></AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="zlib.NET\history.txt" />
+    <Content Include="zlib.NET\license.txt" />
+    <Content Include="zlib.NET\readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="lz4net" Version="1.0.15.93" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FSException\FSException.csproj" />
+    <ProjectReference Include="..\FSGraphics\FSGraphics.csproj" />
+    <ProjectReference Include="..\FSLibrary\FSLibrary.csproj" />
+    <ProjectReference Include="..\FSTrace\FSTrace.csproj" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))' == 'net'" >
+    <Reference Include="System.IO.Compression" />
+  </ItemGroup>
+</Project>

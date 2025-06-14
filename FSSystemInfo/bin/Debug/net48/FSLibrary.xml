@@ -1,0 +1,922 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FSLibrary</name>
+    </assembly>
+    <members>
+        <member name="T:FSLibrary.AlarmClock">
+            <summary>
+            Clase que nos permite definir eventos de alarma.
+            </summary>
+        </member>
+        <member name="P:FSLibrary.AlarmClock.AlarmTime">
+            <summary>
+            Gets or sets the alarm time.
+            </summary>
+            <value>
+            The alarm time.
+            </value>
+        </member>
+        <member name="P:FSLibrary.AlarmClock.Enabled">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:FSLibrary.AlarmClock"/> is enabled.
+            </summary>
+            <value>
+              <c>true</c> if enabled; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:FSLibrary.AlarmClock.Alarm_Type">
+            <summary>
+            Gets or sets the type of the alarm.
+            </summary>
+            <value>
+            The type of the alarm.
+            </value>
+        </member>
+        <member name="P:FSLibrary.AlarmClock.Execute_Days">
+            <summary>
+            Gets or sets the execute days.
+            </summary>
+            <value>
+            The execute days.
+            </value>
+        </member>
+        <member name="P:FSLibrary.AlarmClock.Name">
+            <summary>
+            Gets or sets the name.
+            </summary>
+            <value>
+            The name.
+            </value>
+        </member>
+        <member name="T:FSLibrary.AlarmClock.AlarmType">
+            <summary>
+            Tipo de alarma
+            </summary>
+        </member>
+        <member name="F:FSLibrary.AlarmClock.AlarmType.Diary">
+            <summary>
+            Diaria
+            </summary>
+        </member>
+        <member name="F:FSLibrary.AlarmClock.AlarmType.Day">
+            <summary>
+            Un día concreto
+            </summary>
+        </member>
+        <member name="F:FSLibrary.AlarmClock.AlarmType.Weekly">
+            <summary>
+            Semanal
+            </summary>
+        </member>
+        <member name="F:FSLibrary.AlarmClock.AlarmType.Mounthly">
+            <summary>
+            Mensual
+            </summary>
+        </member>
+        <member name="F:FSLibrary.AlarmClock.AlarmType.Yearthly">
+            <summary>
+            Anual
+            </summary>
+        </member>
+        <member name="T:FSLibrary.AlarmClock.ExecuteDays">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FSLibrary.AlarmClock.ExecuteDays.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:FSLibrary.AlarmClock.ExecuteDays"/> class.
+            </summary>
+        </member>
+        <member name="F:FSLibrary.AlarmClock.ExecuteDays.Monday">
+            <summary>
+            The monday
+            </summary>
+        </member>
+        <member name="F:FSLibrary.AlarmClock.ExecuteDays.Tuesday">
+            <summary>
+            Launch on tuesday
+            </summary>
+        </member>
+        <member name="F:FSLibrary.AlarmClock.ExecuteDays.Wednesday">
+            <summary>
+            Launch on wednesday
+            </summary>
+        </member>
+        <member name="F:FSLibrary.AlarmClock.ExecuteDays.Thursday">
+            <summary>
+            Launch on thursday
+            </summary>
+        </member>
+        <member name="F:FSLibrary.AlarmClock.ExecuteDays.Friday">
+            <summary>
+            Launch on friday
+            </summary>
+        </member>
+        <member name="F:FSLibrary.AlarmClock.ExecuteDays.Saturday">
+            <summary>
+            Launch on saturday
+            </summary>
+        </member>
+        <member name="F:FSLibrary.AlarmClock.ExecuteDays.Sunday">
+            <summary>
+            Launch on sunday
+            </summary>
+        </member>
+        <member name="M:FSLibrary.AlarmClock.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:FSLibrary.AlarmClock"/> class.
+            </summary>
+        </member>
+        <member name="M:FSLibrary.AlarmClock.#ctor(System.String,System.DateTime,FSLibrary.AlarmClock.AlarmType,FSLibrary.AlarmClock.ExecuteDays)">
+            <summary>
+            Initializes a new instance of the <see cref="T:FSLibrary.AlarmClock"/> class.
+            </summary>
+            <param name="name">The name.</param>
+            <param name="alarmTime">The alarm time.</param>
+            <param name="alarmType">Type of the alarm.</param>
+            <param name="executeDays">The execute days.</param>
+        </member>
+        <member name="M:FSLibrary.AlarmClock.OnAlarm">
+            <summary>
+            Called when [alarm].
+            </summary>
+        </member>
+        <member name="E:FSLibrary.AlarmClock.Alarm">
+            <summary>
+            Occurs when [alarm].
+            </summary>
+        </member>
+        <member name="T:FSLibrary.AlarmClockCollection">
+            <summary>
+            Colección de alarmas
+            </summary>
+            <seealso cref="T:System.Collections.CollectionBase" />
+        </member>
+        <member name="M:FSLibrary.AlarmClockCollection.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:FSLibrary.AlarmClockCollection"/> class.
+            </summary>
+        </member>
+        <member name="P:FSLibrary.AlarmClockCollection.Item(System.Int32)">
+            <summary>
+            Gets or sets the <see cref="T:FSLibrary.AlarmClock"/> at the specified index.
+            </summary>
+            <value>
+            The <see cref="T:FSLibrary.AlarmClock"/>.
+            </value>
+            <param name="index">The index.</param>
+            <returns></returns>
+        </member>
+        <member name="M:FSLibrary.AlarmClockCollection.Add(FSLibrary.AlarmClock)">
+            <summary>
+            Adds the specified entry.
+            </summary>
+            <param name="entry">The entry.</param>
+        </member>
+        <member name="M:FSLibrary.AlarmClockCollection.Add(FSLibrary.AlarmClockCollection)">
+            <summary>
+            Adds the specified entries.
+            </summary>
+            <param name="entries">The entries.</param>
+        </member>
+        <member name="M:FSLibrary.AlarmClockCollection.Remove(FSLibrary.AlarmClock)">
+            <summary>
+            Removes the specified entry.
+            </summary>
+            <param name="entry">The entry.</param>
+        </member>
+        <member name="M:FSLibrary.AlarmClockCollection.Remove(System.String)">
+            <summary>
+            Removes the specified alarm name.
+            </summary>
+            <param name="alarmName">Name of the alarm.</param>
+        </member>
+        <member name="M:FSLibrary.AlarmClockCollection.Find(FSLibrary.AlarmClock)">
+            <summary>
+            Finds the specified entry.
+            </summary>
+            <param name="entry">The entry.</param>
+            <returns></returns>
+        </member>
+        <member name="M:FSLibrary.AlarmClockCollection.Find(System.String)">
+            <summary>
+            Finds the specified name.
+            </summary>
+            <param name="name">The name.</param>
+            <returns></returns>
+        </member>
+        <member name="M:FSLibrary.AlarmClockCollection.Exist(System.String)">
+            <summary>
+            Exists the specified name.
+            </summary>
+            <param name="name">The name.</param>
+            <returns></returns>
+        </member>
+        <member name="M:FSLibrary.AlarmClockCollection.Load(System.String)">
+            <summary>
+            Loads the specified file name.
+            </summary>
+            <param name="fileName">Name of the file.</param>
+        </member>
+        <member name="M:FSLibrary.AlarmClockCollection.Save(System.String)">
+            <summary>
+            Saves the specified file name.
+            </summary>
+            <param name="fileName">Name of the file.</param>
+        </member>
+        <member name="T:FSLibrary.Autorun">
+            <summary>
+            Funciones para la ejecución automática de la aplicación cuando se inicie el ordenador.
+            </summary>
+        </member>
+        <member name="M:FSLibrary.Autorun.Install(System.String,System.String,System.Boolean)">
+            <summary>
+            Función para instalar la aplicación en el registro
+            </summary>
+            <param name="app">Nombre de la aplicación</param>
+            <param name="appPath">Path al ejecutable</param>
+            <param name="force">Desinstalamos la aplicación si esta instalada</param>
+        </member>
+        <member name="M:FSLibrary.Autorun.UnInstall">
+            <summary>
+            Función para desinstalar la aplicación del inicio del ordenador.
+            </summary>
+        </member>
+        <member name="M:FSLibrary.Autorun.UnInstall(System.String)">
+            <summary>
+            Función para desinstalar la aplicación del inicio del ordenador.
+            </summary>
+            <param name="app"></param>
+        </member>
+        <member name="M:FSLibrary.Autorun.IsStartupItem">
+            <summary>
+            Función para comprobar si una aplicación esta instalada para ejecutarse al inicio.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:FSLibrary.Bank">
+            <summary>
+                Servicios de validación de las cuentas bancarias españolas
+            </summary>
+        </member>
+        <member name="M:FSLibrary.Bank.ValidaCuentaBancaria(System.String,System.String,System.String,System.String)">
+            <summary>
+                Validación de una cuenta bancaria española
+            </summary>
+            <param name="banco">Código del banco en formato "0000"</param>
+            <param name="oficina">Código de la sucursal en formato "0000"</param>
+            <param name="dc">Dígito de control en formato "00"</param>
+            <param name="cuenta">Número de cuenta en formato "0000000000"</param>
+            <returns>true si el número de cuenta es correcto</returns>
+        </member>
+        <member name="M:FSLibrary.Bank.ValidaCuentaBancaria(System.String)">
+            <summary>
+                Validación de una cuenta bancaria española
+            </summary>
+            <param name="cuentaCompleta">Número de cuenta completa con carácteres numéricos y 20 dígitos</param>
+            <returns>true si el número de cuenta es correcto</returns>
+        </member>
+        <member name="M:FSLibrary.Bank.ValidaCuentaBancaria(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+                Validación de una cuenta bancaria española
+            </summary>
+            <param name="banco">Código del banco</param>
+            <param name="oficina">Código de la oficina</param>
+            <param name="dc">Dígito de control</param>
+            <param name="cuenta">Número de cuenta</param>
+            <returns>true si el número de cuenta es correcto</returns>
+        </member>
+        <member name="M:FSLibrary.Bank.CompruebaCuenta(System.String,System.String,System.String,System.String)">
+            <summary>
+                Una cuenta bancaria está validada si los dígitos de control calculados coinciden con los
+                que se han pasado en los argumentos
+            </summary>
+        </member>
+        <member name="M:FSLibrary.Bank.GetDigitoControl(System.String)">
+            <summary>
+                Obtiene el dígito de control de una cuenta bancaria. La función sólo devuelve un número
+                que corresponderá a una de las dos opciones.
+                - Codigo + CódigoOficina
+                - CuentaBancaria
+            </summary>
+        </member>
+        <member name="M:FSLibrary.Bank.ValidateCardNumber(System.String)">
+            <summary>
+            Validates the card number.
+            </summary>
+            <param name="cardNumber">The card number.</param>
+            <returns></returns>
+        </member>
+        <member name="T:FSLibrary.Calculator">
+            <summary>
+            Calculadora científica
+            </summary>
+        </member>
+        <member name="M:FSLibrary.Calculator.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:FSLibrary.Calculator"/> class.
+            </summary>
+        </member>
+        <member name="M:FSLibrary.Calculator.evaluate(System.String)">
+            <summary>
+            Evalua la expresión
+            </summary>
+            <param name="expression"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FSLibrary.Calculator.calc_scan(System.String,System.Collections.Queue@)">
+            <summary>
+            Calculates the scan.
+            </summary>
+            <param name="line">The line.</param>
+            <param name="symbols">The symbols.</param>
+            <returns></returns>
+        </member>
+        <member name="T:FSLibrary.Config">
+            <summary>
+            Funciones para acceso al fichero de configuración App.config
+            </summary>
+        </member>
+        <member name="F:FSLibrary.Config.APP_SETTINGS">
+            <summary>
+            Variable con la sección por defecto.
+            </summary>
+        </member>
+        <member name="P:FSLibrary.Config.Section">
+            <summary>
+            Sección a utilizar
+            </summary>
+        </member>
+        <member name="P:FSLibrary.Config.Settings">
+            <summary>
+            Configuración
+            </summary>
+        </member>
+        <member name="M:FSLibrary.Config.#ctor(System.String)">
+            <summary>
+            Constructor con la sección a utilizar
+            </summary>
+            <param name="section"></param>
+        </member>
+        <member name="M:FSLibrary.Config.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:FSLibrary.Config.UpdatePropertyWithRemove(System.String,System.String)">
+            <summary>
+            Actualizar propiedad elimandola antes.
+            </summary>
+            <param name="key"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:FSLibrary.Config.ReadProperties">
+            <summary>
+            Leemos las propiedades de AppSettings
+            </summary>
+            <returns></returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:FSLibrary.Config.AddProperty(System.String,System.String)">
+            <summary>
+            Añadimos una propiedad.
+            </summary>
+            <param name="key"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:FSLibrary.Config.InsertProperty(System.String,System.String)">
+            <summary>
+            Añadimos una propiedad.
+            </summary>
+            <param name="key"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:FSLibrary.Config.DeleteProperty(System.String)">
+            <summary>
+            Borramos una propiedad.
+            </summary>
+            <param name="key"></param>
+        </member>
+        <member name="M:FSLibrary.Config.ValueProperty(System.String)">
+            <summary>
+            Recuperamos el valor de una propiedad.
+            </summary>
+            <param name="key"></param>
+        </member>
+        <member name="M:FSLibrary.Config.CheckSettings(System.String)">
+            <summary>
+            Comprueba si la key existe en Settings
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FSLibrary.Config.ValuePropertyArray(System.String)">
+            <summary>
+            Recuperamos el valor de una propiedad.
+            </summary>
+            <param name="key"></param>
+        </member>
+        <member name="M:FSLibrary.Config.ValuePropertyBool(System.String)">
+            <summary>
+            Recuperamos el valor de una propiedad.
+            </summary>
+            <param name="key"></param>
+        </member>
+        <member name="M:FSLibrary.Config.ValuePropertyInt(System.String)">
+            <summary>
+            Recuperamos el valor de una propiedad.
+            </summary>
+            <param name="key"></param>
+        </member>
+        <member name="M:FSLibrary.Config.ValuePropertyDate(System.String)">
+            <summary>
+            Recuperamos el valor de una propiedad.
+            </summary>
+            <param name="key"></param>
+        </member>
+        <member name="M:FSLibrary.Config.SetProperty(System.String,System.String[])">
+            <summary>
+            Guardamos el valor de una propiedad.
+            </summary>
+            <param name="key"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:FSLibrary.Config.SetProperty(System.String,System.Collections.Generic.List{System.String})">
+            <summary>
+            Guardamos el valor de una propiedad.
+            </summary>
+            <param name="key"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:FSLibrary.Config.SetProperty(System.String,System.String)">
+            <summary>
+            Guardamos el valor de una propiedad.
+            </summary>
+            <param name="key"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:FSLibrary.Config.SetProperty(System.String,System.Boolean)">
+            <summary>
+            Guardamos el valor de una propiedad.
+            </summary>
+            <param name="key"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:FSLibrary.Config.SetProperty(System.String,System.DateTime)">
+            <summary>
+            Guardamos el valor de una propiedad.
+            </summary>
+            <param name="key"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:FSLibrary.Config.SaveConfigFile">
+            <summary>
+            Guardamos la configuracíón en el fichero config.
+            </summary>
+        </member>
+        <member name="M:FSLibrary.Config.GetSections">
+            <summary>
+            Devuelve las secciones definidas en /condfiguration/configSections.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:FSLibrary.ConfigConnectionList">
+            <summary>
+            Clase lista de conexiones a la base de datos definidas en el fichero web.config.
+            </summary>
+        </member>
+        <member name="M:FSLibrary.ConfigConnectionList.GetConnectionId(System.String)">
+            <summary>
+            Devuelve el id de la entrada ConnectionString en el fichero web.config.
+            </summary>
+            <param name="entryName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FSLibrary.ConfigConnectionList.GetConnectionName(System.Int32)">
+            <summary>
+            Devuelve el nombre de la entrada ConnectionString en el fichero web.config.
+            </summary>
+            <param name="entryId"></param>
+            <returns></returns>
+            <exception cref="T:System.Configuration.ExceptionUtil"></exception>
+        </member>
+        <member name="M:FSLibrary.ConfigConnectionList.GetConnectionString(System.Int32)">
+            <summary>
+            Devuelve la cadena de conexión de la entrada ConnectionString en el fichero web.config.
+            </summary>
+            <param name="entryId"></param>
+            <returns></returns>
+            <exception cref="T:System.Configuration.ExceptionUtil"></exception>
+        </member>
+        <member name="T:FSLibrary.FSSettingsSection">
+            <summary>
+            Settings personalizados.
+            </summary>
+        </member>
+        <member name="P:FSLibrary.FSSettingsSection.Settings">
+            <summary>
+            Settings
+            </summary>
+        </member>
+        <member name="M:FSLibrary.FSSettingsSection.IsReadOnly">
+            <summary>
+            Retornamos false indicando que no es de solo lectura.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:FSLibrary.FSSettingsCollection">
+            <summary>
+            Colección de FSSettingsElement
+            </summary>
+        </member>
+        <member name="M:FSLibrary.FSSettingsCollection.Add(FSLibrary.FSSettingsElement)">
+            <summary>
+            Añadir
+            </summary>
+            <param name="element"></param>
+        </member>
+        <member name="M:FSLibrary.FSSettingsCollection.Add(System.String,System.String)">
+            <summary>
+            Añadir
+            </summary>
+            <param name="key"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:FSLibrary.FSSettingsCollection.Add(System.String,System.String,System.String)">
+            <summary>
+            Añadir
+            </summary>
+            <param name="key"></param>
+            <param name="value"></param>
+            <param name="description"></param>
+        </member>
+        <member name="M:FSLibrary.FSSettingsCollection.Add(System.String,System.String,System.String,System.String)">
+            <summary>
+            Añadir
+            </summary>
+            <param name="key"></param>
+            <param name="value"></param>
+            <param name="description"></param>
+            <param name="type"></param>
+        </member>
+        <member name="M:FSLibrary.FSSettingsCollection.Remove(FSLibrary.FSSettingsElement)">
+            <summary>
+            Eliminar
+            </summary>
+            <param name="element"></param>
+        </member>
+        <member name="M:FSLibrary.FSSettingsCollection.Remove(System.String)">
+            <summary>
+            Eliminar
+            </summary>
+            <param name="key"></param>
+        </member>
+        <member name="M:FSLibrary.FSSettingsCollection.Clear">
+            <summary>
+            Borrar
+            </summary>
+        </member>
+        <member name="P:FSLibrary.FSSettingsCollection.Item(System.Int32)">
+            <summary>
+            this
+            </summary>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="P:FSLibrary.FSSettingsCollection.Item(System.String)">
+            <summary>
+            this
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FSLibrary.FSSettingsCollection.CreateNewElement">
+            <summary>
+            Crear nuevo elemento
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FSLibrary.FSSettingsCollection.GetElementKey(System.Configuration.ConfigurationElement)">
+            <summary>
+            Obetner la clave del elemento
+            </summary>
+            <param name="element"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FSLibrary.FSSettingsCollection.IsReadOnly">
+            <summary>
+            Retornamos false indicando que no es de solo lectura.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FSLibrary.FSSettingsCollection.IsModified">
+            <summary>
+            Indica si un elemento esta modificado.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:FSLibrary.FSSettingsElement">
+            <summary>
+            FSSettingsElement
+            </summary>
+        </member>
+        <member name="M:FSLibrary.FSSettingsElement.#ctor">
+            <summary>
+            Constructor vacio
+            </summary>
+        </member>
+        <member name="M:FSLibrary.FSSettingsElement.IsReadOnly">
+            <summary>
+            Retornamos false indicando que no es de solo lectura.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FSLibrary.FSSettingsElement.#ctor(System.String,System.String)">
+            <summary>
+            Contructor con par de clave/valor
+            </summary>
+            <param name="key"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:FSLibrary.FSSettingsElement.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="key"></param>
+            <param name="value"></param>
+            <param name="description"></param>
+        </member>
+        <member name="M:FSLibrary.FSSettingsElement.#ctor(System.String,System.String,System.String,System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="key"></param>
+            <param name="value"></param>
+            <param name="description"></param>
+            <param name="type"></param>
+        </member>
+        <member name="P:FSLibrary.FSSettingsElement.Key">
+            <summary>
+            Clave
+            </summary>
+        </member>
+        <member name="P:FSLibrary.FSSettingsElement.Value">
+            <summary>
+            Valor
+            </summary>
+        </member>
+        <member name="P:FSLibrary.FSSettingsElement.Desc">
+            <summary>
+            Descripción
+            </summary>
+        </member>
+        <member name="P:FSLibrary.FSSettingsElement.Description">
+            <summary>
+            Descripción
+            </summary>
+        </member>
+        <member name="P:FSLibrary.FSSettingsElement.Type">
+            <summary>
+            Tipo
+            </summary>
+        </member>
+        <member name="T:FSLibrary.Contenedor_ISO6346">
+            <summary>
+            Validate if Container number passes the DIN EN ISO 6346 validation Formula
+            </summary>
+            <example>
+            <code>if(Contenedor_ISO6346.Check("Containernumber")) Console.WriteLine("Number is OK");</code></example>
+        </member>
+        <member name="P:FSLibrary.Contenedor_ISO6346.Alphabet">
+            <summary>
+            ISO Validation Alphabed in a dictionary
+            </summary>
+        </member>
+        <member name="M:FSLibrary.Contenedor_ISO6346.Check(System.String)">
+            <summary>
+            Check if a Container number string is valid or not
+            </summary>
+            <param name="containerNumberToCheck">Container number string that has to be checked for validation</param>
+            <returns>Boolean that shows if the Container number string is valid or not</returns>
+        </member>
+        <member name="M:FSLibrary.Contenedor_ISO6346.CleanConNumberString(System.String)">
+            <summary>
+            Clean a Container number string from Chars that are not in the ISO Alphabed dictionary
+            </summary>
+            <param name="inputString">String that has to be cleaned</param>
+            <returns>String that is cleaned from incorrect Chars</returns>
+        </member>
+        <member name="M:FSLibrary.Contenedor_ISO6346.GetCheckNumber(System.String)">
+            <summary>
+            Provides the Check number from a Container number string
+            </summary>
+            <param name="inputString">String of the Container number</param>
+            <returns>Integer of the Check number</returns>
+        </member>
+        <member name="M:FSLibrary.Contenedor_ISO6346.GetSumm(System.String)">
+            <summary>
+            Calculate the sum by the ISO Formula
+            </summary>
+            <param name="inputString">String of the Container number</param>
+            <returns></returns>
+        </member>
+        <member name="T:FSLibrary.Crc8">
+            <summary>
+            Clase para la obtención del código CRC8 de TicketBAI
+            </summary>
+        </member>
+        <member name="M:FSLibrary.Crc8.Calculate(System.String)">
+            <summary>
+            Calculate the CRC value with data from input string.
+            </summary>
+            <param name="input">The input.</param>
+            <returns>The calculated CRC value. Left padding with zeros.</returns>
+        </member>
+        <member name="T:FSLibrary.DateTimeUtil">
+            <summary>
+            Clase para el manejo de fechas.
+            </summary>
+        </member>
+        <member name="F:FSLibrary.DateTimeUtil.MinDateInfragistics">
+            <summary>
+            Fecha mínima que admite los controles de fecha de infragistics
+            </summary>
+        </member>
+        <member name="M:FSLibrary.DateTimeUtil.ToISO_8601(System.String)">
+            <summary>
+            Converts date to iso_8601.
+            </summary>
+            <param name="date">The date.</param>
+            <returns></returns>
+        </member>
+        <member name="M:FSLibrary.DateTimeUtil.ToRFC_822(System.DateTime)">
+            <summary>
+            Converts date to rfc_822.
+            </summary>
+            <param name="date">The date.</param>
+            <returns></returns>
+        </member>
+        <member name="M:FSLibrary.DateTimeUtil.GetFirstDayName(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Gets the name of the day.
+            </summary>
+            <param name="year">The year.</param>
+            <param name="month">The month.</param>
+            <param name="day">The day.</param>
+            <returns></returns>
+        </member>
+        <member name="M:FSLibrary.DateTimeUtil.ShortDate(System.DateTime)">
+            <summary>
+            Devuelve la fecha en formato fecha corto.
+            </summary>
+            <param name="date">The date.</param>
+            <returns></returns>
+        </member>
+        <member name="M:FSLibrary.DateTimeUtil.LongDate(System.DateTime)">
+            <summary>
+            Devuelve la fecha en formato largo.
+            </summary>
+            <param name="date">The date.</param>
+            <returns></returns>
+        </member>
+        <member name="M:FSLibrary.DateTimeUtil.TotalDays(System.DateTime,System.DateTime)">
+            <summary>
+            Días totales entre dos fechas.
+            </summary>
+            <param name="date1">Fecha 1.</param>
+            <param name="date2">Fecha 2</param>
+            <returns></returns>
+        </member>
+        <member name="M:FSLibrary.DateTimeUtil.TotalMilliseconds(System.DateTime,System.DateTime)">
+            <summary>
+            Totals the milliseconds.
+            </summary>
+            <param name="date1">The date1.</param>
+            <param name="date2">The date2.</param>
+            <returns></returns>
+        </member>
+        <member name="M:FSLibrary.DateTimeUtil.DateDiffMonth(System.DateTime,System.DateTime)">
+            <summary>
+            Dates the difference month.
+            </summary>
+            <param name="lValue">The l value.</param>
+            <param name="rValue">The r value.</param>
+            <returns></returns>
+        </member>
+        <member name="M:FSLibrary.DateTimeUtil.ValorFecha(System.String)">
+            <summary>
+            Devuelve la fecha en formato DateTime.
+            </summary>
+            <param name="fecha">Fecha.</param>
+            <returns></returns>
+        </member>
+        <member name="M:FSLibrary.DateTimeUtil.ValorFecha(System.String,System.DateTime)">
+            <summary>
+            Devuelve la fecha en formato DateTime.
+            </summary>
+            <param name="fecha">Fecha.</param>
+            <param name="defaultValue">Fecha por defecto.</param>
+            <returns></returns>
+        </member>
+        <member name="M:FSLibrary.DateTimeUtil.IsDate(System.String)">
+            <summary>
+            Determines whether the specified date is date.
+            </summary>
+            <param name="date">The date.</param>
+            <returns>
+              <c>true</c> if the specified date is date; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:FSLibrary.DateTimeUtil.Quarter(System.DateTime)">
+            <summary>
+            Devuelve el cuatrimestre de la fecha.
+            </summary>
+            <param name="date">Fecha.</param>
+            <returns></returns>
+        </member>
+        <member name="M:FSLibrary.DateTimeUtil.Seconds">
+            <summary>
+            Devuelve los segundos hasta hoy.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FSLibrary.DateTimeUtil.Week(System.DateTime)">
+            <summary>
+            Devuelve la semana de la fecha.
+            </summary>
+            <param name="date">The date.</param>
+            <returns></returns>
+        </member>
+        <member name="M:FSLibrary.DateTimeUtil.DayName(System.DayOfWeek)">
+            <summary>
+            Devuelve el día de la semana en formato texto.
+            </summary>
+            <param name="dia">Día de la semana</param>
+            <returns></returns>
+        </member>
+        <member name="M:FSLibrary.DateTimeUtil.MonthName(System.Int32)">
+            <summary>
+            Devuelve el nombre del mes en formato texto.
+            </summary>
+            <param name="mes">Número del mes.</param>
+            <returns></returns>
+        </member>
+        <member name="M:FSLibrary.DateTimeUtil.ShortMonthName(System.Int32)">
+            <summary>
+            Devuelve el nombre del mes en formato texto con 3 carácteres.
+            </summary>
+            <param name="mes">Número del mes.</param>
+            <returns></returns>
+        </member>
+        <member name="M:FSLibrary.DateTimeUtil.UtcToDateTime(System.String)">
+            <summary>
+            Convert string date UTC standard datetime.
+            </summary>
+            <param name="date">The date.</param>
+            <returns></returns>
+        </member>
+        <member name="M:FSLibrary.DateTimeUtil.UtcDateTime2(System.String)">
+            <summary>
+            Convert string date UTC standard datetime (OBSOLETE).
+            </summary>
+            <param name="str">The string.</param>
+            <returns></returns>
+            <exception cref="T:System.FormatException">
+            Unknown month.
+            or
+            Incompatible date/time string format
+            </exception>
+        </member>
+        <member name="M:FSLibrary.DateTimeUtil.ConvertSQLiteToDateTime(System.String)">
+            <summary>
+            Convierte una cadena de fecha de SQLite a DateTime
+            Formato SQLite: ISO8601 "YYYY-MM-DD HH:MM:SS.SSS"
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FSLibrary.DateTimeUtil.ISO8601ToDateTime(System.String)">
+            <summary>
+            Devuelve la fecha en formato ISO8601 a DateTime
+            </summary>
+            <param name="date"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FSLibrary.DateTimeUtil.DateTimeToISO8601(System.DateTime)">
+            <summary>
+            Devuelve la fecha en formato DateTime a IS8601
+            </summary>
+            <param name="date"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FSLibrary.DateTimeUtil.DateDiffBusinessDays(System.DateTime,System.DateTime)">
+            <summary>
+            Calcula la diferencia en días hábiles (excluyendo sábados y domingos) entre dos fechas.
+            </summary>
+            <param name="startD">Fecha inicial.</param>
+            <param name="endD">Fecha final.</param>
+            <returns>Número de días hábiles.</returns>
+        </member>
+        <member name="M:FSLibrary.DateTimeUtil.DateDiffBusinessMinut

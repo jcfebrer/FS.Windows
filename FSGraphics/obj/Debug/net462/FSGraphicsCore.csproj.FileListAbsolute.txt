@@ -1,0 +1,4 @@
+D:\FS\FS\FSGraphicsCore\obj\Debug\net462\FSGraphicsCore.csproj.AssemblyReference.cache
+D:\FS\FS\FSGraphicsCore\obj\Debug\net462\FSGraphicsCore.GeneratedMSBuildEditorConfig.editorconfig
+D:\FS\FS\FSGraphicsCore\obj\Debug\net462\FSGraphicsCore.csproj.CoreCompileInputs.cache
+D:\FS\FS\FSGraphicsCore\obj\Debug\net462\FSGraphicsCore.sourcelink.json

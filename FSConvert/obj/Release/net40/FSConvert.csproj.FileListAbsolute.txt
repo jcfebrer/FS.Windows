@@ -1,0 +1,11 @@
+D:\FS\FS\FSConvert\bin\Release\net40\FSConvert.dll
+D:\FS\FS\FSConvert\bin\Release\net40\FSConvert.pdb
+D:\FS\FS\FSConvert\bin\Release\net40\FSTrace.dll
+D:\FS\FS\FSConvert\bin\Release\net40\FSTrace.pdb
+D:\FS\FS\FSConvert\obj\Release\net40\FSConvert.csproj.AssemblyReference.cache
+D:\FS\FS\FSConvert\obj\Release\net40\FSConvert.GeneratedMSBuildEditorConfig.editorconfig
+D:\FS\FS\FSConvert\obj\Release\net40\FSConvert.csproj.CoreCompileInputs.cache
+D:\FS\FS\FSConvert\obj\Release\net40\FSConvert.sourcelink.json
+D:\FS\FS\FSConvert\obj\Release\net40\FSConvert.csproj.Up2Date
+D:\FS\FS\FSConvert\obj\Release\net40\FSConvert.dll
+D:\FS\FS\FSConvert\obj\Release\net40\FSConvert.pdb

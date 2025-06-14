@@ -1,0 +1,16 @@
+D:\FS\FS\FSFirewall\obj\Debug\net35\FSFirewall.csproj.AssemblyReference.cache
+D:\FS\FS\FSFirewall\bin\Debug\net35\FSFirewall.dll
+D:\FS\FS\FSFirewall\bin\Debug\net35\FSFirewall.pdb
+D:\FS\FS\FSFirewall\bin\Debug\net35\FSException.dll
+D:\FS\FS\FSFirewall\bin\Debug\net35\FSTrace.dll
+D:\FS\FS\FSFirewall\bin\Debug\net35\FSException.pdb
+D:\FS\FS\FSFirewall\bin\Debug\net35\FSTrace.pdb
+D:\FS\FS\FSFirewall\bin\Debug\net35\Interop.NetFwTypeLib.dll
+D:\FS\FS\FSFirewall\obj\Debug\net35\Interop.NetFwTypeLib.dll
+D:\FS\FS\FSFirewall\obj\Debug\net35\FSFirewall.csproj.ResolveComReference.cache
+D:\FS\FS\FSFirewall\obj\Debug\net35\FSFirewall.GeneratedMSBuildEditorConfig.editorconfig
+D:\FS\FS\FSFirewall\obj\Debug\net35\FSFirewall.csproj.CoreCompileInputs.cache
+D:\FS\FS\FSFirewall\obj\Debug\net35\FSFirewall.sourcelink.json
+D:\FS\FS\FSFirewall\obj\Debug\net35\FSFirewall.csproj.Up2Date
+D:\FS\FS\FSFirewall\obj\Debug\net35\FSFirewall.dll
+D:\FS\FS\FSFirewall\obj\Debug\net35\FSFirewall.pdb

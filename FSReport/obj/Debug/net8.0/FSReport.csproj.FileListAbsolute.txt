@@ -1,0 +1,6 @@
+D:\FS\FS\FSReport\obj\Debug\net8.0\FSReport.csproj.AssemblyReference.cache
+D:\FS\FS\FSReport\obj\Debug\net8.0\FSReport.Report.resources
+D:\FS\FS\FSReport\obj\Debug\net8.0\FSReport.csproj.GenerateResource.cache
+D:\FS\FS\FSReport\obj\Debug\net8.0\FSReport.GeneratedMSBuildEditorConfig.editorconfig
+D:\FS\FS\FSReport\obj\Debug\net8.0\FSReport.csproj.CoreCompileInputs.cache
+D:\FS\FS\FSReport\obj\Debug\net8.0\FSReport.sourcelink.json

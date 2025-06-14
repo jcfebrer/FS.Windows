@@ -1,0 +1,14 @@
+D:\FS\FS\FSLibrary\bin\Debug\net35\FSLibrary.dll
+D:\FS\FS\FSLibrary\bin\Debug\net35\FSLibrary.pdb
+D:\FS\FS\FSLibrary\bin\Debug\net35\FSLibrary.xml
+D:\FS\FS\FSLibrary\bin\Debug\net35\FSException.dll
+D:\FS\FS\FSLibrary\bin\Debug\net35\FSTrace.dll
+D:\FS\FS\FSLibrary\bin\Debug\net35\FSException.pdb
+D:\FS\FS\FSLibrary\bin\Debug\net35\FSTrace.pdb
+D:\FS\FS\FSLibrary\obj\Debug\net35\FSLibrary.csproj.AssemblyReference.cache
+D:\FS\FS\FSLibrary\obj\Debug\net35\FSLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\FS\FS\FSLibrary\obj\Debug\net35\FSLibrary.csproj.CoreCompileInputs.cache
+D:\FS\FS\FSLibrary\obj\Debug\net35\FSLibrary.sourcelink.json
+D:\FS\FS\FSLibrary\obj\Debug\net35\FSLibrary.csproj.Up2Date
+D:\FS\FS\FSLibrary\obj\Debug\net35\FSLibrary.dll
+D:\FS\FS\FSLibrary\obj\Debug\net35\FSLibrary.pdb

@@ -1,0 +1,10 @@
+D:\FS\FS\FSExcel\bin\Release\net40\FSExcel.dll
+D:\FS\FS\FSExcel\bin\Release\net40\FSExcel.pdb
+D:\FS\FS\FSExcel\bin\Release\net40\Microsoft.Office.Interop.Excel.dll
+D:\FS\FS\FSExcel\obj\Release\net40\FSExcel.csproj.AssemblyReference.cache
+D:\FS\FS\FSExcel\obj\Release\net40\FSExcel.GeneratedMSBuildEditorConfig.editorconfig
+D:\FS\FS\FSExcel\obj\Release\net40\FSExcel.csproj.CoreCompileInputs.cache
+D:\FS\FS\FSExcel\obj\Release\net40\FSExcel.sourcelink.json
+D:\FS\FS\FSExcel\obj\Release\net40\FSExcel.csproj.Up2Date
+D:\FS\FS\FSExcel\obj\Release\net40\FSExcel.dll
+D:\FS\FS\FSExcel\obj\Release\net40\FSExcel.pdb

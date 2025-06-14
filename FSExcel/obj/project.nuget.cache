@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "dgSpecHash": "g9uczOFkmHE=",
+  "success": true,
+  "projectFilePath": "D:\\FS\\FS.Windows\\FSExcel\\FSExcel.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jcfeb\\.nuget\\packages\\microsoft.office.interop.excel\\12.0.4518.1014\\microsoft.office.interop.excel.12.0.4518.1014.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "El paquete \"Microsoft.Office.Interop.Excel 12.0.4518.1014\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net8.0-windows7.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "projectPath": "D:\\FS\\FS.Windows\\FSExcel\\FSExcel.csproj",
+      "warningLevel": 1,
+      "filePath": "D:\\FS\\FS.Windows\\FSExcel\\FSExcel.csproj",
+      "libraryId": "Microsoft.Office.Interop.Excel",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    }
+  ]
+}

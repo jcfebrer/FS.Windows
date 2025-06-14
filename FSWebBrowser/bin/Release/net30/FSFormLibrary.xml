@@ -1,0 +1,491 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FSFormLibrary</name>
+    </assembly>
+    <members>
+        <member name="T:FSFormLibrary.Clipboard">
+            <summary>
+            Funciones relacionadas con el portapapeles
+            </summary>
+        </member>
+        <member name="M:FSFormLibrary.Clipboard.GetClipBoardText">
+            <summary>
+            Obtiene el texto del portapapeles
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FSFormLibrary.Clipboard.GetText">
+            <summary>
+            Obtiene el texto del portapapeles
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FSFormLibrary.Clipboard.GetDataObject">
+            <summary>
+            Obtiene el objecto del portapapeles
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FSFormLibrary.Clipboard.SetDataObject(System.Object,System.Boolean)">
+            <summary>
+            Establece el objeto en el portapapeles
+            </summary>
+            <param name="obj"></param>
+            <param name="copy"></param>
+        </member>
+        <member name="T:FSFormLibrary.Multimedia">
+            <summary>
+            Librería multimedia
+            </summary>
+        </member>
+        <member name="M:FSFormLibrary.Multimedia.PlayWav(System.String)">
+            <summary>
+            Plays the wav.
+            </summary>
+            <param name="fileName">The wav file.</param>
+        </member>
+        <member name="M:FSFormLibrary.Multimedia.PlayWavSync(System.String)">
+            <summary>
+            Plays the wav synchronize.
+            </summary>
+            <param name="fileName">The wav file.</param>
+        </member>
+        <member name="M:FSFormLibrary.Multimedia.PlayBeep">
+            <summary>
+            Play beep sound
+            </summary>
+        </member>
+        <member name="M:FSFormLibrary.Multimedia.PlayAsterik">
+            <summary>
+            Play asterisk sound
+            </summary>
+        </member>
+        <member name="M:FSFormLibrary.Multimedia.PlayExclamation">
+            <summary>
+            Play exclamation sound
+            </summary>
+        </member>
+        <member name="M:FSFormLibrary.Multimedia.PlayQuestion">
+            <summary>
+            Play question sound
+            </summary>
+        </member>
+        <member name="M:FSFormLibrary.Multimedia.PlayHand">
+            <summary>
+            Play hand sound
+            </summary>
+        </member>
+        <member name="M:FSFormLibrary.Multimedia.BeepZx(System.Double,System.Int32)">
+            <summary>
+            Beep de ZX Spectrum
+            </summary>
+            <param name="Duration"></param>
+            <param name="pitch"></param>
+        </member>
+        <member name="M:FSFormLibrary.Multimedia.Beep(System.Int32,System.Int32)">
+            <summary>
+            Beeps the specified frequency.
+            </summary>
+            <param name="Frequency">The frequency.</param>
+            <param name="Duration">The duration.</param>
+        </member>
+        <member name="M:FSFormLibrary.Multimedia.Beep(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Beeps the specified amplitude.
+            </summary>
+            <param name="Amplitude">The amplitude.</param>
+            <param name="Frequency">The frequency.</param>
+            <param name="Duration">The duration.</param>
+        </member>
+        <member name="M:FSFormLibrary.Multimedia.SplitWav(System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            Extrae un fichero wav del fichero wav original desde la posición indicada en ms y la duración indicada.
+            </summary>
+            <param name="inputFilePath"></param>
+            <param name="outputFilePath"></param>
+            <param name="startMilliseconds"></param>
+            <param name="durationMilliseconds"></param>
+            <exception cref="T:System.IO.FileNotFoundException"></exception>
+            <exception cref="T:System.Exception"></exception>
+            <exception cref="T:System.ArgumentOutOfRangeException"></exception>
+        </member>
+        <member name="M:FSFormLibrary.Multimedia.GenerateWav(System.String,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Genera un fichero WAV con el Rate, duración y frecuencia indicada.
+            </summary>
+            <param name="filePath"></param>
+            <param name="sampleRate"></param>
+            <param name="durationMs"></param>
+            <param name="frequency"></param>
+        </member>
+        <member name="M:FSFormLibrary.Multimedia.PlaySound(System.String,System.Boolean)">
+            <summary>
+            Plays the specified file name.
+            </summary>
+            <param name="fileName">Name of the file.</param>
+            <param name="sync">Modo sincronizado true/false</param>
+        </member>
+        <member name="T:FSFormLibrary.SoapUtil">
+            <summary>
+            Utilidades para trabajar con Soap.
+            </summary>
+        </member>
+        <member name="T:FSFormLibrary.Vb">
+            <summary>
+            Biblioteca de funciones para la conversión de aplicaciones VB.
+            </summary>
+        </member>
+        <member name="F:FSFormLibrary.Vb.vbCrLf">
+            <summary>
+            Salto de línea
+            </summary>
+        </member>
+        <member name="T:FSFormLibrary.Vb.TypeMsg">
+            <summary>
+            Tipo para utilizar los mensajes de MessegeBox.Show.
+            </summary>
+        </member>
+        <member name="F:FSFormLibrary.Vb.TypeMsg.Information">
+            <summary>
+            Informativo
+            </summary>
+        </member>
+        <member name="F:FSFormLibrary.Vb.TypeMsg.Critical">
+            <summary>
+            Critico
+            </summary>
+        </member>
+        <member name="F:FSFormLibrary.Vb.TypeMsg.Question">
+            <summary>
+            Pregunta
+            </summary>
+        </member>
+        <member name="F:FSFormLibrary.Vb.TypeMsg.Exclamation">
+            <summary>
+            Exclamación
+            </summary>
+        </member>
+        <member name="F:FSFormLibrary.Vb.TypeMsg.Error">
+            <summary>
+            Error
+            </summary>
+        </member>
+        <member name="T:FSFormLibrary.Vb.TypeButton">
+            <summary>
+            Tipo para los botones a mostrar en los mensajes de MessegeBox.Show.
+            </summary>
+        </member>
+        <member name="F:FSFormLibrary.Vb.TypeButton.YesNo">
+            <summary>
+            Si y No
+            </summary>
+        </member>
+        <member name="F:FSFormLibrary.Vb.TypeButton.YesNoCancel">
+            <summary>
+            Si,no y cancel
+            </summary>
+        </member>
+        <member name="F:FSFormLibrary.Vb.TypeButton.Ok">
+            <summary>
+            Ok
+            </summary>
+        </member>
+        <member name="F:FSFormLibrary.Vb.TypeButton.OkCancel">
+            <summary>
+            Ok y cancel
+            </summary>
+        </member>
+        <member name="M:FSFormLibrary.Vb.MsgBox(System.String)">
+            <summary>
+            MessageBox
+            </summary>
+            <param name="text"></param>
+        </member>
+        <member name="M:FSFormLibrary.Vb.MsgBox(System.String,FSFormLibrary.Vb.TypeMsg)">
+            <summary>
+            MessageBox
+            </summary>
+            <param name="text"></param>
+            <param name="typeMsg"></param>
+        </member>
+        <member name="M:FSFormLibrary.Vb.MsgBox(System.String,FSFormLibrary.Vb.TypeMsg,System.String)">
+            <summary>
+            MessageBox
+            </summary>
+            <param name="text"></param>
+            <param name="typeMsg"></param>
+            <param name="caption"></param>
+        </member>
+        <member name="M:FSFormLibrary.Vb.MsgBox(System.String,FSFormLibrary.Vb.TypeMsg,System.String,FSFormLibrary.Vb.TypeButton)">
+            <summary>
+            MessageBox
+            </summary>
+            <param name="text"></param>
+            <param name="typeMsg"></param>
+            <param name="caption"></param>
+            <param name="typeButton"></param>
+        </member>
+        <member name="M:FSFormLibrary.Vb.InputBox(System.String,System.String)">
+            <summary>
+            Realiza un pregunta y devuelve el resultado escrito.
+            </summary>
+            <param name="question"></param>
+            <param name="title"></param>
+            <returns></returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:FSFormLibrary.Vb.IsDifferent(System.Object,System.Object)">
+            <summary>
+            Devuelve true si obj1 != obj2
+            </summary>
+            <param name="obj1"></param>
+            <param name="obj2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FSFormLibrary.Vb.IsEqual(System.Object,System.Object)">
+            <summary>
+            Devuelve true si obj1 == obj2
+            </summary>
+            <param name="obj1"></param>
+            <param name="obj2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FSFormLibrary.Vb.Concatenate(System.Object,System.Object)">
+            <summary>
+            Concatena obj1 + obj2
+            </summary>
+            <param name="obj1"></param>
+            <param name="obj2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FSFormLibrary.Vb.Multiply(System.Object,System.Object)">
+            <summary>
+            Multiplica obj1 * obj2
+            </summary>
+            <param name="obj1"></param>
+            <param name="obj2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FSFormLibrary.Vb.Divide(System.Object,System.Object)">
+            <summary>
+            Divide obj1 / obj2
+            </summary>
+            <param name="obj1"></param>
+            <param name="obj2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FSFormLibrary.Vb.IsNumeric(System.String)">
+            <summary>
+            Devuelve true si la cadena es numerica.
+            </summary>
+            <param name="s"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FSFormLibrary.Vb.Value(System.Object)">
+            <summary>
+            Devuelve el objeto como cadena.
+            </summary>
+            <param name="valor"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FSFormLibrary.Vb.ValueInt(System.Object)">
+            <summary>
+            Devuelve el objeto como entero.
+            </summary>
+            <param name="valor"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FSFormLibrary.Vb.Len(System.String)">
+            <summary>
+            Logitud de una cadena
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FSFormLibrary.Vb.Left(System.String,System.Int32)">
+            <summary>
+            Devuelve len carácteres por la izquierda
+            </summary>
+            <param name="str"></param>
+            <param name="len"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FSFormLibrary.Vb.Right(System.String,System.Int32)">
+            <summary>
+            Devuelve len carácteres por la derecha
+            </summary>
+            <param name="str"></param>
+            <param name="len"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FSFormLibrary.Vb.Mid(System.String,System.Int32,System.Int32)">
+            <summary>
+            Devuelve los len carácteres comenzando desde start.
+            </summary>
+            <param name="str"></param>
+            <param name="start"></param>
+            <param name="len"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FSFormLibrary.Vb.IIf(System.Boolean,System.Object,System.Object)">
+            <summary>
+            Evalua la expresión y devuel el objeto depediendo del resultado.
+            </summary>
+            <param name="expr"></param>
+            <param name="valueIfTrue"></param>
+            <param name="valueIfFalse"></param>
+        </member>
+        <member name="M:FSFormLibrary.Vb.Mid(System.String,System.Int32)">
+            <summary>
+            Devuelve los len carácteres comenzando desde la posición 0.
+            </summary>
+            <param name="str"></param>
+            <param name="len"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FSFormLibrary.Vb.InStr(System.String,System.String)">
+            <summary>
+            Devuelve -1 si la cadena data no existe en str.
+            </summary>
+            <param name="str"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FSFormLibrary.Vb.InStr(System.Int32,System.String,System.String)">
+            <summary>
+            Devuelve -1 si la cadena data no existe en str, comenzando desde start.
+            </summary>
+            <param name="start"></param>
+            <param name="str"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FSFormLibrary.Vb.Chr(System.Int32)">
+            <summary>
+            Devuelve el character de un valor. Ejemplo: Chr(65) = 'A'.
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FSFormLibrary.Vb.Asc(System.Char)">
+            <summary>
+            Devuelvel el código ASCII de un carácter. Ejemplo Asc('A') = 65
+            </summary>
+            <param name="c"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FSFormLibrary.Vb.Asc(System.String)">
+            <summary>
+            Devuelvel el código ASCII del primer carácter de una cadena. Ejemplo Asc("AITA") = 65
+            </summary>
+            <param name="s"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FSFormLibrary.Vb.UCase(System.String)">
+            <summary>
+            Convierte a mayúsculas una cadena.
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FSFormLibrary.Vb.LCase(System.String)">
+            <summary>
+            Convierte a minúsculas una cadena.
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FSFormLibrary.Vb.Space(System.Int32)">
+            <summary>
+            Devuelve len caráteres en blanco.
+            </summary>
+            <param name="len"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FSFormLibrary.Vb.Trim(System.String)">
+            <summary>
+            Elimina los espacion por delante y detrás de una cadena.
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FSFormLibrary.Vb.StrConv(System.String,System.Int32)">
+            <summary>
+            ??????
+            </summary>
+            <param name="str"></param>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FSFormLibrary.Vb.Capital(System.String)">
+            <summary>
+            Devuelve la cadena con el primer caracter en mayúsculas.
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FSFormLibrary.Vb.MidStmtStr(System.String,System.Int32,System.Char)">
+            <summary>
+            Modifica la cadena con el carácter dado en la posición index.
+            </summary>
+            <param name="input"></param>
+            <param name="index"></param>
+            <param name="newChar"></param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:FSFormLibrary.Vb.ToString(System.Object)">
+            <summary>
+            Convierte en cadena el objeto.
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FSFormLibrary.Vb.ToBoolean(System.Object)">
+            <summary>
+            Convierte en booleano el objeto.
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FSFormLibrary.Vb.ToDate(System.Object)">
+            <summary>
+            Convierte en objeto en fecha.
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FSFormLibrary.Vb.ToInteger(System.Object)">
+            <summary>
+            Convierte en entero el objeto.
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FSFormLibrary.Vb.ToLong(System.Object)">
+            <summary>
+            Convierte en long el objeto.
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FSFormLibrary.Vb.ConcatenateObject(System.Object,System.Object)">
+            <summary>
+            Devuelve dos objetos convertidos a string y concatenados.
+            </summary>
+            <param name="obj1"></param>
+            <param name="obj2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FSFormLibrary.Vb.Replace(System.String,System.String,System.String)">
+            <summary>
+            Reemplaza una cadena por un valor.
+            </summary>
+            <param name="cad"></param>
+            <param name="search"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

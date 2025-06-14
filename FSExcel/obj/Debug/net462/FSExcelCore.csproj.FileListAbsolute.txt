@@ -1,0 +1,4 @@
+D:\FS\FS\FSExcelCore\obj\Debug\net462\FSExcelCore.csproj.AssemblyReference.cache
+D:\FS\FS\FSExcelCore\obj\Debug\net462\FSExcelCore.GeneratedMSBuildEditorConfig.editorconfig
+D:\FS\FS\FSExcelCore\obj\Debug\net462\FSExcelCore.csproj.CoreCompileInputs.cache
+D:\FS\FS\FSExcelCore\obj\Debug\net462\FSExcelCore.sourcelink.json
