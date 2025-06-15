@@ -1,4 +1,0 @@
-D:\FS\FS\FSPdf\obj\Debug\net8.0\FSPdf.csproj.AssemblyReference.cache
-D:\FS\FS\FSPdf\obj\Debug\net8.0\FSPdf.GeneratedMSBuildEditorConfig.editorconfig
-D:\FS\FS\FSPdf\obj\Debug\net8.0\FSPdf.csproj.CoreCompileInputs.cache
-D:\FS\FS\FSPdf\obj\Debug\net8.0\FSPdf.sourcelink.json

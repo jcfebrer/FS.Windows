@@ -1,4 +1,0 @@
-D:\FS\FS\FSConvertCore\obj\Debug\net45\FSConvertCore.csproj.AssemblyReference.cache
-D:\FS\FS\FSConvertCore\obj\Debug\net45\FSConvertCore.GeneratedMSBuildEditorConfig.editorconfig
-D:\FS\FS\FSConvertCore\obj\Debug\net45\FSConvertCore.csproj.CoreCompileInputs.cache
-D:\FS\FS\FSConvertCore\obj\Debug\net45\FSConvertCore.sourcelink.json

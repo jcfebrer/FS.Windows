@@ -1,9 +1,0 @@
-D:\FS\FS\FSExcelCore\bin\Debug\netcoreapp3.1\FSExcelCore.deps.json
-D:\FS\FS\FSExcelCore\bin\Debug\netcoreapp3.1\FSExcelCore.dll
-D:\FS\FS\FSExcelCore\bin\Debug\netcoreapp3.1\FSExcelCore.pdb
-D:\FS\FS\FSExcelCore\obj\Debug\netcoreapp3.1\FSExcelCore.csproj.AssemblyReference.cache
-D:\FS\FS\FSExcelCore\obj\Debug\netcoreapp3.1\FSExcelCore.GeneratedMSBuildEditorConfig.editorconfig
-D:\FS\FS\FSExcelCore\obj\Debug\netcoreapp3.1\FSExcelCore.csproj.CoreCompileInputs.cache
-D:\FS\FS\FSExcelCore\obj\Debug\netcoreapp3.1\FSExcelCore.sourcelink.json
-D:\FS\FS\FSExcelCore\obj\Debug\netcoreapp3.1\FSExcelCore.dll
-D:\FS\FS\FSExcelCore\obj\Debug\netcoreapp3.1\FSExcelCore.pdb

@@ -1,4 +1,0 @@
-D:\FS\FS\FSMouseKeyboardLibraryCore\obj\Debug\net45\FSMouseKeyboardLibraryCore.csproj.AssemblyReference.cache
-D:\FS\FS\FSMouseKeyboardLibraryCore\obj\Debug\net45\FSMouseKeyboardLibraryCore.GeneratedMSBuildEditorConfig.editorconfig
-D:\FS\FS\FSMouseKeyboardLibraryCore\obj\Debug\net45\FSMouseKeyboardLibraryCore.csproj.CoreCompileInputs.cache
-D:\FS\FS\FSMouseKeyboardLibraryCore\obj\Debug\net45\FSMouseKeyboardLibraryCore.sourcelink.json

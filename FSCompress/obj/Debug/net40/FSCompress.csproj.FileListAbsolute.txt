@@ -1,4 +1,0 @@
-D:\FS\FS\FSCompress\obj\Debug\net40\FSCompress.csproj.AssemblyReference.cache
-D:\FS\FS\FSCompress\obj\Debug\net40\FSCompress.GeneratedMSBuildEditorConfig.editorconfig
-D:\FS\FS\FSCompress\obj\Debug\net40\FSCompress.csproj.CoreCompileInputs.cache
-D:\FS\FS\FSCompress\obj\Debug\net40\FSCompress.sourcelink.json
