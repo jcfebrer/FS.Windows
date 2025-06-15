@@ -42,10 +42,10 @@
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="9.0.1" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FSException\FSException.csproj" />
-    <ProjectReference Include="..\FSFormControls\FSFormControls.csproj" />
-    <ProjectReference Include="..\FSLibrary\FSLibrary.csproj" />
-    <ProjectReference Include="..\FSMultimedia\FSMultimedia.csproj" />
+    <ProjectReference Include="..\..\FS.Core\FSException\FSException.csproj" />
+    <ProjectReference Include="..\..\FS.Windows\FSFormControls\FSFormControls.csproj" />
+    <ProjectReference Include="..\..\FS.Core\FSLibrary\FSLibrary.csproj" />
+    <ProjectReference Include="..\..\FS.Core\FSMultimedia\FSMultimedia.csproj" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="CrystalDecisions.CrystalReports.Engine">

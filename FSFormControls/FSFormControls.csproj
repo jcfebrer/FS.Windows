@@ -256,20 +256,20 @@
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FSConvert\FSConvert.csproj" />
-    <ProjectReference Include="..\FSDatabase\FSDatabase.csproj" />
-    <ProjectReference Include="..\FSDisk\FSDisk.csproj" />
-    <ProjectReference Include="..\FSExcel\FSExcel.csproj" />
-    <ProjectReference Include="..\FSException\FSException.csproj" />
-    <ProjectReference Include="..\FSFormLibrary\FSFormLibrary.csproj" />
-    <ProjectReference Include="..\FSGraphics\FSGraphics.csproj" />
-    <ProjectReference Include="..\FSLibrary\FSLibrary.csproj" />
-    <ProjectReference Include="..\FSMail\FSMail.csproj" />
-    <ProjectReference Include="..\FSMouseKeyboardLibrary\FSMouseKeyboardLibrary.csproj" />
-    <ProjectReference Include="..\FSNetwork\FSNetwork.csproj" />
-    <ProjectReference Include="..\FSQueryBuilder\FSQueryBuilder.csproj" />
-    <ProjectReference Include="..\FSSecurity\FSSecurity.csproj" />
-    <ProjectReference Include="..\FSSystemInfo\FSSystemInfo.csproj" />
+    <ProjectReference Include="..\..\FS.Windows\FSConvert\FSConvert.csproj" />
+    <ProjectReference Include="..\..\FS.Core\FSDatabase\FSDatabase.csproj" />
+    <ProjectReference Include="..\..\FS.Core\FSDisk\FSDisk.csproj" />
+    <ProjectReference Include="..\..\FS.Windows\FSExcel\FSExcel.csproj" />
+    <ProjectReference Include="..\..\FS.Core\FSException\FSException.csproj" />
+    <ProjectReference Include="..\..\FS.Windows\FSFormLibrary\FSFormLibrary.csproj" />
+    <ProjectReference Include="..\..\FS.Windows\FSGraphics\FSGraphics.csproj" />
+    <ProjectReference Include="..\..\FS.Core\FSLibrary\FSLibrary.csproj" />
+    <ProjectReference Include="..\..\FS.Core\FSMail\FSMail.csproj" />
+    <ProjectReference Include="..\..\FS.Windows\FSMouseKeyboardLibrary\FSMouseKeyboardLibrary.csproj" />
+    <ProjectReference Include="..\..\FS.Core\FSNetwork\FSNetwork.csproj" />
+    <ProjectReference Include="..\..\FS.Core\FSQueryBuilder\FSQueryBuilder.csproj" />
+    <ProjectReference Include="..\..\FS.Core\FSSecurity\FSSecurity.csproj" />
+    <ProjectReference Include="..\..\FS.Windows\FSSystemInfo\FSSystemInfo.csproj" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Update="Forms\DBForm.resx">

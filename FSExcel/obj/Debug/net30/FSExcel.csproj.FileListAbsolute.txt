@@ -14,6 +14,7 @@ D:\FS\FS.Windows\FSExcel\bin\Debug\net30\Microsoft.Office.Interop.Excel.dll
 D:\FS\FS.Windows\FSExcel\obj\Debug\net30\FSExcel.csproj.AssemblyReference.cache
 D:\FS\FS.Windows\FSExcel\obj\Debug\net30\FSExcel.GeneratedMSBuildEditorConfig.editorconfig
 D:\FS\FS.Windows\FSExcel\obj\Debug\net30\FSExcel.csproj.CoreCompileInputs.cache
+D:\FS\FS.Windows\FSExcel\obj\Debug\net30\FSExcel.sourcelink.json
 D:\FS\FS.Windows\FSExcel\obj\Debug\net30\FSExcel.csproj.Up2Date
 D:\FS\FS.Windows\FSExcel\obj\Debug\net30\FSExcel.dll
 D:\FS\FS.Windows\FSExcel\obj\Debug\net30\FSExcel.pdb

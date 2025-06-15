@@ -1,66 +1,28 @@
 {
   "version": 2,
-  "dgSpecHash": "skFQyhxsOmQ=",
-  "success": false,
+  "dgSpecHash": "caNKEgSqdlE=",
+  "success": true,
   "projectFilePath": "D:\\FS\\FS.Windows\\FSSystemInfo\\FSSystemInfo.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\jcfeb\\.nuget\\packages\\microsoft.extensions.configuration\\9.0.1\\microsoft.extensions.configuration.9.0.1.nupkg.sha512",
+    "C:\\Users\\jcfeb\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\9.0.1\\microsoft.extensions.configuration.abstractions.9.0.1.nupkg.sha512",
+    "C:\\Users\\jcfeb\\.nuget\\packages\\microsoft.extensions.configuration.binder\\9.0.1\\microsoft.extensions.configuration.binder.9.0.1.nupkg.sha512",
+    "C:\\Users\\jcfeb\\.nuget\\packages\\microsoft.extensions.configuration.fileextensions\\9.0.1\\microsoft.extensions.configuration.fileextensions.9.0.1.nupkg.sha512",
+    "C:\\Users\\jcfeb\\.nuget\\packages\\microsoft.extensions.configuration.json\\9.0.1\\microsoft.extensions.configuration.json.9.0.1.nupkg.sha512",
+    "C:\\Users\\jcfeb\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\9.0.1\\microsoft.extensions.fileproviders.abstractions.9.0.1.nupkg.sha512",
+    "C:\\Users\\jcfeb\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\9.0.1\\microsoft.extensions.fileproviders.physical.9.0.1.nupkg.sha512",
+    "C:\\Users\\jcfeb\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\9.0.1\\microsoft.extensions.filesystemglobbing.9.0.1.nupkg.sha512",
+    "C:\\Users\\jcfeb\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.1\\microsoft.extensions.primitives.9.0.1.nupkg.sha512",
     "C:\\Users\\jcfeb\\.nuget\\packages\\system.codedom\\9.0.1\\system.codedom.9.0.1.nupkg.sha512",
-    "C:\\Users\\jcfeb\\.nuget\\packages\\system.management\\9.0.1\\system.management.9.0.1.nupkg.sha512"
+    "C:\\Users\\jcfeb\\.nuget\\packages\\system.configuration.configurationmanager\\9.0.1\\system.configuration.configurationmanager.9.0.1.nupkg.sha512",
+    "C:\\Users\\jcfeb\\.nuget\\packages\\system.diagnostics.eventlog\\9.0.1\\system.diagnostics.eventlog.9.0.1.nupkg.sha512",
+    "C:\\Users\\jcfeb\\.nuget\\packages\\system.io.pipelines\\9.0.1\\system.io.pipelines.9.0.1.nupkg.sha512",
+    "C:\\Users\\jcfeb\\.nuget\\packages\\system.management\\9.0.1\\system.management.9.0.1.nupkg.sha512",
+    "C:\\Users\\jcfeb\\.nuget\\packages\\system.security.cryptography.protecteddata\\9.0.1\\system.security.cryptography.protecteddata.9.0.1.nupkg.sha512",
+    "C:\\Users\\jcfeb\\.nuget\\packages\\system.security.permissions\\9.0.1\\system.security.permissions.9.0.1.nupkg.sha512",
+    "C:\\Users\\jcfeb\\.nuget\\packages\\system.text.encodings.web\\9.0.1\\system.text.encodings.web.9.0.1.nupkg.sha512",
+    "C:\\Users\\jcfeb\\.nuget\\packages\\system.text.json\\9.0.1\\system.text.json.9.0.1.nupkg.sha512",
+    "C:\\Users\\jcfeb\\.nuget\\packages\\system.windows.extensions\\9.0.1\\system.windows.extensions.9.0.1.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "No se encuentra el proyecto \"D:\\FS\\FS.Windows\\FSDisk\\FSDisk.csproj\". Compruebe que la referencia al proyecto sea válida y que exista el archivo de proyecto.",
-      "projectPath": "D:\\FS\\FS.Windows\\FSSystemInfo\\FSSystemInfo.csproj",
-      "filePath": "D:\\FS\\FS.Windows\\FSSystemInfo\\FSSystemInfo.csproj",
-      "libraryId": "D:\\FS\\FS.Windows\\FSDisk\\FSDisk.csproj",
-      "targetGraphs": [
-        ".NETFramework,Version=v2.0",
-        ".NETFramework,Version=v3.0",
-        ".NETFramework,Version=v3.5",
-        ".NETFramework,Version=v4.0",
-        ".NETFramework,Version=v4.5",
-        ".NETFramework,Version=v4.6.1",
-        ".NETFramework,Version=v4.8",
-        "net8.0-windows7.0"
-      ]
-    },
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "No se encuentra el proyecto \"D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj\". Compruebe que la referencia al proyecto sea válida y que exista el archivo de proyecto.",
-      "projectPath": "D:\\FS\\FS.Windows\\FSSystemInfo\\FSSystemInfo.csproj",
-      "filePath": "D:\\FS\\FS.Windows\\FSSystemInfo\\FSSystemInfo.csproj",
-      "libraryId": "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj",
-      "targetGraphs": [
-        ".NETFramework,Version=v2.0",
-        ".NETFramework,Version=v3.0",
-        ".NETFramework,Version=v3.5",
-        ".NETFramework,Version=v4.0",
-        ".NETFramework,Version=v4.5",
-        ".NETFramework,Version=v4.6.1",
-        ".NETFramework,Version=v4.8",
-        "net8.0-windows7.0"
-      ]
-    },
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "No se encuentra el proyecto \"D:\\FS\\FS.Windows\\FSException\\FSException.csproj\". Compruebe que la referencia al proyecto sea válida y que exista el archivo de proyecto.",
-      "projectPath": "D:\\FS\\FS.Windows\\FSSystemInfo\\FSSystemInfo.csproj",
-      "filePath": "D:\\FS\\FS.Windows\\FSSystemInfo\\FSSystemInfo.csproj",
-      "libraryId": "D:\\FS\\FS.Windows\\FSException\\FSException.csproj",
-      "targetGraphs": [
-        ".NETFramework,Version=v2.0",
-        ".NETFramework,Version=v3.0",
-        ".NETFramework,Version=v3.5",
-        ".NETFramework,Version=v4.0",
-        ".NETFramework,Version=v4.5",
-        ".NETFramework,Version=v4.6.1",
-        ".NETFramework,Version=v4.8",
-        "net8.0-windows7.0"
-      ]
-    }
-  ]
+  "logs": []
 }

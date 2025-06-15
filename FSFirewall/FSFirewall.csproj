@@ -23,6 +23,6 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FSException\FSException.csproj" />
+    <ProjectReference Include="..\..\FS.Core\FSException\FSException.csproj" />
   </ItemGroup>
 </Project>

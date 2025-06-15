@@ -29,13 +29,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Interop.SHDocVw">
-      <HintPath>..\dll\Interop.SHDocVw.dll</HintPath>
+      <HintPath>..\..\dll\Interop.SHDocVw.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <SpecificVersion>False</SpecificVersion>
       <EmbedInteropTypes>True</EmbedInteropTypes>
-      <HintPath>..\dll\Microsoft.mshtml.dll</HintPath>
+      <HintPath>..\..\dll\Microsoft.mshtml.dll</HintPath>
     </Reference>
     <Reference Update="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -49,11 +49,11 @@
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FSDns\FSDns.csproj" />
-    <ProjectReference Include="..\FSException\FSException.csproj" />
-    <ProjectReference Include="..\FSFormControls\FSFormControls.csproj" />
-    <ProjectReference Include="..\FSGraphics\FSGraphics.csproj" />
-    <ProjectReference Include="..\FSLibrary\FSLibrary.csproj" />
-    <ProjectReference Include="..\FSNetwork\FSNetwork.csproj" />
+    <ProjectReference Include="..\..\FS.Core\FSDns\FSDns.csproj" />
+    <ProjectReference Include="..\..\FS.Core\FSException\FSException.csproj" />
+    <ProjectReference Include="..\..\FS.Windows\FSFormControls\FSFormControls.csproj" />
+    <ProjectReference Include="..\..\FS.Windows\FSGraphics\FSGraphics.csproj" />
+    <ProjectReference Include="..\..\FS.Core\FSLibrary\FSLibrary.csproj" />
+    <ProjectReference Include="..\..\FS.Core\FSNetwork\FSNetwork.csproj" />
   </ItemGroup>
 </Project>

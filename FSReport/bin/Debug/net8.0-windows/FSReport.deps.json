@@ -530,6 +530,7 @@
         "dependencies": {
           "FSException": "1.0.0",
           "FSLibrary": "1.0.0",
+          "FSNetwork": "1.0.0",
           "FSTrace": "1.0.0"
         },
         "runtime": {

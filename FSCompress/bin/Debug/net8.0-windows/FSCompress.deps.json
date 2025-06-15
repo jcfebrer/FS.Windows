@@ -779,6 +779,17 @@
           "runtime.native.System.Security.Cryptography.OpenSsl": "4.3.0"
         }
       },
+      "System.Security.Permissions/9.0.1": {
+        "dependencies": {
+          "System.Windows.Extensions": "9.0.1"
+        },
+        "runtime": {
+          "lib/net8.0/System.Security.Permissions.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.124.61010"
+          }
+        }
+      },
       "System.Text.Encoding/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
@@ -854,6 +865,22 @@
           "System.Runtime": "4.3.0"
         }
       },
+      "System.Windows.Extensions/9.0.1": {
+        "runtime": {
+          "lib/net8.0/System.Windows.Extensions.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.124.61010"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net8.0/System.Windows.Extensions.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.124.61010"
+          }
+        }
+      },
       "System.Xml.ReaderWriter/4.3.0": {
         "dependencies": {
           "System.Collections": "4.3.0",
@@ -889,6 +916,33 @@
           "System.Xml.ReaderWriter": "4.3.0"
         }
       },
+      "FSCrypto/1.0.0": {
+        "dependencies": {
+          "FSException": "1.0.0",
+          "FSLibrary": "1.0.0"
+        },
+        "runtime": {
+          "FSCrypto.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "FSDisk/1.0.0": {
+        "dependencies": {
+          "FSCrypto": "1.0.0",
+          "FSException": "1.0.0",
+          "FSFuzzyStrings": "1.0.0",
+          "FSLibrary": "1.0.0",
+          "System.Security.Permissions": "9.0.1"
+        },
+        "runtime": {
+          "FSDisk.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
       "FSException/1.0.0": {
         "dependencies": {
           "FSTrace": "1.0.0"
@@ -900,10 +954,22 @@
           }
         }
       },
+      "FSFuzzyStrings/1.0.0": {
+        "dependencies": {
+          "FSLibrary": "1.0.0"
+        },
+        "runtime": {
+          "FSFuzzyStrings.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
       "FSGraphics/1.0.0": {
         "dependencies": {
           "FSException": "1.0.0",
           "FSLibrary": "1.0.0",
+          "FSNetwork": "1.0.0",
           "FSTrace": "1.0.0"
         },
         "runtime": {
@@ -921,6 +987,21 @@
         },
         "runtime": {
           "FSLibrary.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "FSNetwork/1.0.0": {
+        "dependencies": {
+          "FSCrypto": "1.0.0",
+          "FSDisk": "1.0.0",
+          "FSException": "1.0.0",
+          "FSLibrary": "1.0.0",
+          "FSTrace": "1.0.0"
+        },
+        "runtime": {
+          "FSNetwork.dll": {
             "assemblyVersion": "0.0.0.0",
             "fileVersion": "0.0.0.0"
           }
@@ -1500,6 +1581,13 @@
       "path": "system.security.cryptography.x509certificates/4.3.0",
       "hashPath": "system.security.cryptography.x509certificates.4.3.0.nupkg.sha512"
     },
+    "System.Security.Permissions/9.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-moOMbopAJOxpdX0WTZ/6hxxDM40ePMyMQWrPqwcuELrY5XhpQSLoddknbkdTp70Cy4K5LjMm5IW1zz850O+z9g==",
+      "path": "system.security.permissions/9.0.1",
+      "hashPath": "system.security.permissions.9.0.1.nupkg.sha512"
+    },
     "System.Text.Encoding/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -1563,6 +1651,13 @@
       "path": "system.threading.timer/4.3.0",
       "hashPath": "system.threading.timer.4.3.0.nupkg.sha512"
     },
+    "System.Windows.Extensions/9.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OMM+gsL/Lm2cjIyqbdgENBReskG6U741SgnhTE9GpG0hLxmrXlQa6gz7+cyNNVmpnp7ZKtuxB7j0DBoL0SLo/Q==",
+      "path": "system.windows.extensions/9.0.1",
+      "hashPath": "system.windows.extensions.9.0.1.nupkg.sha512"
+    },
     "System.Xml.ReaderWriter/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -1577,7 +1672,22 @@
       "path": "system.xml.xdocument/4.3.0",
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
     },
+    "FSCrypto/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FSDisk/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "FSException/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FSFuzzyStrings/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -1588,6 +1698,11 @@
       "sha512": ""
     },
     "FSLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FSNetwork/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

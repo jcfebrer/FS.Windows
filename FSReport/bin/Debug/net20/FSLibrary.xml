@@ -500,7 +500,7 @@
             </summary>
             <param name="entryId"></param>
             <returns></returns>
-            <exception cref="T:System.Configuration.ExceptionUtil"></exception>
+            <exception cref="T:FSException.ExceptionUtil"></exception>
         </member>
         <member name="M:FSLibrary.ConfigConnectionList.GetConnectionString(System.Int32)">
             <summary>
@@ -508,7 +508,7 @@
             </summary>
             <param name="entryId"></param>
             <returns></returns>
-            <exception cref="T:System.Configuration.ExceptionUtil"></exception>
+            <exception cref="T:FSException.ExceptionUtil"></exception>
         </member>
         <member name="T:FSLibrary.FSSettingsSection">
             <summary>
@@ -999,6 +999,51 @@
             </summary>
             <param name="dniNumbers"></param>
             <returns></returns>
+        </member>
+        <member name="T:FSLibrary.ListExtensions">
+            <summary>
+            Exposes static extension methods for checking the contents of a list.
+            </summary>
+        </member>
+        <member name="M:FSLibrary.ListExtensions.IsAnyOf``1(``0,``0[])">
+            <summary>
+            Compares the <paramref name="value" /> object with the
+            <paramref name="testObjects" /> provided, to see if any of the
+            <paramref name="testObjects" /> is a match.
+            </summary>
+            <typeparam name="T"> Type of the object to be tested. </typeparam>
+            <param name="value"> Source object to check. </param>
+            <param name="testObjects">
+            Object or objects that should be compared to value
+            with the <see cref="M:System.Object.Equals" /> method.
+            </param>
+            <returns>
+            True if any of the <paramref name="testObjects" /> equals the value;
+            false otherwise.
+            </returns>
+        </member>
+        <member name="T:FSLibrary.ArrayExtensions">
+            <summary>
+            Permite rellanar una array con un valor dado.
+            </summary>
+        </member>
+        <member name="M:FSLibrary.ArrayExtensions.Fill``1(``0[],``0)">
+            <summary>
+            Propiedad Fill.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="array"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:FSLibrary.ArrayExtensions.ConvertAll``2(``0[],System.Func{``0,``1})">
+            <summary>
+            Convierte cada elemento de un array utilizando una función de conversión.
+            </summary>
+            <typeparam name="TInput">El tipo del elemento de entrada.</typeparam>
+            <typeparam name="TOutput">El tipo del elemento de salida.</typeparam>
+            <param name="array">El array de entrada.</param>
+            <param name="converter">La función de conversión.</param>
+            <returns>Un nuevo array con los elementos convertidos.</returns>
         </member>
         <member name="T:FSLibrary.Flip">
             <summary>
@@ -1725,21 +1770,11 @@
             <param name="separator"></param>
             <returns></returns>
         </member>
-        <member name="M:FSLibrary.NumberUtils.SplitInParts(System.String,System.Int32)">
+        <member name="M:FSLibrary.NumberUtils.GetNumbers(System.String)">
             <summary>
-            Suponiendo que TextUtil.SplitInParts y TextUtil.JoinParts están definidos en algún lugar:
+            Devuelve una cadena unicamente con los numeros.
             </summary>
-            <param name="text"></param>
-            <param name="partLength"></param>
-            <returns></returns>
-        </member>
-        <member name="M:FSLibrary.NumberUtils.JoinParts(System.Char,System.String[])">
-            <summary>
-            Une las partes utilizando un separador.
-            </summary>
-            <param name="separator"></param>
-            <param name="parts"></param>
-            <returns></returns>
+            <param name="input"></param>
         </member>
         <member name="M:FSLibrary.NumberUtils.GetNumbersAndLetters(System.String)">
             <summary>
@@ -3414,6 +3449,34 @@
             </summary>
             <param name="str"></param>
             <param name="pattern"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FSLibrary.TextUtil.SearchUrlValues(System.String)">
+            <summary>
+            Busca las direcciones URL en un texto
+            </summary>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FSLibrary.TextUtil.SearchNumericValues(System.String)">
+            <summary>
+            Busca los valores numéricos en un texto
+            </summary>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FSLibrary.TextUtil.SearchDateValues(System.String)">
+            <summary>
+            Busca las fechas en un texto
+            </summary>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FSLibrary.TextUtil.SearchIpValues(System.String)">
+            <summary>
+            Busca las direcciones IP en un texto
+            </summary>
+            <param name="text"></param>
             <returns></returns>
         </member>
         <member name="M:FSLibrary.TextUtil.SplitInParts(System.String,System.Int32)">
@@ -9164,6 +9227,13 @@
             <summary>
                 Utilidades para trabajar con XML.
             </summary>
+        </member>
+        <member name="M:FSLibrary.XmlUtil.PrettyXml(System.String)">
+            <summary>
+            Formatea un fichero xml en formato texto a xml con intentación y saltos de línea
+            </summary>
+            <param name="xml"></param>
+            <returns></returns>
         </member>
         <member name="T:FSLibrary.XmlUtil.Utf8StringWriter">
             <summary>

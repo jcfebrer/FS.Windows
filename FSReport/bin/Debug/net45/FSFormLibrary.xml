@@ -101,390 +101,254 @@
         </member>
         <member name="F:FSFormLibrary.DiffMatchPatch.Patch.diffs">
             <summary>
-            Array de d"></param>
-            <exception cref="T:System.IO.FileNotFoundException"></exception>
-            <exception cref="T:System.Exception"></exception>
-            <exception cref="T:System.ArgumentOutOfRangeException"></exception>
-        </member>
-        <member name="M:FSFormLibrary.Multimedia.GenerateWav(System.String,System.Int32,System.Int32,System.Int32)">
-            <summary>
-            Genera un fichero WAV con el Rate, duración y frecuencia indicada.
-            </summary>
-            <param name="filePath"></param>
-            <param name="sampleRate"></param>
-            <param name="durationMs"></param>
-            <param name="frequency"></param>
-        </member>
-        <member name="M:FSFormLibrary.Multimedia.PlaySound(System.String,System.Boolean)">
-            <summary>
-            Plays the specified file name.
-            </summary>
-            <param name="fileName">Name of the file.</param>
-            <param name="sync">Modo sincronizado true/false</param>
-        </member>
-        <member name="T:FSFormLibrary.SoapUtil">
-            <summary>
-            Utilidades para trabajar con Soap.
+            Array de diferencias
             </summary>
         </member>
-        <member name="T:FSFormLibrary.Vb">
+        <member name="F:FSFormLibrary.DiffMatchPatch.Patch.start1">
             <summary>
-            Biblioteca de funciones para la conversión de aplicaciones VB.
+            Comienzo 1
             </summary>
         </member>
-        <member name="F:FSFormLibrary.Vb.vbCrLf">
+        <member name="F:FSFormLibrary.DiffMatchPatch.Patch.start2">
             <summary>
-            Salto de línea
+            Comienzo 2
             </summary>
         </member>
-        <member name="T:FSFormLibrary.Vb.TypeMsg">
+        <member name="F:FSFormLibrary.DiffMatchPatch.Patch.length1">
             <summary>
-            Tipo para utilizar los mensajes de MessegeBox.Show.
+            Longitud 1
             </summary>
         </member>
-        <member name="F:FSFormLibrary.Vb.TypeMsg.Information">
+        <member name="F:FSFormLibrary.DiffMatchPatch.Patch.length2">
             <summary>
-            Informativo
+            Longitud 2
             </summary>
         </member>
-        <member name="F:FSFormLibrary.Vb.TypeMsg.Critical">
+        <member name="M:FSFormLibrary.DiffMatchPatch.Patch.ToString">
+            Emulate GNU diff's format.
+            Header: @@ -382,8 +481,9 @@
+            Indices are printed as 1-based, not 0-based.
+            @return The GNU diff string.
+        </member>
+        <member name="T:FSFormLibrary.DiffMatchPatch.diff_match_patch">
+            Class containing the diff, match and patch methods.
+            Also Contains the behaviour settings.
+        </member>
+        <member name="F:FSFormLibrary.DiffMatchPatch.diff_match_patch.Diff_Timeout">
             <summary>
-            Critico
+            Number of seconds to map a diff before giving up (0 for infinity).
             </summary>
         </member>
-        <member name="F:FSFormLibrary.Vb.TypeMsg.Question">
+        <member name="F:FSFormLibrary.DiffMatchPatch.diff_match_patch.Diff_EditCost">
             <summary>
-            Pregunta
+            Cost of an empty edit operation in terms of edit characters.
             </summary>
         </member>
-        <member name="F:FSFormLibrary.Vb.TypeMsg.Exclamation">
+        <member name="F:FSFormLibrary.DiffMatchPatch.diff_match_patch.Match_Threshold">
             <summary>
-            Exclamación
+            At what point is no match declared (0.0 = perfection, 1.0 = very loose).
             </summary>
         </member>
-        <member name="F:FSFormLibrary.Vb.TypeMsg.Error">
+        <member name="F:FSFormLibrary.DiffMatchPatch.diff_match_patch.Match_Distance">
             <summary>
-            Error
+            How far to search for a match (0 = exact location, 1000+ = broad match).
+            A match this many characters away from the expected location will add
+            1.0 to the score (0.0 is a perfect match).
             </summary>
         </member>
-        <member name="T:FSFormLibrary.Vb.TypeButton">
+        <member name="F:FSFormLibrary.DiffMatchPatch.diff_match_patch.Patch_DeleteThreshold">
             <summary>
-            Tipo para los botones a mostrar en los mensajes de MessegeBox.Show.
+            When deleting a large block of text (over ~64 characters), how close
+            do the contents have to be to match the expected contents. (0.0 =
+            perfection, 1.0 = very loose).  Note that Match_Threshold controls
+            how closely the end points of a delete need to match.
+            When deleting a large block of text (over ~64 characters), how close
             </summary>
         </member>
-        <member name="F:FSFormLibrary.Vb.TypeButton.YesNo">
+        <member name="F:FSFormLibrary.DiffMatchPatch.diff_match_patch.Patch_Margin">
             <summary>
-            Si y No
+            Chunk size for context length.
             </summary>
         </member>
-        <member name="F:FSFormLibrary.Vb.TypeButton.YesNoCancel">
-            <summary>
-            Si,no y cancel
-            </summary>
+        <member name="M:FSFormLibrary.DiffMatchPatch.diff_match_patch.diff_main(System.String,System.String)">
+            Find the differences between two texts.
+            Run a faster, slightly less optimal diff.
+            This method allows the 'checklines' of diff_main() to be optional.
+            Most of the time checklines is wanted, so default to true.
+            @param text1 Old string to be diffed.
+            @param text2 New string to be diffed.
+            @return List of Diff objects.
         </member>
-        <member name="F:FSFormLibrary.Vb.TypeButton.Ok">
-            <summary>
-            Ok
-            </summary>
+        <member name="M:FSFormLibrary.DiffMatchPatch.diff_match_patch.diff_main(System.String,System.String,System.Boolean)">
+            Find the differences between two texts.
+            @param text1 Old string to be diffed.
+            @param text2 New string to be diffed.
+            @param checklines Speedup flag.  If false, then don't run a
+                line-level diff first to identify the changed areas.
+                If true, then run a faster slightly less optimal diff.
+            @return List of Diff objects.
         </member>
-        <member name="F:FSFormLibrary.Vb.TypeButton.OkCancel">
-            <summary>
-            Ok y cancel
-            </summary>
+        <member name="M:FSFormLibrary.DiffMatchPatch.diff_match_patch.diff_main(System.String,System.String,System.Boolean,System.DateTime)">
+            Find the differences between two texts.  Simplifies the problem by
+            stripping any common prefix or suffix off the texts before diffing.
+            @param text1 Old string to be diffed.
+            @param text2 New string to be diffed.
+            @param checklines Speedup flag.  If false, then don't run a
+                line-level diff first to identify the changed areas.
+                If true, then run a faster slightly less optimal diff.
+            @param deadline Time when the diff should be complete by.  Used
+                internally for recursive calls.  Users should set DiffTimeout
+                instead.
+            @return List of Diff objects.
         </member>
-        <member name="M:FSFormLibrary.Vb.MsgBox(System.String)">
-            <summary>
-            MessageBox
-            </summary>
-            <param name="text"></param>
+        <member name="M:FSFormLibrary.DiffMatchPatch.diff_match_patch.diff_compute(System.String,System.String,System.Boolean,System.DateTime)">
+            Find the differences between two texts.  Assumes that the texts do not
+            have any common prefix or suffix.
+            @param text1 Old string to be diffed.
+            @param text2 New string to be diffed.
+            @param checklines Speedup flag.  If false, then don't run a
+                line-level diff first to identify the changed areas.
+                If true, then run a faster slightly less optimal diff.
+            @param deadline Time when the diff should be complete by.
+            @return List of Diff objects.
         </member>
-        <member name="M:FSFormLibrary.Vb.MsgBox(System.String,FSFormLibrary.Vb.TypeMsg)">
-            <summary>
-            MessageBox
-            </summary>
-            <param name="text"></param>
-            <param name="typeMsg"></param>
+        <member name="M:FSFormLibrary.DiffMatchPatch.diff_match_patch.diff_lineMode(System.String,System.String,System.DateTime)">
+            Do a quick line-level diff on both strings, then rediff the parts for
+            greater accuracy.
+            This speedup can produce non-minimal diffs.
+            @param text1 Old string to be diffed.
+            @param text2 New string to be diffed.
+            @param deadline Time when the diff should be complete by.
+            @return List of Diff objects.
         </member>
-        <member name="M:FSFormLibrary.Vb.MsgBox(System.String,FSFormLibrary.Vb.TypeMsg,System.String)">
-            <summary>
-            MessageBox
-            </summary>
-            <param name="text"></param>
-            <param name="typeMsg"></param>
-            <param name="caption"></param>
+        <member name="M:FSFormLibrary.DiffMatchPatch.diff_match_patch.diff_bisect(System.String,System.String,System.DateTime)">
+            Find the 'middle snake' of a diff, split the problem in two
+            and return the recursively constructed diff.
+            See Myers 1986 paper: An O(ND) Difference Algorithm and Its Variations.
+            @param text1 Old string to be diffed.
+            @param text2 New string to be diffed.
+            @param deadline Time at which to bail if not yet complete.
+            @return List of Diff objects.
         </member>
-        <member name="M:FSFormLibrary.Vb.MsgBox(System.String,FSFormLibrary.Vb.TypeMsg,System.String,FSFormLibrary.Vb.TypeButton)">
-            <summary>
-            MessageBox
-            </summary>
-            <param name="text"></param>
-            <param name="typeMsg"></param>
-            <param name="caption"></param>
-            <param name="typeButton"></param>
+        <member name="M:FSFormLibrary.DiffMatchPatch.diff_match_patch.diff_bisectSplit(System.String,System.String,System.Int32,System.Int32,System.DateTime)">
+            Given the location of the 'middle snake', split the diff in two parts
+            and recurse.
+            @param text1 Old string to be diffed.
+            @param text2 New string to be diffed.
+            @param x Index of split point in text1.
+            @param y Index of split point in text2.
+            @param deadline Time at which to bail if not yet complete.
+            @return LinkedList of Diff objects.
         </member>
-        <member name="M:FSFormLibrary.Vb.InputBox(System.String,System.String)">
-            <summary>
-            Realiza un pregunta y devuelve el resultado escrito.
-            </summary>
-            <param name="question"></param>
-            <param name="title"></param>
-            <returns></returns>
-            <exception cref="T:System.Exception"></exception>
+        <member name="M:FSFormLibrary.DiffMatchPatch.diff_match_patch.diff_linesToChars(System.String,System.String)">
+            Split two texts into a list of strings.  Reduce the texts to a string of
+            hashes where each Unicode character represents one line.
+            @param text1 First string.
+            @param text2 Second string.
+            @return Three element Object array, containing the encoded text1, the
+                encoded text2 and the List of unique strings.  The zeroth element
+                of the List of unique strings is intentionally blank.
         </member>
-        <member name="M:FSFormLibrary.Vb.IsDifferent(System.Object,System.Object)">
-            <summary>
-            Devuelve true si obj1 != obj2
-            </summary>
-            <param name="obj1"></param>
-            <param name="obj2"></param>
-            <returns></returns>
+        <member name="M:FSFormLibrary.DiffMatchPatch.diff_match_patch.diff_linesToCharsMunge(System.String,System.Collections.Generic.List{System.String},System.Collections.Generic.Dictionary{System.String,System.Int32},System.Int32)">
+            Split a text into a list of strings.  Reduce the texts to a string of
+            hashes where each Unicode character represents one line.
+            @param text String to encode.
+            @param lineArray List of unique strings.
+            @param lineHash Map of strings to indices.
+            @param maxLines Maximum length of lineArray.
+            @return Encoded string.
         </member>
-        <member name="M:FSFormLibrary.Vb.IsEqual(System.Object,System.Object)">
-            <summary>
-            Devuelve true si obj1 == obj2
-            </summary>
-            <param name="obj1"></param>
-            <param name="obj2"></param>
-            <returns></returns>
+        <member name="M:FSFormLibrary.DiffMatchPatch.diff_match_patch.diff_charsToLines(System.Collections.Generic.ICollection{FSFormLibrary.DiffMatchPatch.Diff},System.Collections.Generic.IList{System.String})">
+            Rehydrate the text in a diff from a string of line hashes to real lines
+            of text.
+            @param diffs List of Diff objects.
+            @param lineArray List of unique strings.
         </member>
-        <member name="M:FSFormLibrary.Vb.Concatenate(System.Object,System.Object)">
-            <summary>
-            Concatena obj1 + obj2
-            </summary>
-            <param name="obj1"></param>
-            <param name="obj2"></param>
-            <returns></returns>
+        <member name="M:FSFormLibrary.DiffMatchPatch.diff_match_patch.diff_commonPrefix(System.String,System.String)">
+            Determine the common prefix of two strings.
+            @param text1 First string.
+            @param text2 Second string.
+            @return The number of characters common to the start of each string.
         </member>
-        <member name="M:FSFormLibrary.Vb.Multiply(System.Object,System.Object)">
-            <summary>
-            Multiplica obj1 * obj2
-            </summary>
-            <param name="obj1"></param>
-            <param name="obj2"></param>
-            <returns></returns>
+        <member name="M:FSFormLibrary.DiffMatchPatch.diff_match_patch.diff_commonSuffix(System.String,System.String)">
+            Determine the common suffix of two strings.
+            @param text1 First string.
+            @param text2 Second string.
+            @return The number of characters common to the end of each string.
         </member>
-        <member name="M:FSFormLibrary.Vb.Divide(System.Object,System.Object)">
-            <summary>
-            Divide obj1 / obj2
-            </summary>
-            <param name="obj1"></param>
-            <param name="obj2"></param>
-            <returns></returns>
+        <member name="M:FSFormLibrary.DiffMatchPatch.diff_match_patch.diff_commonOverlap(System.String,System.String)">
+            Determine if the suffix of one string is the prefix of another.
+            @param text1 First string.
+            @param text2 Second string.
+            @return The number of characters common to the end of the first
+                string and the start of the second string.
         </member>
-        <member name="M:FSFormLibrary.Vb.IsNumeric(System.String)">
-            <summary>
-            Devuelve true si la cadena es numerica.
-            </summary>
-            <param name="s"></param>
-            <returns></returns>
+        <member name="M:FSFormLibrary.DiffMatchPatch.diff_match_patch.diff_halfMatch(System.String,System.String)">
+            Do the two texts share a Substring which is at least half the length of
+            the longer text?
+            This speedup can produce non-minimal diffs.
+            @param text1 First string.
+            @param text2 Second string.
+            @return Five element String array, containing the prefix of text1, the
+                suffix of text1, the prefix of text2, the suffix of text2 and the
+                common middle.  Or null if there was no match.
         </member>
-        <member name="M:FSFormLibrary.Vb.Value(System.Object)">
-            <summary>
-            Devuelve el objeto como cadena.
-            </summary>
-            <param name="valor"></param>
-            <returns></returns>
+        <member name="M:FSFormLibrary.DiffMatchPatch.diff_match_patch.diff_halfMatchI(System.String,System.String,System.Int32)">
+            Does a Substring of shorttext exist within longtext such that the
+            Substring is at least half the length of longtext?
+            @param longtext Longer string.
+            @param shorttext Shorter string.
+            @param i Start index of quarter length Substring within longtext.
+            @return Five element string array, containing the prefix of longtext, the
+                suffix of longtext, the prefix of shorttext, the suffix of shorttext
+                and the common middle.  Or null if there was no match.
         </member>
-        <member name="M:FSFormLibrary.Vb.ValueInt(System.Object)">
-            <summary>
-            Devuelve el objeto como entero.
-            </summary>
-            <param name="valor"></param>
-            <returns></returns>
+        <member name="M:FSFormLibrary.DiffMatchPatch.diff_match_patch.diff_cleanupSemantic(System.Collections.Generic.List{FSFormLibrary.DiffMatchPatch.Diff})">
+            Reduce the number of edits by eliminating semantically trivial
+            equalities.
+            @param diffs List of Diff objects.
         </member>
-        <member name="M:FSFormLibrary.Vb.Len(System.String)">
-            <summary>
-            Logitud de una cadena
-            </summary>
-            <param name="str"></param>
-            <returns></returns>
+        <member name="M:FSFormLibrary.DiffMatchPatch.diff_match_patch.diff_cleanupSemanticLossless(System.Collections.Generic.List{FSFormLibrary.DiffMatchPatch.Diff})">
+            Look for single edits surrounded on both sides by equalities
+            which can be shifted sideways to align the edit to a word boundary.
+            e.g: The c<ins>at c</ins>ame. -> The <ins>cat </ins>came.
+            @param diffs List of Diff objects.
         </member>
-        <member name="M:FSFormLibrary.Vb.Left(System.String,System.Int32)">
-            <summary>
-            Devuelve len carácteres por la izquierda
-            </summary>
-            <param name="str"></param>
-            <param name="len"></param>
-            <returns></returns>
+        <member name="M:FSFormLibrary.DiffMatchPatch.diff_match_patch.diff_cleanupSemanticScore(System.String,System.String)">
+            Given two strings, compute a score representing whether the internal
+            boundary falls on logical boundaries.
+            Scores range from 6 (best) to 0 (worst).
+            @param one First string.
+            @param two Second string.
+            @return The score.
         </member>
-        <member name="M:FSFormLibrary.Vb.Right(System.String,System.Int32)">
-            <summary>
-            Devuelve len carácteres por la derecha
-            </summary>
-            <param name="str"></param>
-            <param name="len"></param>
-            <returns></returns>
+        <member name="M:FSFormLibrary.DiffMatchPatch.diff_match_patch.diff_cleanupEfficiency(System.Collections.Generic.List{FSFormLibrary.DiffMatchPatch.Diff})">
+            Reduce the number of edits by eliminating operationally trivial
+            equalities.
+            @param diffs List of Diff objects.
         </member>
-        <member name="M:FSFormLibrary.Vb.Mid(System.String,System.Int32,System.Int32)">
-            <summary>
-            Devuelve los len carácteres comenzando desde start.
-            </summary>
-            <param name="str"></param>
-            <param name="start"></param>
-            <param name="len"></param>
-            <returns></returns>
+        <member name="M:FSFormLibrary.DiffMatchPatch.diff_match_patch.diff_cleanupMerge(System.Collections.Generic.List{FSFormLibrary.DiffMatchPatch.Diff})">
+            Reorder and merge like edit sections.  Merge equalities.
+            Any edit section can move as long as it doesn't cross an equality.
+            @param diffs List of Diff objects.
         </member>
-        <member name="M:FSFormLibrary.Vb.IIf(System.Boolean,System.Object,System.Object)">
-            <summary>
-            Evalua la expresión y devuel el objeto depediendo del resultado.
-            </summary>
-            <param name="expr"></param>
-            <param name="valueIfTrue"></param>
-            <param name="valueIfFalse"></param>
+        <member name="M:FSFormLibrary.DiffMatchPatch.diff_match_patch.diff_xIndex(System.Collections.Generic.List{FSFormLibrary.DiffMatchPatch.Diff},System.Int32)">
+            loc is a location in text1, compute and return the equivalent location in
+            text2.
+            e.g. "The cat" vs "The big cat", 1->1, 5->8
+            @param diffs List of Diff objects.
+            @param loc Location within text1.
+            @return Location within text2.
         </member>
-        <member name="M:FSFormLibrary.Vb.Mid(System.String,System.Int32)">
-            <summary>
-            Devuelve los len carácteres comenzando desde la posición 0.
-            </summary>
-            <param name="str"></param>
-            <param name="len"></param>
-            <returns></returns>
+        <member name="M:FSFormLibrary.DiffMatchPatch.diff_match_patch.diff_prettyHtml(System.Collections.Generic.List{FSFormLibrary.DiffMatchPatch.Diff})">
+            Convert a Diff list into a pretty HTML report.
+            @param diffs List of Diff objects.
+            @return HTML representation.
         </member>
-        <member name="M:FSFormLibrary.Vb.InStr(System.String,System.String)">
-            <summary>
-            Devuelve -1 si la cadena data no existe en str.
-            </summary>
-            <param name="str"></param>
-            <param name="data"></param>
-            <returns></returns>
-        </member>
-        <member name="M:FSFormLibrary.Vb.InStr(System.Int32,System.String,System.String)">
-            <summary>
-            Devuelve -1 si la cadena data no existe en str, comenzando desde start.
-            </summary>
-            <param name="start"></param>
-            <param name="str"></param>
-            <param name="data"></param>
-            <returns></returns>
-        </member>
-        <member name="M:FSFormLibrary.Vb.Chr(System.Int32)">
-            <summary>
-            Devuelve el character de un valor. Ejemplo: Chr(65) = 'A'.
-            </summary>
-            <param name="value"></param>
-            <returns></returns>
-        </member>
-        <member name="M:FSFormLibrary.Vb.Asc(System.Char)">
-            <summary>
-            Devuelvel el código ASCII de un carácter. Ejemplo Asc('A') = 65
-            </summary>
-            <param name="c"></param>
-            <returns></returns>
-        </member>
-        <member name="M:FSFormLibrary.Vb.Asc(System.String)">
-            <summary>
-            Devuelvel el código ASCII del primer carácter de una cadena. Ejemplo Asc("AITA") = 65
-            </summary>
-            <param name="s"></param>
-            <returns></returns>
-        </member>
-        <member name="M:FSFormLibrary.Vb.UCase(System.String)">
-            <summary>
-            Convierte a mayúsculas una cadena.
-            </summary>
-            <param name="str"></param>
-            <returns></returns>
-        </member>
-        <member name="M:FSFormLibrary.Vb.LCase(System.String)">
-            <summary>
-            Convierte a minúsculas una cadena.
-            </summary>
-            <param name="str"></param>
-            <returns></returns>
-        </member>
-        <member name="M:FSFormLibrary.Vb.Space(System.Int32)">
-            <summary>
-            Devuelve len caráteres en blanco.
-            </summary>
-            <param name="len"></param>
-            <returns></returns>
-        </member>
-        <member name="M:FSFormLibrary.Vb.Trim(System.String)">
-            <summary>
-            Elimina los espacion por delante y detrás de una cadena.
-            </summary>
-            <param name="str"></param>
-            <returns></returns>
-        </member>
-        <member name="M:FSFormLibrary.Vb.StrConv(System.String,System.Int32)">
-            <summary>
-            ??????
-            </summary>
-            <param name="str"></param>
-            <param name="type"></param>
-            <returns></returns>
-        </member>
-        <member name="M:FSFormLibrary.Vb.Capital(System.String)">
-            <summary>
-            Devuelve la cadena con el primer caracter en mayúsculas.
-            </summary>
-            <param name="str"></param>
-            <returns></returns>
-        </member>
-        <member name="M:FSFormLibrary.Vb.MidStmtStr(System.String,System.Int32,System.Char)">
-            <summary>
-            Modifica la cadena con el carácter dado en la posición index.
-            </summary>
-            <param name="input"></param>
-            <param name="index"></param>
-            <param name="newChar"></param>
-            <returns></returns>
-            <exception cref="T:System.ArgumentNullException"></exception>
-        </member>
-        <member name="M:FSFormLibrary.Vb.ToString(System.Object)">
-            <summary>
-            Convierte en cadena el objeto.
-            </summary>
-            <param name="obj"></param>
-            <returns></returns>
-        </member>
-        <member name="M:FSFormLibrary.Vb.ToBoolean(System.Object)">
-            <summary>
-            Convierte en booleano el objeto.
-            </summary>
-            <param name="obj"></param>
-            <returns></returns>
-        </member>
-        <member name="M:FSFormLibrary.Vb.ToDate(System.Object)">
-            <summary>
-            Convierte en objeto en fecha.
-            </summary>
-            <param name="obj"></param>
-            <returns></returns>
-        </member>
-        <member name="M:FSFormLibrary.Vb.ToInteger(System.Object)">
-            <summary>
-            Convierte en entero el objeto.
-            </summary>
-            <param name="obj"></param>
-            <returns></returns>
-        </member>
-        <member name="M:FSFormLibrary.Vb.ToLong(System.Object)">
-            <summary>
-            Convierte en long el objeto.
-            </summary>
-            <param name="obj"></param>
-            <returns></returns>
-        </member>
-        <member name="M:FSFormLibrary.Vb.ConcatenateObject(System.Object,System.Object)">
-            <summary>
-            Devuelve dos objetos convertidos a string y concatenados.
-            </summary>
-            <param name="obj1"></param>
-            <param name="obj2"></param>
-            <returns></returns>
-        </member>
-        <member name="M:FSFormLibrary.Vb.Replace(System.String,System.String,System.String)">
-            <summary>
-            Reemplaza una cadena por un valor.
-            </summary>
-            <param name="cad"></param>
-            <param name="search"></param>
-            <param name="value"></param>
-            <returns></returns>
-        </member>
-    </members>
-</doc>
+        <member name="M:FSFormLibrary.DiffMatchPatch.diff_match_patch.diff_text1(System.Collections.Generic.List{FSFormLibrary.DiffMatchPatch.Diff})">
+            Compute and return the source text (all equalities and deletions).
+            @param diffs List of Diff objects.
+            @return Source text.
         </member>
         <member name="M:FSFormLibrary.DiffMatchPatch.diff_match_patch.diff_text2(System.Collections.Generic.List{FSFormLibrary.DiffMatchPatch.Diff})">
             Compute and return the destination text (all equalities and insertions).

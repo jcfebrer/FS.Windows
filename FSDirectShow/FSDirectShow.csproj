@@ -26,13 +26,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.DirectX">
-      <HintPath>..\dll\Microsoft.DirectX.dll</HintPath>
+      <HintPath>..\..\dll\Microsoft.DirectX.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.DirectX.DirectPlay">
-      <HintPath>..\dll\Microsoft.DirectX.DirectPlay.dll</HintPath>
+      <HintPath>..\..\dll\Microsoft.DirectX.DirectPlay.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.DirectX.DirectSound">
-      <HintPath>..\dll\Microsoft.DirectX.DirectSound.dll</HintPath>
+      <HintPath>..\..\dll\Microsoft.DirectX.DirectSound.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualC">
       <HintPath>C:\Windows\Microsoft.NET\Framework64\v2.0.50727\Microsoft.VisualC.Dll</HintPath>
@@ -65,6 +65,6 @@
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FSException\FSException.csproj" />
+    <ProjectReference Include="..\..\FS.Core\FSException\FSException.csproj" />
   </ItemGroup>
 </Project>

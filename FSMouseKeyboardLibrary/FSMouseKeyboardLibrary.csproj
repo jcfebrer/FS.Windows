@@ -9,8 +9,8 @@
     <AssemblyOriginatorKeyFile></AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FSException\FSException.csproj" />
-    <ProjectReference Include="..\FSLibrary\FSLibrary.csproj" />
+    <ProjectReference Include="..\..\FS.Core\FSException\FSException.csproj" />
+    <ProjectReference Include="..\..\FS.Core\FSLibrary\FSLibrary.csproj" />
   </ItemGroup>
   <ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))' == 'net'">
     <Reference Include="System.Windows.Forms" />

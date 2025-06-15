@@ -5683,7 +5683,7 @@
             <summary>
                 Sets the desktop wallpaper. The value of the pvParam parameter determines the new wallpaper. To specify a wallpaper
                 bitmap,
-                set pvParam to point to a null-terminated s null-terminated string containing the name of a bitmap file. Setting pvParam to ""
+                set pvParam to point to a null-terminated string containing the name of a bitmap file. Setting pvParam to ""
                 removes the wallpaper.
                 Setting pvParam to SETWALLPAPER_DEFAULT or null reverts to the default wallpaper.
             </summary>
@@ -7718,7 +7718,7 @@
         <member name="F:FSLibrary.Win32APIEnums.VK_BROWSER_BACK">
             <summary>
             The vk browser back
-    
+            </summary>
         </member>
         <member name="F:FSLibrary.Win32APIEnums.VK_BROWSER_FORWARD">
             <summary>

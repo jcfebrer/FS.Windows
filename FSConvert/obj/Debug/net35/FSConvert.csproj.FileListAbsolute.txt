@@ -11,8 +11,12 @@ D:\FS\FS\FSConvert\obj\Debug\net35\FSConvert.dll
 D:\FS\FS\FSConvert\obj\Debug\net35\FSConvert.pdb
 D:\FS\FS.Windows\FSConvert\bin\Debug\net35\FSConvert.dll
 D:\FS\FS.Windows\FSConvert\bin\Debug\net35\FSConvert.pdb
+D:\FS\FS.Windows\FSConvert\bin\Debug\net35\FSTrace.dll
+D:\FS\FS.Windows\FSConvert\bin\Debug\net35\FSTrace.pdb
 D:\FS\FS.Windows\FSConvert\obj\Debug\net35\FSConvert.csproj.AssemblyReference.cache
 D:\FS\FS.Windows\FSConvert\obj\Debug\net35\FSConvert.GeneratedMSBuildEditorConfig.editorconfig
 D:\FS\FS.Windows\FSConvert\obj\Debug\net35\FSConvert.csproj.CoreCompileInputs.cache
+D:\FS\FS.Windows\FSConvert\obj\Debug\net35\FSConvert.sourcelink.json
+D:\FS\FS.Windows\FSConvert\obj\Debug\net35\FSConvert.csproj.Up2Date
 D:\FS\FS.Windows\FSConvert\obj\Debug\net35\FSConvert.dll
 D:\FS\FS.Windows\FSConvert\obj\Debug\net35\FSConvert.pdb

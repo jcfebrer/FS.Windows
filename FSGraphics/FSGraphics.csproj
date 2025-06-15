@@ -13,8 +13,9 @@
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FSException\FSException.csproj" />
-    <ProjectReference Include="..\FSLibrary\FSLibrary.csproj" />
-    <ProjectReference Include="..\FSTrace\FSTrace.csproj" />
+    <ProjectReference Include="..\..\FS.Core\FSException\FSException.csproj" />
+    <ProjectReference Include="..\..\FS.Core\FSLibrary\FSLibrary.csproj" />
+    <ProjectReference Include="..\..\FS.Core\FSNetwork\FSNetwork.csproj" />
+    <ProjectReference Include="..\..\FS.Core\FSTrace\FSTrace.csproj" />
   </ItemGroup>
 </Project>

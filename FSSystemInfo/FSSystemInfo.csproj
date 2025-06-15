@@ -16,9 +16,9 @@
     <PackageReference Include="System.Management" Version="9.0.1" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FSDisk\FSDisk.csproj" />
-    <ProjectReference Include="..\FSException\FSException.csproj" />
-    <ProjectReference Include="..\FSLibrary\FSLibrary.csproj" />
+    <ProjectReference Include="..\..\FS.Core\FSDisk\FSDisk.csproj" />
+    <ProjectReference Include="..\..\FS.Core\FSException\FSException.csproj" />
+    <ProjectReference Include="..\..\FS.Core\FSLibrary\FSLibrary.csproj" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System.Management" />

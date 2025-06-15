@@ -4,6 +4,2784 @@
     "D:\\FS\\FS.Windows\\FSFormControls\\FSFormControls.csproj": {}
   },
   "projects": {
+    "D:\\FS\\FS.Core\\FSCertificate\\FSCertificate.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\FS\\FS.Core\\FSCertificate\\FSCertificate.csproj",
+        "projectName": "FSCertificate",
+        "projectPath": "D:\\FS\\FS.Core\\FSCertificate\\FSCertificate.csproj",
+        "packagesPath": "C:\\Users\\jcfeb\\.nuget\\packages\\",
+        "outputPath": "D:\\FS\\FS.Core\\FSCertificate\\obj\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jcfeb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net20",
+          "net30",
+          "net35",
+          "net40",
+          "net45",
+          "net461",
+          "net48",
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              }
+            }
+          },
+          "net20": {
+            "targetAlias": "net20",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              }
+            }
+          },
+          "net30": {
+            "targetAlias": "net30",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              }
+            }
+          },
+          "net35": {
+            "targetAlias": "net35",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              }
+            }
+          },
+          "net40": {
+            "targetAlias": "net40",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              }
+            }
+          },
+          "net45": {
+            "targetAlias": "net45",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              }
+            }
+          },
+          "net461": {
+            "targetAlias": "net461",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              }
+            }
+          },
+          "net48": {
+            "targetAlias": "net48",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.CSharp": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "System.Data.DataSetExtensions": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
+            "System.Security.Cryptography.Xml": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+        },
+        "net20": {
+          "targetAlias": "net20",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net30": {
+          "targetAlias": "net30",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net35": {
+          "targetAlias": "net35",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net40": {
+          "targetAlias": "net40",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net45": {
+          "targetAlias": "net45",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net461": {
+          "targetAlias": "net461",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net48": {
+          "targetAlias": "net48",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\FS\\FS.Core\\FSCrypto\\FSCrypto.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\FS\\FS.Core\\FSCrypto\\FSCrypto.csproj",
+        "projectName": "FSCrypto",
+        "projectPath": "D:\\FS\\FS.Core\\FSCrypto\\FSCrypto.csproj",
+        "packagesPath": "C:\\Users\\jcfeb\\.nuget\\packages\\",
+        "outputPath": "D:\\FS\\FS.Core\\FSCrypto\\obj\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jcfeb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net20",
+          "net30",
+          "net35",
+          "net40",
+          "net45",
+          "net461",
+          "net48",
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              }
+            }
+          },
+          "net20": {
+            "targetAlias": "net20",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              }
+            }
+          },
+          "net30": {
+            "targetAlias": "net30",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              }
+            }
+          },
+          "net35": {
+            "targetAlias": "net35",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              }
+            }
+          },
+          "net40": {
+            "targetAlias": "net40",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              }
+            }
+          },
+          "net45": {
+            "targetAlias": "net45",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              }
+            }
+          },
+          "net461": {
+            "targetAlias": "net461",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              }
+            }
+          },
+          "net48": {
+            "targetAlias": "net48",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+        },
+        "net20": {
+          "targetAlias": "net20",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net30": {
+          "targetAlias": "net30",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net35": {
+          "targetAlias": "net35",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net40": {
+          "targetAlias": "net40",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net45": {
+          "targetAlias": "net45",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net461": {
+          "targetAlias": "net461",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net48": {
+          "targetAlias": "net48",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\FS\\FS.Core\\FSDatabase\\FSDatabase.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\FS\\FS.Core\\FSDatabase\\FSDatabase.csproj",
+        "projectName": "FSDatabase",
+        "projectPath": "D:\\FS\\FS.Core\\FSDatabase\\FSDatabase.csproj",
+        "packagesPath": "C:\\Users\\jcfeb\\.nuget\\packages\\",
+        "outputPath": "D:\\FS\\FS.Core\\FSDatabase\\obj\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jcfeb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net20",
+          "net30",
+          "net35",
+          "net40",
+          "net45",
+          "net461",
+          "net48",
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSDisk\\FSDisk.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSDisk\\FSDisk.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSNetwork\\FSNetwork.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSNetwork\\FSNetwork.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSParser\\FSParser.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSParser\\FSParser.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSQueryBuilder\\FSQueryBuilder.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSQueryBuilder\\FSQueryBuilder.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSSecurity\\FSSecurity.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSSecurity\\FSSecurity.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
+              },
+              "D:\\FS\\FS.Windows\\FSSystemInfo\\FSSystemInfo.csproj": {
+                "projectPath": "D:\\FS\\FS.Windows\\FSSystemInfo\\FSSystemInfo.csproj"
+              }
+            }
+          },
+          "net20": {
+            "targetAlias": "net20",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSDisk\\FSDisk.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSDisk\\FSDisk.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSNetwork\\FSNetwork.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSNetwork\\FSNetwork.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSParser\\FSParser.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSParser\\FSParser.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSQueryBuilder\\FSQueryBuilder.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSQueryBuilder\\FSQueryBuilder.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSSecurity\\FSSecurity.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSSecurity\\FSSecurity.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
+              },
+              "D:\\FS\\FS.Windows\\FSSystemInfo\\FSSystemInfo.csproj": {
+                "projectPath": "D:\\FS\\FS.Windows\\FSSystemInfo\\FSSystemInfo.csproj"
+              }
+            }
+          },
+          "net30": {
+            "targetAlias": "net30",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSDisk\\FSDisk.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSDisk\\FSDisk.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSNetwork\\FSNetwork.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSNetwork\\FSNetwork.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSParser\\FSParser.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSParser\\FSParser.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSQueryBuilder\\FSQueryBuilder.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSQueryBuilder\\FSQueryBuilder.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSSecurity\\FSSecurity.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSSecurity\\FSSecurity.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
+              },
+              "D:\\FS\\FS.Windows\\FSSystemInfo\\FSSystemInfo.csproj": {
+                "projectPath": "D:\\FS\\FS.Windows\\FSSystemInfo\\FSSystemInfo.csproj"
+              }
+            }
+          },
+          "net35": {
+            "targetAlias": "net35",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSDisk\\FSDisk.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSDisk\\FSDisk.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSNetwork\\FSNetwork.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSNetwork\\FSNetwork.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSParser\\FSParser.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSParser\\FSParser.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSQueryBuilder\\FSQueryBuilder.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSQueryBuilder\\FSQueryBuilder.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSSecurity\\FSSecurity.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSSecurity\\FSSecurity.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
+              },
+              "D:\\FS\\FS.Windows\\FSSystemInfo\\FSSystemInfo.csproj": {
+                "projectPath": "D:\\FS\\FS.Windows\\FSSystemInfo\\FSSystemInfo.csproj"
+              }
+            }
+          },
+          "net40": {
+            "targetAlias": "net40",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSDisk\\FSDisk.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSDisk\\FSDisk.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSNetwork\\FSNetwork.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSNetwork\\FSNetwork.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSParser\\FSParser.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSParser\\FSParser.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSQueryBuilder\\FSQueryBuilder.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSQueryBuilder\\FSQueryBuilder.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSSecurity\\FSSecurity.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSSecurity\\FSSecurity.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
+              },
+              "D:\\FS\\FS.Windows\\FSSystemInfo\\FSSystemInfo.csproj": {
+                "projectPath": "D:\\FS\\FS.Windows\\FSSystemInfo\\FSSystemInfo.csproj"
+              }
+            }
+          },
+          "net45": {
+            "targetAlias": "net45",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSDisk\\FSDisk.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSDisk\\FSDisk.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSNetwork\\FSNetwork.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSNetwork\\FSNetwork.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSParser\\FSParser.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSParser\\FSParser.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSQueryBuilder\\FSQueryBuilder.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSQueryBuilder\\FSQueryBuilder.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSSecurity\\FSSecurity.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSSecurity\\FSSecurity.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
+              },
+              "D:\\FS\\FS.Windows\\FSSystemInfo\\FSSystemInfo.csproj": {
+                "projectPath": "D:\\FS\\FS.Windows\\FSSystemInfo\\FSSystemInfo.csproj"
+              }
+            }
+          },
+          "net461": {
+            "targetAlias": "net461",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSDisk\\FSDisk.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSDisk\\FSDisk.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSNetwork\\FSNetwork.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSNetwork\\FSNetwork.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSParser\\FSParser.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSParser\\FSParser.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSQueryBuilder\\FSQueryBuilder.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSQueryBuilder\\FSQueryBuilder.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSSecurity\\FSSecurity.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSSecurity\\FSSecurity.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
+              },
+              "D:\\FS\\FS.Windows\\FSSystemInfo\\FSSystemInfo.csproj": {
+                "projectPath": "D:\\FS\\FS.Windows\\FSSystemInfo\\FSSystemInfo.csproj"
+              }
+            }
+          },
+          "net48": {
+            "targetAlias": "net48",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSDisk\\FSDisk.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSDisk\\FSDisk.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSNetwork\\FSNetwork.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSNetwork\\FSNetwork.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSParser\\FSParser.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSParser\\FSParser.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSQueryBuilder\\FSQueryBuilder.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSQueryBuilder\\FSQueryBuilder.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSSecurity\\FSSecurity.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSSecurity\\FSSecurity.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
+              },
+              "D:\\FS\\FS.Windows\\FSSystemInfo\\FSSystemInfo.csproj": {
+                "projectPath": "D:\\FS\\FS.Windows\\FSSystemInfo\\FSSystemInfo.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "System.Data.OleDb": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "System.Memory": {
+              "target": "Package",
+              "version": "[4.6.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+        },
+        "net20": {
+          "targetAlias": "net20",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net30": {
+          "targetAlias": "net30",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net35": {
+          "targetAlias": "net35",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net40": {
+          "targetAlias": "net40",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net45": {
+          "targetAlias": "net45",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net461": {
+          "targetAlias": "net461",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net48": {
+          "targetAlias": "net48",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\FS\\FS.Core\\FSDisk\\FSDisk.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\FS\\FS.Core\\FSDisk\\FSDisk.csproj",
+        "projectName": "FSDisk",
+        "projectPath": "D:\\FS\\FS.Core\\FSDisk\\FSDisk.csproj",
+        "packagesPath": "C:\\Users\\jcfeb\\.nuget\\packages\\",
+        "outputPath": "D:\\FS\\FS.Core\\FSDisk\\obj\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jcfeb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net20",
+          "net30",
+          "net35",
+          "net40",
+          "net45",
+          "net461",
+          "net48",
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSCrypto\\FSCrypto.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSCrypto\\FSCrypto.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSFuzzyStrings\\FSFuzzyStrings.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSFuzzyStrings\\FSFuzzyStrings.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              }
+            }
+          },
+          "net20": {
+            "targetAlias": "net20",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSCrypto\\FSCrypto.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSCrypto\\FSCrypto.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSFuzzyStrings\\FSFuzzyStrings.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSFuzzyStrings\\FSFuzzyStrings.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              }
+            }
+          },
+          "net30": {
+            "targetAlias": "net30",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSCrypto\\FSCrypto.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSCrypto\\FSCrypto.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSFuzzyStrings\\FSFuzzyStrings.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSFuzzyStrings\\FSFuzzyStrings.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              }
+            }
+          },
+          "net35": {
+            "targetAlias": "net35",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSCrypto\\FSCrypto.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSCrypto\\FSCrypto.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSFuzzyStrings\\FSFuzzyStrings.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSFuzzyStrings\\FSFuzzyStrings.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              }
+            }
+          },
+          "net40": {
+            "targetAlias": "net40",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSCrypto\\FSCrypto.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSCrypto\\FSCrypto.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSFuzzyStrings\\FSFuzzyStrings.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSFuzzyStrings\\FSFuzzyStrings.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              }
+            }
+          },
+          "net45": {
+            "targetAlias": "net45",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSCrypto\\FSCrypto.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSCrypto\\FSCrypto.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSFuzzyStrings\\FSFuzzyStrings.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSFuzzyStrings\\FSFuzzyStrings.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              }
+            }
+          },
+          "net461": {
+            "targetAlias": "net461",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSCrypto\\FSCrypto.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSCrypto\\FSCrypto.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSFuzzyStrings\\FSFuzzyStrings.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSFuzzyStrings\\FSFuzzyStrings.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              }
+            }
+          },
+          "net48": {
+            "targetAlias": "net48",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSCrypto\\FSCrypto.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSCrypto\\FSCrypto.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSFuzzyStrings\\FSFuzzyStrings.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSFuzzyStrings\\FSFuzzyStrings.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "System.Security.Permissions": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+        },
+        "net20": {
+          "targetAlias": "net20",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net30": {
+          "targetAlias": "net30",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net35": {
+          "targetAlias": "net35",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net40": {
+          "targetAlias": "net40",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net45": {
+          "targetAlias": "net45",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net461": {
+          "targetAlias": "net461",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net48": {
+          "targetAlias": "net48",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\FS\\FS.Core\\FSException\\FSException.csproj",
+        "projectName": "FSException",
+        "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj",
+        "packagesPath": "C:\\Users\\jcfeb\\.nuget\\packages\\",
+        "outputPath": "D:\\FS\\FS.Core\\FSException\\obj\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jcfeb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net20",
+          "net30",
+          "net35",
+          "net40",
+          "net45",
+          "net461",
+          "net48",
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
+              }
+            }
+          },
+          "net20": {
+            "targetAlias": "net20",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
+              }
+            }
+          },
+          "net30": {
+            "targetAlias": "net30",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
+              }
+            }
+          },
+          "net35": {
+            "targetAlias": "net35",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
+              }
+            }
+          },
+          "net40": {
+            "targetAlias": "net40",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
+              }
+            }
+          },
+          "net45": {
+            "targetAlias": "net45",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
+              }
+            }
+          },
+          "net461": {
+            "targetAlias": "net461",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
+              }
+            }
+          },
+          "net48": {
+            "targetAlias": "net48",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+        },
+        "net20": {
+          "targetAlias": "net20",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net30": {
+          "targetAlias": "net30",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net35": {
+          "targetAlias": "net35",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net40": {
+          "targetAlias": "net40",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net45": {
+          "targetAlias": "net45",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net461": {
+          "targetAlias": "net461",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net48": {
+          "targetAlias": "net48",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\FS\\FS.Core\\FSFuzzyStrings\\FSFuzzyStrings.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\FS\\FS.Core\\FSFuzzyStrings\\FSFuzzyStrings.csproj",
+        "projectName": "FSFuzzyStrings",
+        "projectPath": "D:\\FS\\FS.Core\\FSFuzzyStrings\\FSFuzzyStrings.csproj",
+        "packagesPath": "C:\\Users\\jcfeb\\.nuget\\packages\\",
+        "outputPath": "D:\\FS\\FS.Core\\FSFuzzyStrings\\obj\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jcfeb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net20",
+          "net30",
+          "net35",
+          "net40",
+          "net45",
+          "net461",
+          "net48",
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              }
+            }
+          },
+          "net20": {
+            "targetAlias": "net20",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              }
+            }
+          },
+          "net30": {
+            "targetAlias": "net30",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              }
+            }
+          },
+          "net35": {
+            "targetAlias": "net35",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              }
+            }
+          },
+          "net40": {
+            "targetAlias": "net40",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              }
+            }
+          },
+          "net45": {
+            "targetAlias": "net45",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              }
+            }
+          },
+          "net461": {
+            "targetAlias": "net461",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              }
+            }
+          },
+          "net48": {
+            "targetAlias": "net48",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+        },
+        "net20": {
+          "targetAlias": "net20",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net30": {
+          "targetAlias": "net30",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net35": {
+          "targetAlias": "net35",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net40": {
+          "targetAlias": "net40",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net45": {
+          "targetAlias": "net45",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net461": {
+          "targetAlias": "net461",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net48": {
+          "targetAlias": "net48",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj",
+        "projectName": "FSLibrary",
+        "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj",
+        "packagesPath": "C:\\Users\\jcfeb\\.nuget\\packages\\",
+        "outputPath": "D:\\FS\\FS.Core\\FSLibrary\\obj\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jcfeb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net20",
+          "net30",
+          "net35",
+          "net40",
+          "net45",
+          "net461",
+          "net48",
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
+              }
+            }
+          },
+          "net20": {
+            "targetAlias": "net20",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
+              }
+            }
+          },
+          "net30": {
+            "targetAlias": "net30",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
+              }
+            }
+          },
+          "net35": {
+            "targetAlias": "net35",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
+              }
+            }
+          },
+          "net40": {
+            "targetAlias": "net40",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
+              }
+            }
+          },
+          "net45": {
+            "targetAlias": "net45",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
+              }
+            }
+          },
+          "net461": {
+            "targetAlias": "net461",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
+              }
+            }
+          },
+          "net48": {
+            "targetAlias": "net48",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+        },
+        "net20": {
+          "targetAlias": "net20",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net30": {
+          "targetAlias": "net30",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net35": {
+          "targetAlias": "net35",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net40": {
+          "targetAlias": "net40",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net45": {
+          "targetAlias": "net45",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net461": {
+          "targetAlias": "net461",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net48": {
+          "targetAlias": "net48",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\FS\\FS.Core\\FSMail\\FSMail.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\FS\\FS.Core\\FSMail\\FSMail.csproj",
+        "projectName": "FSMail",
+        "projectPath": "D:\\FS\\FS.Core\\FSMail\\FSMail.csproj",
+        "packagesPath": "C:\\Users\\jcfeb\\.nuget\\packages\\",
+        "outputPath": "D:\\FS\\FS.Core\\FSMail\\obj\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jcfeb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net20",
+          "net30",
+          "net35",
+          "net40",
+          "net45",
+          "net461",
+          "net48",
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSCertificate\\FSCertificate.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSCertificate\\FSCertificate.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSCrypto\\FSCrypto.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSCrypto\\FSCrypto.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
+              }
+            }
+          },
+          "net20": {
+            "targetAlias": "net20",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSCertificate\\FSCertificate.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSCertificate\\FSCertificate.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSCrypto\\FSCrypto.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSCrypto\\FSCrypto.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
+              }
+            }
+          },
+          "net30": {
+            "targetAlias": "net30",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSCertificate\\FSCertificate.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSCertificate\\FSCertificate.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSCrypto\\FSCrypto.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSCrypto\\FSCrypto.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
+              }
+            }
+          },
+          "net35": {
+            "targetAlias": "net35",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSCertificate\\FSCertificate.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSCertificate\\FSCertificate.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSCrypto\\FSCrypto.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSCrypto\\FSCrypto.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
+              }
+            }
+          },
+          "net40": {
+            "targetAlias": "net40",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSCertificate\\FSCertificate.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSCertificate\\FSCertificate.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSCrypto\\FSCrypto.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSCrypto\\FSCrypto.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
+              }
+            }
+          },
+          "net45": {
+            "targetAlias": "net45",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSCertificate\\FSCertificate.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSCertificate\\FSCertificate.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSCrypto\\FSCrypto.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSCrypto\\FSCrypto.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
+              }
+            }
+          },
+          "net461": {
+            "targetAlias": "net461",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSCertificate\\FSCertificate.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSCertificate\\FSCertificate.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSCrypto\\FSCrypto.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSCrypto\\FSCrypto.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
+              }
+            }
+          },
+          "net48": {
+            "targetAlias": "net48",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSCertificate\\FSCertificate.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSCertificate\\FSCertificate.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSCrypto\\FSCrypto.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSCrypto\\FSCrypto.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+        },
+        "net20": {
+          "targetAlias": "net20",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net30": {
+          "targetAlias": "net30",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net35": {
+          "targetAlias": "net35",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net40": {
+          "targetAlias": "net40",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net45": {
+          "targetAlias": "net45",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net461": {
+          "targetAlias": "net461",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net48": {
+          "targetAlias": "net48",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\FS\\FS.Core\\FSNetwork\\FSNetwork.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\FS\\FS.Core\\FSNetwork\\FSNetwork.csproj",
+        "projectName": "FSNetwork",
+        "projectPath": "D:\\FS\\FS.Core\\FSNetwork\\FSNetwork.csproj",
+        "packagesPath": "C:\\Users\\jcfeb\\.nuget\\packages\\",
+        "outputPath": "D:\\FS\\FS.Core\\FSNetwork\\obj\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jcfeb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net20",
+          "net30",
+          "net35",
+          "net40",
+          "net45",
+          "net461",
+          "net48",
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSCrypto\\FSCrypto.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSCrypto\\FSCrypto.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSDisk\\FSDisk.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSDisk\\FSDisk.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
+              }
+            }
+          },
+          "net20": {
+            "targetAlias": "net20",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSCrypto\\FSCrypto.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSCrypto\\FSCrypto.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSDisk\\FSDisk.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSDisk\\FSDisk.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
+              }
+            }
+          },
+          "net30": {
+            "targetAlias": "net30",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSCrypto\\FSCrypto.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSCrypto\\FSCrypto.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSDisk\\FSDisk.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSDisk\\FSDisk.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
+              }
+            }
+          },
+          "net35": {
+            "targetAlias": "net35",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSCrypto\\FSCrypto.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSCrypto\\FSCrypto.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSDisk\\FSDisk.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSDisk\\FSDisk.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
+              }
+            }
+          },
+          "net40": {
+            "targetAlias": "net40",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSCrypto\\FSCrypto.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSCrypto\\FSCrypto.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSDisk\\FSDisk.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSDisk\\FSDisk.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
+              }
+            }
+          },
+          "net45": {
+            "targetAlias": "net45",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSCrypto\\FSCrypto.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSCrypto\\FSCrypto.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSDisk\\FSDisk.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSDisk\\FSDisk.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
+              }
+            }
+          },
+          "net461": {
+            "targetAlias": "net461",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSCrypto\\FSCrypto.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSCrypto\\FSCrypto.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSDisk\\FSDisk.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSDisk\\FSDisk.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
+              }
+            }
+          },
+          "net48": {
+            "targetAlias": "net48",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSCrypto\\FSCrypto.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSCrypto\\FSCrypto.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSDisk\\FSDisk.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSDisk\\FSDisk.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+        },
+        "net20": {
+          "targetAlias": "net20",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net30": {
+          "targetAlias": "net30",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net35": {
+          "targetAlias": "net35",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net40": {
+          "targetAlias": "net40",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net45": {
+          "targetAlias": "net45",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net461": {
+          "targetAlias": "net461",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net48": {
+          "targetAlias": "net48",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\FS\\FS.Core\\FSParser\\FSParser.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\FS\\FS.Core\\FSParser\\FSParser.csproj",
+        "projectName": "FSParser",
+        "projectPath": "D:\\FS\\FS.Core\\FSParser\\FSParser.csproj",
+        "packagesPath": "C:\\Users\\jcfeb\\.nuget\\packages\\",
+        "outputPath": "D:\\FS\\FS.Core\\FSParser\\obj\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jcfeb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net20",
+          "net30",
+          "net35",
+          "net40",
+          "net45",
+          "net461",
+          "net48",
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              },
+              "D:\\FS\\FS.Windows\\FSConvert\\FSConvert.csproj": {
+                "projectPath": "D:\\FS\\FS.Windows\\FSConvert\\FSConvert.csproj"
+              }
+            }
+          },
+          "net20": {
+            "targetAlias": "net20",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              },
+              "D:\\FS\\FS.Windows\\FSConvert\\FSConvert.csproj": {
+                "projectPath": "D:\\FS\\FS.Windows\\FSConvert\\FSConvert.csproj"
+              }
+            }
+          },
+          "net30": {
+            "targetAlias": "net30",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              },
+              "D:\\FS\\FS.Windows\\FSConvert\\FSConvert.csproj": {
+                "projectPath": "D:\\FS\\FS.Windows\\FSConvert\\FSConvert.csproj"
+              }
+            }
+          },
+          "net35": {
+            "targetAlias": "net35",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              },
+              "D:\\FS\\FS.Windows\\FSConvert\\FSConvert.csproj": {
+                "projectPath": "D:\\FS\\FS.Windows\\FSConvert\\FSConvert.csproj"
+              }
+            }
+          },
+          "net40": {
+            "targetAlias": "net40",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              },
+              "D:\\FS\\FS.Windows\\FSConvert\\FSConvert.csproj": {
+                "projectPath": "D:\\FS\\FS.Windows\\FSConvert\\FSConvert.csproj"
+              }
+            }
+          },
+          "net45": {
+            "targetAlias": "net45",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              },
+              "D:\\FS\\FS.Windows\\FSConvert\\FSConvert.csproj": {
+                "projectPath": "D:\\FS\\FS.Windows\\FSConvert\\FSConvert.csproj"
+              }
+            }
+          },
+          "net461": {
+            "targetAlias": "net461",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              },
+              "D:\\FS\\FS.Windows\\FSConvert\\FSConvert.csproj": {
+                "projectPath": "D:\\FS\\FS.Windows\\FSConvert\\FSConvert.csproj"
+              }
+            }
+          },
+          "net48": {
+            "targetAlias": "net48",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              },
+              "D:\\FS\\FS.Windows\\FSConvert\\FSConvert.csproj": {
+                "projectPath": "D:\\FS\\FS.Windows\\FSConvert\\FSConvert.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.CSharp": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "System.Data.DataSetExtensions": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
+            "System.ValueTuple": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+        },
+        "net20": {
+          "targetAlias": "net20",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net30": {
+          "targetAlias": "net30",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net35": {
+          "targetAlias": "net35",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net40": {
+          "targetAlias": "net40",
+          "dependencies": {
+            "System.ValueTuple": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net45": {
+          "targetAlias": "net45",
+          "dependencies": {
+            "Microsoft.CSharp": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "System.ValueTuple": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net461": {
+          "targetAlias": "net461",
+          "dependencies": {
+            "Microsoft.CSharp": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "System.ValueTuple": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net48": {
+          "targetAlias": "net48",
+          "dependencies": {
+            "Microsoft.CSharp": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "System.ValueTuple": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\FS\\FS.Core\\FSQueryBuilder\\FSQueryBuilder.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\FS\\FS.Core\\FSQueryBuilder\\FSQueryBuilder.csproj",
+        "projectName": "FSQueryBuilder",
+        "projectPath": "D:\\FS\\FS.Core\\FSQueryBuilder\\FSQueryBuilder.csproj",
+        "packagesPath": "C:\\Users\\jcfeb\\.nuget\\packages\\",
+        "outputPath": "D:\\FS\\FS.Core\\FSQueryBuilder\\obj\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jcfeb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net20",
+          "net30",
+          "net35",
+          "net40",
+          "net45",
+          "net461",
+          "net48",
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              }
+            }
+          },
+          "net20": {
+            "targetAlias": "net20",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              }
+            }
+          },
+          "net30": {
+            "targetAlias": "net30",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              }
+            }
+          },
+          "net35": {
+            "targetAlias": "net35",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              }
+            }
+          },
+          "net40": {
+            "targetAlias": "net40",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              }
+            }
+          },
+          "net45": {
+            "targetAlias": "net45",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              }
+            }
+          },
+          "net461": {
+            "targetAlias": "net461",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              }
+            }
+          },
+          "net48": {
+            "targetAlias": "net48",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true,
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+        },
+        "net20": {
+          "targetAlias": "net20",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net30": {
+          "targetAlias": "net30",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net35": {
+          "targetAlias": "net35",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net40": {
+          "targetAlias": "net40",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net45": {
+          "targetAlias": "net45",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net461": {
+          "targetAlias": "net461",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net48": {
+          "targetAlias": "net48",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\FS\\FS.Core\\FSSecurity\\FSSecurity.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\FS\\FS.Core\\FSSecurity\\FSSecurity.csproj",
+        "projectName": "FSSecurity",
+        "projectPath": "D:\\FS\\FS.Core\\FSSecurity\\FSSecurity.csproj",
+        "packagesPath": "C:\\Users\\jcfeb\\.nuget\\packages\\",
+        "outputPath": "D:\\FS\\FS.Core\\FSSecurity\\obj\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jcfeb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net20",
+          "net30",
+          "net35",
+          "net40",
+          "net45",
+          "net461",
+          "net48",
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
+              }
+            }
+          },
+          "net20": {
+            "targetAlias": "net20",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
+              }
+            }
+          },
+          "net30": {
+            "targetAlias": "net30",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
+              }
+            }
+          },
+          "net35": {
+            "targetAlias": "net35",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
+              }
+            }
+          },
+          "net40": {
+            "targetAlias": "net40",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
+              }
+            }
+          },
+          "net45": {
+            "targetAlias": "net45",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
+              }
+            }
+          },
+          "net461": {
+            "targetAlias": "net461",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
+              }
+            }
+          },
+          "net48": {
+            "targetAlias": "net48",
+            "projectReferences": {
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+        },
+        "net20": {
+          "targetAlias": "net20",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net30": {
+          "targetAlias": "net30",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net35": {
+          "targetAlias": "net35",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net40": {
+          "targetAlias": "net40",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net45": {
+          "targetAlias": "net45",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net461": {
+          "targetAlias": "net461",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net48": {
+          "targetAlias": "net48",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj",
+        "projectName": "FSTrace",
+        "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj",
+        "packagesPath": "C:\\Users\\jcfeb\\.nuget\\packages\\",
+        "outputPath": "D:\\FS\\FS.Core\\FSTrace\\obj\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jcfeb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net20",
+          "net30",
+          "net35",
+          "net40",
+          "net45",
+          "net461",
+          "net48",
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          },
+          "net20": {
+            "targetAlias": "net20",
+            "projectReferences": {}
+          },
+          "net30": {
+            "targetAlias": "net30",
+            "projectReferences": {}
+          },
+          "net35": {
+            "targetAlias": "net35",
+            "projectReferences": {}
+          },
+          "net40": {
+            "targetAlias": "net40",
+            "projectReferences": {}
+          },
+          "net45": {
+            "targetAlias": "net45",
+            "projectReferences": {}
+          },
+          "net461": {
+            "targetAlias": "net461",
+            "projectReferences": {}
+          },
+          "net48": {
+            "targetAlias": "net48",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+        },
+        "net20": {
+          "targetAlias": "net20",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net30": {
+          "targetAlias": "net30",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net35": {
+          "targetAlias": "net35",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net40": {
+          "targetAlias": "net40",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net45": {
+          "targetAlias": "net45",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net461": {
+          "targetAlias": "net461",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        },
+        "net48": {
+          "targetAlias": "net48",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "D:\\FS\\FS.Windows\\FSConvert\\FSConvert.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -41,64 +2819,64 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "D:\\FS\\FS.Windows\\FSTrace\\FSTrace.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSTrace\\FSTrace.csproj"
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
               }
             }
           },
           "net20": {
             "targetAlias": "net20",
             "projectReferences": {
-              "D:\\FS\\FS.Windows\\FSTrace\\FSTrace.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSTrace\\FSTrace.csproj"
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
               }
             }
           },
           "net30": {
             "targetAlias": "net30",
             "projectReferences": {
-              "D:\\FS\\FS.Windows\\FSTrace\\FSTrace.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSTrace\\FSTrace.csproj"
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
               }
             }
           },
           "net35": {
             "targetAlias": "net35",
             "projectReferences": {
-              "D:\\FS\\FS.Windows\\FSTrace\\FSTrace.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSTrace\\FSTrace.csproj"
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
               }
             }
           },
           "net40": {
             "targetAlias": "net40",
             "projectReferences": {
-              "D:\\FS\\FS.Windows\\FSTrace\\FSTrace.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSTrace\\FSTrace.csproj"
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
               }
             }
           },
           "net45": {
             "targetAlias": "net45",
             "projectReferences": {
-              "D:\\FS\\FS.Windows\\FSTrace\\FSTrace.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSTrace\\FSTrace.csproj"
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
               }
             }
           },
           "net461": {
             "targetAlias": "net461",
             "projectReferences": {
-              "D:\\FS\\FS.Windows\\FSTrace\\FSTrace.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSTrace\\FSTrace.csproj"
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
               }
             }
           },
           "net48": {
             "targetAlias": "net48",
             "projectReferences": {
-              "D:\\FS\\FS.Windows\\FSTrace\\FSTrace.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSTrace\\FSTrace.csproj"
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
               }
             }
           }
@@ -137,35 +2915,35 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
         },
         "net20": {
           "targetAlias": "net20",
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
         },
         "net30": {
           "targetAlias": "net30",
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
         },
         "net35": {
           "targetAlias": "net35",
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
         },
         "net40": {
           "targetAlias": "net40",
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
         },
         "net45": {
           "targetAlias": "net45",
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
         },
         "net461": {
           "targetAlias": "net461",
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
         },
         "net48": {
           "targetAlias": "net48",
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -276,7 +3054,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
         },
         "net20": {
           "targetAlias": "net20",
@@ -286,7 +3064,7 @@
               "version": "[12.0.4518.1014, )"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
         },
         "net30": {
           "targetAlias": "net30",
@@ -296,7 +3074,7 @@
               "version": "[12.0.4518.1014, )"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
         },
         "net35": {
           "targetAlias": "net35",
@@ -306,7 +3084,7 @@
               "version": "[12.0.4518.1014, )"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
         },
         "net40": {
           "targetAlias": "net40",
@@ -316,7 +3094,7 @@
               "version": "[12.0.4518.1014, )"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
         },
         "net45": {
           "targetAlias": "net45",
@@ -326,7 +3104,7 @@
               "version": "[12.0.4518.1014, )"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
         },
         "net461": {
           "targetAlias": "net461",
@@ -336,7 +3114,7 @@
               "version": "[12.0.4518.1014, )"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
         },
         "net48": {
           "targetAlias": "net48",
@@ -346,7 +3124,7 @@
               "version": "[12.0.4518.1014, )"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -387,20 +3165,35 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
+              "D:\\FS\\FS.Core\\FSDatabase\\FSDatabase.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSDatabase\\FSDatabase.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSDisk\\FSDisk.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSDisk\\FSDisk.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSMail\\FSMail.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSMail\\FSMail.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSNetwork\\FSNetwork.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSNetwork\\FSNetwork.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSQueryBuilder\\FSQueryBuilder.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSQueryBuilder\\FSQueryBuilder.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSSecurity\\FSSecurity.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSSecurity\\FSSecurity.csproj"
+              },
               "D:\\FS\\FS.Windows\\FSConvert\\FSConvert.csproj": {
                 "projectPath": "D:\\FS\\FS.Windows\\FSConvert\\FSConvert.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSDatabase\\FSDatabase.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSDatabase\\FSDatabase.csproj"
-              },
-              "D:\\FS\\FS.Windows\\FSDisk\\FSDisk.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSDisk\\FSDisk.csproj"
-              },
               "D:\\FS\\FS.Windows\\FSExcel\\FSExcel.csproj": {
                 "projectPath": "D:\\FS\\FS.Windows\\FSExcel\\FSExcel.csproj"
-              },
-              "D:\\FS\\FS.Windows\\FSException\\FSException.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSException\\FSException.csproj"
               },
               "D:\\FS\\FS.Windows\\FSFormLibrary\\FSFormLibrary.csproj": {
                 "projectPath": "D:\\FS\\FS.Windows\\FSFormLibrary\\FSFormLibrary.csproj"
@@ -408,23 +3201,8 @@
               "D:\\FS\\FS.Windows\\FSGraphics\\FSGraphics.csproj": {
                 "projectPath": "D:\\FS\\FS.Windows\\FSGraphics\\FSGraphics.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj"
-              },
-              "D:\\FS\\FS.Windows\\FSMail\\FSMail.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSMail\\FSMail.csproj"
-              },
               "D:\\FS\\FS.Windows\\FSMouseKeyboardLibrary\\FSMouseKeyboardLibrary.csproj": {
                 "projectPath": "D:\\FS\\FS.Windows\\FSMouseKeyboardLibrary\\FSMouseKeyboardLibrary.csproj"
-              },
-              "D:\\FS\\FS.Windows\\FSNetwork\\FSNetwork.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSNetwork\\FSNetwork.csproj"
-              },
-              "D:\\FS\\FS.Windows\\FSQueryBuilder\\FSQueryBuilder.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSQueryBuilder\\FSQueryBuilder.csproj"
-              },
-              "D:\\FS\\FS.Windows\\FSSecurity\\FSSecurity.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSSecurity\\FSSecurity.csproj"
               },
               "D:\\FS\\FS.Windows\\FSSystemInfo\\FSSystemInfo.csproj": {
                 "projectPath": "D:\\FS\\FS.Windows\\FSSystemInfo\\FSSystemInfo.csproj"
@@ -434,20 +3212,35 @@
           "net20": {
             "targetAlias": "net20",
             "projectReferences": {
+              "D:\\FS\\FS.Core\\FSDatabase\\FSDatabase.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSDatabase\\FSDatabase.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSDisk\\FSDisk.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSDisk\\FSDisk.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSMail\\FSMail.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSMail\\FSMail.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSNetwork\\FSNetwork.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSNetwork\\FSNetwork.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSQueryBuilder\\FSQueryBuilder.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSQueryBuilder\\FSQueryBuilder.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSSecurity\\FSSecurity.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSSecurity\\FSSecurity.csproj"
+              },
               "D:\\FS\\FS.Windows\\FSConvert\\FSConvert.csproj": {
                 "projectPath": "D:\\FS\\FS.Windows\\FSConvert\\FSConvert.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSDatabase\\FSDatabase.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSDatabase\\FSDatabase.csproj"
-              },
-              "D:\\FS\\FS.Windows\\FSDisk\\FSDisk.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSDisk\\FSDisk.csproj"
-              },
               "D:\\FS\\FS.Windows\\FSExcel\\FSExcel.csproj": {
                 "projectPath": "D:\\FS\\FS.Windows\\FSExcel\\FSExcel.csproj"
-              },
-              "D:\\FS\\FS.Windows\\FSException\\FSException.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSException\\FSException.csproj"
               },
               "D:\\FS\\FS.Windows\\FSFormLibrary\\FSFormLibrary.csproj": {
                 "projectPath": "D:\\FS\\FS.Windows\\FSFormLibrary\\FSFormLibrary.csproj"
@@ -455,23 +3248,8 @@
               "D:\\FS\\FS.Windows\\FSGraphics\\FSGraphics.csproj": {
                 "projectPath": "D:\\FS\\FS.Windows\\FSGraphics\\FSGraphics.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj"
-              },
-              "D:\\FS\\FS.Windows\\FSMail\\FSMail.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSMail\\FSMail.csproj"
-              },
               "D:\\FS\\FS.Windows\\FSMouseKeyboardLibrary\\FSMouseKeyboardLibrary.csproj": {
                 "projectPath": "D:\\FS\\FS.Windows\\FSMouseKeyboardLibrary\\FSMouseKeyboardLibrary.csproj"
-              },
-              "D:\\FS\\FS.Windows\\FSNetwork\\FSNetwork.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSNetwork\\FSNetwork.csproj"
-              },
-              "D:\\FS\\FS.Windows\\FSQueryBuilder\\FSQueryBuilder.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSQueryBuilder\\FSQueryBuilder.csproj"
-              },
-              "D:\\FS\\FS.Windows\\FSSecurity\\FSSecurity.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSSecurity\\FSSecurity.csproj"
               },
               "D:\\FS\\FS.Windows\\FSSystemInfo\\FSSystemInfo.csproj": {
                 "projectPath": "D:\\FS\\FS.Windows\\FSSystemInfo\\FSSystemInfo.csproj"
@@ -481,20 +3259,35 @@
           "net30": {
             "targetAlias": "net30",
             "projectReferences": {
+              "D:\\FS\\FS.Core\\FSDatabase\\FSDatabase.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSDatabase\\FSDatabase.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSDisk\\FSDisk.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSDisk\\FSDisk.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSMail\\FSMail.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSMail\\FSMail.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSNetwork\\FSNetwork.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSNetwork\\FSNetwork.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSQueryBuilder\\FSQueryBuilder.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSQueryBuilder\\FSQueryBuilder.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSSecurity\\FSSecurity.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSSecurity\\FSSecurity.csproj"
+              },
               "D:\\FS\\FS.Windows\\FSConvert\\FSConvert.csproj": {
                 "projectPath": "D:\\FS\\FS.Windows\\FSConvert\\FSConvert.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSDatabase\\FSDatabase.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSDatabase\\FSDatabase.csproj"
-              },
-              "D:\\FS\\FS.Windows\\FSDisk\\FSDisk.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSDisk\\FSDisk.csproj"
-              },
               "D:\\FS\\FS.Windows\\FSExcel\\FSExcel.csproj": {
                 "projectPath": "D:\\FS\\FS.Windows\\FSExcel\\FSExcel.csproj"
-              },
-              "D:\\FS\\FS.Windows\\FSException\\FSException.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSException\\FSException.csproj"
               },
               "D:\\FS\\FS.Windows\\FSFormLibrary\\FSFormLibrary.csproj": {
                 "projectPath": "D:\\FS\\FS.Windows\\FSFormLibrary\\FSFormLibrary.csproj"
@@ -502,23 +3295,8 @@
               "D:\\FS\\FS.Windows\\FSGraphics\\FSGraphics.csproj": {
                 "projectPath": "D:\\FS\\FS.Windows\\FSGraphics\\FSGraphics.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj"
-              },
-              "D:\\FS\\FS.Windows\\FSMail\\FSMail.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSMail\\FSMail.csproj"
-              },
               "D:\\FS\\FS.Windows\\FSMouseKeyboardLibrary\\FSMouseKeyboardLibrary.csproj": {
                 "projectPath": "D:\\FS\\FS.Windows\\FSMouseKeyboardLibrary\\FSMouseKeyboardLibrary.csproj"
-              },
-              "D:\\FS\\FS.Windows\\FSNetwork\\FSNetwork.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSNetwork\\FSNetwork.csproj"
-              },
-              "D:\\FS\\FS.Windows\\FSQueryBuilder\\FSQueryBuilder.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSQueryBuilder\\FSQueryBuilder.csproj"
-              },
-              "D:\\FS\\FS.Windows\\FSSecurity\\FSSecurity.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSSecurity\\FSSecurity.csproj"
               },
               "D:\\FS\\FS.Windows\\FSSystemInfo\\FSSystemInfo.csproj": {
                 "projectPath": "D:\\FS\\FS.Windows\\FSSystemInfo\\FSSystemInfo.csproj"
@@ -528,20 +3306,35 @@
           "net35": {
             "targetAlias": "net35",
             "projectReferences": {
+              "D:\\FS\\FS.Core\\FSDatabase\\FSDatabase.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSDatabase\\FSDatabase.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSDisk\\FSDisk.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSDisk\\FSDisk.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSMail\\FSMail.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSMail\\FSMail.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSNetwork\\FSNetwork.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSNetwork\\FSNetwork.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSQueryBuilder\\FSQueryBuilder.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSQueryBuilder\\FSQueryBuilder.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSSecurity\\FSSecurity.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSSecurity\\FSSecurity.csproj"
+              },
               "D:\\FS\\FS.Windows\\FSConvert\\FSConvert.csproj": {
                 "projectPath": "D:\\FS\\FS.Windows\\FSConvert\\FSConvert.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSDatabase\\FSDatabase.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSDatabase\\FSDatabase.csproj"
-              },
-              "D:\\FS\\FS.Windows\\FSDisk\\FSDisk.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSDisk\\FSDisk.csproj"
-              },
               "D:\\FS\\FS.Windows\\FSExcel\\FSExcel.csproj": {
                 "projectPath": "D:\\FS\\FS.Windows\\FSExcel\\FSExcel.csproj"
-              },
-              "D:\\FS\\FS.Windows\\FSException\\FSException.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSException\\FSException.csproj"
               },
               "D:\\FS\\FS.Windows\\FSFormLibrary\\FSFormLibrary.csproj": {
                 "projectPath": "D:\\FS\\FS.Windows\\FSFormLibrary\\FSFormLibrary.csproj"
@@ -549,23 +3342,8 @@
               "D:\\FS\\FS.Windows\\FSGraphics\\FSGraphics.csproj": {
                 "projectPath": "D:\\FS\\FS.Windows\\FSGraphics\\FSGraphics.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj"
-              },
-              "D:\\FS\\FS.Windows\\FSMail\\FSMail.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSMail\\FSMail.csproj"
-              },
               "D:\\FS\\FS.Windows\\FSMouseKeyboardLibrary\\FSMouseKeyboardLibrary.csproj": {
                 "projectPath": "D:\\FS\\FS.Windows\\FSMouseKeyboardLibrary\\FSMouseKeyboardLibrary.csproj"
-              },
-              "D:\\FS\\FS.Windows\\FSNetwork\\FSNetwork.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSNetwork\\FSNetwork.csproj"
-              },
-              "D:\\FS\\FS.Windows\\FSQueryBuilder\\FSQueryBuilder.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSQueryBuilder\\FSQueryBuilder.csproj"
-              },
-              "D:\\FS\\FS.Windows\\FSSecurity\\FSSecurity.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSSecurity\\FSSecurity.csproj"
               },
               "D:\\FS\\FS.Windows\\FSSystemInfo\\FSSystemInfo.csproj": {
                 "projectPath": "D:\\FS\\FS.Windows\\FSSystemInfo\\FSSystemInfo.csproj"
@@ -575,20 +3353,35 @@
           "net40": {
             "targetAlias": "net40",
             "projectReferences": {
+              "D:\\FS\\FS.Core\\FSDatabase\\FSDatabase.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSDatabase\\FSDatabase.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSDisk\\FSDisk.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSDisk\\FSDisk.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSMail\\FSMail.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSMail\\FSMail.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSNetwork\\FSNetwork.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSNetwork\\FSNetwork.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSQueryBuilder\\FSQueryBuilder.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSQueryBuilder\\FSQueryBuilder.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSSecurity\\FSSecurity.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSSecurity\\FSSecurity.csproj"
+              },
               "D:\\FS\\FS.Windows\\FSConvert\\FSConvert.csproj": {
                 "projectPath": "D:\\FS\\FS.Windows\\FSConvert\\FSConvert.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSDatabase\\FSDatabase.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSDatabase\\FSDatabase.csproj"
-              },
-              "D:\\FS\\FS.Windows\\FSDisk\\FSDisk.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSDisk\\FSDisk.csproj"
-              },
               "D:\\FS\\FS.Windows\\FSExcel\\FSExcel.csproj": {
                 "projectPath": "D:\\FS\\FS.Windows\\FSExcel\\FSExcel.csproj"
-              },
-              "D:\\FS\\FS.Windows\\FSException\\FSException.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSException\\FSException.csproj"
               },
               "D:\\FS\\FS.Windows\\FSFormLibrary\\FSFormLibrary.csproj": {
                 "projectPath": "D:\\FS\\FS.Windows\\FSFormLibrary\\FSFormLibrary.csproj"
@@ -596,23 +3389,8 @@
               "D:\\FS\\FS.Windows\\FSGraphics\\FSGraphics.csproj": {
                 "projectPath": "D:\\FS\\FS.Windows\\FSGraphics\\FSGraphics.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj"
-              },
-              "D:\\FS\\FS.Windows\\FSMail\\FSMail.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSMail\\FSMail.csproj"
-              },
               "D:\\FS\\FS.Windows\\FSMouseKeyboardLibrary\\FSMouseKeyboardLibrary.csproj": {
                 "projectPath": "D:\\FS\\FS.Windows\\FSMouseKeyboardLibrary\\FSMouseKeyboardLibrary.csproj"
-              },
-              "D:\\FS\\FS.Windows\\FSNetwork\\FSNetwork.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSNetwork\\FSNetwork.csproj"
-              },
-              "D:\\FS\\FS.Windows\\FSQueryBuilder\\FSQueryBuilder.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSQueryBuilder\\FSQueryBuilder.csproj"
-              },
-              "D:\\FS\\FS.Windows\\FSSecurity\\FSSecurity.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSSecurity\\FSSecurity.csproj"
               },
               "D:\\FS\\FS.Windows\\FSSystemInfo\\FSSystemInfo.csproj": {
                 "projectPath": "D:\\FS\\FS.Windows\\FSSystemInfo\\FSSystemInfo.csproj"
@@ -622,20 +3400,35 @@
           "net45": {
             "targetAlias": "net45",
             "projectReferences": {
+              "D:\\FS\\FS.Core\\FSDatabase\\FSDatabase.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSDatabase\\FSDatabase.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSDisk\\FSDisk.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSDisk\\FSDisk.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSMail\\FSMail.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSMail\\FSMail.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSNetwork\\FSNetwork.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSNetwork\\FSNetwork.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSQueryBuilder\\FSQueryBuilder.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSQueryBuilder\\FSQueryBuilder.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSSecurity\\FSSecurity.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSSecurity\\FSSecurity.csproj"
+              },
               "D:\\FS\\FS.Windows\\FSConvert\\FSConvert.csproj": {
                 "projectPath": "D:\\FS\\FS.Windows\\FSConvert\\FSConvert.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSDatabase\\FSDatabase.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSDatabase\\FSDatabase.csproj"
-              },
-              "D:\\FS\\FS.Windows\\FSDisk\\FSDisk.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSDisk\\FSDisk.csproj"
-              },
               "D:\\FS\\FS.Windows\\FSExcel\\FSExcel.csproj": {
                 "projectPath": "D:\\FS\\FS.Windows\\FSExcel\\FSExcel.csproj"
-              },
-              "D:\\FS\\FS.Windows\\FSException\\FSException.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSException\\FSException.csproj"
               },
               "D:\\FS\\FS.Windows\\FSFormLibrary\\FSFormLibrary.csproj": {
                 "projectPath": "D:\\FS\\FS.Windows\\FSFormLibrary\\FSFormLibrary.csproj"
@@ -643,23 +3436,8 @@
               "D:\\FS\\FS.Windows\\FSGraphics\\FSGraphics.csproj": {
                 "projectPath": "D:\\FS\\FS.Windows\\FSGraphics\\FSGraphics.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj"
-              },
-              "D:\\FS\\FS.Windows\\FSMail\\FSMail.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSMail\\FSMail.csproj"
-              },
               "D:\\FS\\FS.Windows\\FSMouseKeyboardLibrary\\FSMouseKeyboardLibrary.csproj": {
                 "projectPath": "D:\\FS\\FS.Windows\\FSMouseKeyboardLibrary\\FSMouseKeyboardLibrary.csproj"
-              },
-              "D:\\FS\\FS.Windows\\FSNetwork\\FSNetwork.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSNetwork\\FSNetwork.csproj"
-              },
-              "D:\\FS\\FS.Windows\\FSQueryBuilder\\FSQueryBuilder.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSQueryBuilder\\FSQueryBuilder.csproj"
-              },
-              "D:\\FS\\FS.Windows\\FSSecurity\\FSSecurity.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSSecurity\\FSSecurity.csproj"
               },
               "D:\\FS\\FS.Windows\\FSSystemInfo\\FSSystemInfo.csproj": {
                 "projectPath": "D:\\FS\\FS.Windows\\FSSystemInfo\\FSSystemInfo.csproj"
@@ -669,20 +3447,35 @@
           "net461": {
             "targetAlias": "net461",
             "projectReferences": {
+              "D:\\FS\\FS.Core\\FSDatabase\\FSDatabase.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSDatabase\\FSDatabase.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSDisk\\FSDisk.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSDisk\\FSDisk.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSMail\\FSMail.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSMail\\FSMail.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSNetwork\\FSNetwork.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSNetwork\\FSNetwork.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSQueryBuilder\\FSQueryBuilder.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSQueryBuilder\\FSQueryBuilder.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSSecurity\\FSSecurity.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSSecurity\\FSSecurity.csproj"
+              },
               "D:\\FS\\FS.Windows\\FSConvert\\FSConvert.csproj": {
                 "projectPath": "D:\\FS\\FS.Windows\\FSConvert\\FSConvert.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSDatabase\\FSDatabase.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSDatabase\\FSDatabase.csproj"
-              },
-              "D:\\FS\\FS.Windows\\FSDisk\\FSDisk.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSDisk\\FSDisk.csproj"
-              },
               "D:\\FS\\FS.Windows\\FSExcel\\FSExcel.csproj": {
                 "projectPath": "D:\\FS\\FS.Windows\\FSExcel\\FSExcel.csproj"
-              },
-              "D:\\FS\\FS.Windows\\FSException\\FSException.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSException\\FSException.csproj"
               },
               "D:\\FS\\FS.Windows\\FSFormLibrary\\FSFormLibrary.csproj": {
                 "projectPath": "D:\\FS\\FS.Windows\\FSFormLibrary\\FSFormLibrary.csproj"
@@ -690,23 +3483,8 @@
               "D:\\FS\\FS.Windows\\FSGraphics\\FSGraphics.csproj": {
                 "projectPath": "D:\\FS\\FS.Windows\\FSGraphics\\FSGraphics.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj"
-              },
-              "D:\\FS\\FS.Windows\\FSMail\\FSMail.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSMail\\FSMail.csproj"
-              },
               "D:\\FS\\FS.Windows\\FSMouseKeyboardLibrary\\FSMouseKeyboardLibrary.csproj": {
                 "projectPath": "D:\\FS\\FS.Windows\\FSMouseKeyboardLibrary\\FSMouseKeyboardLibrary.csproj"
-              },
-              "D:\\FS\\FS.Windows\\FSNetwork\\FSNetwork.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSNetwork\\FSNetwork.csproj"
-              },
-              "D:\\FS\\FS.Windows\\FSQueryBuilder\\FSQueryBuilder.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSQueryBuilder\\FSQueryBuilder.csproj"
-              },
-              "D:\\FS\\FS.Windows\\FSSecurity\\FSSecurity.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSSecurity\\FSSecurity.csproj"
               },
               "D:\\FS\\FS.Windows\\FSSystemInfo\\FSSystemInfo.csproj": {
                 "projectPath": "D:\\FS\\FS.Windows\\FSSystemInfo\\FSSystemInfo.csproj"
@@ -716,20 +3494,35 @@
           "net48": {
             "targetAlias": "net48",
             "projectReferences": {
+              "D:\\FS\\FS.Core\\FSDatabase\\FSDatabase.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSDatabase\\FSDatabase.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSDisk\\FSDisk.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSDisk\\FSDisk.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSMail\\FSMail.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSMail\\FSMail.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSNetwork\\FSNetwork.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSNetwork\\FSNetwork.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSQueryBuilder\\FSQueryBuilder.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSQueryBuilder\\FSQueryBuilder.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSSecurity\\FSSecurity.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSSecurity\\FSSecurity.csproj"
+              },
               "D:\\FS\\FS.Windows\\FSConvert\\FSConvert.csproj": {
                 "projectPath": "D:\\FS\\FS.Windows\\FSConvert\\FSConvert.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSDatabase\\FSDatabase.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSDatabase\\FSDatabase.csproj"
-              },
-              "D:\\FS\\FS.Windows\\FSDisk\\FSDisk.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSDisk\\FSDisk.csproj"
-              },
               "D:\\FS\\FS.Windows\\FSExcel\\FSExcel.csproj": {
                 "projectPath": "D:\\FS\\FS.Windows\\FSExcel\\FSExcel.csproj"
-              },
-              "D:\\FS\\FS.Windows\\FSException\\FSException.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSException\\FSException.csproj"
               },
               "D:\\FS\\FS.Windows\\FSFormLibrary\\FSFormLibrary.csproj": {
                 "projectPath": "D:\\FS\\FS.Windows\\FSFormLibrary\\FSFormLibrary.csproj"
@@ -737,23 +3530,8 @@
               "D:\\FS\\FS.Windows\\FSGraphics\\FSGraphics.csproj": {
                 "projectPath": "D:\\FS\\FS.Windows\\FSGraphics\\FSGraphics.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj"
-              },
-              "D:\\FS\\FS.Windows\\FSMail\\FSMail.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSMail\\FSMail.csproj"
-              },
               "D:\\FS\\FS.Windows\\FSMouseKeyboardLibrary\\FSMouseKeyboardLibrary.csproj": {
                 "projectPath": "D:\\FS\\FS.Windows\\FSMouseKeyboardLibrary\\FSMouseKeyboardLibrary.csproj"
-              },
-              "D:\\FS\\FS.Windows\\FSNetwork\\FSNetwork.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSNetwork\\FSNetwork.csproj"
-              },
-              "D:\\FS\\FS.Windows\\FSQueryBuilder\\FSQueryBuilder.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSQueryBuilder\\FSQueryBuilder.csproj"
-              },
-              "D:\\FS\\FS.Windows\\FSSecurity\\FSSecurity.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSSecurity\\FSSecurity.csproj"
               },
               "D:\\FS\\FS.Windows\\FSSystemInfo\\FSSystemInfo.csproj": {
                 "projectPath": "D:\\FS\\FS.Windows\\FSSystemInfo\\FSSystemInfo.csproj"
@@ -801,35 +3579,35 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
         },
         "net20": {
           "targetAlias": "net20",
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
         },
         "net30": {
           "targetAlias": "net30",
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
         },
         "net35": {
           "targetAlias": "net35",
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
         },
         "net40": {
           "targetAlias": "net40",
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
         },
         "net45": {
           "targetAlias": "net45",
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
         },
         "net461": {
           "targetAlias": "net461",
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
         },
         "net48": {
           "targetAlias": "net48",
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -870,112 +3648,112 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "D:\\FS\\FS.Windows\\FSException\\FSException.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSException\\FSException.csproj"
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj"
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSTrace\\FSTrace.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSTrace\\FSTrace.csproj"
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
               }
             }
           },
           "net20": {
             "targetAlias": "net20",
             "projectReferences": {
-              "D:\\FS\\FS.Windows\\FSException\\FSException.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSException\\FSException.csproj"
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj"
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSTrace\\FSTrace.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSTrace\\FSTrace.csproj"
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
               }
             }
           },
           "net30": {
             "targetAlias": "net30",
             "projectReferences": {
-              "D:\\FS\\FS.Windows\\FSException\\FSException.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSException\\FSException.csproj"
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj"
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSTrace\\FSTrace.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSTrace\\FSTrace.csproj"
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
               }
             }
           },
           "net35": {
             "targetAlias": "net35",
             "projectReferences": {
-              "D:\\FS\\FS.Windows\\FSException\\FSException.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSException\\FSException.csproj"
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj"
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSTrace\\FSTrace.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSTrace\\FSTrace.csproj"
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
               }
             }
           },
           "net40": {
             "targetAlias": "net40",
             "projectReferences": {
-              "D:\\FS\\FS.Windows\\FSException\\FSException.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSException\\FSException.csproj"
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj"
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSTrace\\FSTrace.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSTrace\\FSTrace.csproj"
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
               }
             }
           },
           "net45": {
             "targetAlias": "net45",
             "projectReferences": {
-              "D:\\FS\\FS.Windows\\FSException\\FSException.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSException\\FSException.csproj"
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj"
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSTrace\\FSTrace.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSTrace\\FSTrace.csproj"
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
               }
             }
           },
           "net461": {
             "targetAlias": "net461",
             "projectReferences": {
-              "D:\\FS\\FS.Windows\\FSException\\FSException.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSException\\FSException.csproj"
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj"
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSTrace\\FSTrace.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSTrace\\FSTrace.csproj"
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
               }
             }
           },
           "net48": {
             "targetAlias": "net48",
             "projectReferences": {
-              "D:\\FS\\FS.Windows\\FSException\\FSException.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSException\\FSException.csproj"
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj"
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSTrace\\FSTrace.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSTrace\\FSTrace.csproj"
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
               }
             }
           }
@@ -1024,35 +3802,35 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
         },
         "net20": {
           "targetAlias": "net20",
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
         },
         "net30": {
           "targetAlias": "net30",
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
         },
         "net35": {
           "targetAlias": "net35",
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
         },
         "net40": {
           "targetAlias": "net40",
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
         },
         "net45": {
           "targetAlias": "net45",
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
         },
         "net461": {
           "targetAlias": "net461",
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
         },
         "net48": {
           "targetAlias": "net48",
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -1093,112 +3871,136 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "D:\\FS\\FS.Windows\\FSException\\FSException.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSException\\FSException.csproj"
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj"
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSTrace\\FSTrace.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSTrace\\FSTrace.csproj"
+              "D:\\FS\\FS.Core\\FSNetwork\\FSNetwork.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSNetwork\\FSNetwork.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
               }
             }
           },
           "net20": {
             "targetAlias": "net20",
             "projectReferences": {
-              "D:\\FS\\FS.Windows\\FSException\\FSException.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSException\\FSException.csproj"
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj"
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSTrace\\FSTrace.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSTrace\\FSTrace.csproj"
+              "D:\\FS\\FS.Core\\FSNetwork\\FSNetwork.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSNetwork\\FSNetwork.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
               }
             }
           },
           "net30": {
             "targetAlias": "net30",
             "projectReferences": {
-              "D:\\FS\\FS.Windows\\FSException\\FSException.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSException\\FSException.csproj"
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj"
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSTrace\\FSTrace.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSTrace\\FSTrace.csproj"
+              "D:\\FS\\FS.Core\\FSNetwork\\FSNetwork.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSNetwork\\FSNetwork.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
               }
             }
           },
           "net35": {
             "targetAlias": "net35",
             "projectReferences": {
-              "D:\\FS\\FS.Windows\\FSException\\FSException.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSException\\FSException.csproj"
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj"
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSTrace\\FSTrace.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSTrace\\FSTrace.csproj"
+              "D:\\FS\\FS.Core\\FSNetwork\\FSNetwork.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSNetwork\\FSNetwork.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
               }
             }
           },
           "net40": {
             "targetAlias": "net40",
             "projectReferences": {
-              "D:\\FS\\FS.Windows\\FSException\\FSException.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSException\\FSException.csproj"
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj"
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSTrace\\FSTrace.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSTrace\\FSTrace.csproj"
+              "D:\\FS\\FS.Core\\FSNetwork\\FSNetwork.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSNetwork\\FSNetwork.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
               }
             }
           },
           "net45": {
             "targetAlias": "net45",
             "projectReferences": {
-              "D:\\FS\\FS.Windows\\FSException\\FSException.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSException\\FSException.csproj"
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj"
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSTrace\\FSTrace.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSTrace\\FSTrace.csproj"
+              "D:\\FS\\FS.Core\\FSNetwork\\FSNetwork.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSNetwork\\FSNetwork.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
               }
             }
           },
           "net461": {
             "targetAlias": "net461",
             "projectReferences": {
-              "D:\\FS\\FS.Windows\\FSException\\FSException.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSException\\FSException.csproj"
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj"
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSTrace\\FSTrace.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSTrace\\FSTrace.csproj"
+              "D:\\FS\\FS.Core\\FSNetwork\\FSNetwork.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSNetwork\\FSNetwork.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
               }
             }
           },
           "net48": {
             "targetAlias": "net48",
             "projectReferences": {
-              "D:\\FS\\FS.Windows\\FSException\\FSException.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSException\\FSException.csproj"
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj"
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSTrace\\FSTrace.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSTrace\\FSTrace.csproj"
+              "D:\\FS\\FS.Core\\FSNetwork\\FSNetwork.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSNetwork\\FSNetwork.csproj"
+              },
+              "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSTrace\\FSTrace.csproj"
               }
             }
           }
@@ -1237,35 +4039,35 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
         },
         "net20": {
           "targetAlias": "net20",
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
         },
         "net30": {
           "targetAlias": "net30",
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
         },
         "net35": {
           "targetAlias": "net35",
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
         },
         "net40": {
           "targetAlias": "net40",
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
         },
         "net45": {
           "targetAlias": "net45",
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
         },
         "net461": {
           "targetAlias": "net461",
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
         },
         "net48": {
           "targetAlias": "net48",
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -1306,88 +4108,88 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "D:\\FS\\FS.Windows\\FSException\\FSException.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSException\\FSException.csproj"
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj"
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
               }
             }
           },
           "net20": {
             "targetAlias": "net20",
             "projectReferences": {
-              "D:\\FS\\FS.Windows\\FSException\\FSException.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSException\\FSException.csproj"
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj"
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
               }
             }
           },
           "net30": {
             "targetAlias": "net30",
             "projectReferences": {
-              "D:\\FS\\FS.Windows\\FSException\\FSException.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSException\\FSException.csproj"
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj"
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
               }
             }
           },
           "net35": {
             "targetAlias": "net35",
             "projectReferences": {
-              "D:\\FS\\FS.Windows\\FSException\\FSException.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSException\\FSException.csproj"
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj"
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
               }
             }
           },
           "net40": {
             "targetAlias": "net40",
             "projectReferences": {
-              "D:\\FS\\FS.Windows\\FSException\\FSException.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSException\\FSException.csproj"
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj"
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
               }
             }
           },
           "net45": {
             "targetAlias": "net45",
             "projectReferences": {
-              "D:\\FS\\FS.Windows\\FSException\\FSException.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSException\\FSException.csproj"
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj"
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
               }
             }
           },
           "net461": {
             "targetAlias": "net461",
             "projectReferences": {
-              "D:\\FS\\FS.Windows\\FSException\\FSException.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSException\\FSException.csproj"
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj"
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
               }
             }
           },
           "net48": {
             "targetAlias": "net48",
             "projectReferences": {
-              "D:\\FS\\FS.Windows\\FSException\\FSException.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSException\\FSException.csproj"
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj"
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
               }
             }
           }
@@ -1426,35 +4228,35 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
         },
         "net20": {
           "targetAlias": "net20",
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
         },
         "net30": {
           "targetAlias": "net30",
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
         },
         "net35": {
           "targetAlias": "net35",
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
         },
         "net40": {
           "targetAlias": "net40",
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
         },
         "net45": {
           "targetAlias": "net45",
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
         },
         "net461": {
           "targetAlias": "net461",
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
         },
         "net48": {
           "targetAlias": "net48",
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -1495,112 +4297,112 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "D:\\FS\\FS.Windows\\FSDisk\\FSDisk.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSDisk\\FSDisk.csproj"
+              "D:\\FS\\FS.Core\\FSDisk\\FSDisk.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSDisk\\FSDisk.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSException\\FSException.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSException\\FSException.csproj"
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj"
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
               }
             }
           },
           "net20": {
             "targetAlias": "net20",
             "projectReferences": {
-              "D:\\FS\\FS.Windows\\FSDisk\\FSDisk.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSDisk\\FSDisk.csproj"
+              "D:\\FS\\FS.Core\\FSDisk\\FSDisk.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSDisk\\FSDisk.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSException\\FSException.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSException\\FSException.csproj"
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj"
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
               }
             }
           },
           "net30": {
             "targetAlias": "net30",
             "projectReferences": {
-              "D:\\FS\\FS.Windows\\FSDisk\\FSDisk.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSDisk\\FSDisk.csproj"
+              "D:\\FS\\FS.Core\\FSDisk\\FSDisk.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSDisk\\FSDisk.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSException\\FSException.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSException\\FSException.csproj"
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj"
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
               }
             }
           },
           "net35": {
             "targetAlias": "net35",
             "projectReferences": {
-              "D:\\FS\\FS.Windows\\FSDisk\\FSDisk.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSDisk\\FSDisk.csproj"
+              "D:\\FS\\FS.Core\\FSDisk\\FSDisk.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSDisk\\FSDisk.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSException\\FSException.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSException\\FSException.csproj"
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj"
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
               }
             }
           },
           "net40": {
             "targetAlias": "net40",
             "projectReferences": {
-              "D:\\FS\\FS.Windows\\FSDisk\\FSDisk.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSDisk\\FSDisk.csproj"
+              "D:\\FS\\FS.Core\\FSDisk\\FSDisk.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSDisk\\FSDisk.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSException\\FSException.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSException\\FSException.csproj"
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj"
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
               }
             }
           },
           "net45": {
             "targetAlias": "net45",
             "projectReferences": {
-              "D:\\FS\\FS.Windows\\FSDisk\\FSDisk.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSDisk\\FSDisk.csproj"
+              "D:\\FS\\FS.Core\\FSDisk\\FSDisk.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSDisk\\FSDisk.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSException\\FSException.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSException\\FSException.csproj"
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj"
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
               }
             }
           },
           "net461": {
             "targetAlias": "net461",
             "projectReferences": {
-              "D:\\FS\\FS.Windows\\FSDisk\\FSDisk.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSDisk\\FSDisk.csproj"
+              "D:\\FS\\FS.Core\\FSDisk\\FSDisk.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSDisk\\FSDisk.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSException\\FSException.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSException\\FSException.csproj"
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj"
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
               }
             }
           },
           "net48": {
             "targetAlias": "net48",
             "projectReferences": {
-              "D:\\FS\\FS.Windows\\FSDisk\\FSDisk.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSDisk\\FSDisk.csproj"
+              "D:\\FS\\FS.Core\\FSDisk\\FSDisk.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSDisk\\FSDisk.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSException\\FSException.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSException\\FSException.csproj"
+              "D:\\FS\\FS.Core\\FSException\\FSException.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSException\\FSException.csproj"
               },
-              "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj": {
-                "projectPath": "D:\\FS\\FS.Windows\\FSLibrary\\FSLibrary.csproj"
+              "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj": {
+                "projectPath": "D:\\FS\\FS.Core\\FSLibrary\\FSLibrary.csproj"
               }
             }
           }
@@ -1642,35 +4444,35 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
         },
         "net20": {
           "targetAlias": "net20",
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
         },
         "net30": {
           "targetAlias": "net30",
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
         },
         "net35": {
           "targetAlias": "net35",
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
         },
         "net40": {
           "targetAlias": "net40",
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
         },
         "net45": {
           "targetAlias": "net45",
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
         },
         "net461": {
           "targetAlias": "net461",
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
         },
         "net48": {
           "targetAlias": "net48",
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -31,10 +31,10 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="itextsharp">
-      <HintPath>..\dll\itextsharp.dll</HintPath>
+      <HintPath>..\..\dll\itextsharp.dll</HintPath>
     </Reference>
     <Reference Include="itextsharp.xmlworker">
-      <HintPath>..\dll\itextsharp.xmlworker.dll</HintPath>
+      <HintPath>..\..\dll\itextsharp.xmlworker.dll</HintPath>
     </Reference>
     <Reference Update="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -55,8 +55,8 @@
     <FrameworkReference Include="Microsoft.AspNetCore.App" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FSException\FSException.csproj" />
-    <ProjectReference Include="..\FSLibrary\FSLibrary.csproj" />
-    <ProjectReference Include="..\FSNetwork\FSNetwork.csproj" />
+    <ProjectReference Include="..\..\FS.Core\FSLibrary\FSLibrary.csproj" />
+    <ProjectReference Include="..\..\FS.Core\FSNetwork\FSNetwork.csproj" />
+    <ProjectReference Include="..\..\FS.Core\FSException\FSException.csproj" />
   </ItemGroup>
 </Project>

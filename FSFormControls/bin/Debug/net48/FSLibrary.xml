@@ -500,7 +500,7 @@
             </summary>
             <param name="entryId"></param>
             <returns></returns>
-            <exception cref="T:FSException.ExceptionUtil"></exception>
+            <exception cref="T:System.Configuration.ExceptionUtil"></exception>
         </member>
         <member name="M:FSLibrary.ConfigConnectionList.GetConnectionString(System.Int32)">
             <summary>
@@ -508,7 +508,7 @@
             </summary>
             <param name="entryId"></param>
             <returns></returns>
-            <exception cref="T:FSException.ExceptionUtil"></exception>
+            <exception cref="T:System.Configuration.ExceptionUtil"></exception>
         </member>
         <member name="T:FSLibrary.FSSettingsSection">
             <summary>
@@ -6080,6 +6080,13 @@
         <member name="F:FSLibrary.Win32APIEnums.SPI.SPI_SETCURSORS">
             <summary>
                 Reloads the system cursors. Set the uiParam parameter to zero and the pvParam parameter to null.
+e/98:  This flag is supported for 16-bit and 32-bit applications.
+                Windows 95:  This flag is supported for 16-bit applications only.
+            </summary>
+        </member>
+        <member name="F:FSLibrary.Win32APIEnums.SPI.SPI_SETCURSORS">
+            <summary>
+                Reloads the system cursors. Set the uiParam parameter to zero and the pvParam parameter to null.
             </summary>
         </member>
         <member name="F:FSLibrary.Win32APIEnums.SPI.SPI_SETICONS">
@@ -9228,13 +9235,6 @@
                 Utilidades para trabajar con XML.
             </summary>
         </member>
-        <member name="M:FSLibrary.XmlUtil.PrettyXml(System.String)">
-            <summary>
-            Formatea un fichero xml en formato texto a xml con intentación y saltos de línea
-            </summary>
-            <param name="xml"></param>
-            <returns></returns>
-        </member>
         <member name="T:FSLibrary.XmlUtil.Utf8StringWriter">
             <summary>
             Clase StringWrite con codificación UTF8
@@ -9358,6 +9358,4 @@
             </summary>
         </member>
     </members>
-</doc>
-members>
 </doc>
