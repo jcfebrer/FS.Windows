@@ -597,7 +597,7 @@ namespace FSFormControls
 
         public int SelectionStart {
             get { return combobox.SelectionStart; }
-            set { if(value > 0)
+            set { if (value > 0)
                     combobox.SelectionStart = value; }
         }
 

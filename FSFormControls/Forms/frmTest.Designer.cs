@@ -585,7 +585,7 @@ namespace FSFormControls
             this.dbCombo8.SelectionStart = 0;
             this.dbCombo8.ShowCode = false;
             this.dbCombo8.ShowEdit = false;
-            this.dbCombo8.Size = new System.Drawing.Size(76, 21);
+            this.dbCombo8.Size = new System.Drawing.Size(110, 21);
             this.dbCombo8.Sort = true;
             this.dbCombo8.SortStyle = FSFormControls.DBCombo.SortStyleEnum.Ascending;
             this.dbCombo8.TabIndex = 51;
@@ -1326,8 +1326,8 @@ namespace FSFormControls
             this.dbCombo1.SelectedOption = null;
             this.dbCombo1.SelectedText = "";
             this.dbCombo1.SelectedValue = null;
-            this.dbCombo1.SelectionLength = 8;
-            this.dbCombo1.SelectionStart = 67462256;
+            this.dbCombo1.SelectionLength = 0;
+            this.dbCombo1.SelectionStart = 0;
             this.dbCombo1.ShowCode = false;
             this.dbCombo1.ShowEdit = false;
             this.dbCombo1.Size = new System.Drawing.Size(150, 21);
