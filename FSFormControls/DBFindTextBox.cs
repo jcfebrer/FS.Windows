@@ -16,6 +16,7 @@ namespace FSFormControls
 {
     [ToolboxBitmap(typeof(resfinder), "FSFormControls.Resources.DBFindTextBox.bmp")]
     [ToolboxItem(true)]
+    [Serializable]
     public class DBFindTextBox : DBUserControl
     {
         public Color m_BackColor = Global.NormalBackColor;

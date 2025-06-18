@@ -1,5 +1,6 @@
 #region
 
+using System;
 using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
@@ -10,6 +11,7 @@ namespace FSFormControls
 {
     [ToolboxBitmap(typeof(resfinder), "FSFormControls.Resources.DBTabControl.bmp")]
     [ToolboxItem(true)]
+    [Serializable]
     public class DBTabPage : TabPage
     {
         //protected override void OnTextChanged(EventArgs e)

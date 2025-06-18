@@ -15,6 +15,7 @@ namespace FSFormControls
 {
     [ToolboxBitmap(typeof(resfinder), "FSFormControls.Resources.DBOfficeMenu.bmp")]
     [ToolboxItem(true)]
+    [Serializable]
     public class DBOfficeMenu : Component
     {
         public static ImageList m_imageList;

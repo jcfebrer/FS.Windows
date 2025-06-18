@@ -15,6 +15,7 @@ namespace FSFormControls
 {
     [ToolboxBitmap(typeof(resfinder), "FSFormControls.Resources.DBControl.bmp")]
     [ToolboxItem(true)]
+    [Serializable]
     public class DBDocument : DBUserControl
     {
         private Global.AccessMode m_Mode = Global.AccessMode.WriteMode;

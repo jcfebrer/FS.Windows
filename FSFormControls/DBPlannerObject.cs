@@ -14,6 +14,8 @@ using FSGraphics;
 
 namespace FSFormControls
 {
+    [ToolboxItem(true)]
+    [Serializable]
     public partial class DBPlannerObject
     {
         public Color m_BackColor = Color.White;

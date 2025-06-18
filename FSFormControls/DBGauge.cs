@@ -32,6 +32,8 @@ namespace FSFormControls
     [ToolboxBitmap(typeof(resfinder), "FSFormControls.Resources.DBGauge.bmp")]
     [DefaultEvent("ValueInRangeChanged"), 
     Description("Displays a value on an analog gauge. Raises an event if the value enters one of the definable ranges.")]
+    [ToolboxItem(true)]
+    [Serializable]
     public partial class DBGauge : Control
     {
 #region enum, var, delegate, event

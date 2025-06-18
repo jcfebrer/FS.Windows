@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using System;
+using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -6,6 +7,8 @@ namespace FSFormControls
 {
     [DesignTimeVisibleAttribute(true)]
     [ToolboxBitmap(typeof(Splitter))]
+    [ToolboxItem(true)]
+    [Serializable]
     public class DBSplitter : Splitter
     {
         /// <summary>

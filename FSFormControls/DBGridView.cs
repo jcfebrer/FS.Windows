@@ -24,6 +24,7 @@ namespace FSFormControls
     [ToolboxBitmap(typeof(resfinder), "FSFormControls.Resources.DBGridView.bmp")]
     [DefaultEvent("Click")]
     [ToolboxItem(true)]
+    [Serializable]
     public class DBGridView : DBUserControl, ISupportInitialize
     {
         private readonly int m_columnMove = -1;
@@ -712,6 +713,8 @@ namespace FSFormControls
             get { return !datagrid.ReadOnly; }
             set { datagrid.ReadOnly = !value; }
         }
+
+        public static object AllowNull { get; set; }
 
         //End Infragistics
 

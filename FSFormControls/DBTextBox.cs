@@ -19,6 +19,7 @@ namespace FSFormControls
     [DefaultEvent("KeyPress")]
     [Designer(typeof(DBTextBoxControlDesigner))]
     [ToolboxItem(true)]
+    [Serializable]
     public class DBTextBox : DBUserControl, ISupportInitialize
     {
         internal Button cmdAmpliar;
@@ -122,9 +123,19 @@ namespace FSFormControls
             set { textbox.AcceptsReturn = value; }
         }
 
-        public decimal MaxValue { get; set; } = decimal.MaxValue;
+        decimal _maxValue;
+        public decimal MaxValue
+        {
+            get { return _maxValue; }
+            set { _maxValue = value; }
+        }
 
-        public decimal MinValue { get; set; } = decimal.MinValue;
+        decimal _minValue;
+        public decimal MinValue
+        {
+            get { return _minValue; }
+            set { _minValue = value; }
+        }
 
         public EditAsType EditAs { get; set; }
 

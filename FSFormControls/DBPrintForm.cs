@@ -1,21 +1,24 @@
 #region
 
+using FSException;
+using FSLibrary;
 using System;
 using System.Collections;
+using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.Drawing.Printing;
 using System.Text;
 using System.Windows.Forms;
-using FSLibrary;
 using Encoder = System.Drawing.Imaging.Encoder;
-using FSException;
 
 #endregion
 
 namespace FSFormControls
 {
+    [ToolboxItem(true)]
+    [Serializable]
     public class DBFormPrint
     {
         #region Delegates

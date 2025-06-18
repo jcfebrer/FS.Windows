@@ -9,6 +9,8 @@ namespace FSFormControls
     /// <summary>
     ///     Status Bar Panel that Displays Progress
     /// </summary>
+    [ToolboxItem(true)]
+    [Serializable]
     public class DBStatusBarProgress2Panel : ToolStripStatusLabel
     {
         #region Component Designer generated code

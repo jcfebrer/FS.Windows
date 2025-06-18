@@ -1,8 +1,11 @@
 ﻿using System;
+using System.ComponentModel;
 using System.Drawing;
 
 namespace FSFormControls
 {
+    [ToolboxItem(true)]
+    [Serializable]
     public delegate void DBEditorButtonEventHandler(object sender, DBEditorButtonEventArgs e);
 
     public class DBEditorButtonEventArgs : EventArgs

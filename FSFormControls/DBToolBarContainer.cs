@@ -6,6 +6,8 @@ using System.Windows.Forms;
 
 namespace FSFormControls
 {
+    [ToolboxItem(true)]
+    [Serializable]
     public class DBToolBarContainer : ToolStripContainer
     {
         public DockStyle DockedPosition

@@ -54,7 +54,7 @@ namespace FSFormControls
             // 
             // frmCalculator
             // 
-            this.AutoScaleBaseSize = new System.Drawing.Size(6, 15);
+            this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
             this.ClientSize = new System.Drawing.Size(160, 272);
             this.Controls.Add(this.DbCalculator1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;

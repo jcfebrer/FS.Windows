@@ -15,6 +15,7 @@ namespace FSFormControls
 {
     [ToolboxBitmap(typeof(resfinder), "FSFormControls.Resources.DBToolbar.bmp")]
     [ToolboxItem(true)]
+    [Serializable]
     public class DBRecord : DBUserControl
     {
         #region t_date enum
@@ -758,7 +759,7 @@ namespace FSFormControls
             this.DbToolBar1.AllowSearch = true;
             this.DbToolBar1.DataControl = null;
             this.DbToolBar1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.DbToolBar1.Location = new System.Drawing.Point(0, 251);
+            this.DbToolBar1.Location = new System.Drawing.Point(0, 364);
             this.DbToolBar1.Name = "DbToolBar1";
             this.DbToolBar1.ShowAddNewButton = true;
             this.DbToolBar1.ShowCancelButton = true;
@@ -774,7 +775,7 @@ namespace FSFormControls
             this.DbToolBar1.ShowScrollBar = true;
             this.DbToolBar1.ShowSearchButton = true;
             this.DbToolBar1.ShowText = true;
-            this.DbToolBar1.Size = new System.Drawing.Size(1020, 138);
+            this.DbToolBar1.Size = new System.Drawing.Size(1483, 25);
             this.DbToolBar1.TabIndex = 3;
             this.DbToolBar1.TabStop = false;
             this.DbToolBar1.Value = 0;

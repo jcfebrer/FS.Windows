@@ -21,6 +21,7 @@ namespace FSFormControls
     [ToolboxBitmap(typeof(resfinder), "FSFormControls.Resources.DBTextBox.bmp")]
     [DefaultEvent("KeyPress")]
     [ToolboxItem(true)]
+    [Serializable]
     public class DBRichTextBox : DBUserControl
     {
         #region LinePosition enum

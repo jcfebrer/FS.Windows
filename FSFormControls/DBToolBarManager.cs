@@ -8,12 +8,16 @@ namespace FSFormControls
 {
     [ToolboxBitmap(typeof(resfinder), "FSFormControls.Resources.DBToolBar.bmp")]
     [ToolboxItem(true)]
-    public class DBToolBarManager : ISupportInitialize
+    [Serializable]
+    public class DBToolBarManager : UserControl, ISupportInitialize
     {
         public DBToolBarManager()
         {
             DBToolBar toolbar = new DBToolBar();
             toolbar.ItemClicked += new ToolStripItemClickedEventHandler(Toolbar_ButtonClick);
+            toolbar.Items.Add("DBToolBar1");
+
+            this.Controls.Add(toolbar);
 
             toolbars.Add(toolbar);
         }
@@ -73,12 +77,24 @@ namespace FSFormControls
             get { return toolbars[0].Items; }
         }
         
-        public bool Visible {
+        public new bool Visible {
             get { return toolbars[0].Visible; }
             set { toolbars[0].Visible = value; }
         }
 
         public event ToolStripItemClickEventHandler ItemClick;
         public delegate void ToolStripItemClickEventHandler(object sender, ToolStripItemClickedEventArgs e);
+
+        private void InitializeComponent()
+        {
+            this.SuspendLayout();
+            // 
+            // DBToolBarManager
+            // 
+            this.Name = "DBToolBarManager";
+            this.Size = new System.Drawing.Size(393, 272);
+            this.ResumeLayout(false);
+
+        }
     }
 }

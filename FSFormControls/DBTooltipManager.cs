@@ -4,6 +4,8 @@ using System.Windows.Forms;
 
 namespace FSFormControls
 {
+    [ToolboxItem(true)]
+    [Serializable]
     public class DBTooltipManager
     {
         private IContainer components;

@@ -18,6 +18,7 @@ namespace FSFormControls
     [ToolboxBitmap(typeof(resfinder), "FSFormControls.Resources.DBDate.bmp")]
     [Designer(typeof(DBDateControlDesigner))]
     [ToolboxItem(true)]
+    [Serializable]
     public class DBDate : DBUserControl, ISupportInitialize
     {
         private Color m_BackColor = Global.NormalBackColor;

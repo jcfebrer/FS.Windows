@@ -1,6 +1,7 @@
 #region
 
-using FSFormControls;
+using System;
+using System.Collections.Specialized;
 using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
@@ -10,7 +11,8 @@ using System.Windows.Forms;
 namespace FSFormControls
 {
     [DesignTimeVisible(false)]
-    [ToolboxItem(false)]
+    [ToolboxItem(true)]
+    [Serializable]
     public class DBColumn : Component
     {
         public delegate void CellClickEventHandler(object sender, DataGridViewCellEventArgs e);
@@ -69,6 +71,8 @@ namespace FSFormControls
 
         public DBColumn()
         {
+            CellAppearance = new DBAppearance();
+            HeaderAppearance = new DBAppearance();
         }
 
         public DBColumn(string strFieldDB, string strHeaderCaption)
@@ -200,6 +204,11 @@ namespace FSFormControls
         public string HeaderCaption { get; set; } = "";
 
         /// <summary>
+        ///     Título de la columna
+        /// </summary>
+        public string Caption { get; set; } = "";
+
+        /// <summary>
         ///     DBControl asociado a la columna
         /// </summary>
         public DBControl ColumnDBControl { get; set; }
@@ -324,6 +333,9 @@ namespace FSFormControls
         public DBAppearance CellAppearance { get; set; }
         public DBAppearance HeaderAppearance { get; set; }
         public Size CellSizeResolved { get; set; }
+        public Bitmap Image { get; set; }
+        public NameValueCollection ValueList { get; set; }
+        public DBCombo Editor { get; set; }
 
         public event CellClickEventHandler CellClick;
 

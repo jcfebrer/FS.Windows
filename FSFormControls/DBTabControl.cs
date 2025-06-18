@@ -11,6 +11,7 @@ namespace FSFormControls
 {
     [ToolboxBitmap(typeof(resfinder), "FSFormControls.Resources.DBTabControl.bmp")]
     [ToolboxItem(true)]
+    [Serializable]
     public class DBTabControl : TabControl, ISupportInitialize
     {
         public enum DBTabControlStyle
@@ -155,14 +156,14 @@ namespace FSFormControls
         /// <summary>
         ///     Por defecto, si existe más de una pestaña, devolvemos la primera en caso de que SelectedTab sea null.
         /// </summary>
-        public new DBTabPage SelectedTab
+        public new TabPage SelectedTab
         {
             get
             {
                 if (base.SelectedTab == null)
                     if (TabPages.Count > 0)
                         base.SelectedTab = TabPages[0];
-                return (DBTabPage)base.SelectedTab;
+                return (TabPage)base.SelectedTab;
             }
             set { base.SelectedTab = value; }
         }
@@ -206,10 +207,20 @@ namespace FSFormControls
         //    RePositionCloseButtons();
         //}
 
-        public DBTabPageCollection Tabs
-        {
-            get { return (DBTabPageCollection)base.TabPages; }
-        }
+        //public DBTabPageCollection Tabs
+        //{
+        //    get { return ConvertToDBTabPpageCollection(base.TabPages); }
+        //}
+
+        //private DBTabPageCollection ConvertToDBTabPpageCollection(TabPageCollection tabPages)
+        //{
+        //    DBTabPageCollection dbTabPages = new DBTabPageCollection();
+        //    foreach (TabPage tabPage in tabPages)
+        //    {
+        //        dbTabPages.Add((DBTabPage)tabPage);
+        //    }
+        //    return dbTabPages;
+        //}
 
         public DBTabControlStyle Style { get; set; }
 

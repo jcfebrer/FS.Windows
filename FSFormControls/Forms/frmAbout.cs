@@ -174,8 +174,8 @@ namespace FSFormControls
                 //lvItem.SubItems.Add(Global.ConnectionString.ProviderName);
             }
 
-            lvItem = ListView1.Items.Add("MDAC Version");
-            lvItem.SubItems.Add(Utils.GetMdacVersion().ToString());
+            //lvItem = ListView1.Items.Add("MDAC Version");
+            //lvItem.SubItems.Add(Utils.GetMdacVersion().ToString());
 
             lvItem = ListView1.Items.Add("Compilation Size");
             lvItem.SubItems.Add(NumberUtils.CompilationSize());
@@ -271,236 +271,249 @@ namespace FSFormControls
         [DebuggerStepThrough]
         private void InitializeComponent()
         {
-            ComponentResourceManager resources = new ComponentResourceManager(typeof(frmAbout));
-            logoFebrerSoftware = new PictureBox();
-            Label2 = new Label();
-            LinkLabel1 = new LinkLabel();
-            Label1 = new Label();
-            Label4 = new Label();
-            Label5 = new Label();
-            cmdClose = new Button();
-            lstAssemblies = new ListView();
-            colName = new ColumnHeader();
-            colVersion = new ColumnHeader();
-            cmdInfo = new Button();
-            ColumnHeader1 = new ColumnHeader();
-            ColumnHeader2 = new ColumnHeader();
-            ListView1 = new ListView();
-            cmdEntorno = new Button();
-            logoNET = new PictureBox();
-            Label3 = new Label();
-            ((ISupportInitialize)logoFebrerSoftware).BeginInit();
-            ((ISupportInitialize)logoNET).BeginInit();
-            SuspendLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAbout));
+            this.logoFebrerSoftware = new System.Windows.Forms.PictureBox();
+            this.Label2 = new System.Windows.Forms.Label();
+            this.LinkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.Label1 = new System.Windows.Forms.Label();
+            this.Label4 = new System.Windows.Forms.Label();
+            this.Label5 = new System.Windows.Forms.Label();
+            this.cmdClose = new System.Windows.Forms.Button();
+            this.lstAssemblies = new System.Windows.Forms.ListView();
+            this.colName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colVersion = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.cmdInfo = new System.Windows.Forms.Button();
+            this.ColumnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.ColumnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.ListView1 = new System.Windows.Forms.ListView();
+            this.cmdEntorno = new System.Windows.Forms.Button();
+            this.logoNET = new System.Windows.Forms.PictureBox();
+            this.Label3 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.logoFebrerSoftware)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logoNET)).BeginInit();
+            this.SuspendLayout();
             // 
             // logoFebrerSoftware
             // 
-            logoFebrerSoftware.Cursor = Cursors.Hand;
-            logoFebrerSoftware.ForeColor = Color.Black;
-            logoFebrerSoftware.Image = (Image)resources.GetObject("logoFebrerSoftware.Image");
-            logoFebrerSoftware.Location = new Point(22, 12);
-            logoFebrerSoftware.Name = "logoFebrerSoftware";
-            logoFebrerSoftware.Size = new Size(240, 63);
-            logoFebrerSoftware.SizeMode = PictureBoxSizeMode.AutoSize;
-            logoFebrerSoftware.TabIndex = 8;
-            logoFebrerSoftware.TabStop = false;
+            this.logoFebrerSoftware.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.logoFebrerSoftware.ForeColor = System.Drawing.Color.Black;
+            this.logoFebrerSoftware.Image = ((System.Drawing.Image)(resources.GetObject("logoFebrerSoftware.Image")));
+            this.logoFebrerSoftware.Location = new System.Drawing.Point(16, 8);
+            this.logoFebrerSoftware.Name = "logoFebrerSoftware";
+            this.logoFebrerSoftware.Size = new System.Drawing.Size(240, 63);
+            this.logoFebrerSoftware.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.logoFebrerSoftware.TabIndex = 8;
+            this.logoFebrerSoftware.TabStop = false;
             // 
             // Label2
             // 
-            Label2.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            Label2.AutoSize = true;
-            Label2.BackColor = Color.White;
-            Label2.FlatStyle = FlatStyle.Flat;
-            Label2.Font = new Font("Microsoft Sans Serif", 8.25F);
-            Label2.Location = new Point(22, 441);
-            Label2.Name = "Label2";
-            Label2.Size = new Size(208, 17);
-            Label2.TabIndex = 11;
-            Label2.Text = "juancarlos@febrersoftware.com";
+            this.Label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.Label2.AutoSize = true;
+            this.Label2.BackColor = System.Drawing.Color.White;
+            this.Label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.Label2.Location = new System.Drawing.Point(16, 452);
+            this.Label2.Name = "Label2";
+            this.Label2.Size = new System.Drawing.Size(156, 13);
+            this.Label2.TabIndex = 11;
+            this.Label2.Text = "juancarlos@febrersoftware.com";
             // 
             // LinkLabel1
             // 
-            LinkLabel1.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            LinkLabel1.AutoSize = true;
-            LinkLabel1.BackColor = Color.White;
-            LinkLabel1.Location = new Point(22, 417);
-            LinkLabel1.Name = "LinkLabel1";
-            LinkLabel1.Size = new Size(216, 20);
-            LinkLabel1.TabIndex = 9;
-            LinkLabel1.TabStop = true;
-            LinkLabel1.Text = "http://www.febrersoftware.com";
+            this.LinkLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.LinkLabel1.AutoSize = true;
+            this.LinkLabel1.BackColor = System.Drawing.Color.White;
+            this.LinkLabel1.Location = new System.Drawing.Point(16, 436);
+            this.LinkLabel1.Name = "LinkLabel1";
+            this.LinkLabel1.Size = new System.Drawing.Size(155, 13);
+            this.LinkLabel1.TabIndex = 9;
+            this.LinkLabel1.TabStop = true;
+            this.LinkLabel1.Text = "http://www.febrersoftware.com";
             // 
             // Label1
             // 
-            Label1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            Label1.AutoSize = true;
-            Label1.Font = new Font("Arial Narrow", 8.25F);
-            Label1.Location = new Point(356, 62);
-            Label1.Name = "Label1";
-            Label1.Size = new Size(118, 17);
-            Label1.TabIndex = 14;
-            Label1.Text = "Bº Marusas Nº5 Lonja";
+            this.Label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Label1.AutoSize = true;
+            this.Label1.Font = new System.Drawing.Font("Arial Narrow", 8.25F);
+            this.Label1.Location = new System.Drawing.Point(459, 40);
+            this.Label1.Name = "Label1";
+            this.Label1.Size = new System.Drawing.Size(98, 15);
+            this.Label1.TabIndex = 14;
+            this.Label1.Text = "Bº Marusas Nº5 Lonja";
             // 
             // Label4
             // 
-            Label4.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            Label4.AutoSize = true;
-            Label4.Font = new Font("Arial Narrow", 8.25F);
-            Label4.Location = new Point(345, 86);
-            Label4.Name = "Label4";
-            Label4.Size = new Size(132, 17);
-            Label4.TabIndex = 15;
-            Label4.Text = "48610 - Urduliz (Vizcaya)";
+            this.Label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Label4.AutoSize = true;
+            this.Label4.Font = new System.Drawing.Font("Arial Narrow", 8.25F);
+            this.Label4.Location = new System.Drawing.Point(451, 56);
+            this.Label4.Name = "Label4";
+            this.Label4.Size = new System.Drawing.Size(113, 15);
+            this.Label4.TabIndex = 15;
+            this.Label4.Text = "48610 - Urduliz (Vizcaya)";
             // 
             // Label5
             // 
-            Label5.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            Label5.AutoSize = true;
-            Label5.Font = new Font("Arial Narrow", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Label5.Location = new Point(376, 36);
-            Label5.Name = "Label5";
-            Label5.Size = new Size(89, 17);
-            Label5.TabIndex = 16;
-            Label5.Text = "Tfno: 629237109";
+            this.Label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Label5.AutoSize = true;
+            this.Label5.Font = new System.Drawing.Font("Arial Narrow", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label5.Location = new System.Drawing.Point(474, 23);
+            this.Label5.Name = "Label5";
+            this.Label5.Size = new System.Drawing.Size(76, 15);
+            this.Label5.TabIndex = 16;
+            this.Label5.Text = "Tfno: 629237109";
             // 
             // cmdClose
             // 
-            cmdClose.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            cmdClose.BackColor = SystemColors.Control;
-            cmdClose.Location = new Point(589, 417);
-            cmdClose.Name = "cmdClose";
-            cmdClose.Size = new Size(100, 37);
-            cmdClose.TabIndex = 17;
-            cmdClose.Text = "Cerrar";
-            cmdClose.UseVisualStyleBackColor = false;
+            this.cmdClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.cmdClose.BackColor = System.Drawing.SystemColors.Control;
+            this.cmdClose.Location = new System.Drawing.Point(626, 436);
+            this.cmdClose.Name = "cmdClose";
+            this.cmdClose.Size = new System.Drawing.Size(71, 24);
+            this.cmdClose.TabIndex = 17;
+            this.cmdClose.Text = "Cerrar";
+            this.cmdClose.UseVisualStyleBackColor = false;
             // 
             // lstAssemblies
             // 
-            lstAssemblies.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            lstAssemblies.BorderStyle = BorderStyle.FixedSingle;
-            lstAssemblies.Columns.AddRange(new ColumnHeader[] { colName, colVersion });
-            lstAssemblies.FullRowSelect = true;
-            lstAssemblies.GridLines = true;
-            lstAssemblies.HeaderStyle = ColumnHeaderStyle.Nonclickable;
-            lstAssemblies.Location = new Point(22, 135);
-            lstAssemblies.MultiSelect = false;
-            lstAssemblies.Name = "lstAssemblies";
-            lstAssemblies.Size = new Size(670, 196);
-            lstAssemblies.TabIndex = 18;
-            lstAssemblies.UseCompatibleStateImageBehavior = false;
-            lstAssemblies.View = View.Details;
+            this.lstAssemblies.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lstAssemblies.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lstAssemblies.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.colName,
+            this.colVersion});
+            this.lstAssemblies.FullRowSelect = true;
+            this.lstAssemblies.GridLines = true;
+            this.lstAssemblies.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this.lstAssemblies.HideSelection = false;
+            this.lstAssemblies.Location = new System.Drawing.Point(16, 88);
+            this.lstAssemblies.MultiSelect = false;
+            this.lstAssemblies.Name = "lstAssemblies";
+            this.lstAssemblies.Size = new System.Drawing.Size(683, 292);
+            this.lstAssemblies.TabIndex = 18;
+            this.lstAssemblies.UseCompatibleStateImageBehavior = false;
+            this.lstAssemblies.View = System.Windows.Forms.View.Details;
             // 
             // colName
             // 
-            colName.Text = "Nombre";
-            colName.Width = 369;
+            this.colName.Text = "Nombre";
+            this.colName.Width = 369;
             // 
             // colVersion
             // 
-            colVersion.Text = "Versión";
-            colVersion.Width = 80;
+            this.colVersion.Text = "Versión";
+            this.colVersion.Width = 80;
             // 
             // cmdInfo
             // 
-            cmdInfo.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            cmdInfo.BackColor = SystemColors.Control;
-            cmdInfo.Location = new Point(376, 417);
-            cmdInfo.Name = "cmdInfo";
-            cmdInfo.Size = new Size(201, 37);
-            cmdInfo.TabIndex = 19;
-            cmdInfo.Text = "Información del Sistema";
-            cmdInfo.UseVisualStyleBackColor = false;
+            this.cmdInfo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.cmdInfo.BackColor = System.Drawing.SystemColors.Control;
+            this.cmdInfo.Location = new System.Drawing.Point(474, 436);
+            this.cmdInfo.Name = "cmdInfo";
+            this.cmdInfo.Size = new System.Drawing.Size(143, 24);
+            this.cmdInfo.TabIndex = 19;
+            this.cmdInfo.Text = "Información del Sistema";
+            this.cmdInfo.UseVisualStyleBackColor = false;
             // 
             // ColumnHeader1
             // 
-            ColumnHeader1.Text = "Nombre";
-            ColumnHeader1.Width = 369;
+            this.ColumnHeader1.Text = "Nombre";
+            this.ColumnHeader1.Width = 369;
             // 
             // ColumnHeader2
             // 
-            ColumnHeader2.Text = "Versión";
-            ColumnHeader2.Width = 80;
+            this.ColumnHeader2.Text = "Versión";
+            this.ColumnHeader2.Width = 80;
             // 
             // ListView1
             // 
-            ListView1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            ListView1.BorderStyle = BorderStyle.FixedSingle;
-            ListView1.Columns.AddRange(new ColumnHeader[] { ColumnHeader1, ColumnHeader2 });
-            ListView1.FullRowSelect = true;
-            ListView1.GridLines = true;
-            ListView1.HeaderStyle = ColumnHeaderStyle.Nonclickable;
-            ListView1.Location = new Point(22, 135);
-            ListView1.MultiSelect = false;
-            ListView1.Name = "ListView1";
-            ListView1.Size = new Size(670, 196);
-            ListView1.TabIndex = 20;
-            ListView1.UseCompatibleStateImageBehavior = false;
-            ListView1.View = View.Details;
+            this.ListView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ListView1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ListView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.ColumnHeader1,
+            this.ColumnHeader2});
+            this.ListView1.FullRowSelect = true;
+            this.ListView1.GridLines = true;
+            this.ListView1.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this.ListView1.HideSelection = false;
+            this.ListView1.Location = new System.Drawing.Point(16, 88);
+            this.ListView1.MultiSelect = false;
+            this.ListView1.Name = "ListView1";
+            this.ListView1.Size = new System.Drawing.Size(683, 292);
+            this.ListView1.TabIndex = 20;
+            this.ListView1.UseCompatibleStateImageBehavior = false;
+            this.ListView1.View = System.Windows.Forms.View.Details;
             // 
             // cmdEntorno
             // 
-            cmdEntorno.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            cmdEntorno.BackColor = SystemColors.Control;
-            cmdEntorno.Location = new Point(253, 417);
-            cmdEntorno.Name = "cmdEntorno";
-            cmdEntorno.Size = new Size(112, 37);
-            cmdEntorno.TabIndex = 21;
-            cmdEntorno.Text = "Entorno";
-            cmdEntorno.UseVisualStyleBackColor = false;
+            this.cmdEntorno.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.cmdEntorno.BackColor = System.Drawing.SystemColors.Control;
+            this.cmdEntorno.Location = new System.Drawing.Point(386, 436);
+            this.cmdEntorno.Name = "cmdEntorno";
+            this.cmdEntorno.Size = new System.Drawing.Size(80, 24);
+            this.cmdEntorno.TabIndex = 21;
+            this.cmdEntorno.Text = "Entorno";
+            this.cmdEntorno.UseVisualStyleBackColor = false;
             // 
             // logoNET
             // 
-            logoNET.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            logoNET.Image = (Image)resources.GetObject("logoNET.Image");
-            logoNET.Location = new Point(547, 25);
-            logoNET.Name = "logoNET";
-            logoNET.Size = new Size(112, 60);
-            logoNET.SizeMode = PictureBoxSizeMode.AutoSize;
-            logoNET.TabIndex = 22;
-            logoNET.TabStop = false;
+            this.logoNET.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.logoNET.Image = ((System.Drawing.Image)(resources.GetObject("logoNET.Image")));
+            this.logoNET.Location = new System.Drawing.Point(596, 16);
+            this.logoNET.Name = "logoNET";
+            this.logoNET.Size = new System.Drawing.Size(112, 60);
+            this.logoNET.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.logoNET.TabIndex = 22;
+            this.logoNET.TabStop = false;
             // 
             // Label3
             // 
-            Label3.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            Label3.BorderStyle = BorderStyle.FixedSingle;
-            Label3.Font = new Font("Arial Narrow", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Label3.Location = new Point(22, 331);
-            Label3.Name = "Label3";
-            Label3.Size = new Size(670, 73);
-            Label3.TabIndex = 23;
-            Label3.Text = resources.GetString("Label3.Text");
+            this.Label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Label3.Font = new System.Drawing.Font("Arial Narrow", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label3.Location = new System.Drawing.Point(16, 380);
+            this.Label3.Name = "Label3";
+            this.Label3.Size = new System.Drawing.Size(683, 48);
+            this.Label3.TabIndex = 23;
+            this.Label3.Text = resources.GetString("Label3.Text");
             // 
             // frmAbout
             // 
-            AutoScaleBaseSize = new Size(7, 20);
-            BackColor = Color.White;
-            ClientSize = new Size(715, 463);
-            Controls.Add(Label3);
-            Controls.Add(logoNET);
-            Controls.Add(cmdEntorno);
-            Controls.Add(cmdInfo);
-            Controls.Add(cmdClose);
-            Controls.Add(Label5);
-            Controls.Add(Label4);
-            Controls.Add(Label1);
-            Controls.Add(Label2);
-            Controls.Add(LinkLabel1);
-            Controls.Add(logoFebrerSoftware);
-            Controls.Add(lstAssemblies);
-            Controls.Add(ListView1);
-            MaximizeBox = false;
-            MinimizeBox = false;
-            MinimumSize = new Size(733, 510);
-            Name = "frmAbout";
-            ShowInTaskbar = false;
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "Febrer Software";
-            ((ISupportInitialize)logoFebrerSoftware).EndInit();
-            ((ISupportInitialize)logoNET).EndInit();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(717, 471);
+            this.Controls.Add(this.Label3);
+            this.Controls.Add(this.logoNET);
+            this.Controls.Add(this.cmdEntorno);
+            this.Controls.Add(this.cmdInfo);
+            this.Controls.Add(this.cmdClose);
+            this.Controls.Add(this.Label5);
+            this.Controls.Add(this.Label4);
+            this.Controls.Add(this.Label1);
+            this.Controls.Add(this.Label2);
+            this.Controls.Add(this.LinkLabel1);
+            this.Controls.Add(this.logoFebrerSoftware);
+            this.Controls.Add(this.lstAssemblies);
+            this.Controls.Add(this.ListView1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(524, 332);
+            this.Name = "frmAbout";
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Febrer Software";
+            ((System.ComponentModel.ISupportInitialize)(this.logoFebrerSoftware)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logoNET)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
     }
 }

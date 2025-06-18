@@ -371,810 +371,811 @@ namespace FSFormControls
         [DebuggerStepThrough]
         private void InitializeComponent()
         {
-            b3 = new Button();
-            b2 = new Button();
-            b1 = new Button();
-            boa = new Button();
-            bMul = new Button();
-            bIntFin = new Button();
-            bIntIni = new Button();
-            b0 = new Button();
-            b9 = new Button();
-            b8 = new Button();
-            b7 = new Button();
-            b6 = new Button();
-            b5 = new Button();
-            b4 = new Button();
-            bMayus = new Button();
-            bSpacio = new Button();
-            bTab = new Button();
-            bBorrar = new Button();
-            bMas = new Button();
-            bComita = new Button();
-            bp = new Button();
-            bo = new Button();
-            bi = new Button();
-            bu = new Button();
-            by = new Button();
-            bt = new Button();
-            br = new Button();
-            be = new Button();
-            bw = new Button();
-            bq = new Button();
-            bCedilla = new Button();
-            bDieresis = new Button();
-            bl = new Button();
-            bñ = new Button();
-            bk = new Button();
-            bj = new Button();
-            bh = new Button();
-            bg = new Button();
-            bf = new Button();
-            bd = new Button();
-            bs = new Button();
-            ba = new Button();
-            bGuion = new Button();
-            bPunto = new Button();
-            bComa = new Button();
-            bm = new Button();
-            bn = new Button();
-            bb = new Button();
-            bv = new Button();
-            bc = new Button();
-            bx = new Button();
-            bz = new Button();
-            bMenorque = new Button();
-            bMayusIzq = new Button();
-            bMayusDer = new Button();
-            bControl = new Button();
-            bAlt = new Button();
-            bSend = new Button();
-            txtKeyboard = new TextBox();
-            bLeft = new Button();
-            bRight = new Button();
-            SuspendLayout();
+            this.b3 = new System.Windows.Forms.Button();
+            this.b2 = new System.Windows.Forms.Button();
+            this.b1 = new System.Windows.Forms.Button();
+            this.boa = new System.Windows.Forms.Button();
+            this.bMul = new System.Windows.Forms.Button();
+            this.bIntFin = new System.Windows.Forms.Button();
+            this.bIntIni = new System.Windows.Forms.Button();
+            this.b0 = new System.Windows.Forms.Button();
+            this.b9 = new System.Windows.Forms.Button();
+            this.b8 = new System.Windows.Forms.Button();
+            this.b7 = new System.Windows.Forms.Button();
+            this.b6 = new System.Windows.Forms.Button();
+            this.b5 = new System.Windows.Forms.Button();
+            this.b4 = new System.Windows.Forms.Button();
+            this.bMayus = new System.Windows.Forms.Button();
+            this.bSpacio = new System.Windows.Forms.Button();
+            this.bTab = new System.Windows.Forms.Button();
+            this.bBorrar = new System.Windows.Forms.Button();
+            this.bMas = new System.Windows.Forms.Button();
+            this.bComita = new System.Windows.Forms.Button();
+            this.bp = new System.Windows.Forms.Button();
+            this.bo = new System.Windows.Forms.Button();
+            this.bi = new System.Windows.Forms.Button();
+            this.bu = new System.Windows.Forms.Button();
+            this.by = new System.Windows.Forms.Button();
+            this.bt = new System.Windows.Forms.Button();
+            this.br = new System.Windows.Forms.Button();
+            this.be = new System.Windows.Forms.Button();
+            this.bw = new System.Windows.Forms.Button();
+            this.bq = new System.Windows.Forms.Button();
+            this.bCedilla = new System.Windows.Forms.Button();
+            this.bDieresis = new System.Windows.Forms.Button();
+            this.bl = new System.Windows.Forms.Button();
+            this.bñ = new System.Windows.Forms.Button();
+            this.bk = new System.Windows.Forms.Button();
+            this.bj = new System.Windows.Forms.Button();
+            this.bh = new System.Windows.Forms.Button();
+            this.bg = new System.Windows.Forms.Button();
+            this.bf = new System.Windows.Forms.Button();
+            this.bd = new System.Windows.Forms.Button();
+            this.bs = new System.Windows.Forms.Button();
+            this.ba = new System.Windows.Forms.Button();
+            this.bGuion = new System.Windows.Forms.Button();
+            this.bPunto = new System.Windows.Forms.Button();
+            this.bComa = new System.Windows.Forms.Button();
+            this.bm = new System.Windows.Forms.Button();
+            this.bn = new System.Windows.Forms.Button();
+            this.bb = new System.Windows.Forms.Button();
+            this.bv = new System.Windows.Forms.Button();
+            this.bc = new System.Windows.Forms.Button();
+            this.bx = new System.Windows.Forms.Button();
+            this.bz = new System.Windows.Forms.Button();
+            this.bMenorque = new System.Windows.Forms.Button();
+            this.bMayusIzq = new System.Windows.Forms.Button();
+            this.bMayusDer = new System.Windows.Forms.Button();
+            this.bControl = new System.Windows.Forms.Button();
+            this.bAlt = new System.Windows.Forms.Button();
+            this.bSend = new System.Windows.Forms.Button();
+            this.txtKeyboard = new System.Windows.Forms.TextBox();
+            this.bLeft = new System.Windows.Forms.Button();
+            this.bRight = new System.Windows.Forms.Button();
+            this.SuspendLayout();
             // 
             // b3
             // 
-            b3.BackColor = Color.LightSkyBlue;
-            b3.Location = new Point(128, 80);
-            b3.Name = "b3";
-            b3.Size = new Size(32, 32);
-            b3.TabIndex = 28;
-            b3.TabStop = false;
-            b3.Text = "3";
-            b3.UseVisualStyleBackColor = false;
+            this.b3.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.b3.Location = new System.Drawing.Point(128, 80);
+            this.b3.Name = "b3";
+            this.b3.Size = new System.Drawing.Size(32, 32);
+            this.b3.TabIndex = 28;
+            this.b3.TabStop = false;
+            this.b3.Text = "3";
+            this.b3.UseVisualStyleBackColor = false;
             // 
             // b2
             // 
-            b2.BackColor = Color.LightSkyBlue;
-            b2.Location = new Point(88, 80);
-            b2.Name = "b2";
-            b2.Size = new Size(32, 32);
-            b2.TabIndex = 27;
-            b2.TabStop = false;
-            b2.Text = "2";
-            b2.UseVisualStyleBackColor = false;
+            this.b2.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.b2.Location = new System.Drawing.Point(88, 80);
+            this.b2.Name = "b2";
+            this.b2.Size = new System.Drawing.Size(32, 32);
+            this.b2.TabIndex = 27;
+            this.b2.TabStop = false;
+            this.b2.Text = "2";
+            this.b2.UseVisualStyleBackColor = false;
             // 
             // b1
             // 
-            b1.BackColor = Color.LightSkyBlue;
-            b1.Location = new Point(48, 80);
-            b1.Name = "b1";
-            b1.Size = new Size(32, 32);
-            b1.TabIndex = 26;
-            b1.TabStop = false;
-            b1.Text = "1";
-            b1.UseVisualStyleBackColor = false;
+            this.b1.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.b1.Location = new System.Drawing.Point(48, 80);
+            this.b1.Name = "b1";
+            this.b1.Size = new System.Drawing.Size(32, 32);
+            this.b1.TabIndex = 26;
+            this.b1.TabStop = false;
+            this.b1.Text = "1";
+            this.b1.UseVisualStyleBackColor = false;
             // 
             // boa
             // 
-            boa.BackColor = Color.LightSkyBlue;
-            boa.Location = new Point(8, 80);
-            boa.Name = "boa";
-            boa.Size = new Size(32, 32);
-            boa.TabIndex = 39;
-            boa.TabStop = false;
-            boa.Text = "º";
-            boa.UseVisualStyleBackColor = false;
+            this.boa.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.boa.Location = new System.Drawing.Point(8, 80);
+            this.boa.Name = "boa";
+            this.boa.Size = new System.Drawing.Size(32, 32);
+            this.boa.TabIndex = 39;
+            this.boa.TabStop = false;
+            this.boa.Text = "º";
+            this.boa.UseVisualStyleBackColor = false;
             // 
             // bMul
             // 
-            bMul.BackColor = Color.LightSkyBlue;
-            bMul.Location = new Point(568, 120);
-            bMul.Name = "bMul";
-            bMul.Size = new Size(40, 72);
-            bMul.TabIndex = 40;
-            bMul.TabStop = false;
-            bMul.Text = "Enter";
-            bMul.UseVisualStyleBackColor = false;
+            this.bMul.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.bMul.Location = new System.Drawing.Point(568, 120);
+            this.bMul.Name = "bMul";
+            this.bMul.Size = new System.Drawing.Size(40, 72);
+            this.bMul.TabIndex = 40;
+            this.bMul.TabStop = false;
+            this.bMul.Text = "Enter";
+            this.bMul.UseVisualStyleBackColor = false;
             // 
             // bIntFin
             // 
-            bIntFin.BackColor = Color.LightSkyBlue;
-            bIntFin.Location = new Point(448, 80);
-            bIntFin.Name = "bIntFin";
-            bIntFin.Size = new Size(32, 32);
-            bIntFin.TabIndex = 44;
-            bIntFin.TabStop = false;
-            bIntFin.Text = "\'";
-            bIntFin.UseVisualStyleBackColor = false;
+            this.bIntFin.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.bIntFin.Location = new System.Drawing.Point(448, 80);
+            this.bIntFin.Name = "bIntFin";
+            this.bIntFin.Size = new System.Drawing.Size(32, 32);
+            this.bIntFin.TabIndex = 44;
+            this.bIntFin.TabStop = false;
+            this.bIntFin.Text = "\'";
+            this.bIntFin.UseVisualStyleBackColor = false;
             // 
             // bIntIni
             // 
-            bIntIni.BackColor = Color.LightSkyBlue;
-            bIntIni.Location = new Point(488, 80);
-            bIntIni.Name = "bIntIni";
-            bIntIni.Size = new Size(32, 32);
-            bIntIni.TabIndex = 45;
-            bIntIni.TabStop = false;
-            bIntIni.Text = "¡";
-            bIntIni.UseVisualStyleBackColor = false;
+            this.bIntIni.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.bIntIni.Location = new System.Drawing.Point(488, 80);
+            this.bIntIni.Name = "bIntIni";
+            this.bIntIni.Size = new System.Drawing.Size(32, 32);
+            this.bIntIni.TabIndex = 45;
+            this.bIntIni.TabStop = false;
+            this.bIntIni.Text = "¡";
+            this.bIntIni.UseVisualStyleBackColor = false;
             // 
             // b0
             // 
-            b0.BackColor = Color.LightSkyBlue;
-            b0.Location = new Point(408, 80);
-            b0.Name = "b0";
-            b0.Size = new Size(32, 32);
-            b0.TabIndex = 35;
-            b0.TabStop = false;
-            b0.Text = "0";
-            b0.UseVisualStyleBackColor = false;
+            this.b0.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.b0.Location = new System.Drawing.Point(408, 80);
+            this.b0.Name = "b0";
+            this.b0.Size = new System.Drawing.Size(32, 32);
+            this.b0.TabIndex = 35;
+            this.b0.TabStop = false;
+            this.b0.Text = "0";
+            this.b0.UseVisualStyleBackColor = false;
             // 
             // b9
             // 
-            b9.BackColor = Color.LightSkyBlue;
-            b9.Location = new Point(368, 80);
-            b9.Name = "b9";
-            b9.Size = new Size(32, 32);
-            b9.TabIndex = 34;
-            b9.TabStop = false;
-            b9.Text = "9";
-            b9.UseVisualStyleBackColor = false;
+            this.b9.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.b9.Location = new System.Drawing.Point(368, 80);
+            this.b9.Name = "b9";
+            this.b9.Size = new System.Drawing.Size(32, 32);
+            this.b9.TabIndex = 34;
+            this.b9.TabStop = false;
+            this.b9.Text = "9";
+            this.b9.UseVisualStyleBackColor = false;
             // 
             // b8
             // 
-            b8.BackColor = Color.LightSkyBlue;
-            b8.Location = new Point(328, 80);
-            b8.Name = "b8";
-            b8.Size = new Size(32, 32);
-            b8.TabIndex = 33;
-            b8.TabStop = false;
-            b8.Text = "8";
-            b8.UseVisualStyleBackColor = false;
+            this.b8.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.b8.Location = new System.Drawing.Point(328, 80);
+            this.b8.Name = "b8";
+            this.b8.Size = new System.Drawing.Size(32, 32);
+            this.b8.TabIndex = 33;
+            this.b8.TabStop = false;
+            this.b8.Text = "8";
+            this.b8.UseVisualStyleBackColor = false;
             // 
             // b7
             // 
-            b7.BackColor = Color.LightSkyBlue;
-            b7.Location = new Point(288, 80);
-            b7.Name = "b7";
-            b7.Size = new Size(32, 32);
-            b7.TabIndex = 32;
-            b7.TabStop = false;
-            b7.Text = "7";
-            b7.UseVisualStyleBackColor = false;
+            this.b7.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.b7.Location = new System.Drawing.Point(288, 80);
+            this.b7.Name = "b7";
+            this.b7.Size = new System.Drawing.Size(32, 32);
+            this.b7.TabIndex = 32;
+            this.b7.TabStop = false;
+            this.b7.Text = "7";
+            this.b7.UseVisualStyleBackColor = false;
             // 
             // b6
             // 
-            b6.BackColor = Color.LightSkyBlue;
-            b6.Location = new Point(248, 80);
-            b6.Name = "b6";
-            b6.Size = new Size(32, 32);
-            b6.TabIndex = 31;
-            b6.TabStop = false;
-            b6.Text = "6";
-            b6.UseVisualStyleBackColor = false;
+            this.b6.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.b6.Location = new System.Drawing.Point(248, 80);
+            this.b6.Name = "b6";
+            this.b6.Size = new System.Drawing.Size(32, 32);
+            this.b6.TabIndex = 31;
+            this.b6.TabStop = false;
+            this.b6.Text = "6";
+            this.b6.UseVisualStyleBackColor = false;
             // 
             // b5
             // 
-            b5.BackColor = Color.LightSkyBlue;
-            b5.Location = new Point(208, 80);
-            b5.Name = "b5";
-            b5.Size = new Size(32, 32);
-            b5.TabIndex = 30;
-            b5.TabStop = false;
-            b5.Text = "5";
-            b5.UseVisualStyleBackColor = false;
+            this.b5.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.b5.Location = new System.Drawing.Point(208, 80);
+            this.b5.Name = "b5";
+            this.b5.Size = new System.Drawing.Size(32, 32);
+            this.b5.TabIndex = 30;
+            this.b5.TabStop = false;
+            this.b5.Text = "5";
+            this.b5.UseVisualStyleBackColor = false;
             // 
             // b4
             // 
-            b4.BackColor = Color.LightSkyBlue;
-            b4.Location = new Point(168, 80);
-            b4.Name = "b4";
-            b4.Size = new Size(32, 32);
-            b4.TabIndex = 29;
-            b4.TabStop = false;
-            b4.Text = "4";
-            b4.UseVisualStyleBackColor = false;
+            this.b4.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.b4.Location = new System.Drawing.Point(168, 80);
+            this.b4.Name = "b4";
+            this.b4.Size = new System.Drawing.Size(32, 32);
+            this.b4.TabIndex = 29;
+            this.b4.TabStop = false;
+            this.b4.Text = "4";
+            this.b4.UseVisualStyleBackColor = false;
             // 
             // bMayus
             // 
-            bMayus.BackColor = Color.LightSkyBlue;
-            bMayus.Location = new Point(8, 160);
-            bMayus.Name = "bMayus";
-            bMayus.Size = new Size(72, 32);
-            bMayus.TabIndex = 36;
-            bMayus.TabStop = false;
-            bMayus.Text = "Bloq Mayús";
-            bMayus.UseVisualStyleBackColor = false;
+            this.bMayus.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.bMayus.Location = new System.Drawing.Point(8, 160);
+            this.bMayus.Name = "bMayus";
+            this.bMayus.Size = new System.Drawing.Size(72, 32);
+            this.bMayus.TabIndex = 36;
+            this.bMayus.TabStop = false;
+            this.bMayus.Text = "Bloq Mayús";
+            this.bMayus.UseVisualStyleBackColor = false;
             // 
             // bSpacio
             // 
-            bSpacio.BackColor = Color.LightSkyBlue;
-            bSpacio.Location = new Point(184, 240);
-            bSpacio.Name = "bSpacio";
-            bSpacio.Size = new Size(264, 32);
-            bSpacio.TabIndex = 37;
-            bSpacio.TabStop = false;
-            bSpacio.Text = "Space";
-            bSpacio.UseVisualStyleBackColor = false;
+            this.bSpacio.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.bSpacio.Location = new System.Drawing.Point(184, 240);
+            this.bSpacio.Name = "bSpacio";
+            this.bSpacio.Size = new System.Drawing.Size(264, 32);
+            this.bSpacio.TabIndex = 37;
+            this.bSpacio.TabStop = false;
+            this.bSpacio.Text = "Space";
+            this.bSpacio.UseVisualStyleBackColor = false;
             // 
             // bTab
             // 
-            bTab.BackColor = Color.LightSkyBlue;
-            bTab.Location = new Point(8, 120);
-            bTab.Name = "bTab";
-            bTab.Size = new Size(56, 32);
-            bTab.TabIndex = 43;
-            bTab.TabStop = false;
-            bTab.Text = "Tab";
-            bTab.UseVisualStyleBackColor = false;
+            this.bTab.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.bTab.Location = new System.Drawing.Point(8, 120);
+            this.bTab.Name = "bTab";
+            this.bTab.Size = new System.Drawing.Size(56, 32);
+            this.bTab.TabIndex = 43;
+            this.bTab.TabStop = false;
+            this.bTab.Text = "Tab";
+            this.bTab.UseVisualStyleBackColor = false;
             // 
             // bBorrar
             // 
-            bBorrar.BackColor = Color.LightSkyBlue;
-            bBorrar.Location = new Point(528, 80);
-            bBorrar.Name = "bBorrar";
-            bBorrar.Size = new Size(80, 32);
-            bBorrar.TabIndex = 42;
-            bBorrar.TabStop = false;
-            bBorrar.Text = "<--";
-            bBorrar.UseVisualStyleBackColor = false;
+            this.bBorrar.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.bBorrar.Location = new System.Drawing.Point(528, 80);
+            this.bBorrar.Name = "bBorrar";
+            this.bBorrar.Size = new System.Drawing.Size(80, 32);
+            this.bBorrar.TabIndex = 42;
+            this.bBorrar.TabStop = false;
+            this.bBorrar.Text = "<--";
+            this.bBorrar.UseVisualStyleBackColor = false;
             // 
             // bMas
             // 
-            bMas.BackColor = Color.LightSkyBlue;
-            bMas.Location = new Point(512, 120);
-            bMas.Name = "bMas";
-            bMas.Size = new Size(32, 32);
-            bMas.TabIndex = 60;
-            bMas.TabStop = false;
-            bMas.Text = "+";
-            bMas.UseVisualStyleBackColor = false;
+            this.bMas.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.bMas.Location = new System.Drawing.Point(512, 120);
+            this.bMas.Name = "bMas";
+            this.bMas.Size = new System.Drawing.Size(32, 32);
+            this.bMas.TabIndex = 60;
+            this.bMas.TabStop = false;
+            this.bMas.Text = "+";
+            this.bMas.UseVisualStyleBackColor = false;
             // 
             // bComita
             // 
-            bComita.BackColor = Color.LightSkyBlue;
-            bComita.Location = new Point(472, 120);
-            bComita.Name = "bComita";
-            bComita.Size = new Size(32, 32);
-            bComita.TabIndex = 59;
-            bComita.TabStop = false;
-            bComita.Text = "\'";
-            bComita.UseVisualStyleBackColor = false;
+            this.bComita.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.bComita.Location = new System.Drawing.Point(472, 120);
+            this.bComita.Name = "bComita";
+            this.bComita.Size = new System.Drawing.Size(32, 32);
+            this.bComita.TabIndex = 59;
+            this.bComita.TabStop = false;
+            this.bComita.Text = "\'";
+            this.bComita.UseVisualStyleBackColor = false;
             // 
             // bp
             // 
-            bp.BackColor = Color.LightSkyBlue;
-            bp.Location = new Point(432, 120);
-            bp.Name = "bp";
-            bp.Size = new Size(32, 32);
-            bp.TabIndex = 58;
-            bp.TabStop = false;
-            bp.Text = "p";
-            bp.UseVisualStyleBackColor = false;
+            this.bp.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.bp.Location = new System.Drawing.Point(432, 120);
+            this.bp.Name = "bp";
+            this.bp.Size = new System.Drawing.Size(32, 32);
+            this.bp.TabIndex = 58;
+            this.bp.TabStop = false;
+            this.bp.Text = "p";
+            this.bp.UseVisualStyleBackColor = false;
             // 
             // bo
             // 
-            bo.BackColor = Color.LightSkyBlue;
-            bo.Location = new Point(392, 120);
-            bo.Name = "bo";
-            bo.Size = new Size(32, 32);
-            bo.TabIndex = 57;
-            bo.TabStop = false;
-            bo.Text = "o";
-            bo.UseVisualStyleBackColor = false;
+            this.bo.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.bo.Location = new System.Drawing.Point(392, 120);
+            this.bo.Name = "bo";
+            this.bo.Size = new System.Drawing.Size(32, 32);
+            this.bo.TabIndex = 57;
+            this.bo.TabStop = false;
+            this.bo.Text = "o";
+            this.bo.UseVisualStyleBackColor = false;
             // 
             // bi
             // 
-            bi.BackColor = Color.LightSkyBlue;
-            bi.Location = new Point(352, 120);
-            bi.Name = "bi";
-            bi.Size = new Size(32, 32);
-            bi.TabIndex = 56;
-            bi.TabStop = false;
-            bi.Text = "i";
-            bi.UseVisualStyleBackColor = false;
+            this.bi.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.bi.Location = new System.Drawing.Point(352, 120);
+            this.bi.Name = "bi";
+            this.bi.Size = new System.Drawing.Size(32, 32);
+            this.bi.TabIndex = 56;
+            this.bi.TabStop = false;
+            this.bi.Text = "i";
+            this.bi.UseVisualStyleBackColor = false;
             // 
             // bu
             // 
-            bu.BackColor = Color.LightSkyBlue;
-            bu.Location = new Point(312, 120);
-            bu.Name = "bu";
-            bu.Size = new Size(32, 32);
-            bu.TabIndex = 55;
-            bu.TabStop = false;
-            bu.Text = "u";
-            bu.UseVisualStyleBackColor = false;
+            this.bu.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.bu.Location = new System.Drawing.Point(312, 120);
+            this.bu.Name = "bu";
+            this.bu.Size = new System.Drawing.Size(32, 32);
+            this.bu.TabIndex = 55;
+            this.bu.TabStop = false;
+            this.bu.Text = "u";
+            this.bu.UseVisualStyleBackColor = false;
             // 
             // by
             // 
-            by.BackColor = Color.LightSkyBlue;
-            by.Location = new Point(272, 120);
-            by.Name = "by";
-            by.Size = new Size(32, 32);
-            by.TabIndex = 54;
-            by.TabStop = false;
-            by.Text = "y";
-            by.UseVisualStyleBackColor = false;
+            this.by.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.by.Location = new System.Drawing.Point(272, 120);
+            this.by.Name = "by";
+            this.by.Size = new System.Drawing.Size(32, 32);
+            this.by.TabIndex = 54;
+            this.by.TabStop = false;
+            this.by.Text = "y";
+            this.by.UseVisualStyleBackColor = false;
             // 
             // bt
             // 
-            bt.BackColor = Color.LightSkyBlue;
-            bt.Location = new Point(232, 120);
-            bt.Name = "bt";
-            bt.Size = new Size(32, 32);
-            bt.TabIndex = 53;
-            bt.TabStop = false;
-            bt.Text = "t";
-            bt.UseVisualStyleBackColor = false;
+            this.bt.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.bt.Location = new System.Drawing.Point(232, 120);
+            this.bt.Name = "bt";
+            this.bt.Size = new System.Drawing.Size(32, 32);
+            this.bt.TabIndex = 53;
+            this.bt.TabStop = false;
+            this.bt.Text = "t";
+            this.bt.UseVisualStyleBackColor = false;
             // 
             // br
             // 
-            br.BackColor = Color.LightSkyBlue;
-            br.Location = new Point(192, 120);
-            br.Name = "br";
-            br.Size = new Size(32, 32);
-            br.TabIndex = 52;
-            br.TabStop = false;
-            br.Text = "r";
-            br.UseVisualStyleBackColor = false;
+            this.br.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.br.Location = new System.Drawing.Point(192, 120);
+            this.br.Name = "br";
+            this.br.Size = new System.Drawing.Size(32, 32);
+            this.br.TabIndex = 52;
+            this.br.TabStop = false;
+            this.br.Text = "r";
+            this.br.UseVisualStyleBackColor = false;
             // 
             // be
             // 
-            be.BackColor = Color.LightSkyBlue;
-            be.Location = new Point(152, 120);
-            be.Name = "be";
-            be.Size = new Size(32, 32);
-            be.TabIndex = 51;
-            be.TabStop = false;
-            be.Text = "e";
-            be.UseVisualStyleBackColor = false;
+            this.be.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.be.Location = new System.Drawing.Point(152, 120);
+            this.be.Name = "be";
+            this.be.Size = new System.Drawing.Size(32, 32);
+            this.be.TabIndex = 51;
+            this.be.TabStop = false;
+            this.be.Text = "e";
+            this.be.UseVisualStyleBackColor = false;
             // 
             // bw
             // 
-            bw.BackColor = Color.LightSkyBlue;
-            bw.Location = new Point(112, 120);
-            bw.Name = "bw";
-            bw.Size = new Size(32, 32);
-            bw.TabIndex = 50;
-            bw.TabStop = false;
-            bw.Text = "w";
-            bw.UseVisualStyleBackColor = false;
+            this.bw.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.bw.Location = new System.Drawing.Point(112, 120);
+            this.bw.Name = "bw";
+            this.bw.Size = new System.Drawing.Size(32, 32);
+            this.bw.TabIndex = 50;
+            this.bw.TabStop = false;
+            this.bw.Text = "w";
+            this.bw.UseVisualStyleBackColor = false;
             // 
             // bq
             // 
-            bq.BackColor = Color.LightSkyBlue;
-            bq.Location = new Point(72, 120);
-            bq.Name = "bq";
-            bq.Size = new Size(32, 32);
-            bq.TabIndex = 49;
-            bq.TabStop = false;
-            bq.Text = "q";
-            bq.UseVisualStyleBackColor = false;
+            this.bq.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.bq.Location = new System.Drawing.Point(72, 120);
+            this.bq.Name = "bq";
+            this.bq.Size = new System.Drawing.Size(32, 32);
+            this.bq.TabIndex = 49;
+            this.bq.TabStop = false;
+            this.bq.Text = "q";
+            this.bq.UseVisualStyleBackColor = false;
             // 
             // bCedilla
             // 
-            bCedilla.BackColor = Color.LightSkyBlue;
-            bCedilla.Location = new Point(528, 160);
-            bCedilla.Name = "bCedilla";
-            bCedilla.Size = new Size(32, 32);
-            bCedilla.TabIndex = 72;
-            bCedilla.TabStop = false;
-            bCedilla.Text = "ç";
-            bCedilla.UseVisualStyleBackColor = false;
+            this.bCedilla.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.bCedilla.Location = new System.Drawing.Point(528, 160);
+            this.bCedilla.Name = "bCedilla";
+            this.bCedilla.Size = new System.Drawing.Size(32, 32);
+            this.bCedilla.TabIndex = 72;
+            this.bCedilla.TabStop = false;
+            this.bCedilla.Text = "ç";
+            this.bCedilla.UseVisualStyleBackColor = false;
             // 
             // bDieresis
             // 
-            bDieresis.BackColor = Color.LightSkyBlue;
-            bDieresis.Location = new Point(488, 160);
-            bDieresis.Name = "bDieresis";
-            bDieresis.Size = new Size(32, 32);
-            bDieresis.TabIndex = 71;
-            bDieresis.TabStop = false;
-            bDieresis.Text = "´";
-            bDieresis.UseVisualStyleBackColor = false;
+            this.bDieresis.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.bDieresis.Location = new System.Drawing.Point(488, 160);
+            this.bDieresis.Name = "bDieresis";
+            this.bDieresis.Size = new System.Drawing.Size(32, 32);
+            this.bDieresis.TabIndex = 71;
+            this.bDieresis.TabStop = false;
+            this.bDieresis.Text = "´";
+            this.bDieresis.UseVisualStyleBackColor = false;
             // 
             // bl
             // 
-            bl.BackColor = Color.LightSkyBlue;
-            bl.Location = new Point(408, 160);
-            bl.Name = "bl";
-            bl.Size = new Size(32, 32);
-            bl.TabIndex = 69;
-            bl.TabStop = false;
-            bl.Text = "l";
-            bl.UseVisualStyleBackColor = false;
+            this.bl.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.bl.Location = new System.Drawing.Point(408, 160);
+            this.bl.Name = "bl";
+            this.bl.Size = new System.Drawing.Size(32, 32);
+            this.bl.TabIndex = 69;
+            this.bl.TabStop = false;
+            this.bl.Text = "l";
+            this.bl.UseVisualStyleBackColor = false;
             // 
             // bñ
             // 
-            bñ.BackColor = Color.LightSkyBlue;
-            bñ.Location = new Point(448, 160);
-            bñ.Name = "bñ";
-            bñ.Size = new Size(32, 32);
-            bñ.TabIndex = 70;
-            bñ.TabStop = false;
-            bñ.Text = "ñ";
-            bñ.UseVisualStyleBackColor = false;
+            this.bñ.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.bñ.Location = new System.Drawing.Point(448, 160);
+            this.bñ.Name = "bñ";
+            this.bñ.Size = new System.Drawing.Size(32, 32);
+            this.bñ.TabIndex = 70;
+            this.bñ.TabStop = false;
+            this.bñ.Text = "ñ";
+            this.bñ.UseVisualStyleBackColor = false;
             // 
             // bk
             // 
-            bk.BackColor = Color.LightSkyBlue;
-            bk.Location = new Point(368, 160);
-            bk.Name = "bk";
-            bk.Size = new Size(32, 32);
-            bk.TabIndex = 68;
-            bk.TabStop = false;
-            bk.Text = "k";
-            bk.UseVisualStyleBackColor = false;
+            this.bk.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.bk.Location = new System.Drawing.Point(368, 160);
+            this.bk.Name = "bk";
+            this.bk.Size = new System.Drawing.Size(32, 32);
+            this.bk.TabIndex = 68;
+            this.bk.TabStop = false;
+            this.bk.Text = "k";
+            this.bk.UseVisualStyleBackColor = false;
             // 
             // bj
             // 
-            bj.BackColor = Color.LightSkyBlue;
-            bj.Location = new Point(328, 160);
-            bj.Name = "bj";
-            bj.Size = new Size(32, 32);
-            bj.TabIndex = 67;
-            bj.TabStop = false;
-            bj.Text = "j";
-            bj.UseVisualStyleBackColor = false;
+            this.bj.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.bj.Location = new System.Drawing.Point(328, 160);
+            this.bj.Name = "bj";
+            this.bj.Size = new System.Drawing.Size(32, 32);
+            this.bj.TabIndex = 67;
+            this.bj.TabStop = false;
+            this.bj.Text = "j";
+            this.bj.UseVisualStyleBackColor = false;
             // 
             // bh
             // 
-            bh.BackColor = Color.LightSkyBlue;
-            bh.Location = new Point(288, 160);
-            bh.Name = "bh";
-            bh.Size = new Size(32, 32);
-            bh.TabIndex = 66;
-            bh.TabStop = false;
-            bh.Text = "h";
-            bh.UseVisualStyleBackColor = false;
+            this.bh.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.bh.Location = new System.Drawing.Point(288, 160);
+            this.bh.Name = "bh";
+            this.bh.Size = new System.Drawing.Size(32, 32);
+            this.bh.TabIndex = 66;
+            this.bh.TabStop = false;
+            this.bh.Text = "h";
+            this.bh.UseVisualStyleBackColor = false;
             // 
             // bg
             // 
-            bg.BackColor = Color.LightSkyBlue;
-            bg.Location = new Point(248, 160);
-            bg.Name = "bg";
-            bg.Size = new Size(32, 32);
-            bg.TabIndex = 65;
-            bg.TabStop = false;
-            bg.Text = "g";
-            bg.UseVisualStyleBackColor = false;
+            this.bg.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.bg.Location = new System.Drawing.Point(248, 160);
+            this.bg.Name = "bg";
+            this.bg.Size = new System.Drawing.Size(32, 32);
+            this.bg.TabIndex = 65;
+            this.bg.TabStop = false;
+            this.bg.Text = "g";
+            this.bg.UseVisualStyleBackColor = false;
             // 
             // bf
             // 
-            bf.BackColor = Color.LightSkyBlue;
-            bf.Location = new Point(208, 160);
-            bf.Name = "bf";
-            bf.Size = new Size(32, 32);
-            bf.TabIndex = 64;
-            bf.TabStop = false;
-            bf.Text = "f";
-            bf.UseVisualStyleBackColor = false;
+            this.bf.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.bf.Location = new System.Drawing.Point(208, 160);
+            this.bf.Name = "bf";
+            this.bf.Size = new System.Drawing.Size(32, 32);
+            this.bf.TabIndex = 64;
+            this.bf.TabStop = false;
+            this.bf.Text = "f";
+            this.bf.UseVisualStyleBackColor = false;
             // 
             // bd
             // 
-            bd.BackColor = Color.LightSkyBlue;
-            bd.Location = new Point(168, 160);
-            bd.Name = "bd";
-            bd.Size = new Size(32, 32);
-            bd.TabIndex = 63;
-            bd.TabStop = false;
-            bd.Text = "d";
-            bd.UseVisualStyleBackColor = false;
+            this.bd.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.bd.Location = new System.Drawing.Point(168, 160);
+            this.bd.Name = "bd";
+            this.bd.Size = new System.Drawing.Size(32, 32);
+            this.bd.TabIndex = 63;
+            this.bd.TabStop = false;
+            this.bd.Text = "d";
+            this.bd.UseVisualStyleBackColor = false;
             // 
             // bs
             // 
-            bs.BackColor = Color.LightSkyBlue;
-            bs.Location = new Point(128, 160);
-            bs.Name = "bs";
-            bs.Size = new Size(32, 32);
-            bs.TabIndex = 62;
-            bs.TabStop = false;
-            bs.Text = "s";
-            bs.UseVisualStyleBackColor = false;
+            this.bs.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.bs.Location = new System.Drawing.Point(128, 160);
+            this.bs.Name = "bs";
+            this.bs.Size = new System.Drawing.Size(32, 32);
+            this.bs.TabIndex = 62;
+            this.bs.TabStop = false;
+            this.bs.Text = "s";
+            this.bs.UseVisualStyleBackColor = false;
             // 
             // ba
             // 
-            ba.BackColor = Color.LightSkyBlue;
-            ba.Location = new Point(88, 160);
-            ba.Name = "ba";
-            ba.Size = new Size(32, 32);
-            ba.TabIndex = 61;
-            ba.TabStop = false;
-            ba.Text = "a";
-            ba.UseVisualStyleBackColor = false;
+            this.ba.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.ba.Location = new System.Drawing.Point(88, 160);
+            this.ba.Name = "ba";
+            this.ba.Size = new System.Drawing.Size(32, 32);
+            this.ba.TabIndex = 61;
+            this.ba.TabStop = false;
+            this.ba.Text = "a";
+            this.ba.UseVisualStyleBackColor = false;
             // 
             // bGuion
             // 
-            bGuion.BackColor = Color.LightSkyBlue;
-            bGuion.Location = new Point(472, 200);
-            bGuion.Name = "bGuion";
-            bGuion.Size = new Size(32, 32);
-            bGuion.TabIndex = 85;
-            bGuion.TabStop = false;
-            bGuion.Text = "-";
-            bGuion.UseVisualStyleBackColor = false;
+            this.bGuion.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.bGuion.Location = new System.Drawing.Point(472, 200);
+            this.bGuion.Name = "bGuion";
+            this.bGuion.Size = new System.Drawing.Size(32, 32);
+            this.bGuion.TabIndex = 85;
+            this.bGuion.TabStop = false;
+            this.bGuion.Text = "-";
+            this.bGuion.UseVisualStyleBackColor = false;
             // 
             // bPunto
             // 
-            bPunto.BackColor = Color.LightSkyBlue;
-            bPunto.Location = new Point(432, 200);
-            bPunto.Name = "bPunto";
-            bPunto.Size = new Size(32, 32);
-            bPunto.TabIndex = 84;
-            bPunto.TabStop = false;
-            bPunto.Text = ".";
-            bPunto.UseVisualStyleBackColor = false;
+            this.bPunto.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.bPunto.Location = new System.Drawing.Point(432, 200);
+            this.bPunto.Name = "bPunto";
+            this.bPunto.Size = new System.Drawing.Size(32, 32);
+            this.bPunto.TabIndex = 84;
+            this.bPunto.TabStop = false;
+            this.bPunto.Text = ".";
+            this.bPunto.UseVisualStyleBackColor = false;
             // 
             // bComa
             // 
-            bComa.BackColor = Color.LightSkyBlue;
-            bComa.Location = new Point(392, 200);
-            bComa.Name = "bComa";
-            bComa.Size = new Size(32, 32);
-            bComa.TabIndex = 83;
-            bComa.TabStop = false;
-            bComa.Text = ",";
-            bComa.UseVisualStyleBackColor = false;
+            this.bComa.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.bComa.Location = new System.Drawing.Point(392, 200);
+            this.bComa.Name = "bComa";
+            this.bComa.Size = new System.Drawing.Size(32, 32);
+            this.bComa.TabIndex = 83;
+            this.bComa.TabStop = false;
+            this.bComa.Text = ",";
+            this.bComa.UseVisualStyleBackColor = false;
             // 
             // bm
             // 
-            bm.BackColor = Color.LightSkyBlue;
-            bm.Location = new Point(352, 200);
-            bm.Name = "bm";
-            bm.Size = new Size(32, 32);
-            bm.TabIndex = 82;
-            bm.TabStop = false;
-            bm.Text = "m";
-            bm.UseVisualStyleBackColor = false;
+            this.bm.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.bm.Location = new System.Drawing.Point(352, 200);
+            this.bm.Name = "bm";
+            this.bm.Size = new System.Drawing.Size(32, 32);
+            this.bm.TabIndex = 82;
+            this.bm.TabStop = false;
+            this.bm.Text = "m";
+            this.bm.UseVisualStyleBackColor = false;
             // 
             // bn
             // 
-            bn.BackColor = Color.LightSkyBlue;
-            bn.Location = new Point(312, 200);
-            bn.Name = "bn";
-            bn.Size = new Size(32, 32);
-            bn.TabIndex = 81;
-            bn.TabStop = false;
-            bn.Text = "n";
-            bn.UseVisualStyleBackColor = false;
+            this.bn.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.bn.Location = new System.Drawing.Point(312, 200);
+            this.bn.Name = "bn";
+            this.bn.Size = new System.Drawing.Size(32, 32);
+            this.bn.TabIndex = 81;
+            this.bn.TabStop = false;
+            this.bn.Text = "n";
+            this.bn.UseVisualStyleBackColor = false;
             // 
             // bb
             // 
-            bb.BackColor = Color.LightSkyBlue;
-            bb.Location = new Point(272, 200);
-            bb.Name = "bb";
-            bb.Size = new Size(32, 32);
-            bb.TabIndex = 80;
-            bb.TabStop = false;
-            bb.Text = "b";
-            bb.UseVisualStyleBackColor = false;
+            this.bb.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.bb.Location = new System.Drawing.Point(272, 200);
+            this.bb.Name = "bb";
+            this.bb.Size = new System.Drawing.Size(32, 32);
+            this.bb.TabIndex = 80;
+            this.bb.TabStop = false;
+            this.bb.Text = "b";
+            this.bb.UseVisualStyleBackColor = false;
             // 
             // bv
             // 
-            bv.BackColor = Color.LightSkyBlue;
-            bv.Location = new Point(232, 200);
-            bv.Name = "bv";
-            bv.Size = new Size(32, 32);
-            bv.TabIndex = 79;
-            bv.TabStop = false;
-            bv.Text = "v";
-            bv.UseVisualStyleBackColor = false;
+            this.bv.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.bv.Location = new System.Drawing.Point(232, 200);
+            this.bv.Name = "bv";
+            this.bv.Size = new System.Drawing.Size(32, 32);
+            this.bv.TabIndex = 79;
+            this.bv.TabStop = false;
+            this.bv.Text = "v";
+            this.bv.UseVisualStyleBackColor = false;
             // 
             // bc
             // 
-            bc.BackColor = Color.LightSkyBlue;
-            bc.Location = new Point(192, 200);
-            bc.Name = "bc";
-            bc.Size = new Size(32, 32);
-            bc.TabIndex = 78;
-            bc.TabStop = false;
-            bc.Text = "c";
-            bc.UseVisualStyleBackColor = false;
+            this.bc.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.bc.Location = new System.Drawing.Point(192, 200);
+            this.bc.Name = "bc";
+            this.bc.Size = new System.Drawing.Size(32, 32);
+            this.bc.TabIndex = 78;
+            this.bc.TabStop = false;
+            this.bc.Text = "c";
+            this.bc.UseVisualStyleBackColor = false;
             // 
             // bx
             // 
-            bx.BackColor = Color.LightSkyBlue;
-            bx.Location = new Point(152, 200);
-            bx.Name = "bx";
-            bx.Size = new Size(32, 32);
-            bx.TabIndex = 77;
-            bx.TabStop = false;
-            bx.Text = "x";
-            bx.UseVisualStyleBackColor = false;
+            this.bx.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.bx.Location = new System.Drawing.Point(152, 200);
+            this.bx.Name = "bx";
+            this.bx.Size = new System.Drawing.Size(32, 32);
+            this.bx.TabIndex = 77;
+            this.bx.TabStop = false;
+            this.bx.Text = "x";
+            this.bx.UseVisualStyleBackColor = false;
             // 
             // bz
             // 
-            bz.BackColor = Color.LightSkyBlue;
-            bz.Location = new Point(112, 200);
-            bz.Name = "bz";
-            bz.Size = new Size(32, 32);
-            bz.TabIndex = 76;
-            bz.TabStop = false;
-            bz.Text = "z";
-            bz.UseVisualStyleBackColor = false;
+            this.bz.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.bz.Location = new System.Drawing.Point(112, 200);
+            this.bz.Name = "bz";
+            this.bz.Size = new System.Drawing.Size(32, 32);
+            this.bz.TabIndex = 76;
+            this.bz.TabStop = false;
+            this.bz.Text = "z";
+            this.bz.UseVisualStyleBackColor = false;
             // 
             // bMenorque
             // 
-            bMenorque.BackColor = Color.LightSkyBlue;
-            bMenorque.Location = new Point(72, 200);
-            bMenorque.Name = "bMenorque";
-            bMenorque.Size = new Size(32, 32);
-            bMenorque.TabIndex = 75;
-            bMenorque.TabStop = false;
-            bMenorque.Text = "<";
-            bMenorque.UseVisualStyleBackColor = false;
+            this.bMenorque.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.bMenorque.Location = new System.Drawing.Point(72, 200);
+            this.bMenorque.Name = "bMenorque";
+            this.bMenorque.Size = new System.Drawing.Size(32, 32);
+            this.bMenorque.TabIndex = 75;
+            this.bMenorque.TabStop = false;
+            this.bMenorque.Text = "<";
+            this.bMenorque.UseVisualStyleBackColor = false;
             // 
             // bMayusIzq
             // 
-            bMayusIzq.BackColor = Color.LightSkyBlue;
-            bMayusIzq.Location = new Point(8, 200);
-            bMayusIzq.Name = "bMayusIzq";
-            bMayusIzq.Size = new Size(56, 32);
-            bMayusIzq.TabIndex = 74;
-            bMayusIzq.TabStop = false;
-            bMayusIzq.Text = "Shift";
-            bMayusIzq.UseVisualStyleBackColor = false;
+            this.bMayusIzq.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.bMayusIzq.Location = new System.Drawing.Point(8, 200);
+            this.bMayusIzq.Name = "bMayusIzq";
+            this.bMayusIzq.Size = new System.Drawing.Size(56, 32);
+            this.bMayusIzq.TabIndex = 74;
+            this.bMayusIzq.TabStop = false;
+            this.bMayusIzq.Text = "Shift";
+            this.bMayusIzq.UseVisualStyleBackColor = false;
             // 
             // bMayusDer
             // 
-            bMayusDer.BackColor = Color.LightSkyBlue;
-            bMayusDer.Location = new Point(512, 200);
-            bMayusDer.Name = "bMayusDer";
-            bMayusDer.Size = new Size(96, 32);
-            bMayusDer.TabIndex = 73;
-            bMayusDer.TabStop = false;
-            bMayusDer.Text = "Cerrar";
-            bMayusDer.UseVisualStyleBackColor = false;
+            this.bMayusDer.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.bMayusDer.Location = new System.Drawing.Point(512, 200);
+            this.bMayusDer.Name = "bMayusDer";
+            this.bMayusDer.Size = new System.Drawing.Size(96, 32);
+            this.bMayusDer.TabIndex = 73;
+            this.bMayusDer.TabStop = false;
+            this.bMayusDer.Text = "Cerrar";
+            this.bMayusDer.UseVisualStyleBackColor = false;
             // 
             // bControl
             // 
-            bControl.BackColor = Color.LightSkyBlue;
-            bControl.Location = new Point(8, 240);
-            bControl.Name = "bControl";
-            bControl.Size = new Size(72, 32);
-            bControl.TabIndex = 87;
-            bControl.TabStop = false;
-            bControl.Text = "Borrar";
-            bControl.UseVisualStyleBackColor = false;
+            this.bControl.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.bControl.Location = new System.Drawing.Point(8, 240);
+            this.bControl.Name = "bControl";
+            this.bControl.Size = new System.Drawing.Size(72, 32);
+            this.bControl.TabIndex = 87;
+            this.bControl.TabStop = false;
+            this.bControl.Text = "Borrar";
+            this.bControl.UseVisualStyleBackColor = false;
             // 
             // bAlt
             // 
-            bAlt.BackColor = Color.LightSkyBlue;
-            bAlt.Location = new Point(120, 240);
-            bAlt.Name = "bAlt";
-            bAlt.Size = new Size(56, 32);
-            bAlt.TabIndex = 88;
-            bAlt.TabStop = false;
-            bAlt.Text = "Alt";
-            bAlt.UseVisualStyleBackColor = false;
+            this.bAlt.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.bAlt.Location = new System.Drawing.Point(120, 240);
+            this.bAlt.Name = "bAlt";
+            this.bAlt.Size = new System.Drawing.Size(56, 32);
+            this.bAlt.TabIndex = 88;
+            this.bAlt.TabStop = false;
+            this.bAlt.Text = "Alt";
+            this.bAlt.UseVisualStyleBackColor = false;
             // 
             // bSend
             // 
-            bSend.BackColor = Color.LightSkyBlue;
-            bSend.Location = new Point(536, 240);
-            bSend.Name = "bSend";
-            bSend.Size = new Size(72, 32);
-            bSend.TabIndex = 89;
-            bSend.TabStop = false;
-            bSend.Text = "Enviar";
-            bSend.UseVisualStyleBackColor = false;
+            this.bSend.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.bSend.Location = new System.Drawing.Point(536, 240);
+            this.bSend.Name = "bSend";
+            this.bSend.Size = new System.Drawing.Size(72, 32);
+            this.bSend.TabIndex = 89;
+            this.bSend.TabStop = false;
+            this.bSend.Text = "Enviar";
+            this.bSend.UseVisualStyleBackColor = false;
             // 
             // txtKeyboard
             // 
-            txtKeyboard.AcceptsReturn = true;
-            txtKeyboard.Location = new Point(8, 8);
-            txtKeyboard.Multiline = true;
-            txtKeyboard.Name = "txtKeyboard";
-            txtKeyboard.ScrollBars = ScrollBars.Vertical;
-            txtKeyboard.Size = new Size(600, 64);
-            txtKeyboard.TabIndex = 90;
+            this.txtKeyboard.AcceptsReturn = true;
+            this.txtKeyboard.Location = new System.Drawing.Point(8, 8);
+            this.txtKeyboard.Multiline = true;
+            this.txtKeyboard.Name = "txtKeyboard";
+            this.txtKeyboard.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtKeyboard.Size = new System.Drawing.Size(600, 64);
+            this.txtKeyboard.TabIndex = 90;
             // 
             // bLeft
             // 
-            bLeft.BackColor = Color.LightSkyBlue;
-            bLeft.Location = new Point(456, 240);
-            bLeft.Name = "bLeft";
-            bLeft.Size = new Size(32, 32);
-            bLeft.TabIndex = 38;
-            bLeft.TabStop = false;
-            bLeft.Text = "<--";
-            bLeft.UseVisualStyleBackColor = false;
+            this.bLeft.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.bLeft.Location = new System.Drawing.Point(456, 240);
+            this.bLeft.Name = "bLeft";
+            this.bLeft.Size = new System.Drawing.Size(32, 32);
+            this.bLeft.TabIndex = 38;
+            this.bLeft.TabStop = false;
+            this.bLeft.Text = "<--";
+            this.bLeft.UseVisualStyleBackColor = false;
             // 
             // bRight
             // 
-            bRight.BackColor = Color.LightSkyBlue;
-            bRight.Location = new Point(496, 240);
-            bRight.Name = "bRight";
-            bRight.Size = new Size(32, 32);
-            bRight.TabIndex = 91;
-            bRight.TabStop = false;
-            bRight.Text = "-->";
-            bRight.UseVisualStyleBackColor = false;
+            this.bRight.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.bRight.Location = new System.Drawing.Point(496, 240);
+            this.bRight.Name = "bRight";
+            this.bRight.Size = new System.Drawing.Size(32, 32);
+            this.bRight.TabIndex = 91;
+            this.bRight.TabStop = false;
+            this.bRight.Text = "-->";
+            this.bRight.UseVisualStyleBackColor = false;
             // 
             // frmKeyboard
             // 
-            AutoScaleBaseSize = new Size(5, 13);
-            ClientSize = new Size(617, 279);
-            Controls.Add(bRight);
-            Controls.Add(txtKeyboard);
-            Controls.Add(bSend);
-            Controls.Add(bAlt);
-            Controls.Add(bControl);
-            Controls.Add(bGuion);
-            Controls.Add(bPunto);
-            Controls.Add(bComa);
-            Controls.Add(bm);
-            Controls.Add(bn);
-            Controls.Add(bb);
-            Controls.Add(bv);
-            Controls.Add(bc);
-            Controls.Add(bx);
-            Controls.Add(bz);
-            Controls.Add(bMenorque);
-            Controls.Add(bMayusIzq);
-            Controls.Add(bMayusDer);
-            Controls.Add(bCedilla);
-            Controls.Add(bDieresis);
-            Controls.Add(bñ);
-            Controls.Add(bl);
-            Controls.Add(bk);
-            Controls.Add(bj);
-            Controls.Add(bh);
-            Controls.Add(bg);
-            Controls.Add(bf);
-            Controls.Add(bd);
-            Controls.Add(bs);
-            Controls.Add(ba);
-            Controls.Add(bMas);
-            Controls.Add(bComita);
-            Controls.Add(bp);
-            Controls.Add(bo);
-            Controls.Add(bi);
-            Controls.Add(bu);
-            Controls.Add(by);
-            Controls.Add(bt);
-            Controls.Add(br);
-            Controls.Add(be);
-            Controls.Add(bw);
-            Controls.Add(bq);
-            Controls.Add(bBorrar);
-            Controls.Add(bIntIni);
-            Controls.Add(bIntFin);
-            Controls.Add(bTab);
-            Controls.Add(bMul);
-            Controls.Add(boa);
-            Controls.Add(bLeft);
-            Controls.Add(bSpacio);
-            Controls.Add(bMayus);
-            Controls.Add(b0);
-            Controls.Add(b9);
-            Controls.Add(b8);
-            Controls.Add(b7);
-            Controls.Add(b6);
-            Controls.Add(b5);
-            Controls.Add(b4);
-            Controls.Add(b3);
-            Controls.Add(b2);
-            Controls.Add(b1);
-            FormBorderStyle = FormBorderStyle.Fixed3D;
-            Name = "frmKeyboard";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "Teclado";
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
+            this.ClientSize = new System.Drawing.Size(617, 279);
+            this.Controls.Add(this.bRight);
+            this.Controls.Add(this.txtKeyboard);
+            this.Controls.Add(this.bSend);
+            this.Controls.Add(this.bAlt);
+            this.Controls.Add(this.bControl);
+            this.Controls.Add(this.bGuion);
+            this.Controls.Add(this.bPunto);
+            this.Controls.Add(this.bComa);
+            this.Controls.Add(this.bm);
+            this.Controls.Add(this.bn);
+            this.Controls.Add(this.bb);
+            this.Controls.Add(this.bv);
+            this.Controls.Add(this.bc);
+            this.Controls.Add(this.bx);
+            this.Controls.Add(this.bz);
+            this.Controls.Add(this.bMenorque);
+            this.Controls.Add(this.bMayusIzq);
+            this.Controls.Add(this.bMayusDer);
+            this.Controls.Add(this.bCedilla);
+            this.Controls.Add(this.bDieresis);
+            this.Controls.Add(this.bñ);
+            this.Controls.Add(this.bl);
+            this.Controls.Add(this.bk);
+            this.Controls.Add(this.bj);
+            this.Controls.Add(this.bh);
+            this.Controls.Add(this.bg);
+            this.Controls.Add(this.bf);
+            this.Controls.Add(this.bd);
+            this.Controls.Add(this.bs);
+            this.Controls.Add(this.ba);
+            this.Controls.Add(this.bMas);
+            this.Controls.Add(this.bComita);
+            this.Controls.Add(this.bp);
+            this.Controls.Add(this.bo);
+            this.Controls.Add(this.bi);
+            this.Controls.Add(this.bu);
+            this.Controls.Add(this.by);
+            this.Controls.Add(this.bt);
+            this.Controls.Add(this.br);
+            this.Controls.Add(this.be);
+            this.Controls.Add(this.bw);
+            this.Controls.Add(this.bq);
+            this.Controls.Add(this.bBorrar);
+            this.Controls.Add(this.bIntIni);
+            this.Controls.Add(this.bIntFin);
+            this.Controls.Add(this.bTab);
+            this.Controls.Add(this.bMul);
+            this.Controls.Add(this.boa);
+            this.Controls.Add(this.bLeft);
+            this.Controls.Add(this.bSpacio);
+            this.Controls.Add(this.bMayus);
+            this.Controls.Add(this.b0);
+            this.Controls.Add(this.b9);
+            this.Controls.Add(this.b8);
+            this.Controls.Add(this.b7);
+            this.Controls.Add(this.b6);
+            this.Controls.Add(this.b5);
+            this.Controls.Add(this.b4);
+            this.Controls.Add(this.b3);
+            this.Controls.Add(this.b2);
+            this.Controls.Add(this.b1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Name = "frmKeyboard";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Teclado";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

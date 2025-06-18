@@ -17,6 +17,7 @@ namespace FSFormControls
     [Designer(typeof(ParentControlDesigner))]
     [ToolboxBitmap(typeof(resfinder), "FSFormControls.Resources.DBFrame.bmp")]
     [ToolboxItem(true)]
+    [Serializable]
     public class DBFrame : DBUserControl
     {
         #region Delegates

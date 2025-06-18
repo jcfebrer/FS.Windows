@@ -19,6 +19,7 @@ namespace FSFormControls
     [Designer(typeof(DBControlDesigner))]
     [DesignTimeVisible(true)]
     [ToolboxItem(false)]
+    [Serializable]
     public class DBUserControl : UserControl
     {
         public DBUserControl()

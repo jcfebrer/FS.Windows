@@ -1,9 +1,12 @@
-﻿using System.Collections;
+﻿using FSLibrary;
+using System;
+using System.Collections;
 using System.ComponentModel;
-using FSLibrary;
 
 namespace FSFormControls
 {
+    [ToolboxItem(true)]
+    [Serializable]
     public class DBParamCollection : CollectionBase, IBindingList
     {
         private ListChangedEventHandler onListChanged;

@@ -1,13 +1,14 @@
 #region
 
+using FSDatabase;
+using FSException;
+using FSLibrary;
+using System;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Drawing;
 using System.Windows.Forms;
-using FSDatabase;
-using FSLibrary;
 using StringConverter = System.ComponentModel.StringConverter;
-using FSException;
 
 #endregion
 
@@ -15,6 +16,7 @@ namespace FSFormControls
 {
     [ToolboxBitmap(typeof(resfinder), "FSFormControls.Resources.DBControl.bmp")]
     [ToolboxItem(true)]
+    [Serializable]
     public class DBLopd : DBUserControl
     {
         //private string m_Table;

@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
+using System.ComponentModel;
 using System.Windows.Forms;
 
 namespace FSFormControls
@@ -6,6 +8,8 @@ namespace FSFormControls
     /// <summary>
     ///     This class is an implementation of the 'IComparer' interface.
     /// </summary>
+    [ToolboxItem(true)]
+    [Serializable]
     public class DBListViewColumnSorter : IComparer
     {
         /// <summary>

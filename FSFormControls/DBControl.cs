@@ -30,6 +30,7 @@ namespace FSFormControls
     [DesignTimeVisible(true)]
     [DefaultProperty("Selection")]
     [ToolboxItem(true)]
+    [Serializable]
     public class DBControl : DBUserControl
     {
         #region Events

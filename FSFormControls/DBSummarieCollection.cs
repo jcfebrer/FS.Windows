@@ -1,9 +1,12 @@
-﻿using System.Collections;
+﻿using FSLibrary;
+using System;
+using System.Collections;
 using System.ComponentModel;
-using FSLibrary;
 
 namespace FSFormControls
 {
+    [ToolboxItem(true)]
+    [Serializable]
     public class DBSummarieCollection : CollectionBase
     {
         private ListChangedEventHandler onListChanged;

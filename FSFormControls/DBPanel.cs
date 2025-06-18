@@ -1,11 +1,15 @@
 #region
 
+using System;
+using System.ComponentModel;
 using System.Windows.Forms;
 
 #endregion
 
 namespace FSFormControls
 {
+    [ToolboxItem(true)]
+    [Serializable]
     public class DBPanel : Panel
     {
         #region Delegates

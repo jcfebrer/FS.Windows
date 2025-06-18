@@ -21,6 +21,7 @@ namespace FSFormControls
     [DefaultEvent("SelectedValueChanged")]
     [Designer(typeof(DBComboControlDesigner))]
     [ToolboxItem(true)]
+    [Serializable]
     public class DBCombo : DBUserControl, ISupportInitialize
     {
         public enum SortStyleEnum
@@ -596,12 +597,14 @@ namespace FSFormControls
 
         public int SelectionStart {
             get { return combobox.SelectionStart; }
-            set { combobox.SelectionStart = value; }
+            set { if(value > 0)
+                    combobox.SelectionStart = value; }
         }
 
         public int SelectionLength {
             get { return combobox.SelectionLength; }
-            set { combobox.SelectionLength = value; }
+            set { if (value > 0)
+                    combobox.SelectionLength = value; }
         }
 
         public string SelectedText
