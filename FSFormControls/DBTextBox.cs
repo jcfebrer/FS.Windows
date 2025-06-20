@@ -50,6 +50,7 @@ namespace FSFormControls
             SetStyle(ControlStyles.DoubleBuffer, true);
 
             //lblShadow.TabStop = false;
+            Appearance = new DBAppearance();
 
             cmdAmpliar.Click += cmdAmpliar_Click;
             cmdCalc.Click += cmdCalc_Click;
@@ -341,8 +342,6 @@ namespace FSFormControls
             set { textbox.ForeColor = value; }
         }
 
-        public DBAppearance Appearance { get; set; }
-
         [Description("Modo lectura")]
         public bool ReadOnly
         {
@@ -497,8 +496,10 @@ namespace FSFormControls
         public string Expression { get; set; } = "";
 
         public string LastValue { get; private set; } = "";
-		
-		public void ScrollToEnd()
+
+        public DBAppearance Appearance { get; set; }
+
+        public void ScrollToEnd()
 		{
 			textbox.SelectionStart = textbox.Text.Length;
 			textbox.ScrollToCaret();

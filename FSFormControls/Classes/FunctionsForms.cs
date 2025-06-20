@@ -311,5 +311,25 @@ namespace FSFormControls
 
             return false;
         }
+
+        /// <summary>
+        /// Convierte un DataGridView a DBGridViewRowCollection.
+        /// </summary>
+        /// <param name="rows"></param>
+        /// <returns></returns>
+        public static DBGridViewRowCollection ConvertoToDBGridViewRowCollection(DataGridView dataGridView)
+        {
+            return new DBGridViewRowCollection(dataGridView);  
+        }
+
+        /// <summary>
+        /// Convierte una filas a DBGridViewRowCollection.
+        /// </summary>
+        /// <param name="rows"></param>
+        /// <returns></returns>
+        public static DBGridViewRow ConvertoToDBGridViewRow(DataGridViewRow row)
+        {
+            return row as DBGridViewRow;
+        }
     }
 }

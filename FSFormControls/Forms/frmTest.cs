@@ -14,6 +14,8 @@
             dbCombo1.Items.Add(6, "Valor 6");
             dbCombo1.Items.Add(7, "Valor 7");
             dbCombo1.Items.Add(8, "Valor 8");
+
+            dbStatusBar2.Items["mensaje"].Text = "Bienvenido al formulario de pruebas de controles DBFormControls";
         }
 
         private void dbButton18_Click(object sender, System.EventArgs e)

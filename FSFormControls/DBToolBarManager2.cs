@@ -9,28 +9,19 @@ namespace FSFormControls
     [ToolboxBitmap(typeof(resfinder), "FSFormControls.Resources.DBToolBar.bmp")]
     [ToolboxItem(true)]
     [Serializable]
-    public class DBToolBarManager : DBToolBar
+    public class DBToolBarManager2 : DBToolBarContainer, ISupportInitialize
     {
-        public DBToolBarManager()
+        public DBToolBarManager2()
         {
+            Dock = DockStyle.Top;
+
             //DBToolBar toolbar = new DBToolBar();
-            this.ItemClicked += new ToolStripItemClickedEventHandler(Toolbar_ButtonClick);
+            //toolbar.ItemClicked += new ToolStripItemClickedEventHandler(Toolbar_ButtonClick);
             //toolbar.Items.Add("DBToolBar1");
 
-            //this.Controls.Add(this);
+            //toolbars.Add(this);
 
-            this.Text = "DBToolBarManager";
-            this.Name = "DBToolBarManager";
-            this.ShowItemToolTips = true;
-
-            toolbars[0] = this;
-        }
-
-        public DBToolBarManager(string name, string text)
-            : this()
-        {
-            this.Name = name;
-            this.Text = text;
+            //this.ItemClicked += new ToolStripItemClickedEventHandler(Toolbar_ButtonClick);
         }
 
         private void Toolbar_ButtonClick(object sender, ToolStripItemClickedEventArgs e)
@@ -52,64 +43,69 @@ namespace FSFormControls
         }
 
         public int DesignerFlags { get; set; }
+
         public object DockWithinContainer { get; set; }
         public bool LockToolbars { get; set; }
         public bool MdiMergeable { get; set; }
         public DBRuntimeCustomizationOptions RuntimeCustomizationOptions { get; set; }
         public bool ShowShortcutsInToolTips { get; set; }
+        public object Settings { get; internal set; }
 
-        [NonSerialized]
-        DBToolBar[] toolbars = new DBToolBar[1];
+        List<DBToolBar> toolbars = new List<DBToolBar>();
 
         /// <summary>
         /// Esta propiedad la utiliza infragistics para manejar multiples Toolbar.
         /// </summary>
-        public DBToolBar[] Toolbars
+        public List<DBToolBar> Toolbars
         {
-            get { return toolbars; }
-            set { toolbars = value; }
+            get
+            {
+                //List<DBToolBar> toolbar = new List<DBToolBar>();
+                //toolbar.Add(this);
+                DBToolBar toolbar = new DBToolBar();
+                if (toolbars.Count == 0)
+                    toolbars.Add(toolbar);
+                return toolbars;
+            }
+            //set { toolbars = value; }
         }
 
-        //public bool Exists(string name)
-        //{
-        //    if (toolbars.Exists(n => n.Name == name))
-        //        return true;
-        //    return false;
-        //}
+        public ControlCollection Items
+        {
+            get
+            {
+                return TopToolStripPanel.Controls;
+            }
+        }
 
-        //public void BeginInit()
-        //{
-        //}
 
-        //public void EndInit()
-        //{
-        //}
+        public bool Exists(string name)
+        {
+            //if (toolbars.Exists(n => n.Name == name))
+            //    return true;
+            return false;
+        }
+
+        public void BeginInit()
+        {
+        }
+
+        public void EndInit()
+        {
+        }
 
         //public ToolStripItemCollection Items
         //{
-        //    get { return toolbars[0].Items; }
+        //    get { return this.Items; }
         //}
-        
-        public new bool Visible {
-            get { return toolbars[0].Visible; }
-            set { toolbars[0].Visible = value; }
-        }
 
-        //public object Settings { get; internal set; }
+        //public new bool Visible
+        //{
+        //    get { return base.Visible; }
+        //    set { base.Visible = value; }
+        //}
 
         public event ToolStripItemClickEventHandler ItemClick;
         public delegate void ToolStripItemClickEventHandler(object sender, ToolStripItemClickedEventArgs e);
-
-        //private void InitializeComponent()
-        //{
-        //    this.SuspendLayout();
-        //    // 
-        //    // DBToolBarManager
-        //    // 
-        //    this.Name = "DBToolBarManager";
-        //    this.Size = new System.Drawing.Size(393, 272);
-        //    this.ResumeLayout(false);
-
-        //}
     }
 }

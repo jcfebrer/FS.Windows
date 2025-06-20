@@ -32,13 +32,15 @@ namespace FSFormControls
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTest));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewRow dataGridViewRow3 = new System.Windows.Forms.DataGridViewRow();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            FSFormControls.DBGridViewDisplayLayout dbGridViewDisplayLayout2 = new FSFormControls.DBGridViewDisplayLayout();
             System.Windows.Forms.DataGridViewRow dataGridViewRow1 = new System.Windows.Forms.DataGridViewRow();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            FSFormControls.DBGridViewDisplayLayout dbGridViewDisplayLayout1 = new FSFormControls.DBGridViewDisplayLayout();
-            System.Windows.Forms.DataGridViewRow dataGridViewRow2 = new System.Windows.Forms.DataGridViewRow();
+            FSFormControls.DBAppearance dbAppearance11 = new FSFormControls.DBAppearance();
+            FSFormControls.DBAppearance dbAppearance12 = new FSFormControls.DBAppearance();
             FSFormControls.DBAppearance dbAppearance1 = new FSFormControls.DBAppearance();
             FSFormControls.DBAppearance dbAppearance2 = new FSFormControls.DBAppearance();
             FSFormControls.DBAppearance dbAppearance3 = new FSFormControls.DBAppearance();
@@ -47,8 +49,6 @@ namespace FSFormControls
             FSFormControls.DBAppearance dbAppearance6 = new FSFormControls.DBAppearance();
             FSFormControls.DBAppearance dbAppearance7 = new FSFormControls.DBAppearance();
             FSFormControls.DBAppearance dbAppearance8 = new FSFormControls.DBAppearance();
-            FSFormControls.DBAppearance dbAppearance9 = new FSFormControls.DBAppearance();
-            FSFormControls.DBAppearance dbAppearance10 = new FSFormControls.DBAppearance();
             this.dbTabControl1 = new FSFormControls.DBTabControl();
             this.tabPage1 = new FSFormControls.DBTabPage();
             this.dbButton19 = new FSFormControls.DBButton();
@@ -120,8 +120,15 @@ namespace FSFormControls
             this.dbScroll1 = new FSFormControls.DBScroll();
             this.dbProgressBar1 = new FSFormControls.DBProgressBar();
             this.tabPage6 = new FSFormControls.DBTabPage();
+            this.dbToolBarManager1 = new FSFormControls.DBToolBarManager();
             this.dbEditPicture1 = new FSFormControls.DBEditPicture();
             this.dbRichTextBox1 = new FSFormControls.DBRichTextBox();
+            this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton7 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton8 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton9 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton10 = new System.Windows.Forms.ToolStripButton();
             this.dbButton17 = new FSFormControls.DBButton();
             this.dbButton16 = new FSFormControls.DBButton();
             this.cValue1 = new FSFormControls.ChartValue();
@@ -132,6 +139,7 @@ namespace FSFormControls
             this.dbStatusBar2 = new FSFormControls.DBStatusBar();
             this.statusBarPanel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.statusBarPanel2 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.mensaje = new System.Windows.Forms.ToolStripStatusLabel();
             this.dbStatusBar3 = new FSFormControls.DBStatusBar();
             this.dbColumn1 = new FSFormControls.DBColumn();
             this.dbColumn2 = new FSFormControls.DBColumn();
@@ -176,6 +184,7 @@ namespace FSFormControls
             this.tabPage5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dbGrid1)).BeginInit();
             this.tabPage6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dbToolBarManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dbStatusBar2)).BeginInit();
             this.dbStatusBar2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dbStatusBar3)).BeginInit();
@@ -585,7 +594,7 @@ namespace FSFormControls
             this.dbCombo8.SelectionStart = 0;
             this.dbCombo8.ShowCode = false;
             this.dbCombo8.ShowEdit = false;
-            this.dbCombo8.Size = new System.Drawing.Size(110, 21);
+            this.dbCombo8.Size = new System.Drawing.Size(76, 21);
             this.dbCombo8.Sort = true;
             this.dbCombo8.SortStyle = FSFormControls.DBCombo.SortStyleEnum.Ascending;
             this.dbCombo8.TabIndex = 51;
@@ -965,8 +974,8 @@ namespace FSFormControls
             this.dbCombo4.SelectedOption = null;
             this.dbCombo4.SelectedText = "";
             this.dbCombo4.SelectedValue = null;
-            this.dbCombo4.SelectionLength = 0;
-            this.dbCombo4.SelectionStart = 0;
+            this.dbCombo4.SelectionLength = -106664;
+            this.dbCombo4.SelectionStart = 20;
             this.dbCombo4.ShowCode = false;
             this.dbCombo4.ShowEdit = false;
             this.dbCombo4.Size = new System.Drawing.Size(339, 21);
@@ -1697,7 +1706,7 @@ namespace FSFormControls
             // toolStripButton1
             // 
             this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.Image = global::FSFormControls.Properties.Resources.DBButton;
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
             this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
@@ -1705,17 +1714,16 @@ namespace FSFormControls
             // 
             // toolStripButton2
             // 
-            this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
+            this.toolStripButton2.Image = global::FSFormControls.Properties.Resources.DBCheckBox;
             this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton2.Size = new System.Drawing.Size(114, 22);
             this.toolStripButton2.Text = "toolStripButton2";
             // 
             // toolStripButton3
             // 
             this.toolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
+            this.toolStripButton3.Image = global::FSFormControls.Properties.Resources.DBControl;
             this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton3.Name = "toolStripButton3";
             this.toolStripButton3.Size = new System.Drawing.Size(23, 22);
@@ -1723,11 +1731,11 @@ namespace FSFormControls
             // 
             // toolStripButton4
             // 
-            this.toolStripButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.toolStripButton4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton4.Image")));
             this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton4.Name = "toolStripButton4";
-            this.toolStripButton4.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton4.Size = new System.Drawing.Size(98, 22);
             this.toolStripButton4.Text = "toolStripButton4";
             // 
             // dbGridView1
@@ -1760,27 +1768,27 @@ namespace FSFormControls
             this.dbGridView1.CellAppearance = null;
             this.dbGridView1.CellClickAction = FSFormControls.DBGridViewDisplayLayout.DBCellClickAction.Default;
             this.dbGridView1.CellPadding = 0;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dbGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 9F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dbGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dbGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dbGridView1.CurrentCell = null;
             this.dbGridView1.DataControl = null;
             this.dbGridView1.DataSource = null;
             this.dbGridView1.DBField = null;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dbGridView1.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 9F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dbGridView1.DefaultCellStyle = dataGridViewCellStyle6;
             this.dbGridView1.DefaultDecimals = 2;
             this.dbGridView1.DefaultHeaderFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dbGridView1.DisplayLayout = null;
@@ -1806,7 +1814,7 @@ namespace FSFormControls
             this.dbGridView1.RowSelectorWidth = 0;
             this.dbGridView1.RowsInCaption = 2;
             this.dbGridView1.RowSizing = FSFormControls.DBGridViewDisplayLayout.DBRowSizing.Default;
-            this.dbGridView1.RowTemplate = dataGridViewRow1;
+            this.dbGridView1.RowTemplate = dataGridViewRow3;
             this.dbGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dbGridView1.SelectTypeRow = FSFormControls.DBGridViewDisplayLayout.SelectType.Default;
             this.dbGridView1.ShowExpand = false;
@@ -2012,70 +2020,70 @@ namespace FSFormControls
             this.dbGrid1.CellAppearance = null;
             this.dbGrid1.CellClickAction = FSFormControls.DBGridViewDisplayLayout.DBCellClickAction.Default;
             this.dbGrid1.CellPadding = 0;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dbGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dbGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dbGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dbGrid1.CurrentCell = null;
             this.dbGrid1.DataControl = null;
             this.dbGrid1.DataSource = null;
             this.dbGrid1.DBField = null;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dbGrid1.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dbGrid1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dbGrid1.DefaultDecimals = 2;
             this.dbGrid1.DefaultHeaderFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dbGridViewDisplayLayout1.ActiveCellAppearance = null;
-            dbGridViewDisplayLayout1.ActiveRowAppearance = null;
-            dbGridViewDisplayLayout1.AllowColMoving = FSFormControls.DBGridViewDisplayLayout.DBAllowColMoving.Default;
-            dbGridViewDisplayLayout1.AllowColSwapping = FSFormControls.DBGridViewDisplayLayout.DBAllowColSwapping.Default;
-            dbGridViewDisplayLayout1.AllowDelete = false;
-            dbGridViewDisplayLayout1.Appearance = null;
-            dbGridViewDisplayLayout1.BandLabelAppearance = null;
-            dbGridViewDisplayLayout1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dbGridViewDisplayLayout1.BorderStyleCell = System.Windows.Forms.BorderStyle.None;
-            dbGridViewDisplayLayout1.BorderStyleRow = System.Windows.Forms.BorderStyle.None;
-            dbGridViewDisplayLayout1.CaptionVisible = false;
-            dbGridViewDisplayLayout1.CardAreaAppearance = null;
-            dbGridViewDisplayLayout1.CellAppearance = null;
-            dbGridViewDisplayLayout1.CellClickAction = FSFormControls.DBGridViewDisplayLayout.DBCellClickAction.Default;
-            dbGridViewDisplayLayout1.CellPadding = 0;
-            dbGridViewDisplayLayout1.GroupByBox = null;
-            dbGridViewDisplayLayout1.GroupByRowAppearance = null;
-            dbGridViewDisplayLayout1.HeaderAppearance = null;
-            dbGridViewDisplayLayout1.HeaderClickAction = FSFormControls.DBGridViewDisplayLayout.DBHeaderClickAction.Default;
-            dbGridViewDisplayLayout1.HeaderStyle = FSFormControls.DBGridViewDisplayLayout.DBHeaderStyle.Default;
-            dbGridViewDisplayLayout1.Hidden = false;
-            dbGridViewDisplayLayout1.LoadStyle = FSFormControls.DBGridViewDisplayLayout.DBLoadStyle.Default;
-            dbGridViewDisplayLayout1.MaxColScrollRegions = 0;
-            dbGridViewDisplayLayout1.MaxRowScrollRegions = 0;
-            dbGridViewDisplayLayout1.MinRowHeight = 0;
-            dbGridViewDisplayLayout1.Override = null;
-            dbGridViewDisplayLayout1.PromptAppearance = null;
-            dbGridViewDisplayLayout1.RowAppearance = null;
-            dbGridViewDisplayLayout1.RowSelectorHeaderStyle = FSFormControls.DBGridViewDisplayLayout.DBRowSelectorHeaderStyle.Default;
-            dbGridViewDisplayLayout1.RowSelectorNumberStyle = FSFormControls.DBGridViewDisplayLayout.DBRowSelectorNumberStyle.Default;
-            dbGridViewDisplayLayout1.RowSelectors = false;
-            dbGridViewDisplayLayout1.RowSelectorStyle = FSFormControls.DBGridViewDisplayLayout.DBHeaderStyle.Default;
-            dbGridViewDisplayLayout1.RowSizing = FSFormControls.DBGridViewDisplayLayout.DBRowSizing.Default;
-            dbGridViewDisplayLayout1.ScrollBounds = FSFormControls.DBGridViewDisplayLayout.DBScrollBounds.ScrollToFill;
-            dbGridViewDisplayLayout1.ScrollStyle = FSFormControls.DBGridViewDisplayLayout.DBScrollStyle.Deferred;
-            dbGridViewDisplayLayout1.SelectTypeCol = FSFormControls.DBGridViewDisplayLayout.SelectType.Default;
-            dbGridViewDisplayLayout1.SelectTypeRow = FSFormControls.DBGridViewDisplayLayout.SelectType.Default;
-            dbGridViewDisplayLayout1.TabNavigation = FSFormControls.DBGridViewDisplayLayout.DBTabNavigation.NextCell;
-            dbGridViewDisplayLayout1.TemplateAddRowAppearance = null;
-            dbGridViewDisplayLayout1.ViewStyleBand = FSFormControls.DBGridViewDisplayLayout.DBViewStyleBand.Vertical;
-            this.dbGrid1.DisplayLayout = dbGridViewDisplayLayout1;
+            dbGridViewDisplayLayout2.ActiveCellAppearance = null;
+            dbGridViewDisplayLayout2.ActiveRowAppearance = null;
+            dbGridViewDisplayLayout2.AllowColMoving = FSFormControls.DBGridViewDisplayLayout.DBAllowColMoving.Default;
+            dbGridViewDisplayLayout2.AllowColSwapping = FSFormControls.DBGridViewDisplayLayout.DBAllowColSwapping.Default;
+            dbGridViewDisplayLayout2.AllowDelete = false;
+            dbGridViewDisplayLayout2.Appearance = null;
+            dbGridViewDisplayLayout2.BandLabelAppearance = null;
+            dbGridViewDisplayLayout2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dbGridViewDisplayLayout2.BorderStyleCell = System.Windows.Forms.BorderStyle.None;
+            dbGridViewDisplayLayout2.BorderStyleRow = System.Windows.Forms.BorderStyle.None;
+            dbGridViewDisplayLayout2.CaptionVisible = false;
+            dbGridViewDisplayLayout2.CardAreaAppearance = null;
+            dbGridViewDisplayLayout2.CellAppearance = null;
+            dbGridViewDisplayLayout2.CellClickAction = FSFormControls.DBGridViewDisplayLayout.DBCellClickAction.Default;
+            dbGridViewDisplayLayout2.CellPadding = 0;
+            dbGridViewDisplayLayout2.GroupByBox = null;
+            dbGridViewDisplayLayout2.GroupByRowAppearance = null;
+            dbGridViewDisplayLayout2.HeaderAppearance = null;
+            dbGridViewDisplayLayout2.HeaderClickAction = FSFormControls.DBGridViewDisplayLayout.DBHeaderClickAction.Default;
+            dbGridViewDisplayLayout2.HeaderStyle = FSFormControls.DBGridViewDisplayLayout.DBHeaderStyle.Default;
+            dbGridViewDisplayLayout2.Hidden = false;
+            dbGridViewDisplayLayout2.LoadStyle = FSFormControls.DBGridViewDisplayLayout.DBLoadStyle.Default;
+            dbGridViewDisplayLayout2.MaxColScrollRegions = 0;
+            dbGridViewDisplayLayout2.MaxRowScrollRegions = 0;
+            dbGridViewDisplayLayout2.MinRowHeight = 0;
+            dbGridViewDisplayLayout2.Override = null;
+            dbGridViewDisplayLayout2.PromptAppearance = null;
+            dbGridViewDisplayLayout2.RowAppearance = null;
+            dbGridViewDisplayLayout2.RowSelectorHeaderStyle = FSFormControls.DBGridViewDisplayLayout.DBRowSelectorHeaderStyle.Default;
+            dbGridViewDisplayLayout2.RowSelectorNumberStyle = FSFormControls.DBGridViewDisplayLayout.DBRowSelectorNumberStyle.Default;
+            dbGridViewDisplayLayout2.RowSelectors = false;
+            dbGridViewDisplayLayout2.RowSelectorStyle = FSFormControls.DBGridViewDisplayLayout.DBHeaderStyle.Default;
+            dbGridViewDisplayLayout2.RowSizing = FSFormControls.DBGridViewDisplayLayout.DBRowSizing.Default;
+            dbGridViewDisplayLayout2.ScrollBounds = FSFormControls.DBGridViewDisplayLayout.DBScrollBounds.ScrollToFill;
+            dbGridViewDisplayLayout2.ScrollStyle = FSFormControls.DBGridViewDisplayLayout.DBScrollStyle.Deferred;
+            dbGridViewDisplayLayout2.SelectTypeCol = FSFormControls.DBGridViewDisplayLayout.SelectType.Default;
+            dbGridViewDisplayLayout2.SelectTypeRow = FSFormControls.DBGridViewDisplayLayout.SelectType.Default;
+            dbGridViewDisplayLayout2.TabNavigation = FSFormControls.DBGridViewDisplayLayout.DBTabNavigation.NextCell;
+            dbGridViewDisplayLayout2.TemplateAddRowAppearance = null;
+            dbGridViewDisplayLayout2.ViewStyleBand = FSFormControls.DBGridViewDisplayLayout.DBViewStyleBand.Vertical;
+            this.dbGrid1.DisplayLayout = dbGridViewDisplayLayout2;
             this.dbGrid1.Editable = true;
             this.dbGrid1.EditCellAppearance = null;
             this.dbGrid1.EnableHeadersVisualStyles = true;
@@ -2098,7 +2106,7 @@ namespace FSFormControls
             this.dbGrid1.RowSelectorWidth = 0;
             this.dbGrid1.RowsInCaption = 2;
             this.dbGrid1.RowSizing = FSFormControls.DBGridViewDisplayLayout.DBRowSizing.Default;
-            this.dbGrid1.RowTemplate = dataGridViewRow2;
+            this.dbGrid1.RowTemplate = dataGridViewRow1;
             this.dbGrid1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dbGrid1.SelectTypeRow = FSFormControls.DBGridViewDisplayLayout.SelectType.Default;
             this.dbGrid1.ShowExpand = false;
@@ -2177,6 +2185,7 @@ namespace FSFormControls
             // tabPage6
             // 
             this.tabPage6.Appearance = null;
+            this.tabPage6.Controls.Add(this.dbToolBarManager1);
             this.tabPage6.Controls.Add(this.dbEditPicture1);
             this.tabPage6.Controls.Add(this.dbRichTextBox1);
             this.tabPage6.Key = "tabPage6";
@@ -2187,6 +2196,21 @@ namespace FSFormControls
             this.tabPage6.Text = "tabPage6";
             this.tabPage6.UseVisualStyleBackColor = true;
             // 
+            // dbToolBarManager1
+            // 
+            this.dbToolBarManager1.DesignerFlags = 0;
+            this.dbToolBarManager1.DockWithinContainer = null;
+            this.dbToolBarManager1.Location = new System.Drawing.Point(0, 0);
+            this.dbToolBarManager1.LockToolbars = false;
+            this.dbToolBarManager1.MdiMergeable = false;
+            this.dbToolBarManager1.Name = "dbToolBarManager1";
+            this.dbToolBarManager1.RuntimeCustomizationOptions = FSFormControls.DBToolBarManager.DBRuntimeCustomizationOptions.None;
+            this.dbToolBarManager1.Settings = null;
+            this.dbToolBarManager1.ShowShortcutsInToolTips = false;
+            this.dbToolBarManager1.Size = new System.Drawing.Size(1063, 25);
+            this.dbToolBarManager1.TabIndex = 42;
+            this.dbToolBarManager1.Text = "dbToolBarManager1";
+            // 
             // dbEditPicture1
             // 
             this.dbEditPicture1.About = "";
@@ -2195,22 +2219,76 @@ namespace FSFormControls
             this.dbEditPicture1.DataControl = null;
             this.dbEditPicture1.DBField = null;
             this.dbEditPicture1.Image = null;
-            this.dbEditPicture1.Location = new System.Drawing.Point(16, 5);
+            this.dbEditPicture1.Location = new System.Drawing.Point(16, 58);
             this.dbEditPicture1.Mode = FSFormControls.Global.AccessMode.WriteMode;
             this.dbEditPicture1.Name = "dbEditPicture1";
             this.dbEditPicture1.PointSizeX = 9;
             this.dbEditPicture1.PointSizeY = 9;
-            this.dbEditPicture1.Size = new System.Drawing.Size(366, 189);
+            this.dbEditPicture1.Size = new System.Drawing.Size(309, 332);
             this.dbEditPicture1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Normal;
             this.dbEditPicture1.TabIndex = 19;
             // 
             // dbRichTextBox1
             // 
             this.dbRichTextBox1.About = "";
-            this.dbRichTextBox1.Location = new System.Drawing.Point(425, 13);
+            this.dbRichTextBox1.Location = new System.Drawing.Point(331, 85);
             this.dbRichTextBox1.Name = "dbRichTextBox1";
-            this.dbRichTextBox1.Size = new System.Drawing.Size(266, 223);
+            this.dbRichTextBox1.Size = new System.Drawing.Size(703, 282);
             this.dbRichTextBox1.TabIndex = 41;
+            // 
+            // toolStripButton5
+            // 
+            this.toolStripButton5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton5.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton5.Image")));
+            this.toolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton5.Name = "toolStripButton5";
+            this.toolStripButton5.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton5.Text = "toolStripButton5";
+            // 
+            // toolStripButton6
+            // 
+            this.toolStripButton6.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton6.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton6.Image")));
+            this.toolStripButton6.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton6.Name = "toolStripButton6";
+            this.toolStripButton6.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton6.Text = "toolStripButton6";
+            // 
+            // toolStripButton7
+            // 
+            this.toolStripButton7.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton7.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton7.Image")));
+            this.toolStripButton7.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton7.Name = "toolStripButton7";
+            this.toolStripButton7.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton7.Text = "toolStripButton7";
+            // 
+            // toolStripButton8
+            // 
+            this.toolStripButton8.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton8.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton8.Image")));
+            this.toolStripButton8.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton8.Name = "toolStripButton8";
+            this.toolStripButton8.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton8.Text = "toolStripButton8";
+            // 
+            // toolStripButton9
+            // 
+            this.toolStripButton9.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton9.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton9.Image")));
+            this.toolStripButton9.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton9.Name = "toolStripButton9";
+            this.toolStripButton9.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton9.Text = "toolStripButton9";
+            // 
+            // toolStripButton10
+            // 
+            this.toolStripButton10.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton10.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton10.Image")));
+            this.toolStripButton10.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton10.Name = "toolStripButton10";
+            this.toolStripButton10.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton10.Text = "toolStripButton10";
             // 
             // dbButton17
             // 
@@ -2320,11 +2398,15 @@ namespace FSFormControls
             // 
             this.dbStatusBar2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.statusBarPanel1,
-            this.statusBarPanel2});
+            this.statusBarPanel2,
+            this.mensaje});
+            this.dbStatusBar2.Key = "DBStatusBar1";
             this.dbStatusBar2.Location = new System.Drawing.Point(0, 479);
             this.dbStatusBar2.Name = "dbStatusBar2";
+            this.dbStatusBar2.ShowItemToolTips = true;
             this.dbStatusBar2.Size = new System.Drawing.Size(1071, 22);
             this.dbStatusBar2.TabIndex = 44;
+            this.dbStatusBar2.Text = "DBStatusBar1";
             this.dbStatusBar2.ViewStyle = FSFormControls.DBStatusBar.ViewStyleEnum.Default;
             this.dbStatusBar2.WrapText = false;
             // 
@@ -2340,12 +2422,21 @@ namespace FSFormControls
             this.statusBarPanel2.Size = new System.Drawing.Size(90, 17);
             this.statusBarPanel2.Text = "statusBarPanel2";
             // 
+            // mensaje
+            // 
+            this.mensaje.Name = "mensaje";
+            this.mensaje.Size = new System.Drawing.Size(118, 17);
+            this.mensaje.Text = "toolStripStatusLabel1";
+            // 
             // dbStatusBar3
             // 
+            this.dbStatusBar3.Key = "DBStatusBar1";
             this.dbStatusBar3.Location = new System.Drawing.Point(0, 457);
             this.dbStatusBar3.Name = "dbStatusBar3";
+            this.dbStatusBar3.ShowItemToolTips = true;
             this.dbStatusBar3.Size = new System.Drawing.Size(1071, 22);
             this.dbStatusBar3.TabIndex = 47;
+            this.dbStatusBar3.Text = "DBStatusBar1";
             this.dbStatusBar3.ViewStyle = FSFormControls.DBStatusBar.ViewStyleEnum.Default;
             this.dbStatusBar3.WrapText = false;
             // 
@@ -2358,12 +2449,12 @@ namespace FSFormControls
             this.dbColumn1.AsociatedButtonColumn = -1;
             this.dbColumn1.AsociatedComboColumn = -1;
             this.dbColumn1.Caption = "";
-            dbAppearance1.Alignment = System.Windows.Forms.HorizontalAlignment.Left;
-            dbAppearance1.AppearanceOnToolbar = null;
-            dbAppearance1.PressedAppearanceOnToolbar = null;
-            dbAppearance1.TextHAlign = FSFormControls.DBAppearance.HAlign.Default;
-            dbAppearance1.TextVAlign = FSFormControls.DBAppearance.VAlign.Default;
-            this.dbColumn1.CellAppearance = dbAppearance1;
+            dbAppearance11.Alignment = System.Windows.Forms.HorizontalAlignment.Left;
+            dbAppearance11.AppearanceOnToolbar = null;
+            dbAppearance11.PressedAppearanceOnToolbar = null;
+            dbAppearance11.TextHAlign = FSFormControls.DBAppearance.HAlign.Default;
+            dbAppearance11.TextVAlign = FSFormControls.DBAppearance.VAlign.Default;
+            this.dbColumn1.CellAppearance = dbAppearance11;
             this.dbColumn1.CellSizeResolved = new System.Drawing.Size(0, 0);
             this.dbColumn1.ColumnBackColor = System.Drawing.Color.Empty;
             this.dbColumn1.ColumnDBControl = null;
@@ -2384,12 +2475,12 @@ namespace FSFormControls
             this.dbColumn1.Font = null;
             this.dbColumn1.Format = null;
             this.dbColumn1.FormatString = null;
-            dbAppearance2.Alignment = System.Windows.Forms.HorizontalAlignment.Left;
-            dbAppearance2.AppearanceOnToolbar = null;
-            dbAppearance2.PressedAppearanceOnToolbar = null;
-            dbAppearance2.TextHAlign = FSFormControls.DBAppearance.HAlign.Default;
-            dbAppearance2.TextVAlign = FSFormControls.DBAppearance.VAlign.Default;
-            this.dbColumn1.HeaderAppearance = dbAppearance2;
+            dbAppearance12.Alignment = System.Windows.Forms.HorizontalAlignment.Left;
+            dbAppearance12.AppearanceOnToolbar = null;
+            dbAppearance12.PressedAppearanceOnToolbar = null;
+            dbAppearance12.TextHAlign = FSFormControls.DBAppearance.HAlign.Default;
+            dbAppearance12.TextVAlign = FSFormControls.DBAppearance.VAlign.Default;
+            this.dbColumn1.HeaderAppearance = dbAppearance12;
             this.dbColumn1.HeaderCaption = "";
             this.dbColumn1.Hidden = false;
             this.dbColumn1.Image = null;
@@ -2432,12 +2523,12 @@ namespace FSFormControls
             this.dbColumn2.AsociatedButtonColumn = -1;
             this.dbColumn2.AsociatedComboColumn = -1;
             this.dbColumn2.Caption = "";
-            dbAppearance3.Alignment = System.Windows.Forms.HorizontalAlignment.Left;
-            dbAppearance3.AppearanceOnToolbar = null;
-            dbAppearance3.PressedAppearanceOnToolbar = null;
-            dbAppearance3.TextHAlign = FSFormControls.DBAppearance.HAlign.Default;
-            dbAppearance3.TextVAlign = FSFormControls.DBAppearance.VAlign.Default;
-            this.dbColumn2.CellAppearance = dbAppearance3;
+            dbAppearance1.Alignment = System.Windows.Forms.HorizontalAlignment.Left;
+            dbAppearance1.AppearanceOnToolbar = null;
+            dbAppearance1.PressedAppearanceOnToolbar = null;
+            dbAppearance1.TextHAlign = FSFormControls.DBAppearance.HAlign.Default;
+            dbAppearance1.TextVAlign = FSFormControls.DBAppearance.VAlign.Default;
+            this.dbColumn2.CellAppearance = dbAppearance1;
             this.dbColumn2.CellSizeResolved = new System.Drawing.Size(0, 0);
             this.dbColumn2.ColumnBackColor = System.Drawing.Color.Empty;
             this.dbColumn2.ColumnDBControl = null;
@@ -2458,12 +2549,12 @@ namespace FSFormControls
             this.dbColumn2.Font = null;
             this.dbColumn2.Format = null;
             this.dbColumn2.FormatString = null;
-            dbAppearance4.Alignment = System.Windows.Forms.HorizontalAlignment.Left;
-            dbAppearance4.AppearanceOnToolbar = null;
-            dbAppearance4.PressedAppearanceOnToolbar = null;
-            dbAppearance4.TextHAlign = FSFormControls.DBAppearance.HAlign.Default;
-            dbAppearance4.TextVAlign = FSFormControls.DBAppearance.VAlign.Default;
-            this.dbColumn2.HeaderAppearance = dbAppearance4;
+            dbAppearance2.Alignment = System.Windows.Forms.HorizontalAlignment.Left;
+            dbAppearance2.AppearanceOnToolbar = null;
+            dbAppearance2.PressedAppearanceOnToolbar = null;
+            dbAppearance2.TextHAlign = FSFormControls.DBAppearance.HAlign.Default;
+            dbAppearance2.TextVAlign = FSFormControls.DBAppearance.VAlign.Default;
+            this.dbColumn2.HeaderAppearance = dbAppearance2;
             this.dbColumn2.HeaderCaption = "";
             this.dbColumn2.Hidden = false;
             this.dbColumn2.Image = null;
@@ -2506,12 +2597,12 @@ namespace FSFormControls
             this.dbColumn3.AsociatedButtonColumn = -1;
             this.dbColumn3.AsociatedComboColumn = -1;
             this.dbColumn3.Caption = "";
-            dbAppearance5.Alignment = System.Windows.Forms.HorizontalAlignment.Left;
-            dbAppearance5.AppearanceOnToolbar = null;
-            dbAppearance5.PressedAppearanceOnToolbar = null;
-            dbAppearance5.TextHAlign = FSFormControls.DBAppearance.HAlign.Default;
-            dbAppearance5.TextVAlign = FSFormControls.DBAppearance.VAlign.Default;
-            this.dbColumn3.CellAppearance = dbAppearance5;
+            dbAppearance3.Alignment = System.Windows.Forms.HorizontalAlignment.Left;
+            dbAppearance3.AppearanceOnToolbar = null;
+            dbAppearance3.PressedAppearanceOnToolbar = null;
+            dbAppearance3.TextHAlign = FSFormControls.DBAppearance.HAlign.Default;
+            dbAppearance3.TextVAlign = FSFormControls.DBAppearance.VAlign.Default;
+            this.dbColumn3.CellAppearance = dbAppearance3;
             this.dbColumn3.CellSizeResolved = new System.Drawing.Size(0, 0);
             this.dbColumn3.ColumnBackColor = System.Drawing.Color.Empty;
             this.dbColumn3.ColumnDBControl = null;
@@ -2532,12 +2623,12 @@ namespace FSFormControls
             this.dbColumn3.Font = null;
             this.dbColumn3.Format = null;
             this.dbColumn3.FormatString = null;
-            dbAppearance6.Alignment = System.Windows.Forms.HorizontalAlignment.Left;
-            dbAppearance6.AppearanceOnToolbar = null;
-            dbAppearance6.PressedAppearanceOnToolbar = null;
-            dbAppearance6.TextHAlign = FSFormControls.DBAppearance.HAlign.Default;
-            dbAppearance6.TextVAlign = FSFormControls.DBAppearance.VAlign.Default;
-            this.dbColumn3.HeaderAppearance = dbAppearance6;
+            dbAppearance4.Alignment = System.Windows.Forms.HorizontalAlignment.Left;
+            dbAppearance4.AppearanceOnToolbar = null;
+            dbAppearance4.PressedAppearanceOnToolbar = null;
+            dbAppearance4.TextHAlign = FSFormControls.DBAppearance.HAlign.Default;
+            dbAppearance4.TextVAlign = FSFormControls.DBAppearance.VAlign.Default;
+            this.dbColumn3.HeaderAppearance = dbAppearance4;
             this.dbColumn3.HeaderCaption = "";
             this.dbColumn3.Hidden = false;
             this.dbColumn3.Image = null;
@@ -2580,12 +2671,12 @@ namespace FSFormControls
             this.dbColumn4.AsociatedButtonColumn = -1;
             this.dbColumn4.AsociatedComboColumn = -1;
             this.dbColumn4.Caption = "";
-            dbAppearance7.Alignment = System.Windows.Forms.HorizontalAlignment.Left;
-            dbAppearance7.AppearanceOnToolbar = null;
-            dbAppearance7.PressedAppearanceOnToolbar = null;
-            dbAppearance7.TextHAlign = FSFormControls.DBAppearance.HAlign.Default;
-            dbAppearance7.TextVAlign = FSFormControls.DBAppearance.VAlign.Default;
-            this.dbColumn4.CellAppearance = dbAppearance7;
+            dbAppearance5.Alignment = System.Windows.Forms.HorizontalAlignment.Left;
+            dbAppearance5.AppearanceOnToolbar = null;
+            dbAppearance5.PressedAppearanceOnToolbar = null;
+            dbAppearance5.TextHAlign = FSFormControls.DBAppearance.HAlign.Default;
+            dbAppearance5.TextVAlign = FSFormControls.DBAppearance.VAlign.Default;
+            this.dbColumn4.CellAppearance = dbAppearance5;
             this.dbColumn4.CellSizeResolved = new System.Drawing.Size(0, 0);
             this.dbColumn4.ColumnBackColor = System.Drawing.Color.Empty;
             this.dbColumn4.ColumnDBControl = null;
@@ -2606,12 +2697,12 @@ namespace FSFormControls
             this.dbColumn4.Font = null;
             this.dbColumn4.Format = null;
             this.dbColumn4.FormatString = null;
-            dbAppearance8.Alignment = System.Windows.Forms.HorizontalAlignment.Left;
-            dbAppearance8.AppearanceOnToolbar = null;
-            dbAppearance8.PressedAppearanceOnToolbar = null;
-            dbAppearance8.TextHAlign = FSFormControls.DBAppearance.HAlign.Default;
-            dbAppearance8.TextVAlign = FSFormControls.DBAppearance.VAlign.Default;
-            this.dbColumn4.HeaderAppearance = dbAppearance8;
+            dbAppearance6.Alignment = System.Windows.Forms.HorizontalAlignment.Left;
+            dbAppearance6.AppearanceOnToolbar = null;
+            dbAppearance6.PressedAppearanceOnToolbar = null;
+            dbAppearance6.TextHAlign = FSFormControls.DBAppearance.HAlign.Default;
+            dbAppearance6.TextVAlign = FSFormControls.DBAppearance.VAlign.Default;
+            this.dbColumn4.HeaderAppearance = dbAppearance6;
             this.dbColumn4.HeaderCaption = "";
             this.dbColumn4.Hidden = false;
             this.dbColumn4.Image = null;
@@ -2654,12 +2745,12 @@ namespace FSFormControls
             this.dbColumn5.AsociatedButtonColumn = -1;
             this.dbColumn5.AsociatedComboColumn = -1;
             this.dbColumn5.Caption = "";
-            dbAppearance9.Alignment = System.Windows.Forms.HorizontalAlignment.Left;
-            dbAppearance9.AppearanceOnToolbar = null;
-            dbAppearance9.PressedAppearanceOnToolbar = null;
-            dbAppearance9.TextHAlign = FSFormControls.DBAppearance.HAlign.Default;
-            dbAppearance9.TextVAlign = FSFormControls.DBAppearance.VAlign.Default;
-            this.dbColumn5.CellAppearance = dbAppearance9;
+            dbAppearance7.Alignment = System.Windows.Forms.HorizontalAlignment.Left;
+            dbAppearance7.AppearanceOnToolbar = null;
+            dbAppearance7.PressedAppearanceOnToolbar = null;
+            dbAppearance7.TextHAlign = FSFormControls.DBAppearance.HAlign.Default;
+            dbAppearance7.TextVAlign = FSFormControls.DBAppearance.VAlign.Default;
+            this.dbColumn5.CellAppearance = dbAppearance7;
             this.dbColumn5.CellSizeResolved = new System.Drawing.Size(0, 0);
             this.dbColumn5.ColumnBackColor = System.Drawing.Color.Empty;
             this.dbColumn5.ColumnDBControl = null;
@@ -2680,12 +2771,12 @@ namespace FSFormControls
             this.dbColumn5.Font = null;
             this.dbColumn5.Format = null;
             this.dbColumn5.FormatString = null;
-            dbAppearance10.Alignment = System.Windows.Forms.HorizontalAlignment.Left;
-            dbAppearance10.AppearanceOnToolbar = null;
-            dbAppearance10.PressedAppearanceOnToolbar = null;
-            dbAppearance10.TextHAlign = FSFormControls.DBAppearance.HAlign.Default;
-            dbAppearance10.TextVAlign = FSFormControls.DBAppearance.VAlign.Default;
-            this.dbColumn5.HeaderAppearance = dbAppearance10;
+            dbAppearance8.Alignment = System.Windows.Forms.HorizontalAlignment.Left;
+            dbAppearance8.AppearanceOnToolbar = null;
+            dbAppearance8.PressedAppearanceOnToolbar = null;
+            dbAppearance8.TextHAlign = FSFormControls.DBAppearance.HAlign.Default;
+            dbAppearance8.TextVAlign = FSFormControls.DBAppearance.VAlign.Default;
+            this.dbColumn5.HeaderAppearance = dbAppearance8;
             this.dbColumn5.HeaderCaption = "";
             this.dbColumn5.Hidden = false;
             this.dbColumn5.Image = null;
@@ -2775,6 +2866,8 @@ namespace FSFormControls
             this.tabPage5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dbGrid1)).EndInit();
             this.tabPage6.ResumeLayout(false);
+            this.tabPage6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dbToolBarManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dbStatusBar2)).EndInit();
             this.dbStatusBar2.ResumeLayout(false);
             this.dbStatusBar2.PerformLayout();
@@ -2875,5 +2968,13 @@ namespace FSFormControls
         private System.Windows.Forms.ToolStripButton toolStripButton2;
         private System.Windows.Forms.ToolStripButton toolStripButton3;
         private System.Windows.Forms.ToolStripButton toolStripButton4;
+        private DBToolBarManager dbToolBarManager1;
+        private System.Windows.Forms.ToolStripButton toolStripButton5;
+        private System.Windows.Forms.ToolStripButton toolStripButton6;
+        private System.Windows.Forms.ToolStripButton toolStripButton7;
+        private System.Windows.Forms.ToolStripButton toolStripButton8;
+        private System.Windows.Forms.ToolStripButton toolStripButton9;
+        private System.Windows.Forms.ToolStripButton toolStripButton10;
+        private System.Windows.Forms.ToolStripStatusLabel mensaje;
     }
 }

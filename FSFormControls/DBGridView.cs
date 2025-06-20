@@ -320,7 +320,7 @@ namespace FSFormControls
 
         public bool ShowExpand { get; set; }
 
-        public DBGridViewRowCollection Rows => (DBGridViewRowCollection)datagrid.Rows;
+        public DBGridViewRowCollection Rows => FunctionsForms.ConvertoToDBGridViewRowCollection(dataGridView);
 
         public Color AlternatingColor
         {
@@ -442,7 +442,7 @@ namespace FSFormControls
             get
             {
                 if (datagrid.SelectedRows.Count > 0)
-                    return (DBGridViewRow)datagrid.SelectedRows[0];
+                    return FunctionsForms.ConvertoToDBGridViewRow(datagrid.SelectedRows[0]);
                 return (DBGridViewRow)datagrid.CurrentRow;
             }
             set
