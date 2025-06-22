@@ -1743,7 +1743,7 @@ namespace FSFormControls
             this.dbGridView1.About = "";
             this.dbGridView1.ActiveCell = null;
             this.dbGridView1.ActiveCellAppearance = null;
-            this.dbGridView1.ActiveRow = null;
+            //this.dbGridView1.ActiveRow = null;
             this.dbGridView1.ActiveRowAppearance = null;
             this.dbGridView1.AllowAddNew = true;
             this.dbGridView1.AllowColMoving = FSFormControls.DBGridViewDisplayLayout.DBAllowColMoving.Default;
@@ -1995,7 +1995,7 @@ namespace FSFormControls
             this.dbGrid1.About = "";
             this.dbGrid1.ActiveCell = null;
             this.dbGrid1.ActiveCellAppearance = null;
-            this.dbGrid1.ActiveRow = null;
+            //this.dbGrid1.ActiveRow = null;
             this.dbGrid1.ActiveRowAppearance = null;
             this.dbGrid1.AllowAddNew = true;
             this.dbGrid1.AllowColMoving = FSFormControls.DBGridViewDisplayLayout.DBAllowColMoving.Default;

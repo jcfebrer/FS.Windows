@@ -320,7 +320,10 @@ namespace FSFormControls
 
         public bool ShowExpand { get; set; }
 
-        public DBGridViewRowCollection Rows => FunctionsForms.ConvertoToDBGridViewRowCollection(dataGridView);
+        public DataGridViewRowCollection Rows
+        {
+            get { return datagrid.Rows; }
+        }
 
         public Color AlternatingColor
         {
@@ -437,19 +440,19 @@ namespace FSFormControls
             datagrid.Sort(comparer);
         }
 
-        public DBGridViewRow ActiveRow
+        public DataGridViewRow ActiveRow
         {
             get
             {
-                if (datagrid.SelectedRows.Count > 0)
-                    return FunctionsForms.ConvertoToDBGridViewRow(datagrid.SelectedRows[0]);
-                return (DBGridViewRow)datagrid.CurrentRow;
+                //if (datagrid.SelectedRows.Count > 0)
+                //    return FunctionsForms.ConvertoToDBGridViewRow(datagrid.SelectedRows[0]);
+                //return (DBGridViewRow)datagrid.CurrentRow;
+                return datagrid.CurrentRow;
             }
-            set
-            {
-                if (value != null)
-                    value.Selected = true;
-            }
+            //set
+            //{
+            //    datagrid.CurrentRow = value;
+            //}
         }
 
         public DBGridViewDisplayLayout DisplayLayout { get; set; } = new DBGridViewDisplayLayout();

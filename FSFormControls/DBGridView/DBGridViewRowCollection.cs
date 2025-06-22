@@ -9,17 +9,17 @@ namespace FSFormControls
         {
         }
 
-        public new DBGridViewRow this[int index]
-        {
-            get
-            {
-                if (index < 0 || index >= Count)
-                {
-                    throw new ArgumentOutOfRangeException(nameof(index), "Index out of range");
-                }
-                return (DBGridViewRow)base[index];
-            }
-        }
+        //public new DBGridViewRow this[int index]
+        //{
+        //    get
+        //    {
+        //        if (index < 0 || index >= Count)
+        //        {
+        //            throw new ArgumentOutOfRangeException(nameof(index), "Index out of range");
+        //        }
+        //        return (DBGridViewRow)base[index];
+        //    }
+        //}
 
         public DBGridViewFilterCollection ColumnFilters { get; set; }
     }

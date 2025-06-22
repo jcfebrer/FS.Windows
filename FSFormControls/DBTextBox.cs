@@ -42,6 +42,89 @@ namespace FSFormControls
         private string m_ToolTip = "";
         private string m_XMLName = "";
 
+        #region Delegates
+
+        public delegate void EnterEventHandler(object sender, EventArgs e);
+        public delegate void KeyDownEventHandler(object sender, KeyEventArgs e);
+        public delegate void KeyPressEventHandler(object sender, KeyPressEventArgs e);
+        public delegate void KeyUpEventHandler(object sender, KeyEventArgs e);
+        public delegate void LeaveEventHandler(object sender, EventArgs e);
+        public delegate void LostFocusEventHandler(object sender, EventArgs e);
+        public delegate void MouseEnterEventHandler(object sender, EventArgs e);
+        public delegate void MouseEnterElementEventHandler(object sender, DBEditorButtonEventArgs e);
+        public delegate void MaskChangedEventHandler(object sender, EventArgs e);
+
+        #endregion
+
+        #region Events
+
+        public new event LostFocusEventHandler LostFocus;
+        public new event KeyPressEventHandler KeyPress;
+        public new event KeyDownEventHandler KeyDown;
+        public new event KeyUpEventHandler KeyUp;
+        public new event EventHandler Leave;
+        public new event EventHandler MouseEnter;
+        public new event EventHandler Enter;
+        public event EventHandler ValueChanged;
+        public event EventHandler AfterEnterEditMode;
+        public event EventHandler AfterExitEditMode;
+        public event DBEditorButtonEventHandler EditorButtonClick;
+        public event MouseEnterElementEventHandler MouseEnterElement;
+        public event MaskChangedEventHandler MaskChanged;
+
+        #endregion
+
+        #region Enums
+
+        public enum TypeData
+        {
+            All,
+            Numeric,
+            Money,
+            Pecentage,
+            Date,
+            Formula,
+            Time,
+            Memo
+        }
+
+        public enum TypeString
+        {
+            Normal,
+            Uppercase,
+            Lowercase,
+            Capitalize
+        }
+
+        public enum NumericTypeEnum
+        {
+            Decimal,
+            Double,
+            Integer
+        }
+
+        #endregion
+
+        #region TabNavigation
+
+        public enum TabNavigationEnum
+        {
+            NextControl,
+            NextSection
+        }
+
+        public enum SelectAllBehaviorEnum
+        {
+            SelectAllCharacters,
+            SelectEnteredCharacters
+        }
+
+        public enum EditAsType
+        {
+            UseSpecifiedMask
+        }
+
+        #endregion
 
         public DBTextBox()
         {
@@ -1549,98 +1632,6 @@ namespace FSFormControls
         {
             base.OnMouseUp(e);
         }
-
-        #region Delegates
-
-        public delegate void EnterEventHandler(object sender, EventArgs e);
-
-        public delegate void KeyDownEventHandler(object sender, KeyEventArgs e);
-
-        public delegate void KeyPressEventHandler(object sender, KeyPressEventArgs e);
-
-        public delegate void KeyUpEventHandler(object sender, KeyEventArgs e);
-
-        public delegate void LeaveEventHandler(object sender, EventArgs e);
-
-        public delegate void LostFocusEventHandler(object sender, EventArgs e);
-
-        public delegate void MouseEnterEventHandler(object sender, EventArgs e);
-
-        public delegate void MouseEnterElementEventHandler(object sender, DBEditorButtonEventArgs e);
-
-        public delegate void MaskChangedEventHandler(object sender, EventArgs e);
-
-        #endregion
-
-        #region Events
-
-        public new event LostFocusEventHandler LostFocus;
-        public new event KeyPressEventHandler KeyPress;
-        public new event KeyDownEventHandler KeyDown;
-        public new event KeyUpEventHandler KeyUp;
-        public new event EventHandler Leave;
-        public new event EventHandler MouseEnter;
-        public new event EventHandler Enter;
-        public event EventHandler ValueChanged;
-        public event EventHandler AfterEnterEditMode;
-        public event EventHandler AfterExitEditMode;
-        public event DBEditorButtonEventHandler EditorButtonClick;
-        public event MouseEnterElementEventHandler MouseEnterElement;
-        public event MaskChangedEventHandler MaskChanged;
-
-        #endregion
-
-        #region Enums
-
-        public enum TypeData
-        {
-            All,
-            Numeric,
-            Money,
-            Pecentage,
-            Date,
-            Formula,
-            Time,
-            Memo
-        }
-
-        public enum TypeString
-        {
-            Normal,
-            Uppercase,
-            Lowercase,
-            Capitalize
-        }
-
-        public enum NumericTypeEnum
-        {
-            Decimal,
-            Double,
-            Integer
-        }
-
-        #endregion
-
-        #region TabNavigation
-
-        public enum TabNavigationEnum
-        {
-            NextControl,
-            NextSection
-        }
-
-        public enum SelectAllBehaviorEnum
-        {
-            SelectAllCharacters,
-            SelectEnteredCharacters
-        }
-
-        public enum EditAsType
-        {
-            UseSpecifiedMask
-        }
-
-        #endregion
 
         #region '" Código generado por el Diseñador de Windows Forms "' 
 
