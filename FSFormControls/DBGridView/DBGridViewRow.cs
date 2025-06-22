@@ -1,9 +1,15 @@
-﻿using System.Windows.Forms;
+﻿using System;
+using System.Collections.Generic;
+using System.Windows.Forms;
 
 namespace FSFormControls
 {
     public class DBGridViewRow : DataGridViewRow
     {
+        public DBGridViewRow()
+        {
+        }
+
         public bool IsFilteredOut
         {
             get
@@ -19,6 +25,11 @@ namespace FSFormControls
             //FEBRER: Comprobar valor a devolver en función del parent row.
             get { return m_parentRow; }
             set { m_parentRow = value; }
+        }
+
+        public static explicit operator DBGridViewRow(List<DataGridViewRow>.Enumerator v)
+        {
+            throw new NotImplementedException();
         }
     }
 }

@@ -320,9 +320,9 @@ namespace FSFormControls
 
         public bool ShowExpand { get; set; }
 
-        public DataGridViewRowCollection Rows
+        public DBGridViewRowCollection Rows
         {
-            get { return datagrid.Rows; }
+            get { return FunctionsForms.ConvertoToDBGridViewRowCollection(dataGridView); }
         }
 
         public Color AlternatingColor
@@ -449,10 +449,17 @@ namespace FSFormControls
                 //return (DBGridViewRow)datagrid.CurrentRow;
                 return datagrid.CurrentRow;
             }
-            //set
-            //{
-            //    datagrid.CurrentRow = value;
-            //}
+        }
+
+        public new void Select()
+        {
+            datagrid.Select();
+        }
+
+
+        public void Select(int row)
+        {
+            datagrid.Rows[row].Selected = true;
         }
 
         public DBGridViewDisplayLayout DisplayLayout { get; set; } = new DBGridViewDisplayLayout();
@@ -1684,24 +1691,6 @@ namespace FSFormControls
             catch (Exception e)
             {
                 throw new ExceptionUtil("Error al Añadir la columna: " + column.FieldDB, e);
-            }
-        }
-
-
-        public new void Select()
-        {
-            datagrid.Select();
-        }
-
-
-        public void Select(int row)
-        {
-            try
-            {
-                datagrid.Rows[row].Selected = true;
-            }
-            catch
-            {
             }
         }
 
