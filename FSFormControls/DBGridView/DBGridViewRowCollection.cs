@@ -80,6 +80,15 @@ namespace FSFormControls
             }
         }
 
+        public void RemoveAt(int index)
+        {
+            if (index < 0 || index >= Count)
+            {
+                throw new ArgumentOutOfRangeException(nameof(index), "Index out of range");
+            }
+            _internalRows.RemoveAt(index);
+        }
+
         public DBGridViewFilterCollection ColumnFilters { get; set; }
     }
 }

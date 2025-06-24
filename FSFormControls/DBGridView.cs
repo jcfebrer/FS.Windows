@@ -449,6 +449,12 @@ namespace FSFormControls
                 //return (DBGridViewRow)datagrid.CurrentRow;
                 return datagrid.CurrentRow;
             }
+            set {
+                if (value != null)
+                {
+                    datagrid.CurrentCell = value.Cells[0];
+                }
+            }
         }
 
         public new void Select()
