@@ -14,7 +14,7 @@ namespace FSFormControls
     [ToolboxItem(false)]
     public class DBGridViewPrintDocument : System.Drawing.Printing.PrintDocument
     {
-        private readonly FSFormControls.DBGridView dataGridToPrint;
+        private readonly FSFormControls.DBGridViewEx dataGridToPrint;
         private readonly DataView objView;
         public int CurCol;
         public int CurRow;
@@ -24,7 +24,7 @@ namespace FSFormControls
         private Font printFont;
         private CurrencyManager privCM;
 
-        public DBGridViewPrintDocument(FSFormControls.DBGridView dataGridToPrint, DataView objView, DataTable objTable,
+        public DBGridViewPrintDocument(FSFormControls.DBGridViewEx dataGridToPrint, DataView objView, DataTable objTable,
             CurrencyManager privCM,
             int NP, string Question)
         {

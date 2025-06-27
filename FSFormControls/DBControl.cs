@@ -119,7 +119,7 @@ namespace FSFormControls
 
         public DbActionTypes Action = DbActionTypes.None;
         public bool AddError;
-        public DBGridView AsociatedDBGridView;
+        public DBGridViewEx AsociatedDBGridView;
         private IContainer components;
         public bool Connected;
         public bool ConnectError;
@@ -1877,10 +1877,10 @@ namespace FSFormControls
                 }
                 else
                 {
-                    if (ctr is DBGridView)
-                        if (((DBGridView) ctr).DataControl != null)
-                            if (((DBGridView) ctr).DataControl.NameControl() == Name)
-                                ((DBGridView) ctr).Fill();
+                    if (ctr is DBGridViewEx)
+                        if (((DBGridViewEx) ctr).DataControl != null)
+                            if (((DBGridViewEx) ctr).DataControl.NameControl() == Name)
+                                ((DBGridViewEx) ctr).Fill();
                 }
         }
 
@@ -2004,21 +2004,21 @@ namespace FSFormControls
                             }
                 }
 
-                if (ctr is DBGridView)
-                    if (((DBGridView) ctr).DataControl != null)
-                        if (((DBGridView) ctr).DataControl.NameControl() == Name)
-                            for (f = 0; f <= ((DBGridView) ctr).Columns.Count - 1; f++)
-                                if (((DBGridView) ctr).Columns[f].MaxLength == 0 &&
-                                    !string.IsNullOrEmpty(((DBGridView) ctr).DBField))
+                if (ctr is DBGridViewEx)
+                    if (((DBGridViewEx) ctr).DataControl != null)
+                        if (((DBGridViewEx) ctr).DataControl.NameControl() == Name)
+                            for (f = 0; f <= ((DBGridViewEx) ctr).Columns.Count - 1; f++)
+                                if (((DBGridViewEx) ctr).Columns[f].MaxLength == 0 &&
+                                    !string.IsNullOrEmpty(((DBGridViewEx) ctr).DBField))
                                 {
-                                    s = db.GetField(((DBGridView) ctr).Columns[f].FieldDB, DataControl.TableName)
+                                    s = db.GetField(((DBGridViewEx) ctr).Columns[f].FieldDB, DataControl.TableName)
                                         .Tamano;
                                     if ((s != 0) & (s < Global.MAX_TEXT_LENGTH))
                                     {
-                                        if (((DBGridView) ctr).Columns[f].ColumnType ==
+                                        if (((DBGridViewEx) ctr).Columns[f].ColumnType ==
                                             FSFormControls.DBColumn.ColumnTypes.DateColumn)
                                             s = Convert.ToInt32(Global.DATE_LENGTH);
-                                        ((DBGridView) ctr).Columns[f].MaxLength = s;
+                                        ((DBGridViewEx) ctr).Columns[f].MaxLength = s;
                                     }
                                 }
             }
@@ -2062,14 +2062,14 @@ namespace FSFormControls
                                         db.FieldMaxValue(((DBFindTextBox)ctr).DBField);
                             }
 
-                    if (ctr is DBGridView)
-                        if (((DBGridView) ctr).DataControl != null)
-                            if (((DBGridView) ctr).DataControl.NameControl() == Name)
-                                for (f = 0; f <= ((DBGridView) ctr).Columns.Count - 1; f++)
-                                    if (((DBGridView) ctr).Columns[f].MaxValue == decimal.MaxValue &&
-                                        !string.IsNullOrEmpty(((DBGridView) ctr).DBField))
-                                        ((DBGridView) ctr).Columns[f].MaxValue =
-                                            db.FieldMaxValue(((DBGridView) ctr).Columns[f].FieldDB);
+                    if (ctr is DBGridViewEx)
+                        if (((DBGridViewEx) ctr).DataControl != null)
+                            if (((DBGridViewEx) ctr).DataControl.NameControl() == Name)
+                                for (f = 0; f <= ((DBGridViewEx) ctr).Columns.Count - 1; f++)
+                                    if (((DBGridViewEx) ctr).Columns[f].MaxValue == decimal.MaxValue &&
+                                        !string.IsNullOrEmpty(((DBGridViewEx) ctr).DBField))
+                                        ((DBGridViewEx) ctr).Columns[f].MaxValue =
+                                            db.FieldMaxValue(((DBGridViewEx) ctr).Columns[f].FieldDB);
                 }
         }
 
@@ -2243,7 +2243,7 @@ namespace FSFormControls
                 else
                 {
                     if (ctr is DBCombo | ctr is DBTextBox | ctr is DBFindTextBox | ctr is DBDate | ctr is DBCheckBox |
-                        ctr is DBGridView | ctr is DBImage | ctr is DBFile | ctr is DBEditPicture | ctr is DBLabel)
+                        ctr is DBGridViewEx | ctr is DBImage | ctr is DBFile | ctr is DBEditPicture | ctr is DBLabel)
                     {
                         if (ctr is DBCombo && ((DBCombo)ctr).DataControl != null && ((DBCombo)ctr).DataControl.NameControl() == Name)
                             ((DBCombo)ctr).Mode = AccMode;
@@ -2255,8 +2255,8 @@ namespace FSFormControls
                             ((DBDate)ctr).Mode = AccMode;
                         if (ctr is DBCheckBox && ((DBCheckBox)ctr).DataControl != null && ((DBCheckBox)ctr).DataControl.NameControl() == Name)
                             ((DBCheckBox)ctr).Mode = AccMode;
-                        if (ctr is DBGridView && ((DBGridView)ctr).DataControl != null && ((DBGridView)ctr).DataControl.NameControl() == Name)
-                            ((DBGridView)ctr).Mode = AccMode;
+                        if (ctr is DBGridViewEx && ((DBGridViewEx)ctr).DataControl != null && ((DBGridViewEx)ctr).DataControl.NameControl() == Name)
+                            ((DBGridViewEx)ctr).Mode = AccMode;
                         if (ctr is DBImage && ((DBImage)ctr).DataControl != null && ((DBImage)ctr).DataControl.NameControl() == Name)
                             ((DBImage)ctr).Mode = AccMode;
                         if (ctr is DBFile && ((DBFile)ctr).DataControl != null && ((DBFile)ctr).DataControl.NameControl() == Name)

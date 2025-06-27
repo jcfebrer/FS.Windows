@@ -849,8 +849,8 @@ namespace FSFormControls
             ScanForChildControls = false;
 
             DataGridView dg = null;
-            if (c is DBGridView)
-                dg = ((DBGridView) c).dataGridView;
+            if (c is DBGridViewEx)
+                dg = ((DBGridViewEx) c).dataGridView;
             else
                 dg = (DataGridView) c;
 
@@ -928,8 +928,8 @@ namespace FSFormControls
             ScanForChildControls = false;
 
             DataGridView dg = null;
-            if (c is DBGridView)
-                dg = ((DBGridView)c).dataGridView;
+            if (c is DBGridViewEx)
+                dg = ((DBGridViewEx)c).dataGridView;
             else
                 dg = (DataGridView)c;
 

@@ -105,7 +105,7 @@ namespace FSFormControls
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
-            this.dbGridView1 = new FSFormControls.DBGridView();
+            this.dbGridView1 = new FSFormControls.DBGridViewEx();
             this.tabPage4 = new FSFormControls.DBTabPage();
             this.dbGroupBox1 = new FSFormControls.DBGroupBox();
             this.dbGroupBoxXP1 = new FSFormControls.DBGroupBoxXP();
@@ -114,7 +114,7 @@ namespace FSFormControls
             this.dbRecord1 = new FSFormControls.DBRecord();
             this.dbLock1 = new FSFormControls.DBLock();
             this.tabPage5 = new FSFormControls.DBTabPage();
-            this.dbGrid1 = new FSFormControls.DBGridView();
+            this.dbGrid1 = new FSFormControls.DBGridViewEx();
             this.dbGraphics1 = new FSFormControls.DBGraphics();
             this.dbFrame1 = new FSFormControls.DBFrame();
             this.dbScroll1 = new FSFormControls.DBScroll();
@@ -1823,14 +1823,14 @@ namespace FSFormControls
             this.dbGridView1.Size = new System.Drawing.Size(635, 245);
             this.dbGridView1.SortedColumns = null;
             this.dbGridView1.Summaries = null;
-            this.dbGridView1.SummaryDisplayArea = FSFormControls.DBGridView.SummaryDisplayAreas.Default;
+            this.dbGridView1.SummaryDisplayArea = FSFormControls.DBGridViewEx.SummaryDisplayAreas.Default;
             this.dbGridView1.SummaryFooterCaptionVisible = false;
             this.dbGridView1.SummaryFooterSpacingAfter = 0;
             this.dbGridView1.SummaryFooterSpacingBefore = 0;
             this.dbGridView1.TabIndex = 28;
             this.dbGridView1.TemplateAddRowAppearance = null;
             this.dbGridView1.TotalOperation = FSFormControls.DBColumn.OperationTypes.Sum;
-            this.dbGridView1.UpdateMode = FSFormControls.DBGridView.UpdateModeEnum.OnCellChange;
+            this.dbGridView1.UpdateMode = FSFormControls.DBGridViewEx.UpdateModeEnum.OnCellChange;
             // 
             // tabPage4
             // 
@@ -2115,14 +2115,14 @@ namespace FSFormControls
             this.dbGrid1.Size = new System.Drawing.Size(114, 114);
             this.dbGrid1.SortedColumns = null;
             this.dbGrid1.Summaries = null;
-            this.dbGrid1.SummaryDisplayArea = FSFormControls.DBGridView.SummaryDisplayAreas.Default;
+            this.dbGrid1.SummaryDisplayArea = FSFormControls.DBGridViewEx.SummaryDisplayAreas.Default;
             this.dbGrid1.SummaryFooterCaptionVisible = false;
             this.dbGrid1.SummaryFooterSpacingAfter = 0;
             this.dbGrid1.SummaryFooterSpacingBefore = 0;
             this.dbGrid1.TabIndex = 27;
             this.dbGrid1.TemplateAddRowAppearance = null;
             this.dbGrid1.TotalOperation = FSFormControls.DBColumn.OperationTypes.Sum;
-            this.dbGrid1.UpdateMode = FSFormControls.DBGridView.UpdateModeEnum.OnCellChange;
+            this.dbGrid1.UpdateMode = FSFormControls.DBGridViewEx.UpdateModeEnum.OnCellChange;
             // 
             // dbGraphics1
             // 
@@ -2904,8 +2904,8 @@ namespace FSFormControls
         private DBFrame dbFrame1;
         private DBFtp dbFtp1;
         private DBGraphics dbGraphics1;
-        private DBGridView dbGrid1;
-        private DBGridView dbGridView1;
+        private DBGridViewEx dbGrid1;
+        private DBGridViewEx dbGridView1;
         private DBGroupBox dbGroupBox1;
         private DBGroupBoxXP dbGroupBoxXP1;
         private DBImage dbImage1;

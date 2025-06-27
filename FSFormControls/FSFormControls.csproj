@@ -68,7 +68,7 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Update="DBFileExplorer.cs" />
-    <Compile Update="DBGridView.cs" />
+    <Compile Update="DBGridViewEx.cs" />
     <Compile Update="DBGridView\DBGridViewPrintDocument.cs">
       <SubType>Component</SubType>
     </Compile>

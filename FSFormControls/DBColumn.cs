@@ -201,6 +201,11 @@ namespace FSFormControls
         /// <summary>
         ///     Título de la columna
         /// </summary>
+        public string HeaderText { get; set; } = "";
+
+        /// <summary>
+        ///     Título de la columna
+        /// </summary>
         public string HeaderCaption { get; set; } = "";
 
         /// <summary>

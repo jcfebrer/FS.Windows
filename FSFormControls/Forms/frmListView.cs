@@ -78,7 +78,7 @@ namespace FSFormControls
         private readonly IContainer components = null;
 
         internal DBButton DbButton1;
-        internal DBGridView DbGrid1;
+        internal DBGridViewEx DbGrid1;
 
         public frmListView()
         {
@@ -101,7 +101,7 @@ namespace FSFormControls
         [DebuggerStepThrough]
         private void InitializeComponent()
         {
-            DbGrid1 = new DBGridView();
+            DbGrid1 = new DBGridViewEx();
             DbButton1 = new DBButton();
             SuspendLayout();
             // 
