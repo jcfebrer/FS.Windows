@@ -18,24 +18,28 @@ namespace FSFormControls
 
                 if ((dbc.Width == 0) | force)
                 {
-                    var db = new BdUtils(Global.ConnectionString);
-                    dbc.Width = db.GetField(dbc.FieldDB, datacontrol.TableName).Tamano * Global.CARACTER_SIZE;
-                    if (dbc.ColumnType == DBColumn.ColumnTypes.DescriptionColumn)
+                    var db = new BdUtils(Global.ConnectionString, Global.ProviderName);
+                    
+                    if (!String.IsNullOrEmpty(datacontrol.TableName))
                     {
-                        if (dbc.ColumnDBControl == null)
+                        dbc.Width = db.GetField(dbc.FieldDB, datacontrol.TableName).Tamano * Global.CARACTER_SIZE;
+                        if (dbc.ColumnType == DBColumn.ColumnTypes.DescriptionColumn)
                         {
-                            if ((dbc.AsociatedButtonColumn == -1) & (dbc.AsociatedComboColumn == -1))
-                                throw new ExceptionUtil("[" + dbc.FieldDB +
-                                                        "] DBColumn sin ColumnDBControl asociado, ó DBColumn sin AsociatedButtonColumn/AsociatedComboColumn definido.");
+                            if (dbc.ColumnDBControl == null)
+                            {
+                                if ((dbc.AsociatedButtonColumn == -1) & (dbc.AsociatedComboColumn == -1))
+                                    throw new ExceptionUtil("[" + dbc.FieldDB +
+                                                            "] DBColumn sin ColumnDBControl asociado, ó DBColumn sin AsociatedButtonColumn/AsociatedComboColumn definido.");
 
-                            if (dbc.AsociatedButtonColumn != -1)
-                                dbc.ColumnDBControl = columns[dbc.AsociatedButtonColumn].ColumnDBControl;
-                            else
-                                dbc.ColumnDBControl = columns[dbc.AsociatedComboColumn].ColumnDBControl;
+                                if (dbc.AsociatedButtonColumn != -1)
+                                    dbc.ColumnDBControl = columns[dbc.AsociatedButtonColumn].ColumnDBControl;
+                                else
+                                    dbc.ColumnDBControl = columns[dbc.AsociatedComboColumn].ColumnDBControl;
+                            }
+
+                            dbc.Width = db.GetField(dbc.FieldDB, dbc.ColumnDBControl.TableName).Tamano *
+                                        Global.CARACTER_SIZE;
                         }
-
-                        dbc.Width = db.GetField(dbc.FieldDB, dbc.ColumnDBControl.TableName).Tamano *
-                                    Global.CARACTER_SIZE;
                     }
 
                     if (dbc.ColumnType == DBColumn.ColumnTypes.ComboColumn)
@@ -156,7 +160,7 @@ namespace FSFormControls
                             dataControl.TypeDB == DBControl.DbType.OleDB ||
                             dataControl.TypeDB == DBControl.DbType.SQLServer)
                         {
-                            var db = new BdUtils(Global.ConnectionString);
+                            var db = new BdUtils(Global.ConnectionString, Global.ProviderName);
                             column = new DBColumn(dataControl.FieldName(f), TextUtil.PCase(dataControl.FieldName(f)),
                                 FunctionsForms.ConvertFieldTypeToColumnType(db.GetField(dataControl.FieldName(f),
                                     dataControl.TableName).Tipo));

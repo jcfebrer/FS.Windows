@@ -126,7 +126,7 @@ namespace FSFormControls
 
         private void cmdAceptar_Click(object sender, EventArgs e)
         {
-            BdUtils db = new BdUtils(Global.ConnectionString);
+            BdUtils db = new BdUtils(Global.ConnectionString, Global.ProviderName);
             var f = 0;
             var cond = new string[5];
             var field = new string[5];
@@ -436,7 +436,7 @@ namespace FSFormControls
 
         private void FillCond(ComboBox cboField, ComboBox cboCond)
         {
-            BdUtils db = new BdUtils(Global.ConnectionString);
+            BdUtils db = new BdUtils(Global.ConnectionString, Global.ProviderName);
             string fielddb = null;
 
             if (!(DataControl.ColumnMapping.FindByHeaderCaption(cboField.SelectedItem + "") == null))

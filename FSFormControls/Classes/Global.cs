@@ -40,6 +40,7 @@ namespace FSFormControls
 
         public static DBControl.DbActionTypes Action = DBControl.DbActionTypes.None;
         public static string ConnectionString;
+        public static string ProviderName;
         //public static DbConnection DBconnection;
         //public static FSDatabase.Utils.TypeBd typeDb = FSDatabase.Utils.TypeBd.Oledb;
         public static bool SilentError;

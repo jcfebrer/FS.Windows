@@ -62,7 +62,7 @@ namespace FSFormControls
         {
             base.OnPrintPage(ev);
 
-            var db = new BdUtils(Global.ConnectionString);
+            var db = new BdUtils(Global.ConnectionString, Global.ProviderName);
             NextFirstCol = 0;
             npp += 1;
 

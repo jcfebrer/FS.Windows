@@ -1,5 +1,10 @@
 ﻿#region
 
+using FSDatabase;
+using FSExcel;
+using FSException;
+using FSFormControls.Properties;
+using FSLibrary;
 using System;
 using System.CodeDom;
 using System.Collections;
@@ -11,11 +16,6 @@ using System.Diagnostics;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using FSDatabase;
-using FSException;
-using FSFormControls.Properties;
-using FSLibrary;
-using FSExcel;
 
 #endregion
 
@@ -161,6 +161,7 @@ namespace FSFormControls
         public event DataGridViewRowCancelEventHandler UserDeletingRow;
         public event DataGridViewRowEventHandler UserAddedRow;
         public event DataGridViewRowEventHandler UserDeletedRow;
+        public event DataGridViewCellEventHandler CellContentClick;
 
         //INFRAGISTICS
         //public event InitializeRowEventHandler InitializeRow;
@@ -216,6 +217,7 @@ namespace FSFormControls
             datagrid.MouseClick += Datagrid_MouseClick;
             datagrid.UserAddedRow += DataGridView1_UserAddedRow;
             datagrid.UserDeletedRow += DataGridView1_UserDeletedRow;
+            datagrid.CellContentClick += DataGridView1_CellContentClick;
 
             if (Columns == null)
                 Columns = new DBColumnCollection();
@@ -231,6 +233,12 @@ namespace FSFormControls
             datagrid.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
             DoubleBuffered = true;
             datagrid.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+        }
+
+        private void DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (CellContentClick != null)
+                CellContentClick(sender, e);
         }
 
         private void DataGridView1_UserDeletedRow(object sender, DataGridViewRowEventArgs e)
@@ -488,10 +496,17 @@ namespace FSFormControls
                 //return (DBGridViewRow)datagrid.CurrentRow;
                 return datagrid.CurrentRow;
             }
-            set {
+            set
+            {
                 if (value != null)
                 {
-                    datagrid.CurrentCell = value.Cells[0];
+                    //        datagrid.CurrentRow = value;
+                    //        //datagrid.CurrentCell = value.Cells[0];
+                    value.Selected = true;
+                }
+                else
+                {
+                    datagrid.CurrentRow.Selected = false;
                 }
             }
         }
@@ -1263,6 +1278,7 @@ namespace FSFormControls
                         {
                             var dbic = new DataGridViewImageColumn();
 
+                            dbic.Name = column.Name;
                             dbic.Visible = !column.Hidden;
                             dbic.DataPropertyName = column.FieldDB;
                             dbic.HeaderText = column.HeaderCaption;
@@ -1287,6 +1303,7 @@ namespace FSFormControls
                         {
                             var dbcbc = new DataGridViewCheckBoxColumn();
 
+                            dbcbc.Name = column.Name;
                             dbcbc.Visible = !column.Hidden;
                             dbcbc.DataPropertyName = column.FieldDB;
                             dbcbc.HeaderText = column.HeaderCaption;
@@ -1313,6 +1330,7 @@ namespace FSFormControls
                         {
                             var textCol = new DataGridViewTextBoxColumn();
 
+                            textCol.Name = column.Name;
                             textCol.Visible = !column.Hidden;
                             textCol.DataPropertyName = column.FieldDB;
                             textCol.HeaderText = column.HeaderCaption;
@@ -1338,6 +1356,7 @@ namespace FSFormControls
                         {
                             var textCol = new DataGridViewTextBoxColumn();
 
+                            textCol.Name = column.Name;
                             textCol.Visible = !column.Hidden;
                             textCol.DataPropertyName = column.FieldDB;
                             textCol.HeaderText = column.HeaderCaption;
@@ -1363,6 +1382,7 @@ namespace FSFormControls
                         {
                             var cm = new DBGridViewMaskColumn(column.MaskInput);
 
+                            cm.Name = column.Name;
                             cm.Visible = !column.Hidden;
                             cm.DataPropertyName = column.FieldDB;
                             cm.HeaderText = column.HeaderCaption;
@@ -1389,6 +1409,7 @@ namespace FSFormControls
                         {
                             var tp = new DBGridViewDateTimePickerColumn();
 
+                            tp.Name = column.Name;
                             tp.Visible = !column.Hidden;
                             tp.DataPropertyName = column.FieldDB;
                             tp.HeaderText = column.HeaderCaption;
@@ -1414,6 +1435,7 @@ namespace FSFormControls
                         {
                             var textCol = new DataGridViewTextBoxColumn();
 
+                            textCol.Name = column.Name;
                             textCol.Visible = !column.Hidden;
                             textCol.DataPropertyName = column.FieldDB;
                             textCol.HeaderText = column.HeaderCaption;
@@ -1439,6 +1461,7 @@ namespace FSFormControls
                         {
                             var textCol = new DBGridViewDateTimePickerColumn();
 
+                            textCol.Name = column.Name;
                             textCol.Visible = !column.Hidden;
                             textCol.DataPropertyName = column.FieldDB;
                             textCol.HeaderText = column.HeaderCaption;
@@ -1464,6 +1487,7 @@ namespace FSFormControls
                         {
                             var textCol = new DataGridViewTextBoxColumn();
 
+                            textCol.Name = column.Name;
                             textCol.Visible = !column.Hidden;
                             textCol.DataPropertyName = column.FieldDB;
                             textCol.HeaderText = column.HeaderCaption;
@@ -1489,6 +1513,7 @@ namespace FSFormControls
                         {
                             //DataGridFileColumn fileCol = new DataGridFileColumn( col, Columns[ col ], this ); 
 
+                            //fileCol.Name = column.Name;
                             //fileCol.MappingName = Columns[ col ].FieldDB; 
                             //fileCol.HeaderText = Columns[ col ].HeaderCaption; 
                             //fileCol.Width = System.Convert.ToInt32( Columns[ col ].Size ); 
@@ -1511,6 +1536,7 @@ namespace FSFormControls
                         {
                             var textCol = new DataGridViewTextBoxColumn();
 
+                            textCol.Name = column.Name;
                             textCol.Visible = !column.Hidden;
                             textCol.DataPropertyName = column.FieldDB;
                             textCol.HeaderText = column.HeaderCaption;
@@ -1536,6 +1562,7 @@ namespace FSFormControls
                         {
                             var comboCol = new DataGridViewComboBoxColumn();
 
+                            comboCol.Name = column.Name;
                             comboCol.Visible = !column.Hidden;
                             comboCol.DataSource = column.ColumnDBControl.DataTable;
                             comboCol.DisplayMember = column.ComboListField;
@@ -1564,6 +1591,7 @@ namespace FSFormControls
                         {
                             var textCol = new DataGridViewButtonColumn();
 
+                            textCol.Name = column.Name;
                             textCol.Visible = !column.Hidden;
                             textCol.DataPropertyName = column.FieldDB;
                             textCol.HeaderText = column.HeaderCaption;
@@ -1589,6 +1617,7 @@ namespace FSFormControls
                         {
                             var textCol = new DataGridViewButtonColumn();
 
+                            textCol.Name = column.Name;
                             textCol.Visible = !column.Hidden;
                             textCol.DataPropertyName = column.FieldDB;
                             textCol.HeaderText = column.HeaderCaption;
@@ -1614,6 +1643,7 @@ namespace FSFormControls
                         {
                             var textCol = new DataGridViewTextBoxColumn();
 
+                            textCol.Name = column.Name;
                             textCol.Visible = !column.Hidden;
                             textCol.DataPropertyName = column.FieldDB;
                             textCol.HeaderText = column.HeaderCaption;
@@ -1639,6 +1669,7 @@ namespace FSFormControls
                         {
                             var textCol = new DataGridViewTextBoxColumn();
 
+                            textCol.Name = column.Name;
                             textCol.Visible = !column.Hidden;
                             textCol.DataPropertyName = column.FieldDB;
                             textCol.HeaderText = column.HeaderCaption;
@@ -1664,6 +1695,7 @@ namespace FSFormControls
                         {
                             var textCol = new DBGridViewProgressBarColumn();
 
+                            textCol.Name = column.Name;
                             textCol.Visible = !column.Hidden;
                             textCol.DataPropertyName = column.FieldDB;
                             textCol.HeaderText = column.HeaderCaption;

@@ -235,7 +235,7 @@ namespace FSFormControls
 
         private void CheckInputFindTextBoxData()
         {
-            BdUtils db = new BdUtils(Global.ConnectionString);
+            BdUtils db = new BdUtils(Global.ConnectionString, Global.ProviderName);
             object dat = null;
             var ok = false;
             var conc = " where ";

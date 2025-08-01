@@ -265,10 +265,8 @@
     <ProjectReference Include="..\..\FS.Core\FSDatabase\FSDatabase.csproj" />
     <ProjectReference Include="..\..\FS.Core\FSDisk\FSDisk.csproj" />
     <ProjectReference Include="..\..\FS.Windows\FSExcel\FSExcel.csproj" />
-    <ProjectReference Include="..\..\FS.Core\FSException\FSException.csproj" />
     <ProjectReference Include="..\..\FS.Windows\FSFormLibrary\FSFormLibrary.csproj" />
     <ProjectReference Include="..\..\FS.Windows\FSGraphics\FSGraphics.csproj" />
-    <ProjectReference Include="..\..\FS.Core\FSLibrary\FSLibrary.csproj" />
     <ProjectReference Include="..\..\FS.Core\FSMail\FSMail.csproj" />
     <ProjectReference Include="..\..\FS.Windows\FSMouseKeyboardLibrary\FSMouseKeyboardLibrary.csproj" />
     <ProjectReference Include="..\..\FS.Core\FSNetwork\FSNetwork.csproj" />

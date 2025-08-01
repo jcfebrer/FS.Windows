@@ -23,6 +23,7 @@ namespace FSFormControls
                 dbCol.ReadColumn = col.ReadOnly;
                 dbCol.Width = col.Width;
                 dbCol.Alignment = ConvertSystemTypeToAlignment(col.ValueType);
+                dbCol.Name = col.Name;
                 columns.Add(dbCol);
             }
 

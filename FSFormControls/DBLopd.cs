@@ -79,7 +79,7 @@ namespace FSFormControls
 
         public void Save(string tableName, Action operation)
         {
-            BdUtils db = new BdUtils(Global.ConnectionString);
+            BdUtils db = new BdUtils(Global.ConnectionString, Global.ProviderName);
             string registerCode = DataControl.GetField(db.PrimaryKeyName(tableName)).ToString();
             string ssql;
 
