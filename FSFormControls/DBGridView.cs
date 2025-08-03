@@ -3,18 +3,66 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using System.Drawing;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Windows.Forms;
-using static FSFormControls.DBGridViewEx;
 
 namespace FSFormControls
 {
     public class DBGridView : DataGridView
     {
-        /*
-         * BORRRAR TODO
-         */
+        public DBGridView()
+        {
+            //Filas alternativas con diferente color
+            this.RowsDefaultCellStyle.BackColor = Color.White;
+            this.AlternatingRowsDefaultCellStyle.BackColor = Color.Aquamarine;
 
+            // Eventos
+            this.KeyDown += DBGridView_KeyDown;
+            this.RowPostPaint += DataGridView1_RowPostPaint;
+        }
+
+        private void DBGridView_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Delete)
+            {
+                if (this.AllowUserToDeleteRows && this.DataSource is DataTable)
+                {
+                    //this.Rows.Remove(this.CurrentRow);
+                    // Eliminamos el datarow actual del DataTable
+                    DataTable data = this.DataSource as DataTable;
+                    data.Rows.RemoveAt(this.CurrentRow.Index);
+                }
+            }
+        }
+
+        private void DataGridView1_RowPostPaint(object sender, DataGridViewRowPostPaintEventArgs e)
+        {
+            DrawCounterOnRowHeader(this, e);
+        }
+
+        /// <summary>
+        /// Ponemos un numero de row en la parte izquierda del DataGridView
+        /// </summary>
+        /// <param name="grid"></param>
+        /// <param name="e"></param>
+        private void DrawCounterOnRowHeader(DataGridView grid, DataGridViewRowPostPaintEventArgs e)
+        {
+            var rowIdx = (e.RowIndex + 1).ToString();
+
+            var font = new Font(FontFamily.GenericMonospace, 6);
+
+            var centerFormat = new StringFormat();
+            centerFormat.Alignment = StringAlignment.Far;
+            centerFormat.LineAlignment = StringAlignment.Center;
+            var headerBounds = new Rectangle(e.RowBounds.Left, e.RowBounds.Top, grid.RowHeadersWidth,
+                e.RowBounds.Height - grid.Rows[e.RowIndex].DividerHeight);
+            e.Graphics.DrawString(rowIdx, font, SystemBrushes.ControlText, headerBounds, centerFormat);
+        }
+
+        /*
+        * COMPATIBILIDAD CON INFRAGISTICS
+        */
         private DBGridView m_childView;
 
         //EVENTS
@@ -44,6 +92,30 @@ namespace FSFormControls
 
                 return arrGrd;
             }
+        }
+
+        public enum SummaryDisplayAreas
+        {
+            Default,
+            None,
+            Top,
+            TopFixed,
+            Bottom,
+            BottomFixed,
+            InGroupByRows,
+            GroupByRowsFooter,
+            HideDataRowFooters,
+            RootRowsFootersOnly
+        }
+
+        public enum UpdateModeEnum
+        {
+            OnCellChange,
+            OnRowChange,
+            OnRowLeave,
+            OnRowValidated,
+            OnRowEnter,
+            OnRowStateChanged
         }
 
         public DBAppearance ActiveCellAppearance { get; set; }
@@ -98,7 +170,13 @@ namespace FSFormControls
             {
                 if (value != null)
                 {
-                    this.CurrentCell = value.Cells[0];
+                    //        datagrid.CurrentRow = value;
+                    //        //datagrid.CurrentCell = value.Cells[0];
+                    value.Selected = true;
+                }
+                else
+                {
+                    this.CurrentRow.Selected = false;
                 }
             }
         }
@@ -115,9 +193,9 @@ namespace FSFormControls
 
         public DataGridViewColumnCollection SortedColumns { get; set; }
 
-        /*
-         * HASTA AQUI BORRRAR TODO
-         */
+/*
+* HASTA AQUI COMPATIBILIDAD CON INFRAGISTICS
+*/
 
         public new void Select()
         {
