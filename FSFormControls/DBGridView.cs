@@ -26,12 +26,15 @@ namespace FSFormControls
         {
             if (e.KeyCode == Keys.Delete)
             {
-                if (this.AllowUserToDeleteRows && this.DataSource is DataTable)
+                if (this.AllowUserToDeleteRows && AllowDelete && this.DataSource is DataTable)
                 {
                     //this.Rows.Remove(this.CurrentRow);
                     // Eliminamos el datarow actual del DataTable
                     DataTable data = this.DataSource as DataTable;
-                    data.Rows.RemoveAt(this.CurrentRow.Index);
+                    if (this.CurrentRow.Index > data.Rows.Count)
+                    {
+                        data.Rows.RemoveAt(this.CurrentRow.Index);
+                    }
                 }
             }
         }

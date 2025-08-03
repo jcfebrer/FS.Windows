@@ -234,12 +234,15 @@ namespace FSFormControls
         {
             if (e.KeyCode == Keys.Delete)
             {
-                if (datagrid.AllowUserToDeleteRows && datagrid.DataSource is DataTable)
+                if (this.AllowUserToDeleteRows && AllowDelete && this.DataSource is DataTable)
                 {
-                    //datagrid.Rows.Remove(datagrid.CurrentRow);
+                    //this.Rows.Remove(this.CurrentRow);
                     // Eliminamos el datarow actual del DataTable
-                    DataTable data = datagrid.DataSource as DataTable;
-                    data.Rows.RemoveAt(datagrid.CurrentRow.Index);
+                    DataTable data = this.DataSource as DataTable;
+                    if (this.CurrentRow.Index > data.Rows.Count)
+                    {
+                        data.Rows.RemoveAt(this.CurrentRow.Index);
+                    }
                 }
             }
         }
@@ -755,9 +758,14 @@ namespace FSFormControls
             RootRowsFootersOnly
         }
 
-        public object CurrentCell {
+        public DataGridViewCell CurrentCell {
             get { return datagrid.CurrentCell; }
             set { datagrid.CurrentCell = (DataGridViewCell)value; }
+        }
+
+        public DataGridViewRow CurrentRow
+        {
+            get { return datagrid.CurrentRow; }
         }
 
         public int SummaryFooterSpacingBefore { get; set; }
