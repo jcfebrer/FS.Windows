@@ -63,11 +63,9 @@ namespace FSFormControls
         // end variables
 
 
-        /*
-         * 
-         * TODO ESTO BORRAR DESPUES DE LA MIRGRACIÓN
-         * 
-         * */
+/*
+* COMPATIBILIDAD CON INFRAGISTICS
+*/
 
         public DBAppearance ActiveCellAppearance { get; set; }
         public DBAppearance EditCellAppearance { get; set; }
@@ -102,13 +100,9 @@ namespace FSFormControls
         public int DefaultDecimals { get; set; } = 2;
 
 
-        /*
-        *
-        HASTA AQUI
-        *
-         */
-
-
+/*
+* HASTA AQUI COMPATIBILIDAD CON INFRAGISTICS
+*/
 
         #region Delegates
 
@@ -218,6 +212,7 @@ namespace FSFormControls
             datagrid.UserAddedRow += DataGridView1_UserAddedRow;
             datagrid.UserDeletedRow += DataGridView1_UserDeletedRow;
             datagrid.CellContentClick += DataGridView1_CellContentClick;
+            datagrid.KeyDown += DataGridView1_KeyDown;
 
             if (Columns == null)
                 Columns = new DBColumnCollection();
@@ -233,6 +228,20 @@ namespace FSFormControls
             datagrid.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
             DoubleBuffered = true;
             datagrid.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+        }
+
+        private void DataGridView1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Delete)
+            {
+                if (datagrid.AllowUserToDeleteRows && datagrid.DataSource is DataTable)
+                {
+                    //datagrid.Rows.Remove(datagrid.CurrentRow);
+                    // Eliminamos el datarow actual del DataTable
+                    DataTable data = datagrid.DataSource as DataTable;
+                    data.Rows.RemoveAt(datagrid.CurrentRow.Index);
+                }
+            }
         }
 
         private void DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -332,6 +341,11 @@ namespace FSFormControls
             set
             {
                 m_DBControl = value;
+
+                //DataSource = m_DBControl?.DataSet;
+                //DataSource = m_DBControl?.DataTable;
+                //DataSource = m_DBControl?.DataView;
+                //DataSource = m_DBControl?.ArrayList;
 
                 //Borramos las clumans si estuvieran definidas
                 datagrid.Columns.Clear();
@@ -667,6 +681,12 @@ namespace FSFormControls
             set { datagrid.AllowUserToDeleteRows = value; }
         }
 
+        public DataGridViewEditMode EditMode
+        {
+            get { return datagrid.EditMode; }
+            set { datagrid.EditMode = value; }
+        }
+
         public bool AllowUserToOrderColumns
         {
             get { return datagrid.AllowUserToOrderColumns; }
@@ -779,9 +799,13 @@ namespace FSFormControls
                 RowEnter(sender, e);
         }
 
+        /// <summary>
+        /// Ponemos un numero de row en la parte izquierda del DataGridView
+        /// </summary>
+        /// <param name="grid"></param>
+        /// <param name="e"></param>
         private void DrawCounterOnRowHeader(DataGridView grid, DataGridViewRowPostPaintEventArgs e)
         {
-            // Ponemos un numero de row en la parte izquierda del DataGridView
             var rowIdx = (e.RowIndex + 1).ToString();
 
             var font = new Font(FontFamily.GenericMonospace, 6);
