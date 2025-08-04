@@ -428,6 +428,8 @@ namespace FSFormControls
             DateTimePicker1.Leave += DateTimePicker1_Leave;
             DateTimePicker1.Enter += DateTimePicker1_Enter;
             DateTimePicker1.LostFocus += DateTimePicker1_LostFocus;
+
+            Appearance = new DBAppearance();
         }
 
         private void DateTimePicker1_LostFocus(object sender, EventArgs e)

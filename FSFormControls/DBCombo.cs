@@ -138,6 +138,8 @@ namespace FSFormControls
             cmdEdit.Click += cmdEdit_Click;
 
             Load += DBCombo_Load;
+
+            Appearance = new DBAppearance();
         }
 
         private void DBCombo_Load(object sender, EventArgs e)

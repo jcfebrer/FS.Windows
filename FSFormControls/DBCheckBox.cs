@@ -276,6 +276,8 @@ namespace FSFormControls
             checkbox.CheckedChanged += CheckBox1_CheckedChanged;
             checkbox.MouseDown += CheckBox1_MouseDown;
             checkbox.MouseUp += CheckBox1_MouseUp;
+
+            Appearance = new DBAppearance();
         }
 
         protected override void Dispose(bool disposing)
