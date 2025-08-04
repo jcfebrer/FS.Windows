@@ -1795,7 +1795,6 @@ namespace FSFormControls
             this.dbGridView1.Editable = true;
             this.dbGridView1.EditCellAppearance = null;
             this.dbGridView1.EnableHeadersVisualStyles = true;
-            this.dbGridView1.FirstDisplayedScrollingRowIndex = -1;
             this.dbGridView1.GroupByRowAppearance = null;
             this.dbGridView1.HeaderAppearance = null;
             this.dbGridView1.HeaderClickAction = FSFormControls.DBGridViewDisplayLayout.DBHeaderClickAction.Default;
@@ -2087,7 +2086,6 @@ namespace FSFormControls
             this.dbGrid1.Editable = true;
             this.dbGrid1.EditCellAppearance = null;
             this.dbGrid1.EnableHeadersVisualStyles = true;
-            this.dbGrid1.FirstDisplayedScrollingRowIndex = -1;
             this.dbGrid1.GroupByRowAppearance = null;
             this.dbGrid1.HeaderAppearance = null;
             this.dbGrid1.HeaderClickAction = FSFormControls.DBGridViewDisplayLayout.DBHeaderClickAction.Default;
