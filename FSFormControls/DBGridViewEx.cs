@@ -1062,7 +1062,8 @@ namespace FSFormControls
 
         public void ScrollToTop()
         {
-            datagrid.FirstDisplayedScrollingRowIndex = 0;
+            if(Rows.Count > 0)
+                datagrid.FirstDisplayedScrollingRowIndex = 0;
             datagrid.Rows[0].Selected = true;
         }
 
