@@ -93,9 +93,9 @@ namespace FSFormControls.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap DBCombo {
+        internal static System.Drawing.Bitmap DBComboEx {
             get {
-                object obj = ResourceManager.GetObject("DBCombo", resourceCulture);
+                object obj = ResourceManager.GetObject("DBComboEx", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -221,9 +221,9 @@ namespace FSConvert
             "<fs:ComboBox x:Name='${name}' Text='${text}' ${position} ${margin} ${size} ${anchor} ${dock} />"
         ),
         (
-            "DBCombo",
+            "DBComboEx",
             @"
-            this\.(?<name>[a-zA-Z0-9_]+)\s*=\s*new\s*FSFormControls\.DBCombo\(\);
+            this\.(?<name>[a-zA-Z0-9_]+)\s*=\s*new\s*FSFormControls\.DBComboEx\(\);
             (?=.*this\.\k<name>\.Location\s*=\s*new\s*System\.Drawing\.Point\((?<x>\d+),\s*(?<y>\d+)\))?
             (?=.*this\.\k<name>\.Size\s*=\s*new\s*System\.Drawing\.Size\((?<width>\d+),\s*(?<height>\d+)\))?
             (?=.*this\.\k<name>\.Text\s*=\s*""(?<text>[^""]+)"")?

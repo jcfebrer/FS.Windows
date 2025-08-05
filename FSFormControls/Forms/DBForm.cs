@@ -818,8 +818,8 @@ namespace FSFormControls
                 }
                 else
                 {
-                    if (ctr is DBCombo)
-                        ((DBCombo)ctr).Fill();
+                    if (ctr is DBComboEx)
+                        ((DBComboEx)ctr).Fill();
 
                     if (ctr is DBGridViewEx)
                         ((DBGridViewEx)ctr).Fill();

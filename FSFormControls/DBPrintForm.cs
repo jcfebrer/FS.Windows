@@ -79,7 +79,7 @@ namespace FSFormControls
             m_DelegatesforControls = new ArrayList();
             m_Pen = new Pen(Color.Black);
             AddTextBoxLikeControl("ComboBox");
-            AddTextBoxLikeControl("DBCombo");
+            AddTextBoxLikeControl("DBComboEx");
             AddTextBoxLikeControl("DateTimePicker");
             AddTextBoxLikeControl("DateTimeSlicker");
             AddTextBoxLikeControl("NumericUpDown");

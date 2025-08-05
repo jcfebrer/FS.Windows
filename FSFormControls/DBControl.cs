@@ -1491,10 +1491,10 @@ namespace FSFormControls
                             if (((DBDate)ctr).DataControl.NameControl() == Name)
                                 ((DBDate)ctr).Text = "";
 
-                    if (ctr is DBCombo)
-                        if (((DBCombo)ctr).DataControl != null)
-                            if (((DBCombo)ctr).DataControl.NameControl() == Name)
-                                ((DBCombo)ctr).Text = "";
+                    if (ctr is DBComboEx)
+                        if (((DBComboEx)ctr).DataControl != null)
+                            if (((DBComboEx)ctr).DataControl.NameControl() == Name)
+                                ((DBComboEx)ctr).Text = "";
 
                 }
             }
@@ -1728,8 +1728,8 @@ namespace FSFormControls
                             ((DBImage)ctr).DataControl = this;
                     if (ctr is DBEditPicture && ((DBEditPicture)ctr).DataControl == null) 
                         ((DBEditPicture)ctr).DataControl = this;
-                    if (ctr is DBCombo && ((DBCombo)ctr).DataControl == null) 
-                        ((DBCombo)ctr).DataControl = this;
+                    if (ctr is DBComboEx && ((DBComboEx)ctr).DataControl == null) 
+                        ((DBComboEx)ctr).DataControl = this;
                     if (ctr is DBTextBox && ((DBTextBox)ctr).DataControl == null)
                         ((DBTextBox)ctr).DataControl = this;
                     if (ctr is DBLabel && ((DBLabel)ctr).DataControl == null) 
@@ -1851,16 +1851,16 @@ namespace FSFormControls
                 }
                 else
                 {
-                    if (ctr is DBCombo)
-                        if (((DBCombo) ctr).DataControlList != null)
+                    if (ctr is DBComboEx)
+                        if (((DBComboEx) ctr).DataControlList != null)
                         {
-                            if (((DBCombo) ctr).DataControl == null)
+                            if (((DBComboEx) ctr).DataControl == null)
                             {
-                                if (((DBCombo) ctr).DataControlList.NameControl() == Name) ((DBCombo) ctr).Fill();
+                                if (((DBComboEx) ctr).DataControlList.NameControl() == Name) ((DBComboEx) ctr).Fill();
                             }
                             else
                             {
-                                if (((DBCombo) ctr).DataControl.NameControl() == Name) ((DBCombo) ctr).Fill();
+                                if (((DBComboEx) ctr).DataControl.NameControl() == Name) ((DBComboEx) ctr).Fill();
                             }
                         }
                 }
@@ -1921,13 +1921,13 @@ namespace FSFormControls
                 }
                 else
                 {
-                    if (ctr is DBCombo | ctr is DBFindTextBox | ctr is DBTextBox | ctr is DBDate)
+                    if (ctr is DBComboEx | ctr is DBFindTextBox | ctr is DBTextBox | ctr is DBDate)
                         if (ctr.Text == "")
                         {
                             var setErr = false;
 
-                            if (ctr is DBCombo && ((DBCombo)ctr).DataControl != null && ((DBCombo)ctr).DataControl.NameControl() == Name)
-                                if (((DBCombo)ctr).Obligatory)
+                            if (ctr is DBComboEx && ((DBComboEx)ctr).DataControl != null && ((DBComboEx)ctr).DataControl.NameControl() == Name)
+                                if (((DBComboEx)ctr).Obligatory)
                                     setErr = true;
                             if (ctr is DBFindTextBox && ((DBFindTextBox)ctr).DataControl != null && ((DBFindTextBox)ctr).DataControl.NameControl() == Name)
                                 if (((DBFindTextBox)ctr).Obligatory)
@@ -2242,11 +2242,11 @@ namespace FSFormControls
                 }
                 else
                 {
-                    if (ctr is DBCombo | ctr is DBTextBox | ctr is DBFindTextBox | ctr is DBDate | ctr is DBCheckBox |
+                    if (ctr is DBComboEx | ctr is DBTextBox | ctr is DBFindTextBox | ctr is DBDate | ctr is DBCheckBox |
                         ctr is DBGridViewEx | ctr is DBImage | ctr is DBFile | ctr is DBEditPicture | ctr is DBLabel)
                     {
-                        if (ctr is DBCombo && ((DBCombo)ctr).DataControl != null && ((DBCombo)ctr).DataControl.NameControl() == Name)
-                            ((DBCombo)ctr).Mode = AccMode;
+                        if (ctr is DBComboEx && ((DBComboEx)ctr).DataControl != null && ((DBComboEx)ctr).DataControl.NameControl() == Name)
+                            ((DBComboEx)ctr).Mode = AccMode;
                         if (ctr is DBTextBox && ((DBTextBox)ctr).DataControl != null && ((DBTextBox)ctr).DataControl.NameControl() == Name)
                             ((DBTextBox)ctr).Mode = AccMode;
                         if (ctr is DBFindTextBox && ((DBFindTextBox)ctr).DataControl != null && ((DBFindTextBox)ctr).DataControl.NameControl() == Name)

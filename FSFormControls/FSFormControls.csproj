@@ -118,7 +118,7 @@
     <Compile Update="DBCalculator.cs" />
     <Compile Update="DBChart.cs" />
     <Compile Update="DBCheckBox.cs" />
-    <Compile Update="DBCombo.cs" />
+    <Compile Update="DBComboEx.cs" />
     <Compile Update="DBComm.cs" />
     <Compile Update="DBControl.cs" />
     <Compile Update="DBDate.cs" />
@@ -202,7 +202,6 @@
     <EmbeddedResource Include="Resources\DBGridView.bmp" />
     <EmbeddedResource Include="Resources\DBButton.bmp" />
     <EmbeddedResource Include="Resources\DBCheckBox.bmp" />
-    <EmbeddedResource Include="Resources\DBCombo.bmp" />
     <EmbeddedResource Include="Resources\DBControl.bmp" />
     <EmbeddedResource Include="Resources\DBDate.bmp" />
     <EmbeddedResource Include="Resources\DBFindTextBox.bmp" />
@@ -221,6 +220,7 @@
     <EmbeddedResource Include="Resources\DBScroll.bmp" />
     <EmbeddedResource Include="Resources\DBShape.bmp" />
     <EmbeddedResource Include="Resources\DBStatusBar.bmp" />
+    <EmbeddedResource Include="Resources\DBTextBoxEx.bmp" />
     <EmbeddedResource Include="Resources\DBTextBox.bmp" />
     <EmbeddedResource Include="Resources\DBToolBar.bmp" />
     <EmbeddedResource Include="Resources\febrer.ico" />

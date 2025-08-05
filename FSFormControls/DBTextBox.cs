@@ -395,9 +395,9 @@ namespace FSFormControls
 
 
         [Description(
-            "DBCombo asociado al control. Si se produce un cambio en el combo asociado, se actualiza el contenido de este control."
+            "DBComboEx asociado al control. Si se produce un cambio en el combo asociado, se actualiza el contenido de este control."
         )]
-        public DBCombo AsociatedCombo { get; set; }
+        public DBComboEx AsociatedCombo { get; set; }
 
         [Description(
             "DBFindTextBox asociado al control. Si se produce un cambio en el DBFindTextBox asociado, se actualiza el contenido de este control."
@@ -823,26 +823,26 @@ namespace FSFormControls
         //         {
         //             if (showb)
         //             {
-        //                 DbCombo1.DataControl = DataControl;
-        //                 DbCombo1.DataControlList = DataControl;
-        //                 DbCombo1.DBFieldList = DBField;
-        //                 DbCombo1.DBFieldData = DBField;
-        //                 DbCombo1.DBField = DBField;
+        //                 DBComboEx1.DataControl = DataControl;
+        //                 DBComboEx1.DataControlList = DataControl;
+        //                 DBComboEx1.DBFieldList = DBField;
+        //                 DBComboEx1.DBFieldData = DBField;
+        //                 DBComboEx1.DBField = DBField;
 
         //                 if (DataControl != null)
         //                 {
-        //                     DbCombo1.Fill();
+        //                     DBComboEx1.Fill();
         //                 }
 
-        //                 DbCombo1.Visible = true;
+        //                 DBComboEx1.Visible = true;
         //                 Text1.Visible = false;
 
-        //                 DbCombo1.Width = Width;
-        //                 DbCombo1.Left = 0;
+        //                 DBComboEx1.Width = Width;
+        //                 DBComboEx1.Left = 0;
         //             }
         //             else
         //             {
-        //                 DbCombo1.Visible = false;
+        //                 DBComboEx1.Visible = false;
         //                 Text1.Visible = true;
         //                 Text1.Height = Height;
         //             }

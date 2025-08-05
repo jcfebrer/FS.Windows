@@ -92,7 +92,7 @@ namespace FSConvert
                         ((TextBox) webctrl).Font.Size = FontUnit.Point(Convert.ToInt32(winctrl.Font.Size));
                         ((TextBox) webctrl).Text = HttpUtility.HtmlEncode(winctrl.Text);
                         break;
-                    case "FSFormControls.DBCombo":
+                    case "FSFormControls.DBComboEx":
                     case "System.Windows.Forms.ComboBox":
                         webctrl = new DropDownList();
                         ((DropDownList) webctrl).Style["POSITION"] = "absolute";
@@ -102,11 +102,11 @@ namespace FSConvert
                         ((DropDownList) webctrl).Style["HEIGHT"] = sy + "px";
                         ((DropDownList) webctrl).Font.Name = winctrl.Font.Name;
                         ((DropDownList) webctrl).Font.Size = FontUnit.Point(Convert.ToInt32(winctrl.Font.Size));
-                        if (winctrl.GetType().ToString() == "FSFormControls.DBCombo")
+                        if (winctrl.GetType().ToString() == "FSFormControls.DBComboEx")
                         {
-                            //((DropDownList) webctrl).DataSource = ((DBCombo) winctrl).DataControlList.DataTable;
-                            //((DropDownList) webctrl).DataTextField = ((DBCombo) winctrl).DBFieldList;
-                            //((DropDownList) webctrl).DataValueField = ((DBCombo) winctrl).DBFieldData;
+                            //((DropDownList) webctrl).DataSource = ((DBComboEx) winctrl).DataControlList.DataTable;
+                            //((DropDownList) webctrl).DataTextField = ((DBComboEx) winctrl).DBFieldList;
+                            //((DropDownList) webctrl).DataValueField = ((DBComboEx) winctrl).DBFieldData;
                         }
                         else
                         {

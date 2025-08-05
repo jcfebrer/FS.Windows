@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace FSFormControls
 {
-    [ToolboxBitmap(typeof(resfinder), "FSFormControls.Resources.DBCombo.bmp")]
+    [ToolboxBitmap(typeof(resfinder), "FSFormControls.Resources.DBComboEx.bmp")]
     [ToolboxItem(true)]
     [Serializable]
     public class DBFontCombo : ComboBox

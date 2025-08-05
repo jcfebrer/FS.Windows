@@ -6,23 +6,23 @@ using FSLibrary;
 
 namespace FSFormControls
 {
-    public class DBComboValues : CollectionBase, IBindingList
+    public class DBComboExValues : CollectionBase, IBindingList
     {
         private readonly ComboBox m_combobox;
         private ListChangedEventHandler onListChanged;
 
-        public DBComboValues(ComboBox combobox)
+        public DBComboExValues(ComboBox combobox)
         {
             m_combobox = combobox;
         }
 
-        public DBComboboxItem this[int index]
+        public DBComboExBoxItem this[int index]
         {
-            get { return (DBComboboxItem) List[index]; }
+            get { return (DBComboExBoxItem) List[index]; }
             set { List[index] = value; }
         }
 
-        public DBComboboxItem this[string name] => Find(name);
+        public DBComboExBoxItem this[string name] => Find(name);
 
         public IList ValueList => List;
 
@@ -74,9 +74,9 @@ namespace FSFormControls
             throw new NotImplementedException();
         }
 
-        public DBComboboxItem Find(string fieldName)
+        public DBComboExBoxItem Find(string fieldName)
         {
-            foreach (DBComboboxItem dbcol in List)
+            foreach (DBComboExBoxItem dbcol in List)
                 if (dbcol.Text.ToLower() == fieldName.ToLower())
                     return dbcol;
             return null;
@@ -91,7 +91,7 @@ namespace FSFormControls
 
             if (fieldName.Substring(0, 1) == "_") fieldName = TextUtil.Replace(fieldName, "_", "");
 
-            foreach (DBComboboxItem dbcol in List)
+            foreach (DBComboExBoxItem dbcol in List)
             {
                 if (dbcol.Text.ToLower() == fieldName.ToLower()) return f;
                 f = f + 1;
@@ -101,9 +101,9 @@ namespace FSFormControls
         }
 
 
-        public DBComboboxItem FindByValue(string value)
+        public DBComboExBoxItem FindByValue(string value)
         {
-            foreach (DBComboboxItem dbcol in List)
+            foreach (DBComboExBoxItem dbcol in List)
                 if (Functions.Value(dbcol.Value).ToLower() == value.ToLower())
                     return dbcol;
             return null;
@@ -112,23 +112,23 @@ namespace FSFormControls
 
         public void Add(string value, string text)
         {
-            List.Add(new DBComboboxItem(value, text));
-            m_combobox.Items.Add(new DBComboboxItem(value, text));
+            List.Add(new DBComboExBoxItem(value, text));
+            m_combobox.Items.Add(new DBComboExBoxItem(value, text));
         }
 
         public void Add(int value, string text)
         {
-            List.Add(new DBComboboxItem(value, text));
-            m_combobox.Items.Add(new DBComboboxItem(value, text));
+            List.Add(new DBComboExBoxItem(value, text));
+            m_combobox.Items.Add(new DBComboExBoxItem(value, text));
         }
 
         public void Add(decimal value, string text)
         {
-            List.Add(new DBComboboxItem(value, text));
-            m_combobox.Items.Add(new DBComboboxItem(value, text));
+            List.Add(new DBComboExBoxItem(value, text));
+            m_combobox.Items.Add(new DBComboExBoxItem(value, text));
         }
 
-        public DBComboboxItem Add(DBComboboxItem Value)
+        public DBComboExBoxItem Add(DBComboExBoxItem Value)
         {
             List.Add(Value);
             m_combobox.Items.Add(Value);
@@ -145,7 +145,7 @@ namespace FSFormControls
         }
 
 
-        public void AddRange(DBComboboxItem[] Values)
+        public void AddRange(DBComboExBoxItem[] Values)
         {
             var f = 0;
             for (f = 0; f <= Values.Length - 1; f++)
@@ -156,27 +156,36 @@ namespace FSFormControls
         }
 
 
-        public void Remove(DBComboboxItem Value)
+        public void Remove(DBComboExBoxItem Value)
         {
             List.Remove(Value);
             m_combobox.Items.Remove(Value);
         }
 
 
-        public void Insert(int index, DBComboboxItem Value)
+        public void Insert(int index, DBComboExBoxItem Value)
         {
             List.Insert(index, Value);
             m_combobox.Items.Insert(index, Value);
         }
 
 
-        public bool Contains(DBComboboxItem Value)
+        public bool Contains(DBComboExBoxItem Value)
         {
             return List.Contains(Value);
         }
 
+        public bool Contains(string Value)
+        {
+            return List.Contains(Value);
+        }
 
-        public int IndexOf(DBComboboxItem Value)
+        public bool Contains(object Value)
+        {
+            return List.Contains(Value);
+        }
+
+        public int IndexOf(DBComboExBoxItem Value)
         {
             return List.IndexOf(Value);
         }
@@ -211,21 +220,21 @@ namespace FSFormControls
         #endregion
     }
 
-    public class DBComboboxItem
+    public class DBComboExBoxItem
     {
-        public DBComboboxItem(string value, string text)
+        public DBComboExBoxItem(string value, string text)
         {
             Text = text;
             Value = value;
         }
 
-        public DBComboboxItem(int value, string text)
+        public DBComboExBoxItem(int value, string text)
         {
             Text = text;
             Value = value.ToString();
         }
 
-        public DBComboboxItem(decimal value, string text)
+        public DBComboExBoxItem(decimal value, string text)
         {
             Text = text;
             Value = value.ToString();

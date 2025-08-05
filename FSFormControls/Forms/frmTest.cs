@@ -6,14 +6,14 @@
         {
             InitializeComponent();
 
-            dbCombo1.Items.Add(1, "Valor 1");
-            dbCombo1.Items.Add(2, "Valor 2");
-            dbCombo1.Items.Add(3, "Valor 3");
-            dbCombo1.Items.Add(4, "Valor 4");
-            dbCombo1.Items.Add(5, "Valor 5");
-            dbCombo1.Items.Add(6, "Valor 6");
-            dbCombo1.Items.Add(7, "Valor 7");
-            dbCombo1.Items.Add(8, "Valor 8");
+            DBComboEx1.Items.Add(1, "Valor 1");
+            DBComboEx1.Items.Add(2, "Valor 2");
+            DBComboEx1.Items.Add(3, "Valor 3");
+            DBComboEx1.Items.Add(4, "Valor 4");
+            DBComboEx1.Items.Add(5, "Valor 5");
+            DBComboEx1.Items.Add(6, "Valor 6");
+            DBComboEx1.Items.Add(7, "Valor 7");
+            DBComboEx1.Items.Add(8, "Valor 8");
 
             dbStatusBar2.Items["mensaje"].Text = "Bienvenido al formulario de pruebas de controles DBFormControls";
         }

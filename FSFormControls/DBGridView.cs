@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Runtime.CompilerServices;
@@ -9,6 +10,9 @@ using System.Windows.Forms;
 
 namespace FSFormControls
 {
+    [ToolboxBitmap(typeof(resfinder), "FSFormControls.Resources.DBGrid.bmp")]
+    [ToolboxItem(true)]
+    [Serializable]
     public class DBGridView : DataGridView
     {
         public DBGridView()

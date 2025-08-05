@@ -340,7 +340,7 @@ namespace FSFormControls
         public Size CellSizeResolved { get; set; }
         public Bitmap Image { get; set; }
         public NameValueCollection ValueList { get; set; }
-        public DBCombo Editor { get; set; }
+        public DBComboEx Editor { get; set; }
 
         public event CellClickEventHandler CellClick;
 

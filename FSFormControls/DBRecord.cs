@@ -580,7 +580,7 @@ namespace FSFormControls
                     }
                     break;
                 case DBColumn.ColumnTypes.ComboColumn:
-                    var comboCol = new DBCombo();
+                    var comboCol = new DBComboEx();
                     comboCol.DataControl = DataControl;
                     comboCol.Mode = Mode;
                     comboCol.Font = selCol.Font;

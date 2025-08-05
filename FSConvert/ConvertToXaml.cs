@@ -630,7 +630,7 @@ namespace FSConvert
            new WinFormsToWpfTranslator("FlowLayoutPanel"             , "WrapPanel or StackPanel"              ),
            new WinFormsToWpfTranslator("DBLabel"                     , "Label"                                ),
            new WinFormsToWpfTranslator("DBControl"                   , "Label"                                ),
-           new WinFormsToWpfTranslator("DBCombo"                     , "ComboBox"                             ),
+           new WinFormsToWpfTranslator("DBComboEx"                     , "ComboBox"                             ),
            new WinFormsToWpfTranslator("DBButton"                    , "Button"                               ),
            new WinFormsToWpfTranslator("DBGrid"                      , "DataGrid"                             ),
            new WinFormsToWpfTranslator("DBGridView"                  , "DataGrid"                             ),
