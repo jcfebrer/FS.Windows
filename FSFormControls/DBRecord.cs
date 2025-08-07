@@ -351,8 +351,8 @@ namespace FSFormControls
 
         private void AddColumn(int col, int posXLabel, int posXData, int posYLabel, int posYData)
         {
-            var labelCol = new DBLabel();
-            var textCol = new DBTextBox();
+            var labelCol = new DBLabelEx();
+            var textCol = new DBTextBoxEx();
 
             var selCol = Columns[col];
 
@@ -418,7 +418,7 @@ namespace FSFormControls
                             selCol.Expression);
                         textCol.DBField = "_" + selCol.FieldDB;
                         textCol.Width = Convert.ToInt32(selCol.Width);
-                        textCol.DataType = DBTextBox.TypeData.Formula;
+                        textCol.DataType = DBTextBoxEx.TypeData.Formula;
                         textCol.Decimals = selCol.Decimals;
                         textCol.MaxLength = selCol.MaxLength;
                         textCol.DefaultValue = selCol.DefaultValue;
@@ -440,11 +440,11 @@ namespace FSFormControls
                         textCol.Font = selCol.Font;
 
                         textCol.DBField = selCol.FieldDB;
-                        textCol.DataType = DBTextBox.TypeData.All;
+                        textCol.DataType = DBTextBoxEx.TypeData.All;
 
                         if (selCol.Width == Global.MAX_COLUMN_WIDTH)
                         {
-                            textCol.DataType = DBTextBox.TypeData.Memo;
+                            textCol.DataType = DBTextBoxEx.TypeData.Memo;
                             textCol.Width = Convert.ToInt32(Global.MAX_COLUMN_WIDTH / 1.5);
                             textCol.Multiline = true;
                             textCol.ShowScrollBars = ScrollBars.Vertical;
@@ -481,7 +481,7 @@ namespace FSFormControls
                         textCol.DBField = selCol.FieldDB;
                         textCol.Width = Convert.ToInt32(selCol.Width);
                         textCol.Decimals = selCol.Decimals;
-                        textCol.DataType = DBTextBox.TypeData.Money;
+                        textCol.DataType = DBTextBoxEx.TypeData.Money;
                         textCol.TextAlign = HorizontalAlignment.Right;
                         textCol.MaxLength = selCol.MaxLength;
                         textCol.DefaultValue = selCol.DefaultValue;
@@ -519,7 +519,7 @@ namespace FSFormControls
                         {
                             textCol.DBField = selCol.FieldDB;
                             textCol.Width = Convert.ToInt32(selCol.Width);
-                            textCol.DataType = DBTextBox.TypeData.Date;
+                            textCol.DataType = DBTextBoxEx.TypeData.Date;
                             textCol.TextAlign = selCol.Alignment;
                             textCol.MaxLength = selCol.MaxLength;
                             textCol.DefaultValue = selCol.DefaultValue;
@@ -543,7 +543,7 @@ namespace FSFormControls
 
                     textCol.DBField = selCol.FieldDB;
                     textCol.Width = Convert.ToInt32(selCol.Width);
-                    textCol.DataType = DBTextBox.TypeData.Time;
+                    textCol.DataType = DBTextBoxEx.TypeData.Time;
                     textCol.TextAlign = selCol.Alignment;
                     textCol.MaxLength = selCol.MaxLength;
                     textCol.DefaultValue = selCol.DefaultValue;
@@ -567,7 +567,7 @@ namespace FSFormControls
                         textCol.DBField = selCol.FieldDB;
                         textCol.Width = Convert.ToInt32(selCol.Width);
                         textCol.Decimals = selCol.Decimals;
-                        textCol.DataType = DBTextBox.TypeData.Numeric;
+                        textCol.DataType = DBTextBoxEx.TypeData.Numeric;
                         textCol.TextAlign = HorizontalAlignment.Right;
                         textCol.MaxLength = selCol.MaxLength;
                         textCol.DefaultValue = selCol.DefaultValue;
@@ -677,12 +677,12 @@ namespace FSFormControls
         }
 
 
-        public DBTextBox get_GetDBTextBoxByDBField(string DBField)
+        public DBTextBoxEx get_GetDBTextBoxByDBField(string DBField)
         {
             foreach (Control ctr in panelRecord.Controls)
-                if (ctr is DBTextBox)
-                    if (((DBTextBox) ctr).DBField.ToLower() == DBField.ToLower())
-                        return (DBTextBox) ctr;
+                if (ctr is DBTextBoxEx)
+                    if (((DBTextBoxEx) ctr).DBField.ToLower() == DBField.ToLower())
+                        return (DBTextBoxEx) ctr;
             return null;
         }
 

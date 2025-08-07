@@ -21,9 +21,23 @@ namespace FSFormControls
             this.RowsDefaultCellStyle.BackColor = Color.White;
             this.AlternatingRowsDefaultCellStyle.BackColor = Color.Aquamarine;
 
+            // Estilo de cabecera (quitar fondo azul al seleccionar una columna)
+            this.EnableHeadersVisualStyles = false;
+            this.ColumnHeadersDefaultCellStyle.SelectionBackColor = SystemColors.Control;
+
             // Eventos
             this.KeyDown += DBGridView_KeyDown;
             this.RowPostPaint += DataGridView1_RowPostPaint;
+            this.CellDoubleClick += DBGridView_CellDoubleClick;
+
+            if (SortedColumns == null)
+                SortedColumns = new DataGridViewColumnCollection(this);
+        }
+
+        private void DBGridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if(DoubleClickRow != null)
+                DoubleClickRow(this, e);
         }
 
         private void DBGridView_KeyDown(object sender, KeyEventArgs e)
@@ -183,7 +197,8 @@ namespace FSFormControls
                 }
                 else
                 {
-                    this.CurrentRow.Selected = false;
+                    if(this.CurrentRow != null)
+                        this.CurrentRow.Selected = false;
                 }
             }
         }

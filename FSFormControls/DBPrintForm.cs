@@ -484,8 +484,8 @@ namespace FSFormControls
             ScanForChildControls = false;
             TextBox tb = null;
 
-            if (c is DBTextBox)
-                tb = ((DBTextBox) c).textbox;
+            if (c is DBTextBoxEx)
+                tb = ((DBTextBoxEx) c).textbox;
             else if (c is TextBox)
                 tb = (TextBox) c;
             else
@@ -562,8 +562,8 @@ namespace FSFormControls
 
             var ha2 = new ContentAlignment();
 
-            if (c is DBLabel)
-                ha2 = ((DBLabel) c).TextAlign;
+            if (c is DBLabelEx)
+                ha2 = ((DBLabelEx) c).TextAlign;
             else
                 ha2 = ((Label) c).TextAlign;
 

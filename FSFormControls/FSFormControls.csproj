@@ -144,7 +144,7 @@
     <Compile Update="DBGroupBoxXP.cs" />
     <Compile Update="DBGroupBoxXPList.cs" />
     <Compile Update="DBImage.cs" />
-    <Compile Update="DBLabel.cs" />
+    <Compile Update="DBLabelEx.cs" />
     <Compile Update="DBListBox.cs" />
     <Compile Update="DBListView.cs" />
     <Compile Update="DBLock.cs" />
@@ -163,7 +163,7 @@
     <Compile Update="DBTabControl.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Update="DBTextBox.cs" />
+    <Compile Update="DBTextBoxEx.cs" />
     <Compile Update="DBToolBarEx.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -196,6 +196,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Resources\DBLabelEx.bmp" />
     <EmbeddedResource Include="Resources\DBPicture.bmp" />
     <EmbeddedResource Include="Resources\DBListBox.bmp" />
     <EmbeddedResource Include="Resources\DBImage.bmp" />

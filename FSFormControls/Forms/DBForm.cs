@@ -576,10 +576,10 @@ namespace FSFormControls
                             ((DBCheckBox)ctr).UpdateCheckBox();
                     }
 
-                    if (ctr is DBTextBox)
+                    if (ctr is DBTextBoxEx)
                     {
-                        if (((DBTextBox)ctr).DataControl == null)
-                            ((DBTextBox)ctr).UpdateText();
+                        if (((DBTextBoxEx)ctr).DataControl == null)
+                            ((DBTextBoxEx)ctr).UpdateText();
                     }
 
                     if (ctr is DBFindTextBox)

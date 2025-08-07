@@ -12,11 +12,11 @@ namespace FSFormControls
 {
     public class frmMemo : Form
     {
-        public DBTextBox m_DBTextbox;
+        public DBTextBoxEx m_DBTextbox;
 
         public string Value => DbTextBox1.Text;
 
-        public DBTextBox DBTextbox
+        public DBTextBoxEx DBTextbox
         {
             get { return m_DBTextbox; }
             set
@@ -41,7 +41,7 @@ namespace FSFormControls
         #region '" Código generado por el Diseñador de Windows Forms "' 
 
         private readonly IContainer components = null;
-        internal DBTextBox DbTextBox1;
+        internal DBTextBoxEx DbTextBox1;
         internal Label Label1;
 
         public frmMemo()
@@ -64,7 +64,7 @@ namespace FSFormControls
         private void InitializeComponent()
         {
             Label1 = new Label();
-            DbTextBox1 = new DBTextBox();
+            DbTextBox1 = new DBTextBoxEx();
             SuspendLayout();
             // 
             // Label1
@@ -89,9 +89,9 @@ namespace FSFormControls
             DbTextBox1.AsociatedDBFindTextBox = null;
             DbTextBox1.BackColorRead = Color.WhiteSmoke;
             DbTextBox1.BorderStyle = BorderStyle.Fixed3D;
-            DbTextBox1.Capitalize = DBTextBox.TypeString.Normal;
+            DbTextBox1.Capitalize = DBTextBoxEx.TypeString.Normal;
             DbTextBox1.DataControl = null;
-            DbTextBox1.DataType = DBTextBox.TypeData.All;
+            DbTextBox1.DataType = DBTextBoxEx.TypeData.All;
             DbTextBox1.DateFormat = "dd/MM/yyyy";
             DbTextBox1.DBField = null;
             DbTextBox1.DBFont = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);

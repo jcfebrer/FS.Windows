@@ -15,9 +15,9 @@ namespace FSFormControls
     public class frmKeyboard : Form
     {
         public Keyboard dbk = new Keyboard();
-        public DBTextBox m_TextBox;
+        public DBTextBoxEx m_TextBox;
 
-        public DBTextBox TextBox
+        public DBTextBoxEx TextBox
         {
             get { return m_TextBox; }
             set { m_TextBox = value; }

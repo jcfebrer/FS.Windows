@@ -12,11 +12,11 @@ namespace FSFormControls
 {
     public class frmCalc : Form
     {
-        public DBTextBox m_dbtextbox;
+        public DBTextBoxEx m_dbtextbox;
 
         public double Value => DbCalculator.Value;
 
-        public DBTextBox DBTextbox
+        public DBTextBoxEx DBTextbox
         {
             get { return m_dbtextbox; }
             set { m_dbtextbox = value; }

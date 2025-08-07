@@ -54,7 +54,7 @@ namespace FSFormControls
 
         private readonly IContainer components = null;
 
-        internal DBTextBox DbTextBox1;
+        internal DBTextBoxEx DbTextBox1;
         internal DBButton cmdClose;
         internal DBButton cmdSave;
 
@@ -79,7 +79,7 @@ namespace FSFormControls
         private void InitializeComponent()
         {
             cmdClose = new DBButton();
-            DbTextBox1 = new DBTextBox();
+            DbTextBox1 = new DBTextBoxEx();
             cmdSave = new DBButton();
             SuspendLayout();
             // 
@@ -117,8 +117,8 @@ namespace FSFormControls
             DbTextBox1.AsociatedDBFindTextBox = null;
             DbTextBox1.BackColorRead = Color.WhiteSmoke;
             DbTextBox1.BorderStyle = BorderStyle.Fixed3D;
-            DbTextBox1.Capitalize = DBTextBox.TypeString.Normal;
-            DbTextBox1.DataType = DBTextBox.TypeData.All;
+            DbTextBox1.Capitalize = DBTextBoxEx.TypeString.Normal;
+            DbTextBox1.DataType = DBTextBoxEx.TypeData.All;
             DbTextBox1.DateFormat = "dd/MM/yyyy";
             DbTextBox1.DBField = null;
             DbTextBox1.DBFont = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);

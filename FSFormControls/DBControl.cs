@@ -1471,15 +1471,15 @@ namespace FSFormControls
                 }
                 else
                 {
-                    if (ctr is DBTextBox)
-                        if (((DBTextBox)ctr).DataControl != null)
-                            if (((DBTextBox)ctr).DataControl.NameControl() == Name)
-                                ((DBTextBox)ctr).Text = "";
+                    if (ctr is DBTextBoxEx)
+                        if (((DBTextBoxEx)ctr).DataControl != null)
+                            if (((DBTextBoxEx)ctr).DataControl.NameControl() == Name)
+                                ((DBTextBoxEx)ctr).Text = "";
 
-                    if (ctr is DBLabel)
-                        if (((DBLabel)ctr).DataControl != null)
-                            if (((DBLabel)ctr).DataControl.NameControl() == Name)
-                                ((DBLabel)ctr).Text = "";
+                    if (ctr is DBLabelEx)
+                        if (((DBLabelEx)ctr).DataControl != null)
+                            if (((DBLabelEx)ctr).DataControl.NameControl() == Name)
+                                ((DBLabelEx)ctr).Text = "";
 
                     if (ctr is DBFindTextBox)
                         if (((DBFindTextBox)ctr).DataControl != null)
@@ -1730,10 +1730,10 @@ namespace FSFormControls
                         ((DBEditPicture)ctr).DataControl = this;
                     if (ctr is DBComboEx && ((DBComboEx)ctr).DataControl == null) 
                         ((DBComboEx)ctr).DataControl = this;
-                    if (ctr is DBTextBox && ((DBTextBox)ctr).DataControl == null)
-                        ((DBTextBox)ctr).DataControl = this;
-                    if (ctr is DBLabel && ((DBLabel)ctr).DataControl == null) 
-                        ((DBLabel)ctr).DataControl = this;
+                    if (ctr is DBTextBoxEx && ((DBTextBoxEx)ctr).DataControl == null)
+                        ((DBTextBoxEx)ctr).DataControl = this;
+                    if (ctr is DBLabelEx && ((DBLabelEx)ctr).DataControl == null) 
+                        ((DBLabelEx)ctr).DataControl = this;
                     if (ctr is DBFindTextBox && ((DBFindTextBox)ctr).DataControl == null) 
                         ((DBFindTextBox)ctr).DataControl = this;
                     if (ctr is DBDate && ((DBDate)ctr).DataControl == null) 
@@ -1741,17 +1741,17 @@ namespace FSFormControls
                     if (ctr is DBCheckBox && ((DBCheckBox)ctr).DataControl == null) 
                         ((DBCheckBox)ctr).DataControl = this;
 
-                    if (ctr is DBTextBox && ((DBTextBox)ctr).DataControl != null && ((DBTextBox)ctr).DataControl.NameControl() == Name)
+                    if (ctr is DBTextBoxEx && ((DBTextBoxEx)ctr).DataControl != null && ((DBTextBoxEx)ctr).DataControl.NameControl() == Name)
                     {
-                        if (((DBTextBox)ctr).DataType == DBTextBox.TypeData.Formula)
+                        if (((DBTextBoxEx)ctr).DataType == DBTextBoxEx.TypeData.Formula)
                         {
-                            if (!string.IsNullOrEmpty(((DBTextBox)ctr).Expression))
+                            if (!string.IsNullOrEmpty(((DBTextBoxEx)ctr).Expression))
                             {
                                 AddDataColumn("For" + ctr.Name, typeof(object),
-                                    ((DBTextBox)ctr).Expression);
+                                    ((DBTextBoxEx)ctr).Expression);
                                 try
                                 {
-                                    ((DBTextBox)ctr).DataBindings.Add("Text", DataTable, "For" + ctr.Name);
+                                    ((DBTextBoxEx)ctr).DataBindings.Add("Text", DataTable, "For" + ctr.Name);
                                 }
                                 catch (Exception e)
                                 {
@@ -1767,11 +1767,11 @@ namespace FSFormControls
                         if (ctr is DBCheckBox)
                             ((DBCheckBox)ctr).UpdateCheckBox();
 
-                        if (ctr is DBTextBox)
+                        if (ctr is DBTextBoxEx)
                         {
-                            if ((((DBTextBox)ctr).AsociatedDBFindTextBox == null) &
-                                (((DBTextBox)ctr).AsociatedCombo == null))
-                                ((DBTextBox)ctr).UpdateText();
+                            if ((((DBTextBoxEx)ctr).AsociatedDBFindTextBox == null) &
+                                (((DBTextBoxEx)ctr).AsociatedCombo == null))
+                                ((DBTextBoxEx)ctr).UpdateText();
                         }
                         if (ctr is DBFindTextBox)
                             ((DBFindTextBox)ctr).UpdateText();
@@ -1783,8 +1783,8 @@ namespace FSFormControls
                             ((DBEditPicture)ctr).UpdateImage();
                         if (ctr is DBFile)
                             ((DBFile)ctr).UpdateFile();
-                        if (ctr is DBLabel)
-                            ((DBLabel)ctr).UpdateText();
+                        if (ctr is DBLabelEx)
+                            ((DBLabelEx)ctr).UpdateText();
                     }
                     catch (Exception e)
                     {
@@ -1921,7 +1921,7 @@ namespace FSFormControls
                 }
                 else
                 {
-                    if (ctr is DBComboEx | ctr is DBFindTextBox | ctr is DBTextBox | ctr is DBDate)
+                    if (ctr is DBComboEx | ctr is DBFindTextBox | ctr is DBTextBoxEx | ctr is DBDate)
                         if (ctr.Text == "")
                         {
                             var setErr = false;
@@ -1932,8 +1932,8 @@ namespace FSFormControls
                             if (ctr is DBFindTextBox && ((DBFindTextBox)ctr).DataControl != null && ((DBFindTextBox)ctr).DataControl.NameControl() == Name)
                                 if (((DBFindTextBox)ctr).Obligatory)
                                     setErr = true;
-                            if (ctr is DBTextBox && ((DBTextBox)ctr).DataControl != null && ((DBTextBox)ctr).DataControl.NameControl() == Name)
-                                if (((DBTextBox)ctr).Obligatory)
+                            if (ctr is DBTextBoxEx && ((DBTextBoxEx)ctr).DataControl != null && ((DBTextBoxEx)ctr).DataControl.NameControl() == Name)
+                                if (((DBTextBoxEx)ctr).Obligatory)
                                     setErr = true;
                             if (ctr is DBDate && ((DBDate)ctr).DataControl != null && ((DBDate)ctr).DataControl.NameControl() == Name)
                                 if (((DBDate)ctr).Obligatory)
@@ -1967,20 +1967,20 @@ namespace FSFormControls
                 }
                 else
                 {
-                    if (ctr is DBTextBox)
-                        if (((DBTextBox)ctr).DataControl != null)
-                            if (((DBTextBox)ctr).DataControl.NameControl() == Name)
+                    if (ctr is DBTextBoxEx)
+                        if (((DBTextBoxEx)ctr).DataControl != null)
+                            if (((DBTextBoxEx)ctr).DataControl.NameControl() == Name)
                             {
 
-                                if (((DBTextBox)ctr).MaxLength == Global.MAX_TEXT_LENGTH &&
-                                    !string.IsNullOrEmpty(((DBTextBox)ctr).DBField))
+                                if (((DBTextBoxEx)ctr).MaxLength == Global.MAX_TEXT_LENGTH &&
+                                    !string.IsNullOrEmpty(((DBTextBoxEx)ctr).DBField))
                                 {
-                                    s = db.GetField(((DBTextBox)ctr).DBField, TableName).Tamano;
+                                    s = db.GetField(((DBTextBoxEx)ctr).DBField, TableName).Tamano;
                                     if ((s != 0) & (s < Global.MAX_TEXT_LENGTH))
                                     {
-                                        if (((DBTextBox)ctr).DataType == DBTextBox.TypeData.Date)
+                                        if (((DBTextBoxEx)ctr).DataType == DBTextBoxEx.TypeData.Date)
                                             s = Convert.ToInt32(Global.DATE_LENGTH);
-                                        ((DBTextBox)ctr).MaxLength = s;
+                                        ((DBTextBoxEx)ctr).MaxLength = s;
                                     }
                                 }
                             }
@@ -1996,7 +1996,7 @@ namespace FSFormControls
                                     s = db.GetField(((DBFindTextBox)ctr).DBField, TableName).Tamano;
                                     if ((s != 0) & (s < Global.MAX_TEXT_LENGTH))
                                     {
-                                        if (((DBFindTextBox)ctr).DataType == DBTextBox.TypeData.Date)
+                                        if (((DBFindTextBox)ctr).DataType == DBTextBoxEx.TypeData.Date)
                                             s = Convert.ToInt32(Global.DATE_LENGTH);
                                         ((DBFindTextBox)ctr).MaxLength = s;
                                     }
@@ -2039,16 +2039,16 @@ namespace FSFormControls
                 }
                 else
                 {
-                    if (ctr is DBTextBox)
-                        if (((DBTextBox)ctr).DataControl != null)
-                            if (((DBTextBox)ctr).DataControl.NameControl() == Name)
+                    if (ctr is DBTextBoxEx)
+                        if (((DBTextBoxEx)ctr).DataControl != null)
+                            if (((DBTextBoxEx)ctr).DataControl.NameControl() == Name)
                             {
-                                if (ctr is DBTextBox)
+                                if (ctr is DBTextBoxEx)
                                 {
-                                    if (((DBTextBox)ctr).MaxValue == decimal.MaxValue &&
-                                        !string.IsNullOrEmpty(((DBTextBox)ctr).DBField))
-                                        ((DBTextBox)ctr).MaxValue =
-                                            db.FieldMaxValue(((DBTextBox)ctr).DBField);
+                                    if (((DBTextBoxEx)ctr).MaxValue == decimal.MaxValue &&
+                                        !string.IsNullOrEmpty(((DBTextBoxEx)ctr).DBField))
+                                        ((DBTextBoxEx)ctr).MaxValue =
+                                            db.FieldMaxValue(((DBTextBoxEx)ctr).DBField);
                                 }
                             }
 
@@ -2242,13 +2242,13 @@ namespace FSFormControls
                 }
                 else
                 {
-                    if (ctr is DBComboEx | ctr is DBTextBox | ctr is DBFindTextBox | ctr is DBDate | ctr is DBCheckBox |
-                        ctr is DBGridViewEx | ctr is DBImage | ctr is DBFile | ctr is DBEditPicture | ctr is DBLabel)
+                    if (ctr is DBComboEx | ctr is DBTextBoxEx | ctr is DBFindTextBox | ctr is DBDate | ctr is DBCheckBox |
+                        ctr is DBGridViewEx | ctr is DBImage | ctr is DBFile | ctr is DBEditPicture | ctr is DBLabelEx)
                     {
                         if (ctr is DBComboEx && ((DBComboEx)ctr).DataControl != null && ((DBComboEx)ctr).DataControl.NameControl() == Name)
                             ((DBComboEx)ctr).Mode = AccMode;
-                        if (ctr is DBTextBox && ((DBTextBox)ctr).DataControl != null && ((DBTextBox)ctr).DataControl.NameControl() == Name)
-                            ((DBTextBox)ctr).Mode = AccMode;
+                        if (ctr is DBTextBoxEx && ((DBTextBoxEx)ctr).DataControl != null && ((DBTextBoxEx)ctr).DataControl.NameControl() == Name)
+                            ((DBTextBoxEx)ctr).Mode = AccMode;
                         if (ctr is DBFindTextBox && ((DBFindTextBox)ctr).DataControl != null && ((DBFindTextBox)ctr).DataControl.NameControl() == Name)
                             ((DBFindTextBox)ctr).Mode = AccMode;
                         if (ctr is DBDate && ((DBDate)ctr).DataControl != null && ((DBDate)ctr).DataControl.NameControl() == Name)
@@ -2263,8 +2263,8 @@ namespace FSFormControls
                             ((DBFile)ctr).Mode = AccMode;
                         if (ctr is DBEditPicture && ((DBEditPicture)ctr).DataControl != null && ((DBEditPicture)ctr).DataControl.NameControl() == Name)
                             ((DBEditPicture)ctr).Mode = AccMode;
-                        if (ctr is DBLabel && ((DBLabel)ctr).DataControl != null && ((DBLabel)ctr).DataControl.NameControl() == Name)
-                            ((DBLabel)ctr).Mode = AccMode;
+                        if (ctr is DBLabelEx && ((DBLabelEx)ctr).DataControl != null && ((DBLabelEx)ctr).DataControl.NameControl() == Name)
+                            ((DBLabelEx)ctr).Mode = AccMode;
                     }
                 }
             }
@@ -2480,23 +2480,23 @@ namespace FSFormControls
         }
 
 
-        public DBTextBox FindBDTextBoxByDBFieldName(ControlCollection frm, string fieldName)
+        public DBTextBoxEx FindBDTextBoxByDBFieldName(ControlCollection frm, string fieldName)
         {
             if (frm == null) return null;
 
             foreach (Control ctr in frm)
                 if (FunctionsForms.IsContainer(ctr))
                 {
-                    DBTextBox find = FindBDTextBoxByDBFieldName(ctr.Controls, fieldName);
+                    DBTextBoxEx find = FindBDTextBoxByDBFieldName(ctr.Controls, fieldName);
                     if (find != null)
                         return find;
                 }
                 else
                 {
-                    if (ctr is DBTextBox)
-                        if (!string.IsNullOrEmpty(((DBTextBox) ctr).DBField))
-                            if (((DBTextBox) ctr).DBField.ToLower() == fieldName.ToLower())
-                                return (DBTextBox) ctr;
+                    if (ctr is DBTextBoxEx)
+                        if (!string.IsNullOrEmpty(((DBTextBoxEx) ctr).DBField))
+                            if (((DBTextBoxEx) ctr).DBField.ToLower() == fieldName.ToLower())
+                                return (DBTextBoxEx) ctr;
                 }
 
             return null;
@@ -2544,20 +2544,20 @@ namespace FSFormControls
                 }
                 else
                 {
-                    if (ctr is DBTextBox)
+                    if (ctr is DBTextBoxEx)
                     {
-                        if (((DBTextBox) ctr).AsociatedDBFindTextBox != null)
+                        if (((DBTextBoxEx) ctr).AsociatedDBFindTextBox != null)
                         {
-                            if (((DBTextBox) ctr).AsociatedDBFindTextBox.DataControl != null)
-                                if (((DBTextBox) ctr).AsociatedDBFindTextBox.DataControl.NameControl() == Name)
-                                    if (((DBTextBox) ctr).AsociatedDBFindTextBox.DataControlList != null)
+                            if (((DBTextBoxEx) ctr).AsociatedDBFindTextBox.DataControl != null)
+                                if (((DBTextBoxEx) ctr).AsociatedDBFindTextBox.DataControl.NameControl() == Name)
+                                    if (((DBTextBoxEx) ctr).AsociatedDBFindTextBox.DataControlList != null)
                                         try
                                         {
                                             ctr.Text =
-                                                ((DBTextBox) ctr).AsociatedDBFindTextBox.DataControlList.Find(
-                                                    ((DBTextBox) ctr).AsociatedDBFindTextBox.DBFieldData,
-                                                    ((DBTextBox) ctr).AsociatedDBFindTextBox.Text,
-                                                    ((DBTextBox) ctr).DBField);
+                                                ((DBTextBoxEx) ctr).AsociatedDBFindTextBox.DataControlList.Find(
+                                                    ((DBTextBoxEx) ctr).AsociatedDBFindTextBox.DBFieldData,
+                                                    ((DBTextBoxEx) ctr).AsociatedDBFindTextBox.Text,
+                                                    ((DBTextBoxEx) ctr).DBField);
                                         }
                                         catch (Exception e)
                                         {
@@ -2566,16 +2566,16 @@ namespace FSFormControls
                         }
                         else
                         {
-                            if (((DBTextBox) ctr).AsociatedCombo != null)
-                                if (((DBTextBox) ctr).AsociatedCombo.DataControlList != null)
-                                    if (((DBTextBox) ctr).AsociatedCombo.DataControlList.NameControl() == Name)
+                            if (((DBTextBoxEx) ctr).AsociatedCombo != null)
+                                if (((DBTextBoxEx) ctr).AsociatedCombo.DataControlList != null)
+                                    if (((DBTextBoxEx) ctr).AsociatedCombo.DataControlList.NameControl() == Name)
                                         try
                                         {
                                             ctr.Text =
-                                                ((DBTextBox) ctr).AsociatedCombo.DataControlList.Find(
-                                                    ((DBTextBox) ctr).AsociatedCombo.DBFieldData,
-                                                    Convert.ToString(((DBTextBox) ctr).AsociatedCombo.SelectedValue),
-                                                    ((DBTextBox) ctr).DBField);
+                                                ((DBTextBoxEx) ctr).AsociatedCombo.DataControlList.Find(
+                                                    ((DBTextBoxEx) ctr).AsociatedCombo.DBFieldData,
+                                                    Convert.ToString(((DBTextBoxEx) ctr).AsociatedCombo.SelectedValue),
+                                                    ((DBTextBoxEx) ctr).DBField);
                                         }
                                         catch (Exception e)
                                         {

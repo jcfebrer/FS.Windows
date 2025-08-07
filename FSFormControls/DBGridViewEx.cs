@@ -187,6 +187,12 @@ namespace FSFormControls
             datagrid.RowsDefaultCellStyle.BackColor = Color.White;
             datagrid.AlternatingRowsDefaultCellStyle.BackColor = Color.Aquamarine;
 
+            // Estilo de cabecera (quitar fondo azul al seleccionar una columna)
+            datagrid.EnableHeadersVisualStyles = false;
+            datagrid.ColumnHeadersDefaultCellStyle.SelectionBackColor = SystemColors.Control;
+            dataGridViewTotal.EnableHeadersVisualStyles = false;
+            dataGridViewTotal.ColumnHeadersDefaultCellStyle.SelectionBackColor = SystemColors.Control;
+
             dataGridViewTotal.RowsDefaultCellStyle.BackColor = Color.White;
             dataGridViewTotal.AlternatingRowsDefaultCellStyle.BackColor = Color.Aquamarine;
             dataGridViewTotal.MouseClick += DataGridViewTotal_MouseClick;
@@ -228,6 +234,9 @@ namespace FSFormControls
             datagrid.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
             DoubleBuffered = true;
             datagrid.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+
+            if(SortedColumns == null)
+                SortedColumns = new DBColumnCollection();
         }
 
         private void DataGridView1_KeyDown(object sender, KeyEventArgs e)
@@ -523,7 +532,8 @@ namespace FSFormControls
                 }
                 else
                 {
-                    datagrid.CurrentRow.Selected = false;
+                    if(datagrid.CurrentRow != null)
+                        datagrid.CurrentRow.Selected = false;
                 }
             }
         }

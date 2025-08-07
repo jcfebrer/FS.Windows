@@ -162,24 +162,24 @@ namespace FSFormControls
         }
 
 
-        public static DBTextBox.TypeData ConvertDataTypeToColumnType(DBColumn.ColumnTypes columtype)
+        public static DBTextBoxEx.TypeData ConvertDataTypeToColumnType(DBColumn.ColumnTypes columtype)
         {
             switch (columtype)
             {
                 case DBColumn.ColumnTypes.DateColumn:
-                    return DBTextBox.TypeData.Date;
+                    return DBTextBoxEx.TypeData.Date;
                 case DBColumn.ColumnTypes.FormulaColumn:
-                    return DBTextBox.TypeData.Numeric;
+                    return DBTextBoxEx.TypeData.Numeric;
                 case DBColumn.ColumnTypes.MoneyColumn:
-                    return DBTextBox.TypeData.Money;
+                    return DBTextBoxEx.TypeData.Money;
                 case DBColumn.ColumnTypes.NumberColumn:
-                    return DBTextBox.TypeData.Numeric;
+                    return DBTextBoxEx.TypeData.Numeric;
                 case DBColumn.ColumnTypes.PercentColumn:
-                    return DBTextBox.TypeData.Pecentage;
+                    return DBTextBoxEx.TypeData.Pecentage;
                 case DBColumn.ColumnTypes.TimeColumn:
-                    return DBTextBox.TypeData.Time;
+                    return DBTextBoxEx.TypeData.Time;
                 default:
-                    return DBTextBox.TypeData.All;
+                    return DBTextBoxEx.TypeData.All;
             }
         }
 
@@ -273,7 +273,7 @@ namespace FSFormControls
 
             foreach (Control ctr in frm)
             {
-                if (ctr is DBTextBox && ((DBTextBox)ctr).DBField.ToLower() == dbfield.ToLower())
+                if (ctr is DBTextBoxEx && ((DBTextBoxEx)ctr).DBField.ToLower() == dbfield.ToLower())
                     return ctr;
                 if (ctr is DBComboEx && ((DBComboEx)ctr).DBField.ToLower() == dbfield.ToLower())
                     return ctr;

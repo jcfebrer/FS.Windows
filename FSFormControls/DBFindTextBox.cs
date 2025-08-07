@@ -20,7 +20,7 @@ namespace FSFormControls
     public class DBFindTextBox : DBUserControl
     {
         public Color m_BackColor = Global.NormalBackColor;
-        public DBTextBox.TypeData m_DataType = DBTextBox.TypeData.All;
+        public DBTextBoxEx.TypeData m_DataType = DBTextBoxEx.TypeData.All;
 
         public DBControl m_DBControl;
         public DBControl m_DBControlList;
@@ -152,7 +152,7 @@ namespace FSFormControls
 
 
         [Description("Tipo de datos a introducir en el control. Texto, Numérico, Fecha, Porcentaje, ...")]
-        public DBTextBox.TypeData DataType
+        public DBTextBoxEx.TypeData DataType
         {
             get { return m_DataType; }
             set
@@ -325,7 +325,7 @@ namespace FSFormControls
 
         private readonly IContainer components = null;
 
-        private DBTextBox DbTextBox1;
+        private DBTextBoxEx DbTextBox1;
         private Button cmdSearch;
 
         public DBFindTextBox()
@@ -356,7 +356,7 @@ namespace FSFormControls
         private void InitializeComponent()
         {
             var resources = new ComponentResourceManager(typeof(DBFindTextBox));
-            DbTextBox1 = new DBTextBox();
+            DbTextBox1 = new DBTextBoxEx();
             cmdSearch = new Button();
             SuspendLayout();
             // 
@@ -369,9 +369,9 @@ namespace FSFormControls
             DbTextBox1.AsociatedDBFindTextBox = null;
             DbTextBox1.BackColorRead = Color.WhiteSmoke;
             DbTextBox1.BorderStyle = BorderStyle.Fixed3D;
-            DbTextBox1.Capitalize = DBTextBox.TypeString.Normal;
+            DbTextBox1.Capitalize = DBTextBoxEx.TypeString.Normal;
             DbTextBox1.DataControl = null;
-            DbTextBox1.DataType = DBTextBox.TypeData.All;
+            DbTextBox1.DataType = DBTextBoxEx.TypeData.All;
             DbTextBox1.DateFormat = "dd/MM/yyyy";
             DbTextBox1.DBField = null;
             DbTextBox1.DBFont = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
