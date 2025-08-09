@@ -528,7 +528,8 @@ namespace FSFormControls
                 {
                     //        datagrid.CurrentRow = value;
                     //        //datagrid.CurrentCell = value.Cells[0];
-                    value.Selected = true;
+                    if(value.DataGridView != null)
+                        value.Selected = true;
                 }
                 else
                 {

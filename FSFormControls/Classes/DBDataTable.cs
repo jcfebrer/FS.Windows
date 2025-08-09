@@ -9,8 +9,16 @@ namespace FSFormControls
 {
     public class DBDataTable : DataTable
     {
-        //FEBRER: Implementar
-        public bool ReadOnly { get; set; }
+        private bool m_readOnly = false;
+        public bool ReadOnly
+        {
+            get { return m_readOnly; }
+            set
+            {
+                m_readOnly = value;
+                this.DefaultView.AllowEdit = !value;
+            }
+        }
 
         public DBDataTable()
         {
