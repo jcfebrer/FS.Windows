@@ -52,7 +52,56 @@ namespace FSFormControls
 
         public BorderStyle BorderStyleOuter { get; set; }
 
-        public DBAppearance Appearance { get; set; }
+        private DBAppearance m_Appearance = new DBAppearance();
+        public DBAppearance Appearance
+        {
+            get { return m_Appearance; }
+            set
+            {
+                if (value != null)
+                {
+                    label.ForeColor = value.ForeColor;
+                    label.BackColor = value.BackColor;
+
+                    if ((value.TextVAlignAsString == "Middle" && value.TextHAlignAsString == "Center") || value.TextHAlignAsString == "Center")
+                    {
+                        label.TextAlign = ContentAlignment.MiddleCenter;
+                    }
+                    else if ((value.TextVAlignAsString == "Middle" && value.TextHAlignAsString == "Left") || value.TextHAlignAsString == "Left")
+                    {
+                        label.TextAlign = ContentAlignment.MiddleLeft;
+                    }
+                    else if ((value.TextVAlignAsString == "Middle" && value.TextHAlignAsString == "Right") || value.TextHAlignAsString == "Right")
+                    {
+                        label.TextAlign = ContentAlignment.MiddleRight;
+                    }
+                    else if (value.TextVAlignAsString == "Top" && value.TextHAlignAsString == "Center")
+                    {
+                        label.TextAlign = ContentAlignment.TopCenter;
+                    }
+                    else if (value.TextVAlignAsString == "Top" && value.TextHAlignAsString == "Left")
+                    {
+                        label.TextAlign = ContentAlignment.TopLeft;
+                    }
+                    else if (value.TextVAlignAsString == "Top" && value.TextHAlignAsString == "Right")
+                    {
+                        label.TextAlign = ContentAlignment.TopRight;
+                    }
+                    else if (value.TextVAlignAsString == "Bottom" && value.TextHAlignAsString == "Center")
+                    {
+                        label.TextAlign = ContentAlignment.BottomCenter;
+                    }
+                    else if (value.TextVAlignAsString == "Bottom" && value.TextHAlignAsString == "Left")
+                    {
+                        label.TextAlign = ContentAlignment.BottomLeft;
+                    }
+                    else if (value.TextVAlignAsString == "Bottom" && value.TextHAlignAsString == "Right")
+                    {
+                        label.TextAlign = ContentAlignment.BottomRight;
+                    }
+                }
+            }
+        }
 
         [Description("Indicamos la forma de representarse una fecha.")]
         public string DateFormat { get; set; } = "dd/MM/yyyy";

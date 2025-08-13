@@ -403,7 +403,7 @@ namespace FSFormControls
 
         public DBGridViewRowCollection Rows
         {
-            get { return FunctionsForms.ConvertoToDBGridViewRowCollection(dataGridView); }
+            get { return (DBGridViewRowCollection)dataGridView.Rows; }
         }
 
         public Color AlternatingColor
@@ -517,17 +517,12 @@ namespace FSFormControls
         {
             get
             {
-                //if (datagrid.SelectedRows.Count > 0)
-                //    return FunctionsForms.ConvertoToDBGridViewRow(datagrid.SelectedRows[0]);
-                //return (DBGridViewRow)datagrid.CurrentRow;
                 return datagrid.CurrentRow;
             }
             set
             {
                 if (value != null)
                 {
-                    //        datagrid.CurrentRow = value;
-                    //        //datagrid.CurrentCell = value.Cells[0];
                     if(value.DataGridView != null)
                         value.Selected = true;
                 }

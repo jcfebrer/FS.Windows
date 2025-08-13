@@ -101,21 +101,22 @@ namespace FSFormControls
         }
 
         public HorizontalAlignment Alignment { get; set; }
-        public Color BackColor;
-        public Color BackColor2;
-        public Alpha BackColorAlpha;
-        public GradientAlignment? BackGradientAlignment;
-        public GradientStyle? BackGradientStyle;
-        public Color BorderColor;
-        public Font FontData;
-        public Color ForeColor;
-        public Bitmap Image;
-        public HAlign ImageHAlign;
-        public VAlign ImageVAlign;
-        public string TextHAlignAsString;
-        public DBTextTrimming? TextTrimming;
-        public string TextVAlignAsString;
-        
+        public Color BackColor { get; set; }
+        public Color BackColor2 { get; set; }
+        public Alpha BackColorAlpha { get; set; }
+        public GradientAlignment? BackGradientAlignment { get; set; }
+        public GradientStyle? BackGradientStyle { get; set; }
+        public Color BorderColor { get; set; }
+        public Font FontData { get; set; }
+        public Color ForeColor { get; set; }
+        public Bitmap Image { get; set; }
+        public HAlign ImageHAlign { get; set; }
+        public VAlign ImageVAlign { get; set; }
+        public DBTextTrimming? TextTrimming { get; set; }
+
+        public string TextHAlignAsString { get; set; }
+        public string TextVAlignAsString { get; set; }
+
         public HAlign TextHAlign { get; set; }
         public VAlign TextVAlign { get; set; }
         public DBAppearance AppearanceOnToolbar { get; set; }

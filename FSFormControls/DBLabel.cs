@@ -20,7 +20,70 @@ namespace FSFormControls
         public event EventHandler SelectionChanged;
         public event EventHandler ValueChanged;
         public event DBEditorButtonEventHandler EditorButtonClick;
-        public DBAppearance Appearance { get; set; }
+
+        private DBAppearance m_Appearance = new DBAppearance();
+        public DBAppearance Appearance {
+            get { return m_Appearance; }
+            set {
+
+                if (value != null)
+                {
+                    this.ForeColor = value.ForeColor;
+                    this.BackColor = value.BackColor;
+
+                    if (value.Alignment == HorizontalAlignment.Left)
+                    {
+                        this.TextAlign = ContentAlignment.MiddleLeft;
+                    }
+                    else if(value.Alignment == HorizontalAlignment.Center)
+                    {
+                        this.TextAlign = ContentAlignment.MiddleCenter;
+                    }
+                    else if(value.Alignment == HorizontalAlignment.Right)
+                    {
+                        this.TextAlign = ContentAlignment.MiddleRight;
+                    }
+
+                    if ((value.TextVAlignAsString == "Middle" && value.TextHAlignAsString == "Center") || value.TextHAlignAsString == "Center")
+                    {
+                        this.TextAlign = ContentAlignment.MiddleCenter;
+                    }
+                    else if ((value.TextVAlignAsString == "Middle" && value.TextHAlignAsString == "Left") || value.TextHAlignAsString == "Left")
+                    {
+                        this.TextAlign = ContentAlignment.MiddleLeft;
+                    }
+                    else if ((value.TextVAlignAsString == "Middle" && value.TextHAlignAsString == "Right") || value.TextHAlignAsString == "Right")
+                    {
+                        this.TextAlign = ContentAlignment.MiddleRight;
+                    }
+                    else if (value.TextVAlignAsString == "Top" && value.TextHAlignAsString == "Center")
+                    {
+                        this.TextAlign = ContentAlignment.TopCenter;
+                    }
+                    else if (value.TextVAlignAsString == "Top" && value.TextHAlignAsString == "Left")
+                    {
+                        this.TextAlign = ContentAlignment.TopLeft;
+                    }
+                    else if (value.TextVAlignAsString == "Top" && value.TextHAlignAsString == "Right")
+                    {
+                        this.TextAlign = ContentAlignment.TopRight;
+                    }
+                    else if (value.TextVAlignAsString == "Bottom" && value.TextHAlignAsString == "Center")
+                    {
+                        this.TextAlign = ContentAlignment.BottomCenter;
+                    }
+                    else if (value.TextVAlignAsString == "Bottom" && value.TextHAlignAsString == "Left")
+                    {
+                        this.TextAlign = ContentAlignment.BottomLeft;
+                    }
+                    else if (value.TextVAlignAsString == "Bottom" && value.TextHAlignAsString == "Right")
+                    {
+                        this.TextAlign = ContentAlignment.BottomRight;
+                    }
+                }
+            }
+        }
+        
         public object DataControl { get; set; }
         public string DBField { get; set; }
         public string DBFieldData { get; set; }
@@ -37,7 +100,6 @@ namespace FSFormControls
 
         public DBLabel()
         {
-            Appearance = new DBAppearance();
             Editable = true;
             GridMode = false;
             ShowCode = false;
