@@ -13,7 +13,7 @@ using FSException;
 
 namespace FSFormControls
 {
-    [ToolboxBitmap(typeof(resfinder), "FSFormControls.Resources.DBCheckBox.bmp")]
+    [ToolboxBitmap(typeof(resfinder), "FSFormControls.Resources.DBCheckBoxEx.bmp")]
     [DefaultEvent("CheckedChanged")]
     [ToolboxItem(true)]
     [Serializable]
