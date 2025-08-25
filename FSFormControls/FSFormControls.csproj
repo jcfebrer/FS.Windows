@@ -114,10 +114,10 @@
     <Compile Update="DBTabPage.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Update="DBButton.cs" />
+    <Compile Update="DBButtonEx.cs" />
     <Compile Update="DBCalculator.cs" />
     <Compile Update="DBChart.cs" />
-    <Compile Update="DBCheckBox.cs" />
+    <Compile Update="DBCheckBoxEx.cs" />
     <Compile Update="DBComboEx.cs" />
     <Compile Update="DBComm.cs" />
     <Compile Update="DBControl.cs" />
@@ -196,6 +196,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Resources\DBButtonEx.bmp" />
     <EmbeddedResource Include="Resources\DBLabelEx.bmp" />
     <EmbeddedResource Include="Resources\DBPicture.bmp" />
     <EmbeddedResource Include="Resources\DBListBox.bmp" />

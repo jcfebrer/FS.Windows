@@ -51,39 +51,39 @@ namespace FSFormControls
             FSFormControls.DBAppearance dbAppearance8 = new FSFormControls.DBAppearance();
             this.dbTabControl1 = new FSFormControls.DBTabControl();
             this.tabPage1 = new FSFormControls.DBTabPage();
-            this.dbButton19 = new FSFormControls.DBButton();
-            this.dbButton18 = new FSFormControls.DBButton();
+            this.dbButton19 = new FSFormControls.DBButtonEx();
+            this.dbButton18 = new FSFormControls.DBButtonEx();
             this.DBComboEx9 = new FSFormControls.DBComboEx();
             this.dbTextBox4 = new FSFormControls.DBTextBoxEx();
             this.dbTextBox3 = new FSFormControls.DBTextBoxEx();
             this.dbTextBox2 = new FSFormControls.DBTextBoxEx();
             this.dbGroupBox2 = new FSFormControls.DBGroupBox();
             this.DBComboEx8 = new FSFormControls.DBComboEx();
-            this.dbButton14 = new FSFormControls.DBButton();
-            this.dbButton15 = new FSFormControls.DBButton();
+            this.dbButton14 = new FSFormControls.DBButtonEx();
+            this.dbButton15 = new FSFormControls.DBButtonEx();
             this.DBComboEx7 = new FSFormControls.DBComboEx();
-            this.dbButton12 = new FSFormControls.DBButton();
-            this.dbButton13 = new FSFormControls.DBButton();
+            this.dbButton12 = new FSFormControls.DBButtonEx();
+            this.dbButton13 = new FSFormControls.DBButtonEx();
             this.DBComboEx6 = new FSFormControls.DBComboEx();
-            this.dbButton10 = new FSFormControls.DBButton();
-            this.dbButton11 = new FSFormControls.DBButton();
+            this.dbButton10 = new FSFormControls.DBButtonEx();
+            this.dbButton11 = new FSFormControls.DBButtonEx();
             this.DBComboEx5 = new FSFormControls.DBComboEx();
-            this.dbButton8 = new FSFormControls.DBButton();
-            this.dbButton9 = new FSFormControls.DBButton();
+            this.dbButton8 = new FSFormControls.DBButtonEx();
+            this.dbButton9 = new FSFormControls.DBButtonEx();
             this.DBComboEx4 = new FSFormControls.DBComboEx();
-            this.dbButton6 = new FSFormControls.DBButton();
-            this.dbButton7 = new FSFormControls.DBButton();
+            this.dbButton6 = new FSFormControls.DBButtonEx();
+            this.dbButton7 = new FSFormControls.DBButtonEx();
             this.DBComboEx3 = new FSFormControls.DBComboEx();
-            this.dbButton4 = new FSFormControls.DBButton();
-            this.dbButton5 = new FSFormControls.DBButton();
+            this.dbButton4 = new FSFormControls.DBButtonEx();
+            this.dbButton5 = new FSFormControls.DBButtonEx();
             this.dbLabel1 = new FSFormControls.DBLabelEx();
             this.dbTextBox1 = new FSFormControls.DBTextBoxEx();
             this.dbDate1 = new FSFormControls.DBDate();
-            this.dbCheckBox1 = new FSFormControls.DBCheckBox();
-            this.dbButton1 = new FSFormControls.DBButton();
+            this.dbCheckBox1 = new FSFormControls.DBCheckBoxEx();
+            this.dbButton1 = new FSFormControls.DBButtonEx();
             this.DBComboEx1 = new FSFormControls.DBComboEx();
-            this.dbButton2 = new FSFormControls.DBButton();
-            this.dbButton3 = new FSFormControls.DBButton();
+            this.dbButton2 = new FSFormControls.DBButtonEx();
+            this.dbButton3 = new FSFormControls.DBButtonEx();
             this.dbChart1 = new FSFormControls.DBChart();
             this.dbRadioButton1 = new FSFormControls.DBRadioButton();
             this.dbListBox1 = new FSFormControls.DBListBox();
@@ -129,8 +129,8 @@ namespace FSFormControls
             this.toolStripButton8 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton9 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton10 = new System.Windows.Forms.ToolStripButton();
-            this.dbButton17 = new FSFormControls.DBButton();
-            this.dbButton16 = new FSFormControls.DBButton();
+            this.dbButton17 = new FSFormControls.DBButtonEx();
+            this.dbButton16 = new FSFormControls.DBButtonEx();
             this.cValue1 = new FSFormControls.ChartValue();
             this.cValue2 = new FSFormControls.ChartValue();
             this.cValue3 = new FSFormControls.ChartValue();
@@ -250,7 +250,7 @@ namespace FSFormControls
             // 
             this.dbButton19.About = "";
             this.dbButton19.Appearance = null;
-            this.dbButton19.ButtonStyle = FSFormControls.DBButton.ButtonStyleType.Normal;
+            this.dbButton19.ButtonStyle = FSFormControls.DBButtonEx.ButtonStyleType.Normal;
             this.dbButton19.DialogResult = System.Windows.Forms.DialogResult.None;
             this.dbButton19.DropDownMenu = null;
             this.dbButton19.FillColorEnd = System.Drawing.Color.White;
@@ -277,7 +277,7 @@ namespace FSFormControls
             // 
             this.dbButton18.About = "";
             this.dbButton18.Appearance = null;
-            this.dbButton18.ButtonStyle = FSFormControls.DBButton.ButtonStyleType.Normal;
+            this.dbButton18.ButtonStyle = FSFormControls.DBButtonEx.ButtonStyleType.Normal;
             this.dbButton18.DialogResult = System.Windows.Forms.DialogResult.None;
             this.dbButton18.DropDownMenu = null;
             this.dbButton18.FillColorEnd = System.Drawing.Color.White;
@@ -605,7 +605,7 @@ namespace FSFormControls
             // 
             this.dbButton14.About = "";
             this.dbButton14.Appearance = null;
-            this.dbButton14.ButtonStyle = FSFormControls.DBButton.ButtonStyleType.Normal;
+            this.dbButton14.ButtonStyle = FSFormControls.DBButtonEx.ButtonStyleType.Normal;
             this.dbButton14.DialogResult = System.Windows.Forms.DialogResult.None;
             this.dbButton14.DropDownMenu = null;
             this.dbButton14.FillColorEnd = System.Drawing.Color.White;
@@ -632,7 +632,7 @@ namespace FSFormControls
             // 
             this.dbButton15.About = "";
             this.dbButton15.Appearance = null;
-            this.dbButton15.ButtonStyle = FSFormControls.DBButton.ButtonStyleType.Normal;
+            this.dbButton15.ButtonStyle = FSFormControls.DBButtonEx.ButtonStyleType.Normal;
             this.dbButton15.DialogResult = System.Windows.Forms.DialogResult.None;
             this.dbButton15.DropDownMenu = null;
             this.dbButton15.FillColorEnd = System.Drawing.Color.White;
@@ -701,7 +701,7 @@ namespace FSFormControls
             // 
             this.dbButton12.About = "";
             this.dbButton12.Appearance = null;
-            this.dbButton12.ButtonStyle = FSFormControls.DBButton.ButtonStyleType.Normal;
+            this.dbButton12.ButtonStyle = FSFormControls.DBButtonEx.ButtonStyleType.Normal;
             this.dbButton12.DialogResult = System.Windows.Forms.DialogResult.None;
             this.dbButton12.DropDownMenu = null;
             this.dbButton12.FillColorEnd = System.Drawing.Color.White;
@@ -728,7 +728,7 @@ namespace FSFormControls
             // 
             this.dbButton13.About = "";
             this.dbButton13.Appearance = null;
-            this.dbButton13.ButtonStyle = FSFormControls.DBButton.ButtonStyleType.Normal;
+            this.dbButton13.ButtonStyle = FSFormControls.DBButtonEx.ButtonStyleType.Normal;
             this.dbButton13.DialogResult = System.Windows.Forms.DialogResult.None;
             this.dbButton13.DropDownMenu = null;
             this.dbButton13.FillColorEnd = System.Drawing.Color.White;
@@ -797,7 +797,7 @@ namespace FSFormControls
             // 
             this.dbButton10.About = "";
             this.dbButton10.Appearance = null;
-            this.dbButton10.ButtonStyle = FSFormControls.DBButton.ButtonStyleType.Normal;
+            this.dbButton10.ButtonStyle = FSFormControls.DBButtonEx.ButtonStyleType.Normal;
             this.dbButton10.DialogResult = System.Windows.Forms.DialogResult.None;
             this.dbButton10.DropDownMenu = null;
             this.dbButton10.FillColorEnd = System.Drawing.Color.White;
@@ -824,7 +824,7 @@ namespace FSFormControls
             // 
             this.dbButton11.About = "";
             this.dbButton11.Appearance = null;
-            this.dbButton11.ButtonStyle = FSFormControls.DBButton.ButtonStyleType.Normal;
+            this.dbButton11.ButtonStyle = FSFormControls.DBButtonEx.ButtonStyleType.Normal;
             this.dbButton11.DialogResult = System.Windows.Forms.DialogResult.None;
             this.dbButton11.DropDownMenu = null;
             this.dbButton11.FillColorEnd = System.Drawing.Color.White;
@@ -893,7 +893,7 @@ namespace FSFormControls
             // 
             this.dbButton8.About = "";
             this.dbButton8.Appearance = null;
-            this.dbButton8.ButtonStyle = FSFormControls.DBButton.ButtonStyleType.Normal;
+            this.dbButton8.ButtonStyle = FSFormControls.DBButtonEx.ButtonStyleType.Normal;
             this.dbButton8.DialogResult = System.Windows.Forms.DialogResult.None;
             this.dbButton8.DropDownMenu = null;
             this.dbButton8.FillColorEnd = System.Drawing.Color.White;
@@ -920,7 +920,7 @@ namespace FSFormControls
             // 
             this.dbButton9.About = "";
             this.dbButton9.Appearance = null;
-            this.dbButton9.ButtonStyle = FSFormControls.DBButton.ButtonStyleType.Normal;
+            this.dbButton9.ButtonStyle = FSFormControls.DBButtonEx.ButtonStyleType.Normal;
             this.dbButton9.DialogResult = System.Windows.Forms.DialogResult.None;
             this.dbButton9.DropDownMenu = null;
             this.dbButton9.FillColorEnd = System.Drawing.Color.White;
@@ -989,7 +989,7 @@ namespace FSFormControls
             // 
             this.dbButton6.About = "";
             this.dbButton6.Appearance = null;
-            this.dbButton6.ButtonStyle = FSFormControls.DBButton.ButtonStyleType.Normal;
+            this.dbButton6.ButtonStyle = FSFormControls.DBButtonEx.ButtonStyleType.Normal;
             this.dbButton6.DialogResult = System.Windows.Forms.DialogResult.None;
             this.dbButton6.DropDownMenu = null;
             this.dbButton6.FillColorEnd = System.Drawing.Color.White;
@@ -1016,7 +1016,7 @@ namespace FSFormControls
             // 
             this.dbButton7.About = "";
             this.dbButton7.Appearance = null;
-            this.dbButton7.ButtonStyle = FSFormControls.DBButton.ButtonStyleType.Normal;
+            this.dbButton7.ButtonStyle = FSFormControls.DBButtonEx.ButtonStyleType.Normal;
             this.dbButton7.DialogResult = System.Windows.Forms.DialogResult.None;
             this.dbButton7.DropDownMenu = null;
             this.dbButton7.FillColorEnd = System.Drawing.Color.White;
@@ -1085,7 +1085,7 @@ namespace FSFormControls
             // 
             this.dbButton4.About = "";
             this.dbButton4.Appearance = null;
-            this.dbButton4.ButtonStyle = FSFormControls.DBButton.ButtonStyleType.Normal;
+            this.dbButton4.ButtonStyle = FSFormControls.DBButtonEx.ButtonStyleType.Normal;
             this.dbButton4.DialogResult = System.Windows.Forms.DialogResult.None;
             this.dbButton4.DropDownMenu = null;
             this.dbButton4.FillColorEnd = System.Drawing.Color.White;
@@ -1112,7 +1112,7 @@ namespace FSFormControls
             // 
             this.dbButton5.About = "";
             this.dbButton5.Appearance = null;
-            this.dbButton5.ButtonStyle = FSFormControls.DBButton.ButtonStyleType.Normal;
+            this.dbButton5.ButtonStyle = FSFormControls.DBButtonEx.ButtonStyleType.Normal;
             this.dbButton5.DialogResult = System.Windows.Forms.DialogResult.None;
             this.dbButton5.DropDownMenu = null;
             this.dbButton5.FillColorEnd = System.Drawing.Color.White;
@@ -1281,7 +1281,7 @@ namespace FSFormControls
             // 
             this.dbButton1.About = "";
             this.dbButton1.Appearance = null;
-            this.dbButton1.ButtonStyle = FSFormControls.DBButton.ButtonStyleType.Normal;
+            this.dbButton1.ButtonStyle = FSFormControls.DBButtonEx.ButtonStyleType.Normal;
             this.dbButton1.DialogResult = System.Windows.Forms.DialogResult.None;
             this.dbButton1.DropDownMenu = null;
             this.dbButton1.FillColorEnd = System.Drawing.Color.White;
@@ -1350,7 +1350,7 @@ namespace FSFormControls
             // 
             this.dbButton2.About = "";
             this.dbButton2.Appearance = null;
-            this.dbButton2.ButtonStyle = FSFormControls.DBButton.ButtonStyleType.Normal;
+            this.dbButton2.ButtonStyle = FSFormControls.DBButtonEx.ButtonStyleType.Normal;
             this.dbButton2.DialogResult = System.Windows.Forms.DialogResult.None;
             this.dbButton2.DropDownMenu = null;
             this.dbButton2.FillColorEnd = System.Drawing.Color.White;
@@ -1377,7 +1377,7 @@ namespace FSFormControls
             // 
             this.dbButton3.About = "";
             this.dbButton3.Appearance = null;
-            this.dbButton3.ButtonStyle = FSFormControls.DBButton.ButtonStyleType.Normal;
+            this.dbButton3.ButtonStyle = FSFormControls.DBButtonEx.ButtonStyleType.Normal;
             this.dbButton3.DialogResult = System.Windows.Forms.DialogResult.None;
             this.dbButton3.DropDownMenu = null;
             this.dbButton3.FillColorEnd = System.Drawing.Color.White;
@@ -2292,7 +2292,7 @@ namespace FSFormControls
             // 
             this.dbButton17.About = "";
             this.dbButton17.Appearance = null;
-            this.dbButton17.ButtonStyle = FSFormControls.DBButton.ButtonStyleType.Normal;
+            this.dbButton17.ButtonStyle = FSFormControls.DBButtonEx.ButtonStyleType.Normal;
             this.dbButton17.DialogResult = System.Windows.Forms.DialogResult.None;
             this.dbButton17.DropDownMenu = null;
             this.dbButton17.FillColorEnd = System.Drawing.Color.White;
@@ -2319,7 +2319,7 @@ namespace FSFormControls
             // 
             this.dbButton16.About = "";
             this.dbButton16.Appearance = null;
-            this.dbButton16.ButtonStyle = FSFormControls.DBButton.ButtonStyleType.Normal;
+            this.dbButton16.ButtonStyle = FSFormControls.DBButtonEx.ButtonStyleType.Normal;
             this.dbButton16.DialogResult = System.Windows.Forms.DialogResult.None;
             this.dbButton16.DropDownMenu = null;
             this.dbButton16.FillColorEnd = System.Drawing.Color.White;
@@ -2887,10 +2887,10 @@ namespace FSFormControls
         private ChartValue cValue3;
         private ChartValue cValue4;
         private ChartValue cValue5;
-        private DBButton dbButton1;
+        private DBButtonEx dbButton1;
         private DBDate dbDate1;
         private DBLabelEx dbLabel1;
-        private DBCheckBox dbCheckBox1;
+        private DBCheckBoxEx dbCheckBox1;
         private DBComboEx DBComboEx1;
         private DBControl dbControl1;
         private DBDateTimePicker dbDateTimePicker1;
@@ -2925,37 +2925,37 @@ namespace FSFormControls
         private FSFormControls.DBTabPage tabPage4;
         private FSFormControls.DBTabPage tabPage5;
         private FSFormControls.DBTabPage tabPage6;
-        private DBButton dbButton2;
-        private DBButton dbButton3;
+        private DBButtonEx dbButton2;
+        private DBButtonEx dbButton3;
         private System.Windows.Forms.ToolStripStatusLabel statusBarPanel1;
         private System.Windows.Forms.ToolStripStatusLabel statusBarPanel2;
         private DBGroupBox dbGroupBox2;
         private DBComboEx DBComboEx8;
-        private DBButton dbButton14;
-        private DBButton dbButton15;
+        private DBButtonEx dbButton14;
+        private DBButtonEx dbButton15;
         private DBComboEx DBComboEx7;
-        private DBButton dbButton12;
-        private DBButton dbButton13;
+        private DBButtonEx dbButton12;
+        private DBButtonEx dbButton13;
         private DBComboEx DBComboEx6;
-        private DBButton dbButton10;
-        private DBButton dbButton11;
+        private DBButtonEx dbButton10;
+        private DBButtonEx dbButton11;
         private DBComboEx DBComboEx5;
-        private DBButton dbButton8;
-        private DBButton dbButton9;
+        private DBButtonEx dbButton8;
+        private DBButtonEx dbButton9;
         private DBComboEx DBComboEx4;
-        private DBButton dbButton6;
-        private DBButton dbButton7;
+        private DBButtonEx dbButton6;
+        private DBButtonEx dbButton7;
         private DBComboEx DBComboEx3;
-        private DBButton dbButton4;
-        private DBButton dbButton5;
+        private DBButtonEx dbButton4;
+        private DBButtonEx dbButton5;
         private DBTextBoxEx dbTextBox4;
         private DBTextBoxEx dbTextBox3;
         private DBTextBoxEx dbTextBox2;
-        private DBButton dbButton16;
-        private DBButton dbButton17;
+        private DBButtonEx dbButton16;
+        private DBButtonEx dbButton17;
         private DBComboEx DBComboEx9;
-        private DBButton dbButton18;
-        private DBButton dbButton19;
+        private DBButtonEx dbButton18;
+        private DBButtonEx dbButton19;
         private DBToolBar dbToolBar2;
         private DBColumn dbColumn1;
         private DBColumn dbColumn2;

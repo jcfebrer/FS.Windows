@@ -56,15 +56,41 @@ namespace FSFormControls
             Appearance = new DBAppearance();
 
             this.SelectedValueChanged += DBCombo_SelectedValueChanged;
+            this.LostFocus += DBCombo_LostFocus;
+            this.GotFocus += DBCombo_GotFocus;
 
             InitializeButtons();
+        }
+
+        private void DBCombo_GotFocus(object sender, EventArgs e)
+        {
+            if (AfterEnterEditMode != null)
+                AfterEnterEditMode(this, e);
+        }
+
+        private void DBCombo_LostFocus(object sender, EventArgs e)
+        {
+            if (AfterExitEditMode != null)
+                AfterExitEditMode(this, e);
+        }
+
+        private void DBCombo_SelectedValueChanged(object sender, EventArgs e)
+        {
+            if (doTextChanged)
+            {
+                if (SelectionChanged != null)
+                    SelectionChanged(this, e);
+
+                if (ValueChanged != null)
+                    ValueChanged(this, e);
+            }
         }
 
         private void InitializeButtons()
         {
             if (ButtonsRight != null && ButtonsRight.Count > 0)
             {
-                foreach (DBButton button in ButtonsRight)
+                foreach (DBButtonEx button in ButtonsRight)
                 {
                     button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
                     button.Width = 16;
@@ -81,7 +107,7 @@ namespace FSFormControls
 
             if (ButtonsLeft != null && ButtonsLeft.Count > 0)
             {
-                foreach (DBButton button in ButtonsLeft)
+                foreach (DBButtonEx button in ButtonsLeft)
                 {
                     button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
                     button.Width = 16;
@@ -103,21 +129,9 @@ namespace FSFormControls
                 MouseEnterElement(this, new DBEditorButtonEventArgs());
         }
 
-        private void DBCombo_SelectedValueChanged(object sender, EventArgs e)
-        {
-            if (doTextChanged)
-            {
-                if (SelectionChanged != null)
-                    SelectionChanged(this, e);
-
-                if (ValueChanged != null)
-                    ValueChanged(this, e);
-            }
-        }
-
         private void Button_Click(object sender, EventArgs e)
         {
-            var button = (DBButton)sender;
+            var button = (DBButtonEx)sender;
 
             if (EditorButtonClick != null)
                 EditorButtonClick(sender, new DBEditorButtonEventArgs());
@@ -127,16 +141,10 @@ namespace FSFormControls
         [EditorBrowsable(EditorBrowsableState.Always)]
         public object Value
         {
-            get { return this.SelectedValue; }
-            set
-            {
-                if (value == null)
-                    return;
-
-                DBComboExBoxItem dbitem = FindByValue(value.ToString());
-                if (dbitem != null)
-                    this.Text = dbitem.Text;
+            get { 
+                return this.SelectedValue + "";
             }
+            set { this.SelectedValue = value; }
         }
 
         private DBComboExValues m_Items;
@@ -160,7 +168,7 @@ namespace FSFormControls
 
         public DBComboExBoxItem FindByValue(string value)
         {
-            if (Items != null)
+            if (Items != null && Items.Count != 0)
             {
                 foreach (DBComboExBoxItem dbcol in Items)
                     if (Functions.Value(dbcol.Value).ToLower() == value.ToLower())
@@ -270,9 +278,7 @@ namespace FSFormControls
 
         public bool IsItemInList()
         {
-            if (this.Items.Contains(this.SelectedText))
-                return true;
-            return false;
+            return true;
         }
 
         public void BeginInit()

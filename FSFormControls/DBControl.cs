@@ -1738,8 +1738,8 @@ namespace FSFormControls
                         ((DBFindTextBox)ctr).DataControl = this;
                     if (ctr is DBDate && ((DBDate)ctr).DataControl == null) 
                         ((DBDate)ctr).DataControl = this;
-                    if (ctr is DBCheckBox && ((DBCheckBox)ctr).DataControl == null) 
-                        ((DBCheckBox)ctr).DataControl = this;
+                    if (ctr is DBCheckBoxEx && ((DBCheckBoxEx)ctr).DataControl == null) 
+                        ((DBCheckBoxEx)ctr).DataControl = this;
 
                     if (ctr is DBTextBoxEx && ((DBTextBoxEx)ctr).DataControl != null && ((DBTextBoxEx)ctr).DataControl.NameControl() == Name)
                     {
@@ -1764,8 +1764,8 @@ namespace FSFormControls
 
                     try
                     {
-                        if (ctr is DBCheckBox)
-                            ((DBCheckBox)ctr).UpdateCheckBox();
+                        if (ctr is DBCheckBoxEx)
+                            ((DBCheckBoxEx)ctr).UpdateCheckBox();
 
                         if (ctr is DBTextBoxEx)
                         {
@@ -2242,7 +2242,7 @@ namespace FSFormControls
                 }
                 else
                 {
-                    if (ctr is DBComboEx | ctr is DBTextBoxEx | ctr is DBFindTextBox | ctr is DBDate | ctr is DBCheckBox |
+                    if (ctr is DBComboEx | ctr is DBTextBoxEx | ctr is DBFindTextBox | ctr is DBDate | ctr is DBCheckBoxEx |
                         ctr is DBGridViewEx | ctr is DBImage | ctr is DBFile | ctr is DBEditPicture | ctr is DBLabelEx)
                     {
                         if (ctr is DBComboEx && ((DBComboEx)ctr).DataControl != null && ((DBComboEx)ctr).DataControl.NameControl() == Name)
@@ -2253,8 +2253,8 @@ namespace FSFormControls
                             ((DBFindTextBox)ctr).Mode = AccMode;
                         if (ctr is DBDate && ((DBDate)ctr).DataControl != null && ((DBDate)ctr).DataControl.NameControl() == Name)
                             ((DBDate)ctr).Mode = AccMode;
-                        if (ctr is DBCheckBox && ((DBCheckBox)ctr).DataControl != null && ((DBCheckBox)ctr).DataControl.NameControl() == Name)
-                            ((DBCheckBox)ctr).Mode = AccMode;
+                        if (ctr is DBCheckBoxEx && ((DBCheckBoxEx)ctr).DataControl != null && ((DBCheckBoxEx)ctr).DataControl.NameControl() == Name)
+                            ((DBCheckBoxEx)ctr).Mode = AccMode;
                         if (ctr is DBGridViewEx && ((DBGridViewEx)ctr).DataControl != null && ((DBGridViewEx)ctr).DataControl.NameControl() == Name)
                             ((DBGridViewEx)ctr).Mode = AccMode;
                         if (ctr is DBImage && ((DBImage)ctr).DataControl != null && ((DBImage)ctr).DataControl.NameControl() == Name)

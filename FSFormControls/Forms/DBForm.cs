@@ -570,10 +570,10 @@ namespace FSFormControls
                         LinkUnBoundControls(ctr);
 
 
-                    if (ctr is DBCheckBox)
+                    if (ctr is DBCheckBoxEx)
                     {
-                        if (((DBCheckBox)ctr).DataControl == null)
-                            ((DBCheckBox)ctr).UpdateCheckBox();
+                        if (((DBCheckBoxEx)ctr).DataControl == null)
+                            ((DBCheckBoxEx)ctr).UpdateCheckBox();
                     }
 
                     if (ctr is DBTextBoxEx)

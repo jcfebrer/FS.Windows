@@ -133,7 +133,6 @@ namespace FSFormControls
             SetStyle(ControlStyles.DoubleBuffer, true);
 
             //lblShadow.TabStop = false;
-            Appearance = new DBAppearance();
 
             cmdAmpliar.Click += cmdAmpliar_Click;
             cmdCalc.Click += cmdCalc_Click;
@@ -193,7 +192,39 @@ namespace FSFormControls
             set { textbox.ScrollBars = value; }
         }
 
-        public NumericTypeEnum NumericType { get; set; } = NumericTypeEnum.Double;
+        private DBAppearance m_Appearance = new DBAppearance();
+        public DBAppearance Appearance
+        {
+            get { return m_Appearance; }
+            set
+            {
+
+                if (value != null)
+                {
+                    textbox.ForeColor = value.ForeColor;
+                    textbox.BackColor = value.BackColor;
+                    textbox.TextAlign = value.Alignment;
+
+                    if (value.TextHAlignAsString == "Left")
+                        textbox.TextAlign = HorizontalAlignment.Left;
+                    else if (value.TextHAlignAsString == "Center")
+                        textbox.TextAlign = HorizontalAlignment.Center;
+                    else if (value.TextHAlignAsString == "Right")
+                        textbox.TextAlign = HorizontalAlignment.Right;
+                }
+            }
+        }
+
+        private NumericTypeEnum m_NumericType = NumericTypeEnum.Double;
+        public NumericTypeEnum NumericType
+        {
+            get { return m_NumericType; }
+            set
+            {
+                m_NumericType = value;
+                textbox.TextAlign = HorizontalAlignment.Right;
+            }
+        }
 
         public char PromptChar { get; set; }
 
@@ -237,9 +268,9 @@ namespace FSFormControls
             set { textbox.ScrollBars = value; }
         }
 
-        public DBButtonCollection ButtonsRight { get; set; } = new DBButtonCollection();
+        public DBButtonCollectionEx ButtonsRight { get; set; } = new DBButtonCollectionEx();
 
-        public DBButtonCollection ButtonsLeft { get; set; } = new DBButtonCollection();
+        public DBButtonCollectionEx ButtonsLeft { get; set; } = new DBButtonCollectionEx();
 
         public bool ShowKeyboard
         {
@@ -574,8 +605,6 @@ namespace FSFormControls
 
         public string LastValue { get; private set; } = "";
 
-        public DBAppearance Appearance { get; set; }
-
         public void ScrollToEnd()
 		{
 			textbox.SelectionStart = textbox.Text.Length;
@@ -586,36 +615,29 @@ namespace FSFormControls
         {
             var f = 0;
 
-            if (string.IsNullOrEmpty(m_MaskInput)) 
+            if (string.IsNullOrEmpty(m_MaskInput))
                 return;
 
-            try
-            {
-                FireTextChanged = false;
-                textbox.Text = m_MaskInput;
-                textbox.Text = textbox.Text.Replace("#", "_");
-                textbox.Text = textbox.Text.Replace("&", "_");
-                textbox.Text = textbox.Text.Replace("n", "_");
-                textbox.Text = textbox.Text.Replace("9", "_");
-                FireTextChanged = true;
+            FireTextChanged = false;
+            textbox.Text = m_MaskInput;
+            textbox.Text = textbox.Text.Replace("#", "_");
+            textbox.Text = textbox.Text.Replace("&", "_");
+            textbox.Text = textbox.Text.Replace("n", "_");
+            textbox.Text = textbox.Text.Replace("9", "_");
+            FireTextChanged = true;
 
-                m_aMask = new char[textbox.Text.Length];
-                m_aMskMask = new char[textbox.Text.Length];
+            m_aMask = new char[textbox.Text.Length];
+            m_aMskMask = new char[textbox.Text.Length];
 
-                for (f = 0; f <= m_MaskInput.Length - 1; f++)
-                    if ((m_MaskInput.Substring(f, 1) == "#") | (m_MaskInput.Substring(f, 1) == "n") |
-                        (m_MaskInput.Substring(f, 1) == "&") | (m_MaskInput.Substring(f, 1) == "9"))
-                        m_aMask.SetValue(char.Parse("_"), f);
-                    else
-                        m_aMask.SetValue(char.Parse(m_MaskInput.Substring(f, 1)), f);
+            for (f = 0; f <= m_MaskInput.Length - 1; f++)
+                if ((m_MaskInput.Substring(f, 1) == "#") | (m_MaskInput.Substring(f, 1) == "n") |
+                    (m_MaskInput.Substring(f, 1) == "&") | (m_MaskInput.Substring(f, 1) == "9"))
+                    m_aMask.SetValue(char.Parse("_"), f);
+                else
+                    m_aMask.SetValue(char.Parse(m_MaskInput.Substring(f, 1)), f);
 
-                for (f = 0; f <= m_MaskInput.Length - 1; f++)
-                    m_aMskMask.SetValue(char.Parse(m_MaskInput.Substring(f, 1)), f);
-            }
-            catch (Exception e)
-            {
-                throw new ExceptionUtil(e);
-            }
+            for (f = 0; f <= m_MaskInput.Length - 1; f++)
+                m_aMskMask.SetValue(char.Parse(m_MaskInput.Substring(f, 1)), f);
         }
 
 
@@ -861,7 +883,7 @@ namespace FSFormControls
         {
             if (ButtonsRight != null && ButtonsRight.Count > 0)
             {
-                foreach (DBButton button in ButtonsRight)
+                foreach (DBButtonEx button in ButtonsRight)
                 {
                     button.FlatStyle = FlatStyle.Flat;
                     button.Width = 16;
@@ -878,7 +900,7 @@ namespace FSFormControls
 
             if (ButtonsLeft != null && ButtonsLeft.Count > 0)
             {
-                foreach (DBButton button in ButtonsLeft)
+                foreach (DBButtonEx button in ButtonsLeft)
                 {
                     button.FlatStyle = FlatStyle.Flat;
                     button.Width = 16;
@@ -899,7 +921,7 @@ namespace FSFormControls
             int r = 1;
             if (ButtonsRight != null && ButtonsRight.Count > 0)
             {
-                foreach (DBButton button in ButtonsRight)
+                foreach (DBButtonEx button in ButtonsRight)
                 {
                     button.Left = this.Width - 16 * r;
 
@@ -910,7 +932,7 @@ namespace FSFormControls
             int l = 0;
             if (ButtonsLeft != null && ButtonsLeft.Count > 0)
             {
-                foreach (DBButton button in ButtonsLeft)
+                foreach (DBButtonEx button in ButtonsLeft)
                 {
                     button.Left = l * 16;
 
@@ -927,7 +949,7 @@ namespace FSFormControls
 
         private void Button_Click(object sender, EventArgs e)
         {
-            var button = (DBButton) sender;
+            var button = (DBButtonEx) sender;
 
             if (EditorButtonClick != null)
                 EditorButtonClick(sender, new DBEditorButtonEventArgs());

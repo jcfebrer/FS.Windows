@@ -10,12 +10,12 @@ namespace FSFormControls
 
     public class DBEditorButtonEventArgs : EventArgs
     {
-        public DBButton Button;
+        public DBButtonEx Button;
         public Element Element;
 
         public Item ClickedItem { get; set; }
 
-        public DBEditorButtonEventArgs(DBButton button)
+        public DBEditorButtonEventArgs(DBButtonEx button)
         {
         }
 

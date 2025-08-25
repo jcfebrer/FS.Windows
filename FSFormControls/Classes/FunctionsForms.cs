@@ -277,7 +277,7 @@ namespace FSFormControls
                     return ctr;
                 if (ctr is DBComboEx && ((DBComboEx)ctr).DBField.ToLower() == dbfield.ToLower())
                     return ctr;
-                if (ctr is DBCheckBox && ((DBCheckBox)ctr).DBField.ToLower() == dbfield.ToLower())
+                if (ctr is DBCheckBoxEx && ((DBCheckBoxEx)ctr).DBField.ToLower() == dbfield.ToLower())
                     return ctr;
                 if (ctr is DBDate && ((DBDate)ctr).DBField.ToLower() == dbfield.ToLower())
                     return ctr;

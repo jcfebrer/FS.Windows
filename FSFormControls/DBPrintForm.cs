@@ -615,8 +615,8 @@ namespace FSFormControls
             ScanForChildControls = false;
 
             CheckBox cb = null;
-            if (c is DBCheckBox)
-                cb = ((DBCheckBox) c).CheckBox;
+            if (c is DBCheckBoxEx)
+                cb = ((DBCheckBoxEx) c).CheckBox;
             else
                 cb = (CheckBox) c;
 

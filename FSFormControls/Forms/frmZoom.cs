@@ -55,8 +55,8 @@ namespace FSFormControls
         private readonly IContainer components = null;
 
         internal DBTextBoxEx DbTextBox1;
-        internal DBButton cmdClose;
-        internal DBButton cmdSave;
+        internal DBButtonEx cmdClose;
+        internal DBButtonEx cmdSave;
 
         public frmZoom()
         {
@@ -78,15 +78,15 @@ namespace FSFormControls
         [DebuggerStepThrough]
         private void InitializeComponent()
         {
-            cmdClose = new DBButton();
+            cmdClose = new DBButtonEx();
             DbTextBox1 = new DBTextBoxEx();
-            cmdSave = new DBButton();
+            cmdSave = new DBButtonEx();
             SuspendLayout();
             // 
             // cmdClose
             // 
             cmdClose.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            cmdClose.ButtonStyle = DBButton.ButtonStyleType.Normal;
+            cmdClose.ButtonStyle = DBButtonEx.ButtonStyleType.Normal;
             cmdClose.DropDownMenu = null;
             cmdClose.FillColorEnd = Color.White;
             cmdClose.FillColorStart = Color.LightGray;
@@ -155,7 +155,7 @@ namespace FSFormControls
             // cmdSave
             // 
             cmdSave.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            cmdSave.ButtonStyle = DBButton.ButtonStyleType.Normal;
+            cmdSave.ButtonStyle = DBButtonEx.ButtonStyleType.Normal;
             cmdSave.FillColorEnd = Color.White;
             cmdSave.FillColorStart = Color.LightGray;
             cmdSave.FillHoverColorEnd = Color.Beige;

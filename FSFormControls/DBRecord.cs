@@ -392,7 +392,7 @@ namespace FSFormControls
             switch (selCol.ColumnType)
             {
                 case DBColumn.ColumnTypes.CheckColumn:
-                    var boolCol = new DBCheckBox();
+                    var boolCol = new DBCheckBoxEx();
                     boolCol.DataControl = DataControl;
                     boolCol.Mode = Mode;
                     boolCol.Font = selCol.Font;

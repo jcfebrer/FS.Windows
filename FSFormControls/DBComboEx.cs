@@ -615,17 +615,17 @@ namespace FSFormControls
             set { combobox.SelectedText = value; }
         }
 
-        public DBButtonCollection ButtonsRight { get; set; } = new DBButtonCollection();
+        public DBButtonCollectionEx ButtonsRight { get; set; } = new DBButtonCollectionEx();
 
-        public DBButtonCollection ButtonsLeft { get; set; } = new DBButtonCollection();
+        public DBButtonCollectionEx ButtonsLeft { get; set; } = new DBButtonCollectionEx();
 
-        public DBButtonCollection ClickedItemsLeft 
+        public DBButtonCollectionEx ClickedItemsLeft 
         {
             get { return ButtonsLeft; }
             set { ButtonsLeft = value; } 
         }
 
-        public DBButtonCollection ClickedItemsRight
+        public DBButtonCollectionEx ClickedItemsRight
         {
             get { return ButtonsRight; }
             set { ButtonsRight = value; }
@@ -633,8 +633,11 @@ namespace FSFormControls
 
         public bool IsItemInList()
         {
-            if (combobox.Items.Contains(combobox.SelectedText))
-                return true;
+            if (this.Value != null && this.Items != null && this.Items.Count > 0)
+            {
+                if (combobox.Items.Contains(this.Value))
+                    return true;
+            }
             return false;
         }
 
@@ -1210,7 +1213,7 @@ namespace FSFormControls
         {
             if (ButtonsRight != null && ButtonsRight.Count > 0)
             {
-                foreach (DBButton button in ButtonsRight)
+                foreach (DBButtonEx button in ButtonsRight)
                 {
                     button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
                     button.Width = 16;
@@ -1227,7 +1230,7 @@ namespace FSFormControls
 
             if (ButtonsLeft != null && ButtonsLeft.Count > 0)
             {
-                foreach (DBButton button in ButtonsLeft)
+                foreach (DBButtonEx button in ButtonsLeft)
                 {
                     button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
                     button.Width = 16;
@@ -1248,7 +1251,7 @@ namespace FSFormControls
             int r = 1;
             if (ButtonsRight != null && ButtonsRight.Count > 0)
             {
-                foreach (DBButton button in ButtonsRight)
+                foreach (DBButtonEx button in ButtonsRight)
                 {
                     button.Left = this.Width - 16 * r;
 
@@ -1260,7 +1263,7 @@ namespace FSFormControls
 
             if (ButtonsLeft != null && ButtonsLeft.Count > 0)
             {
-                foreach (DBButton button in ButtonsLeft)
+                foreach (DBButtonEx button in ButtonsLeft)
                 {
                     button.Left = l * 16;
 
@@ -1277,7 +1280,7 @@ namespace FSFormControls
 
         private void Button_Click(object sender, EventArgs e)
         {
-            var button = (DBButton) sender;
+            var button = (DBButtonEx) sender;
 
             if (EditorButtonClick != null)
                 EditorButtonClick(sender, new DBEditorButtonEventArgs());

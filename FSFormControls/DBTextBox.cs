@@ -1,9 +1,7 @@
-﻿using FSException;
-using System;
+﻿using System;
 using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace FSFormControls
 {
@@ -14,8 +12,6 @@ namespace FSFormControls
     {
         public DBTextBox()
         {
-            Appearance = new DBAppearance();
-
             this.TextChanged += DBTextBox_TextChanged;
 
             InitializeButtons();
@@ -105,7 +101,29 @@ namespace FSFormControls
             NextSection
         }
 
-        public DBAppearance Appearance { get; set; }
+        private DBAppearance m_Appearance = new DBAppearance();
+        public DBAppearance Appearance
+        {
+            get { return m_Appearance; }
+            set
+            {
+
+                if (value != null)
+                {
+                    this.ForeColor = value.ForeColor;
+                    this.BackColor = value.BackColor;
+                    this.TextAlign = value.Alignment;
+
+                    if(value.TextHAlignAsString == "Left")
+                        this.TextAlign = HorizontalAlignment.Left;
+                    else if(value.TextHAlignAsString == "Center")
+                        this.TextAlign = HorizontalAlignment.Center;
+                    else if(value.TextHAlignAsString == "Right")
+                        this.TextAlign = HorizontalAlignment.Right;
+                }
+            }
+        }
+
         public object About { get; set; }
         public char PromptChar { get; set; }
         public SelectAllBehaviorEnum SelectAllBehavior { get; set; }
@@ -207,7 +225,14 @@ namespace FSFormControls
         )]
         public TypeString Capitalize { get; set; } = TypeString.Normal;
 
-        public NumericTypeEnum NumericType { get; set; } = NumericTypeEnum.Double;
+        private NumericTypeEnum m_NumericType = NumericTypeEnum.Double;
+        public NumericTypeEnum NumericType {
+            get { return m_NumericType; }
+            set { 
+                m_NumericType = value; 
+                this.TextAlign = HorizontalAlignment.Right;
+            }
+        }
 
         private DBControl m_DataControl;
         /// <summary>
@@ -380,40 +405,33 @@ namespace FSFormControls
             if (string.IsNullOrEmpty(m_MaskInput))
                 return;
 
-            try
-            {
-                FireTextChanged = false;
-                this.Text = m_MaskInput;
-                this.Text = this.Text.Replace("#", "_");
-                this.Text = this.Text.Replace("&", "_");
-                this.Text = this.Text.Replace("n", "_");
-                this.Text = this.Text.Replace("9", "_");
-                FireTextChanged = true;
+            FireTextChanged = false;
+            this.Text = m_MaskInput;
+            this.Text = this.Text.Replace("#", "_");
+            this.Text = this.Text.Replace("&", "_");
+            this.Text = this.Text.Replace("n", "_");
+            this.Text = this.Text.Replace("9", "_");
+            FireTextChanged = true;
 
-                m_aMask = new char[this.Text.Length];
-                m_aMskMask = new char[this.Text.Length];
+            m_aMask = new char[this.Text.Length];
+            m_aMskMask = new char[this.Text.Length];
 
-                for (f = 0; f <= m_MaskInput.Length - 1; f++)
-                    if ((m_MaskInput.Substring(f, 1) == "#") | (m_MaskInput.Substring(f, 1) == "n") |
-                        (m_MaskInput.Substring(f, 1) == "&") | (m_MaskInput.Substring(f, 1) == "9"))
-                        m_aMask.SetValue(char.Parse("_"), f);
-                    else
-                        m_aMask.SetValue(char.Parse(m_MaskInput.Substring(f, 1)), f);
+            for (f = 0; f <= m_MaskInput.Length - 1; f++)
+                if ((m_MaskInput.Substring(f, 1) == "#") | (m_MaskInput.Substring(f, 1) == "n") |
+                    (m_MaskInput.Substring(f, 1) == "&") | (m_MaskInput.Substring(f, 1) == "9"))
+                    m_aMask.SetValue(char.Parse("_"), f);
+                else
+                    m_aMask.SetValue(char.Parse(m_MaskInput.Substring(f, 1)), f);
 
-                for (f = 0; f <= m_MaskInput.Length - 1; f++)
-                    m_aMskMask.SetValue(char.Parse(m_MaskInput.Substring(f, 1)), f);
-            }
-            catch (Exception e)
-            {
-                throw new ExceptionUtil(e);
-            }
+            for (f = 0; f <= m_MaskInput.Length - 1; f++)
+                m_aMskMask.SetValue(char.Parse(m_MaskInput.Substring(f, 1)), f);
         }
 
         private void InitializeButtons()
         {
             if (ButtonsRight != null && ButtonsRight.Count > 0)
             {
-                foreach (DBButton button in ButtonsRight)
+                foreach (DBButtonEx button in ButtonsRight)
                 {
                     button.FlatStyle = FlatStyle.Flat;
                     button.Width = 16;
@@ -430,7 +448,7 @@ namespace FSFormControls
 
             if (ButtonsLeft != null && ButtonsLeft.Count > 0)
             {
-                foreach (DBButton button in ButtonsLeft)
+                foreach (DBButtonEx button in ButtonsLeft)
                 {
                     button.FlatStyle = FlatStyle.Flat;
                     button.Width = 16;
@@ -454,7 +472,7 @@ namespace FSFormControls
 
         private void Button_Click(object sender, EventArgs e)
         {
-            var button = (DBButton)sender;
+            var button = (DBButtonEx)sender;
 
             if (EditorButtonClick != null)
                 EditorButtonClick(sender, new DBEditorButtonEventArgs());

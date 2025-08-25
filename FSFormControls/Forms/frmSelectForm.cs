@@ -52,7 +52,7 @@ namespace FSFormControls
 
         private readonly IContainer components = null;
 
-        internal DBButton DbButton1;
+        internal DBButtonEx DbButton1;
         internal DBGridViewEx DbGrid1;
 
         public frmSelectForm()
@@ -76,7 +76,7 @@ namespace FSFormControls
         private void InitializeComponent()
         {
             DbGrid1 = new DBGridViewEx();
-            DbButton1 = new DBButton();
+            DbButton1 = new DBButtonEx();
             SuspendLayout();
             // 
             // DbGrid1
@@ -132,7 +132,7 @@ namespace FSFormControls
             // DbButton1
             // 
             DbButton1.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            DbButton1.ButtonStyle = DBButton.ButtonStyleType.Normal;
+            DbButton1.ButtonStyle = DBButtonEx.ButtonStyleType.Normal;
             DbButton1.DropDownMenu = null;
             DbButton1.FillColorEnd = Color.White;
             DbButton1.FillColorStart = Color.LightGray;
