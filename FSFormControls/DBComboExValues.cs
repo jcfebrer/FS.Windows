@@ -190,6 +190,11 @@ namespace FSFormControls
             return List.IndexOf(Value);
         }
 
+        public new void Clear()
+        {
+            m_combobox.Items.Clear();
+        }
+
         #region IBindingList Members
 
         bool IBindingList.AllowEdit => AllowEdit;
