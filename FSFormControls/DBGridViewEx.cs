@@ -403,7 +403,7 @@ namespace FSFormControls
 
         public DBGridViewRowCollection Rows
         {
-            get { return (DBGridViewRowCollection)dataGridView.Rows; }
+            get { return dataGridView.Rows as DBGridViewRowCollection; }
         }
 
         public Color AlternatingColor
