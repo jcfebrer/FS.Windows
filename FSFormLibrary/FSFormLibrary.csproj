@@ -48,7 +48,7 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))' != 'net'">
-    <PackageReference Include="System.Management" Version="9.0.1" />
+    <PackageReference Include="System.Management" Version="9.0.3" />
     <PackageReference Include="System.ServiceProcess.ServiceController" Version="9.0.1" />
   </ItemGroup>
   <ItemGroup>
