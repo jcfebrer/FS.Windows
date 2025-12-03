@@ -41,11 +41,16 @@ namespace FSFormControls
             ListView1.ItemSelectionChanged += ListView1_ItemSelectionChanged;
             ListView1.ItemCheck += ListView1_ItemCheck;
             ListView1.ItemChecked += ListView1_ItemChecked;
+            ListView1.SelectedIndexChanged += ListView1_SelectedIndexChanged;
 
             lvwColumnSorter = new DBListViewColumnSorter();
             ListView1.ListViewItemSorter = lvwColumnSorter;
         }
 
+        private void ListView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (null != SelectedIndexChanged) SelectedIndexChanged(this, e);
+        }
 
         private DBControl m_DataControl;
         /// <summary>
@@ -94,6 +99,25 @@ namespace FSFormControls
 
         public ListView.ListViewItemCollection Items => ListView1.Items;
 
+        public bool UseCompatibleStateImageBehavior {
+            get { return ListView1.UseCompatibleStateImageBehavior; }
+            set { ListView1.UseCompatibleStateImageBehavior = value; }
+        }
+
+        public View View { 
+            get { return ListView1.View; }
+            set { ListView1.View = value; }
+        }
+
+        public bool FullRowSelect { 
+            get { return ListView1.FullRowSelect; }
+            set { ListView1.FullRowSelect = value; }
+        }
+
+        public ListView.ColumnHeaderCollection Columns { 
+            get { return ListView1.Columns; }
+        }
+
         protected override void Dispose(bool disposing)
         {
             if (disposing)
@@ -101,6 +125,8 @@ namespace FSFormControls
                     components.Dispose();
             base.Dispose(disposing);
         }
+
+        public event EventHandler SelectedIndexChanged;
 
         public event ItemCheckedEventHandler ItemChecked;
 
@@ -260,6 +286,10 @@ namespace FSFormControls
             ListView1.Clear();
         }
 
+        public void AutoResizeColumns(ColumnHeaderAutoResizeStyle columnContent)
+        {
+            ListView1.AutoResizeColumns(columnContent);
+        }
 
         private void ListView1_ColumnClick(object sender, ColumnClickEventArgs e)
         {
