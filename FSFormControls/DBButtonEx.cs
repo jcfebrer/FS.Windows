@@ -68,6 +68,11 @@ namespace FSFormControls
             set { button.Name = value; }
         }
 
+        public Button Button
+        {
+            get { return button; }
+        }
+
         public Color FillColorStart
         {
             get { return m_FillColorStart; }

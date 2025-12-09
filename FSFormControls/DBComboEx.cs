@@ -615,17 +615,17 @@ namespace FSFormControls
             set { combobox.SelectedText = value; }
         }
 
-        public DBButtonCollectionEx ButtonsRight { get; set; } = new DBButtonCollectionEx();
+        public DBButtonCollection ButtonsRight { get; set; } = new DBButtonCollection();
 
-        public DBButtonCollectionEx ButtonsLeft { get; set; } = new DBButtonCollectionEx();
+        public DBButtonCollection ButtonsLeft { get; set; } = new DBButtonCollection();
 
-        public DBButtonCollectionEx ClickedItemsLeft 
+        public DBButtonCollection ClickedItemsLeft 
         {
             get { return ButtonsLeft; }
             set { ButtonsLeft = value; } 
         }
 
-        public DBButtonCollectionEx ClickedItemsRight
+        public DBButtonCollection ClickedItemsRight
         {
             get { return ButtonsRight; }
             set { ButtonsRight = value; }

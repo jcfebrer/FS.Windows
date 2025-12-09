@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.ComponentModel;
+using System.Windows.Forms;
 using FSLibrary;
 
 namespace FSFormControls
@@ -8,13 +9,13 @@ namespace FSFormControls
     {
         private ListChangedEventHandler onListChanged;
 
-        public DBButton this[int index]
+        public Button this[int index]
         {
-            get { return (DBButton) List[index]; }
+            get { return (Button) List[index]; }
             set { List[index] = value; }
         }
 
-        public DBButton this[string key] => get_Find(key);
+        public Button this[string key] => get_Find(key);
 
         public bool AllowEdit => false;
 
@@ -34,10 +35,10 @@ namespace FSFormControls
 
         public bool SupportsSorting => false;
 
-        public DBButton get_Find(string key)
+        public Button get_Find(string key)
         {
-            foreach (DBButton dbbutton in List)
-                if (dbbutton.Key.ToLower() == key.ToLower())
+            foreach (Button dbbutton in List)
+                if (dbbutton.Name.ToLower() == key.ToLower())
                     return dbbutton;
             return null;
         }
@@ -51,7 +52,7 @@ namespace FSFormControls
 
             if (name.Substring(0, 1) == "_") name = TextUtil.Replace(name, "_", "");
 
-            foreach (DBButton dbcol in List)
+            foreach (Button dbcol in List)
             {
                 if (dbcol.Name.ToLower() == name.ToLower()) return f;
                 f = f + 1;
@@ -60,39 +61,53 @@ namespace FSFormControls
             return -1;
         }
 
-        public DBButton Add(DBButton Value)
+        public Button Add(Button Value)
         {
             List.Add(Value);
 
             return Value;
         }
 
-        public void AddRange(DBButton[] Values)
+        public Button Add(DBButton Value)
+        {
+            List.Add(Value);
+
+            return Value;
+        }
+
+        public Button Add(DBButtonEx Value)
+        {
+            List.Add(Value);
+
+            return Value.Button;
+        }
+
+        public void AddRange(Button[] Values)
         {
             var f = 0;
             for (f = 0; f <= Values.Length - 1; f++) List.Add(Values[f]);
         }
 
 
-        public void Remove(DBButton Value)
+        public void Remove(Button Value)
         {
             List.Remove(Value);
         }
 
 
-        public void Insert(int index, DBButton Value)
+        public void Insert(int index, Button Value)
         {
             List.Insert(index, Value);
         }
 
 
-        public bool Contains(DBButton Value)
+        public bool Contains(Button Value)
         {
             return List.Contains(Value);
         }
 
 
-        public int IndexOf(DBButton Value)
+        public int IndexOf(Button Value)
         {
             return List.IndexOf(Value);
         }

@@ -13,8 +13,6 @@ namespace FSFormControls
         public DBTextBox()
         {
             this.TextChanged += DBTextBox_TextChanged;
-
-            InitializeButtons();
         }
 
         private void DBTextBox_TextChanged(object sender, EventArgs e)
@@ -137,8 +135,6 @@ namespace FSFormControls
         public bool SendCommaAsPoint { get; set; } = true;
         public bool ShowAsCombo { get; set; }
         public TabNavigationEnum TabNavigation { get; set; }
-        public DBButtonCollection ButtonsRight { get; set; } = new DBButtonCollection();
-        public DBButtonCollection ButtonsLeft { get; set; } = new DBButtonCollection();
         public string LastValue { get; private set; } = "";
 
         private string m_ToolTip = "";
@@ -425,43 +421,6 @@ namespace FSFormControls
 
             for (f = 0; f <= m_MaskInput.Length - 1; f++)
                 m_aMskMask.SetValue(char.Parse(m_MaskInput.Substring(f, 1)), f);
-        }
-
-        private void InitializeButtons()
-        {
-            if (ButtonsRight != null && ButtonsRight.Count > 0)
-            {
-                foreach (DBButtonEx button in ButtonsRight)
-                {
-                    button.FlatStyle = FlatStyle.Flat;
-                    button.Width = 16;
-                    button.Height = 16;
-                    button.Visible = true;
-                    button.Top = 0;
-                    button.Click += Button_Click;
-                    button.ToolTip = button.Text;
-                    button.MouseEnter += Button_MouseEnter;
-
-                    button.BringToFront();
-                }
-            }
-
-            if (ButtonsLeft != null && ButtonsLeft.Count > 0)
-            {
-                foreach (DBButtonEx button in ButtonsLeft)
-                {
-                    button.FlatStyle = FlatStyle.Flat;
-                    button.Width = 16;
-                    button.Height = 16;
-                    button.Visible = true;
-                    button.Top = 0;
-                    button.Click += Button_Click;
-                    button.ToolTip = button.Text;
-                    button.MouseEnter += Button_MouseEnter;
-
-                    button.BringToFront();
-                }
-            }
         }
 
         private void Button_MouseEnter(object sender, EventArgs e)

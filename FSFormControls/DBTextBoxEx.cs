@@ -268,9 +268,9 @@ namespace FSFormControls
             set { textbox.ScrollBars = value; }
         }
 
-        public DBButtonCollectionEx ButtonsRight { get; set; } = new DBButtonCollectionEx();
+        public DBButtonCollection ButtonsRight { get; set; } = new DBButtonCollection();
 
-        public DBButtonCollectionEx ButtonsLeft { get; set; } = new DBButtonCollectionEx();
+        public DBButtonCollection ButtonsLeft { get; set; } = new DBButtonCollection();
 
         public bool ShowKeyboard
         {
@@ -883,7 +883,7 @@ namespace FSFormControls
         {
             if (ButtonsRight != null && ButtonsRight.Count > 0)
             {
-                foreach (DBButtonEx button in ButtonsRight)
+                foreach (DBButton button in ButtonsRight)
                 {
                     button.FlatStyle = FlatStyle.Flat;
                     button.Width = 16;
@@ -894,13 +894,14 @@ namespace FSFormControls
                     button.ToolTip = button.Text;
                     button.MouseEnter += Button_MouseEnter;
 
-                    button.BringToFront();
+                    textbox.Controls.Add(button);
+                    //button.BringToFront();
                 }
             }
 
             if (ButtonsLeft != null && ButtonsLeft.Count > 0)
             {
-                foreach (DBButtonEx button in ButtonsLeft)
+                foreach (DBButton button in ButtonsLeft)
                 {
                     button.FlatStyle = FlatStyle.Flat;
                     button.Width = 16;
@@ -911,7 +912,8 @@ namespace FSFormControls
                     button.ToolTip = button.Text;
                     button.MouseEnter += Button_MouseEnter;
 
-                    button.BringToFront();
+                    textbox.Controls.Add(button);
+                    //button.BringToFront();
                 }
             }
         }
@@ -921,7 +923,7 @@ namespace FSFormControls
             int r = 1;
             if (ButtonsRight != null && ButtonsRight.Count > 0)
             {
-                foreach (DBButtonEx button in ButtonsRight)
+                foreach (DBButton button in ButtonsRight)
                 {
                     button.Left = this.Width - 16 * r;
 
@@ -932,7 +934,7 @@ namespace FSFormControls
             int l = 0;
             if (ButtonsLeft != null && ButtonsLeft.Count > 0)
             {
-                foreach (DBButtonEx button in ButtonsLeft)
+                foreach (DBButton button in ButtonsLeft)
                 {
                     button.Left = l * 16;
 
