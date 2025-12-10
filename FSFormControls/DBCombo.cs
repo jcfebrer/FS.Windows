@@ -126,7 +126,7 @@ namespace FSFormControls
         private void Button_MouseEnter(object sender, EventArgs e)
         {
             if (null != MouseEnterElement)
-                MouseEnterElement(this, new DBEditorButtonEventArgs());
+                MouseEnterElement(this, new DBEditorButtonEventArgs((DBButton)sender));
         }
 
         private void Button_Click(object sender, EventArgs e)
@@ -134,7 +134,7 @@ namespace FSFormControls
             var button = (DBButtonEx)sender;
 
             if (EditorButtonClick != null)
-                EditorButtonClick(sender, new DBEditorButtonEventArgs());
+                EditorButtonClick(sender, new DBEditorButtonEventArgs(button));
         }
 
         [Browsable(false)]

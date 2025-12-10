@@ -9,13 +9,13 @@ namespace FSFormControls
     {
         private ListChangedEventHandler onListChanged;
 
-        public Button this[int index]
+        public Control this[int index]
         {
-            get { return (Button) List[index]; }
+            get { return (Control) List[index]; }
             set { List[index] = value; }
         }
 
-        public Button this[string key] => get_Find(key);
+        public Control this[string key] => get_Find(key);
 
         public bool AllowEdit => false;
 
@@ -35,11 +35,25 @@ namespace FSFormControls
 
         public bool SupportsSorting => false;
 
-        public Button get_Find(string key)
+        public Control get_Find(string key)
         {
-            foreach (Button dbbutton in List)
+            foreach (Control dbbutton in List)
+            {
+                if (dbbutton is DBButtonEx dbEx)
+                {
+                    if (dbEx.Key.ToLower() == key.ToLower() || dbEx.Name.ToLower() == key.ToLower())
+                        return dbEx;
+                }
+                else
+                if (dbbutton is DBButton dbB)
+                {
+                    if (dbB.Key.ToLower() == key.ToLower() || dbB.Name.ToLower() == key.ToLower())
+                        return dbB;
+                }
+                else
                 if (dbbutton.Name.ToLower() == key.ToLower())
                     return dbbutton;
+            }
             return null;
         }
 
@@ -52,13 +66,20 @@ namespace FSFormControls
 
             if (name.Substring(0, 1) == "_") name = TextUtil.Replace(name, "_", "");
 
-            foreach (Button dbcol in List)
+            foreach (Control dbcol in List)
             {
                 if (dbcol.Name.ToLower() == name.ToLower()) return f;
                 f = f + 1;
             }
 
             return -1;
+        }
+
+        public Control Add(Control Value)
+        {
+            List.Add(Value);
+
+            return Value;
         }
 
         public Button Add(Button Value)
@@ -68,46 +89,46 @@ namespace FSFormControls
             return Value;
         }
 
-        public Button Add(DBButton Value)
+        public DBButton Add(DBButton Value)
         {
             List.Add(Value);
 
             return Value;
         }
 
-        public Button Add(DBButtonEx Value)
+        public DBButtonEx Add(DBButtonEx Value)
         {
             List.Add(Value);
 
-            return Value.Button;
+            return Value;
         }
 
-        public void AddRange(Button[] Values)
+        public void AddRange(Control[] Values)
         {
             var f = 0;
             for (f = 0; f <= Values.Length - 1; f++) List.Add(Values[f]);
         }
 
 
-        public void Remove(Button Value)
+        public void Remove(Control Value)
         {
             List.Remove(Value);
         }
 
 
-        public void Insert(int index, Button Value)
+        public void Insert(int index, Control Value)
         {
             List.Insert(index, Value);
         }
 
 
-        public bool Contains(Button Value)
+        public bool Contains(Control Value)
         {
             return List.Contains(Value);
         }
 
 
-        public int IndexOf(Button Value)
+        public int IndexOf(Control Value)
         {
             return List.IndexOf(Value);
         }

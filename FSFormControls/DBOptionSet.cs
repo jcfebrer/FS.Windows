@@ -13,9 +13,29 @@ namespace FSFormControls
         public DBOptionSet()
         {
             InitializeComponent();
+
+            this.Load += DBOptionSet_Load;
         }
 
-        public DBRadioButtonCollection Items { get; set; }
+        private void DBOptionSet_Load(object sender, EventArgs e)
+        {
+            FillData();
+        }
+
+        private void FillData()
+        {
+            listBox1.Items.Clear();
+            foreach (DBRadioButton item in Items)
+            {
+                listBox1.Items.Add(item.DisplayText);
+            }
+        }
+
+        DBRadioButtonCollection _Items = new DBRadioButtonCollection();
+        public DBRadioButtonCollection Items {
+            get { return _Items; }
+            set { _Items = value; }
+        }
 
         public new BorderStyle BorderStyle
         {
@@ -29,7 +49,13 @@ namespace FSFormControls
 
         public Point ItemOrigin { get; set; }
 
-        public int CheckedIndex { get; set; }
+        public int CheckedIndex {
+            get { return listBox1.SelectedIndex; }
+            set { 
+                if(listBox1.Items.Count > 0)
+                    listBox1.SelectedIndex = value; 
+            }
+        }
 
         public void BeginInit()
         {

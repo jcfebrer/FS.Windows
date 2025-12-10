@@ -41,6 +41,8 @@ namespace FSFormControls
         private bool m_ShowKeyboard;
         private string m_ToolTip = "";
         private string m_XMLName = "";
+        private const int BUTTONWIDTH = 16;
+        private const int BUTTONHEIGHT = 16;
 
         #region Delegates
 
@@ -173,7 +175,7 @@ namespace FSFormControls
         [EditorBrowsable(EditorBrowsableState.Always)]
         public override string Text
         {
-            get { return textbox.Text; }
+            get { return UnMask(textbox.Text); }
             set { textbox.Text = value; }
         }
 
@@ -182,7 +184,7 @@ namespace FSFormControls
         [EditorBrowsable(EditorBrowsableState.Always)]
         public object Value
         {
-            get { return textbox.Text; }
+            get { return UnMask(textbox.Text); }
             set { textbox.Text = value.ToString(); }
         }
 
@@ -640,6 +642,17 @@ namespace FSFormControls
                 m_aMskMask.SetValue(char.Parse(m_MaskInput.Substring(f, 1)), f);
         }
 
+        private string UnMask(string value)
+        {
+            if (!string.IsNullOrEmpty(m_MaskInput))
+            {
+                return value.Replace("_", "");
+            }
+            else
+            {
+                return value;
+            }
+        }
 
         private void Text1_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -871,10 +884,6 @@ namespace FSFormControls
 
         private void Control_Resize(object sender, EventArgs e)
         {
-            textbox.Location = new Point(0, 0);
-            textbox.Size = new Size(this.Width - (16 * ButtonsRight.Count), textbox.Height);
-            //this.Height = textbox.Height;
-            
             ResizeButtons();
         }
 
@@ -883,36 +892,58 @@ namespace FSFormControls
         {
             if (ButtonsRight != null && ButtonsRight.Count > 0)
             {
-                foreach (DBButton button in ButtonsRight)
+                foreach (Control button in ButtonsRight)
                 {
-                    button.FlatStyle = FlatStyle.Flat;
-                    button.Width = 16;
-                    button.Height = 16;
+                    if (button is Button btn)
+                        btn.FlatStyle = FlatStyle.Flat;
+                    if (button is DBButton dbBtn)
+                    {
+                        dbBtn.ToolTip = button.Text;
+                        dbBtn.FlatStyle = FlatStyle.Flat;
+                    }
+                    if (button is DBButtonEx dbBtnEx)
+                    {
+                        dbBtnEx.ToolTip = button.Text;
+                        dbBtnEx.FlatStyle = FlatStyle.Flat;
+                    }
+
+                    button.Width = BUTTONWIDTH;
+                    button.Height = BUTTONHEIGHT;
                     button.Visible = true;
                     button.Top = 0;
                     button.Click += Button_Click;
-                    button.ToolTip = button.Text;
                     button.MouseEnter += Button_MouseEnter;
 
-                    textbox.Controls.Add(button);
+                    this.Controls.Add(button);
                     //button.BringToFront();
                 }
             }
 
             if (ButtonsLeft != null && ButtonsLeft.Count > 0)
             {
-                foreach (DBButton button in ButtonsLeft)
+                foreach (Control button in ButtonsLeft)
                 {
-                    button.FlatStyle = FlatStyle.Flat;
-                    button.Width = 16;
-                    button.Height = 16;
+                    if (button is Button btn)
+                        btn.FlatStyle = FlatStyle.Flat;
+                    if (button is DBButton dbBtn)
+                    {
+                        dbBtn.ToolTip = button.Text;
+                        dbBtn.FlatStyle = FlatStyle.Flat;
+                    }
+                    if (button is DBButtonEx dbBtnEx)
+                    {
+                        dbBtnEx.ToolTip = button.Text;
+                        dbBtnEx.FlatStyle = FlatStyle.Flat;
+                    }
+
+                    button.Width = BUTTONWIDTH;
+                    button.Height = BUTTONHEIGHT;
                     button.Visible = true;
                     button.Top = 0;
                     button.Click += Button_Click;
-                    button.ToolTip = button.Text;
                     button.MouseEnter += Button_MouseEnter;
 
-                    textbox.Controls.Add(button);
+                    this.Controls.Add(button);
                     //button.BringToFront();
                 }
             }
@@ -920,12 +951,30 @@ namespace FSFormControls
 
         private void ResizeButtons()
         {
+            // Cambiamos la dimesión del textbox y la posición dependiendo de los botones.
+            int newSize = this.Width;
+            int newLocation = 0;
+
+            if (ButtonsRight != null)
+                newSize -= (BUTTONWIDTH * ButtonsRight.Count);
+
+            if (ButtonsLeft != null)
+            {
+                newSize -= (BUTTONWIDTH * ButtonsLeft.Count);
+                newLocation = (BUTTONWIDTH * ButtonsLeft.Count);
+            }
+
+            textbox.Location = new Point(newLocation, 0);
+            textbox.Size = new Size(newSize, this.Height);
+
+
+            //Posicionamos los botones.
             int r = 1;
             if (ButtonsRight != null && ButtonsRight.Count > 0)
             {
-                foreach (DBButton button in ButtonsRight)
+                foreach (Control button in ButtonsRight)
                 {
-                    button.Left = this.Width - 16 * r;
+                    button.Left = this.Width - BUTTONWIDTH * r;
 
                     r++;
                 }
@@ -934,9 +983,9 @@ namespace FSFormControls
             int l = 0;
             if (ButtonsLeft != null && ButtonsLeft.Count > 0)
             {
-                foreach (DBButton button in ButtonsLeft)
+                foreach (Control button in ButtonsLeft)
                 {
-                    button.Left = l * 16;
+                    button.Left = l * BUTTONWIDTH;
 
                     l++;
                 }
@@ -946,15 +995,22 @@ namespace FSFormControls
         private void Button_MouseEnter(object sender, EventArgs e)
         {
             if (null != MouseEnterElement)
-                MouseEnterElement(this, new DBEditorButtonEventArgs());
+            {
+                if (sender is DBButton dbb)
+                    MouseEnterElement(this, new DBEditorButtonEventArgs((DBButton)dbb));
+                if (sender is DBButtonEx dbbex)
+                    MouseEnterElement(this, new DBEditorButtonEventArgs((DBButtonEx)dbbex));
+                if (sender is Button db)
+                    MouseEnterElement(this, new DBEditorButtonEventArgs((Button)db));
+            }
         }
 
         private void Button_Click(object sender, EventArgs e)
         {
-            var button = (DBButtonEx) sender;
+            var button = (DBButton) sender;
 
             if (EditorButtonClick != null)
-                EditorButtonClick(sender, new DBEditorButtonEventArgs());
+                EditorButtonClick(sender, new DBEditorButtonEventArgs(button));
         }
 
         private void Text1_KeyDown(object sender, KeyEventArgs e)
@@ -1698,7 +1754,6 @@ namespace FSFormControls
             // 
             // textbox
             // 
-            this.textbox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textbox.Location = new System.Drawing.Point(0, 0);
             this.textbox.Name = "textbox";
             this.textbox.Size = new System.Drawing.Size(266, 20);

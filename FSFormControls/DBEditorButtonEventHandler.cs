@@ -1,6 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Drawing;
+using System.Windows.Forms;
 
 namespace FSFormControls
 {
@@ -10,17 +11,30 @@ namespace FSFormControls
 
     public class DBEditorButtonEventArgs : EventArgs
     {
-        public DBButtonEx Button;
+        public Button Button;
         public Element Element;
 
         public Item ClickedItem { get; set; }
 
         public DBEditorButtonEventArgs(DBButtonEx button)
         {
+            this.Button = button.Button;
+            this.Element = new Element() { Rect = button.Bounds };
+            this.ClickedItem = new Item() { Key = button.Key };
         }
 
-        public DBEditorButtonEventArgs()
+        public DBEditorButtonEventArgs(DBButton button)
         {
+            this.Button = button;
+            this.Element = new Element() { Rect = button.Bounds };
+            this.ClickedItem = new Item() { Key = button.Key };
+        }
+
+        public DBEditorButtonEventArgs(Button button)
+        {
+            this.Button = button;
+            this.Element = new Element() { Rect = button.Bounds };
+            this.ClickedItem = new Item() { Key = button.Name };
         }
     }
 

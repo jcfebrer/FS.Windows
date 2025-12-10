@@ -51,7 +51,7 @@ namespace FSFormControls
         [EditorBrowsable(EditorBrowsableState.Always)]
         public object Value
         {
-            get { return this.Text; }
+            get { return UnMask(this.Text); }
             set { this.Text = value.ToString(); }
         }
 
@@ -423,10 +423,22 @@ namespace FSFormControls
                 m_aMskMask.SetValue(char.Parse(m_MaskInput.Substring(f, 1)), f);
         }
 
+        private string UnMask(string value)
+        {
+            if (!string.IsNullOrEmpty(m_MaskInput))
+            {
+                return value.Replace("_", "");
+            }
+            else
+            {
+                return value;
+            }
+        }
+
         private void Button_MouseEnter(object sender, EventArgs e)
         {
             if (null != MouseEnterElement)
-                MouseEnterElement(this, new DBEditorButtonEventArgs());
+                MouseEnterElement(this, new DBEditorButtonEventArgs((DBButton)sender));
         }
 
         private void Button_Click(object sender, EventArgs e)
@@ -434,7 +446,7 @@ namespace FSFormControls
             var button = (DBButtonEx)sender;
 
             if (EditorButtonClick != null)
-                EditorButtonClick(sender, new DBEditorButtonEventArgs());
+                EditorButtonClick(sender, new DBEditorButtonEventArgs(button));
         }
 
         public void BeginInit()
