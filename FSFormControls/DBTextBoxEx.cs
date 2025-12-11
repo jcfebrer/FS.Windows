@@ -270,8 +270,10 @@ namespace FSFormControls
             set { textbox.ScrollBars = value; }
         }
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
         public DBButtonCollection ButtonsRight { get; set; } = new DBButtonCollection();
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
         public DBButtonCollection ButtonsLeft { get; set; } = new DBButtonCollection();
 
         public bool ShowKeyboard

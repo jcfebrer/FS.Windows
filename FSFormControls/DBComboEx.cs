@@ -435,6 +435,7 @@ namespace FSFormControls
             }
         }
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
         public DBComboExValues Items
         {
             get
@@ -615,16 +616,20 @@ namespace FSFormControls
             set { combobox.SelectedText = value; }
         }
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
         public DBButtonCollection ButtonsRight { get; set; } = new DBButtonCollection();
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
         public DBButtonCollection ButtonsLeft { get; set; } = new DBButtonCollection();
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
         public DBButtonCollection ClickedItemsLeft 
         {
             get { return ButtonsLeft; }
             set { ButtonsLeft = value; } 
         }
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
         public DBButtonCollection ClickedItemsRight
         {
             get { return ButtonsRight; }

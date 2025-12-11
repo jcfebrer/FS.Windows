@@ -171,10 +171,12 @@ namespace FSFormControls
 
         public string VersionableDateField { get; set; } = "";
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
         public DBColumnCollection ColumnMapping { get; set; }
 
         public PageSettings PageSettings { get; set; }
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
         public DBParamCollection Parameters { get; set; }
 
         [Browsable(true)]

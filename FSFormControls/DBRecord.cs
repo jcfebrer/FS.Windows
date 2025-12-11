@@ -124,6 +124,7 @@ namespace FSFormControls
 
         public bool TextBoxShadow { get; set; }
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
         public DBColumnCollection Columns { get; set; }
 
         public new BorderStyle BorderStyle

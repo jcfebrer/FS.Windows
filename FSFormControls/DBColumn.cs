@@ -331,6 +331,7 @@ namespace FSFormControls
 
         public LogicalOperatorEnum LogicalOperator { get; set; }
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
         public DBGridViewFilterCollection DBGridViewFilters { get; set; }
 
         public int Index { get; set; }

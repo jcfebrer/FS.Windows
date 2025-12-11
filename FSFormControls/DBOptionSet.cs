@@ -32,6 +32,8 @@ namespace FSFormControls
         }
 
         DBRadioButtonCollection _Items = new DBRadioButtonCollection();
+
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
         public DBRadioButtonCollection Items {
             get { return _Items; }
             set { _Items = value; }

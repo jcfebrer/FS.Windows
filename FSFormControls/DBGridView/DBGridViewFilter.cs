@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.ComponentModel;
 
 namespace FSFormControls
 {
@@ -25,6 +26,8 @@ namespace FSFormControls
 
         public FilterComparisionOperator ComparisionOperator { get; set; }
         public FilterLogicalOperator LogicalOperator { get; set; }
+
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
         public DBGridViewFilterCollection DBGridViewFilters { get; set; }
     }
 }

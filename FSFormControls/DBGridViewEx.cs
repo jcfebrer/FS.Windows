@@ -377,6 +377,7 @@ namespace FSFormControls
             set { m_DBField = value; }
         }
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
         public DBColumnCollection Columns { get; set; } = new DBColumnCollection();
 
         public DataGridViewColumnCollection ColumnsGrid => datagrid.Columns;
@@ -570,6 +571,7 @@ namespace FSFormControls
             }
         }
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
         public DBColumnCollection SortedColumns { get; set; }
 
         public bool ShowTotals
