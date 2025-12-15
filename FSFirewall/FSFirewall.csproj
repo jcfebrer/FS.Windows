@@ -2,10 +2,11 @@
   <PropertyGroup>
     <TargetFrameworks>net40;net45;net461;net48;net8.0-windows</TargetFrameworks>
     <OutputType>Library</OutputType>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
     <AssemblyTitle>FSFirewall</AssemblyTitle>
     <Product>FSFirewall</Product>
-    <Copyright>Copyright ©  2022</Copyright>
+    <Copyright>Copyright © 2025 Febrer Software</Copyright>
+    <Authors>Juan Carlos Febrer</Authors>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <FileVersion>1.0.0.0</FileVersion>
     <SignAssembly>True</SignAssembly>

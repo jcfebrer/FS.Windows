@@ -12,6 +12,7 @@ using FSDatabase;
 using FSLibrary;
 using FSException;
 using FSSecurity;
+using FSSystemInfo;
 
 #endregion
 
@@ -21,7 +22,7 @@ namespace FSFormControls
     {
         private void LinkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Process.Start("http://www.febrersoftware.com");
+            ProcessUtil.OpenWeb("http://www.febrersoftware.com");
         }
 
 
@@ -193,7 +194,7 @@ namespace FSFormControls
 
         private void PictureBox2_Click(object sender, EventArgs e)
         {
-            Process.Start("http://www.febrersoftware.com");
+            ProcessUtil.OpenWeb("http://www.febrersoftware.com");
         }
 
         private void cmdInfo_Click(object sender, EventArgs e)

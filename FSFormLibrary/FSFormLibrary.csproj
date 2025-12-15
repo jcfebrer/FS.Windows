@@ -14,14 +14,14 @@
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
-    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
     <NoWin32Manifest>False</NoWin32Manifest>
     <NoStdLib>False</NoStdLib>
     <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
     <_MigrateToProjectGuid>7ff4bd71-2f54-419a-ba5f-680f30406058</_MigrateToProjectGuid>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
     <UseWindowsForms>true</UseWindowsForms>
     <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>

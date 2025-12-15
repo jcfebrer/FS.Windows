@@ -2,10 +2,11 @@
   <PropertyGroup>
     <TargetFrameworks>net45;net461;net48;net8.0-windows</TargetFrameworks>
     <OutputType>Library</OutputType>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
     <AssemblyTitle>FSCompress</AssemblyTitle>
     <Product>FSCompress</Product>
-    <Copyright>Copyright ©  2019</Copyright>
+    <Copyright>Copyright © 2025 Febrer Software</Copyright>
+    <Authors>Juan Carlos Febrer</Authors>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <FileVersion>1.0.0.0</FileVersion>
     <SignAssembly>True</SignAssembly>
@@ -25,7 +26,7 @@
     <ProjectReference Include="..\..\FS.Core\FSLibrary\FSLibrary.csproj" />
     <ProjectReference Include="..\..\FS.Core\FSTrace\FSTrace.csproj" />
   </ItemGroup>
-  <ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))' == 'net'" >
+  <ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))' == 'net'">
     <Reference Include="System.IO.Compression" />
   </ItemGroup>
 </Project>

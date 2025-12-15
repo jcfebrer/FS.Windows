@@ -2,7 +2,7 @@
   <PropertyGroup>
     <TargetFrameworks>net20;net30;net35;net40;net45;net461;net48;net8.0-windows</TargetFrameworks>
     <OutputType>Library</OutputType>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
     <UseWindowsForms>true</UseWindowsForms>
     <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
     <SignAssembly>True</SignAssembly>

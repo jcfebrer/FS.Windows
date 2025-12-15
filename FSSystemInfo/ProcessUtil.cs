@@ -116,6 +116,21 @@ namespace FSSystemInfo
         }
 
         /// <summary>
+        /// Abrimos una url en el navegador por defecto
+        /// </summary>
+        /// <param name="file"></param>
+        /// <param name="args"></param>
+        /// <returns></returns>
+        public static Process OpenWeb(string url)
+        {
+            return Process.Start(new ProcessStartInfo(url)
+            { 
+                UseShellExecute = true 
+            }
+            );
+        }
+
+        /// <summary>
         /// Hides the active window.
         /// </summary>
         public static void HideActiveWindow()

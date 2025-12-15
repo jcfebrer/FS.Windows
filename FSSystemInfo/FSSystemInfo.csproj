@@ -2,11 +2,12 @@
   <PropertyGroup>
     <TargetFrameworks>net20;net30;net35;net40;net45;net461;net48;net8.0-windows</TargetFrameworks>
     <OutputType>Library</OutputType>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
     <AssemblyTitle>FSSystemInfo</AssemblyTitle>
     <Company>Febrer Software</Company>
     <Product>FSSystemInfo</Product>
-    <Copyright>Copyright © LG 2024</Copyright>
+    <Copyright>Copyright © 2025 Febrer Software</Copyright>
+    <Authors>Juan Carlos Febrer</Authors>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <FileVersion>1.0.0.0</FileVersion>
     <SignAssembly>True</SignAssembly>
