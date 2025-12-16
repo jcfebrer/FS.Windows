@@ -850,7 +850,7 @@ namespace FSFormControls
 
             DataGridView dg = null;
             if (c is DBGridViewEx)
-                dg = ((DBGridViewEx) c).dataGridView;
+                dg = ((DBGridViewEx) c).DataGridView;
             else
                 dg = (DataGridView) c;
 
@@ -929,7 +929,7 @@ namespace FSFormControls
 
             DataGridView dg = null;
             if (c is DBGridViewEx)
-                dg = ((DBGridViewEx)c).dataGridView;
+                dg = ((DBGridViewEx)c).DataGridView;
             else
                 dg = (DataGridView)c;
 

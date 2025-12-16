@@ -388,7 +388,7 @@ namespace FSFormControls
             set { datagrid.RowHeadersWidth = value; }
         }
 
-        public DataGridView dataGridView { get { return datagrid; } }
+        public DataGridView DataGridView { get { return datagrid; } }
 
         public int CurrentRowIndex => datagrid.CurrentRow.Index;
 
@@ -404,7 +404,7 @@ namespace FSFormControls
 
         public DBGridViewRowCollection Rows
         {
-            get { return dataGridView.Rows as DBGridViewRowCollection; }
+            get { return datagrid.Rows as DBGridViewRowCollection; }
         }
 
         public Color AlternatingColor

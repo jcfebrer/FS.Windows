@@ -1088,8 +1088,10 @@ namespace FSFormControls
             this.estado,
             this.mensaje,
             this.info});
+            this.barraEstado.Key = "DBStatusBar1";
             this.barraEstado.Location = new System.Drawing.Point(0, 403);
             this.barraEstado.Name = "barraEstado";
+            this.barraEstado.ShowItemToolTips = true;
             this.barraEstado.Size = new System.Drawing.Size(1164, 22);
             this.barraEstado.TabIndex = 2;
             this.barraEstado.Text = "dbStatusBar1";

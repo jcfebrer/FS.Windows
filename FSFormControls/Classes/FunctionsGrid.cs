@@ -156,21 +156,29 @@ namespace FSFormControls
                 {
                     for (f = 0; f <= Convert.ToInt32(dataControl.FieldsCount() - 1); f++)
                     {
+                        string fieldName = dataControl.FieldName(f);
+
                         if (dataControl.TypeDB == DBControl.DbType.Odbc ||
                             dataControl.TypeDB == DBControl.DbType.OleDB ||
                             dataControl.TypeDB == DBControl.DbType.SQLServer)
                         {
                             var db = new BdUtils(Global.ConnectionString, Global.ProviderName);
-                            column = new DBColumn(dataControl.FieldName(f), TextUtil.PCase(dataControl.FieldName(f)),
-                                FunctionsForms.ConvertFieldTypeToColumnType(db.GetField(dataControl.FieldName(f),
-                                    dataControl.TableName).Tipo));
+
+                            Field field = db.GetField(fieldName, dataControl.TableName);
+
+                            Utils.FieldTypeEnum fieldType = Utils.FieldTypeEnum.String;
+                            if (field != null)
+                                fieldType = field.Tipo;
+
+                            column = new DBColumn(fieldName, TextUtil.PCase(fieldName),
+                                FunctionsForms.ConvertFieldTypeToColumnType(fieldType));
 
                             if (column.FieldDB.ToLower() == db.PrimaryKeyName(dataControl.TableName).ToLower())
                                 column.ReadColumn = true;
                         }
                         else
                         {
-                            column = new DBColumn(dataControl.FieldName(f), TextUtil.PCase(dataControl.FieldName(f)));
+                            column = new DBColumn(fieldName, TextUtil.PCase(fieldName));
                         }
 
                         column.Decimals = decimals;

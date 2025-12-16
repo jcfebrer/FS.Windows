@@ -1751,14 +1751,14 @@ namespace FSFormControls
                             {
                                 AddDataColumn("For" + ctr.Name, typeof(object),
                                     ((DBTextBoxEx)ctr).Expression);
-                                try
-                                {
-                                    ((DBTextBoxEx)ctr).DataBindings.Add("Text", DataTable, "For" + ctr.Name);
-                                }
-                                catch (Exception e)
-                                {
-                                    throw new ExceptionUtil(e);
-                                }
+                                //try
+                                //{
+                                //    ((DBTextBoxEx)ctr).DataBindings.Add("Text", DataTable, "For" + ctr.Name);
+                                //}
+                                //catch (Exception e)
+                                //{
+                                //    throw new ExceptionUtil(e);
+                                //}
                             }
                         }
                     }
@@ -2357,7 +2357,8 @@ namespace FSFormControls
 
             try
             {
-                DataTable.Columns.Add(col);
+                if(!DataTable.Columns.Contains(ColumnName))
+                    DataTable.Columns.Add(col);
             }
             catch (Exception ex)
             {
