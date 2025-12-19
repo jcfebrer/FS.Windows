@@ -56,6 +56,10 @@ namespace FSFormControls
         private DBControl m_DataControl;
         private string m_DBField;
 
+        private DBButtonCollection m_ButtonsRight = new DBButtonCollection();
+        private DBButtonCollection m_ButtonsLeft = new DBButtonCollection();
+        private DBButtonCollection m_ClickedItemsLeft = new DBButtonCollection();
+        private DBButtonCollection m_ClickedItemsRight = new DBButtonCollection();
 
 
         #region Delegates
@@ -471,7 +475,10 @@ namespace FSFormControls
         public int SelectedIndex
         {
             get { return combobox.SelectedIndex; }
-            set { combobox.SelectedIndex = value; }
+            set { 
+                if(value >= 0)
+                    combobox.SelectedIndex = value;
+            }
         }
 
         public bool BlankSelection { get; set; }
@@ -617,23 +624,31 @@ namespace FSFormControls
         }
 
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
-        public DBButtonCollection ButtonsRight { get; set; } = new DBButtonCollection();
+        public DBButtonCollection ButtonsRight
+        {
+            get { return m_ButtonsRight; }
+            set { m_ButtonsRight = value; }
+        }
 
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
-        public DBButtonCollection ButtonsLeft { get; set; } = new DBButtonCollection();
+            [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
+        public DBButtonCollection ButtonsLeft 
+        { 
+            get { return m_ButtonsLeft; }
+            set { m_ButtonsLeft = value; }
+        }
 
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
         public DBButtonCollection ClickedItemsLeft 
         {
-            get { return ButtonsLeft; }
-            set { ButtonsLeft = value; } 
+            get { return m_ClickedItemsLeft; }
+            set { m_ClickedItemsLeft = value; }
         }
 
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
         public DBButtonCollection ClickedItemsRight
         {
-            get { return ButtonsRight; }
-            set { ButtonsRight = value; }
+            get { return m_ClickedItemsRight; }
+            set { m_ClickedItemsRight = value; }
         }
 
         public bool IsItemInList()

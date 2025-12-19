@@ -58,6 +58,7 @@ namespace FSFormControls
         internal PictureBox picRefrescar;
         private System.Drawing.Printing.PrintDocument printDocument1;
         private DBSummarieCollection m_Summaries = new DBSummarieCollection();
+        private bool m_Hidden = false;
 
         public string RowDraw = "";
         // end variables
@@ -173,70 +174,73 @@ namespace FSFormControls
         {
             InitializeComponent();
 
-            //Deshabilitar la generación de columnas
-            datagrid.AutoGenerateColumns = false;
-            dataGridViewTotal.AutoGenerateColumns = false;
+            if (!this.DesignMode)
+            {
+                //Deshabilitar la generación de columnas
+                datagrid.AutoGenerateColumns = false;
+                dataGridViewTotal.AutoGenerateColumns = false;
 
-            datagrid.AllowUserToAddRows = true;
-            dataGridViewTotal.AllowUserToAddRows = false;
+                datagrid.AllowUserToAddRows = true;
+                dataGridViewTotal.AllowUserToAddRows = false;
 
-            datagrid.MultiSelect = false;
-            datagrid.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+                datagrid.MultiSelect = false;
+                datagrid.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
 
-            //Filas alternativas con diferente color
-            datagrid.RowsDefaultCellStyle.BackColor = Color.White;
-            datagrid.AlternatingRowsDefaultCellStyle.BackColor = Color.Aquamarine;
+                //Filas alternativas con diferente color
+                datagrid.RowsDefaultCellStyle.BackColor = Color.White;
+                datagrid.AlternatingRowsDefaultCellStyle.BackColor = Color.Aquamarine;
 
-            // Estilo de cabecera (quitar fondo azul al seleccionar una columna)
-            datagrid.EnableHeadersVisualStyles = false;
-            datagrid.ColumnHeadersDefaultCellStyle.SelectionBackColor = SystemColors.Control;
-            dataGridViewTotal.EnableHeadersVisualStyles = false;
-            dataGridViewTotal.ColumnHeadersDefaultCellStyle.SelectionBackColor = SystemColors.Control;
+                // Estilo de cabecera (quitar fondo azul al seleccionar una columna)
+                datagrid.EnableHeadersVisualStyles = false;
+                datagrid.ColumnHeadersDefaultCellStyle.SelectionBackColor = SystemColors.Control;
+                dataGridViewTotal.EnableHeadersVisualStyles = false;
+                dataGridViewTotal.ColumnHeadersDefaultCellStyle.SelectionBackColor = SystemColors.Control;
 
-            dataGridViewTotal.RowsDefaultCellStyle.BackColor = Color.White;
-            dataGridViewTotal.AlternatingRowsDefaultCellStyle.BackColor = Color.Aquamarine;
-            dataGridViewTotal.MouseClick += DataGridViewTotal_MouseClick;
+                dataGridViewTotal.RowsDefaultCellStyle.BackColor = Color.White;
+                dataGridViewTotal.AlternatingRowsDefaultCellStyle.BackColor = Color.Aquamarine;
+                dataGridViewTotal.MouseClick += DataGridViewTotal_MouseClick;
 
-            //Eventos
-            datagrid.CellBeginEdit += DataGridView1_CellBeginEdit;
-            datagrid.RowValidated += DataGridView1_RowValidated;
-            datagrid.CellEndEdit += DataGridView1_CellEndEdit;
-            datagrid.CellValidating += DataGridView1_CellValidating;
-            datagrid.CellClick += DataGridView1_CellClick;
-            datagrid.DataError += DataGridView1_DataError;
-            datagrid.Leave += DataGridView1_Leave;
-            datagrid.CellValueChanged += DataGridView1_CellValueChanged;
-            datagrid.RowsAdded += DataGridView1_RowsAdded;
-            datagrid.CellDoubleClick += DataGridView1_CellDoubleClick;
-            datagrid.DefaultValuesNeeded += DataGridView1_DefaultValuesNeeded;
-            datagrid.UserDeletingRow += DataGridView1_UserDeletingRow;
-            datagrid.CellFormatting += DataGridView1_CellFormatting;
-            datagrid.ColumnHeaderMouseClick += Datagrid_ColumnHeaderMouseClick;
-            datagrid.RowEnter += DataGridView1_RowEnter;
-            datagrid.RowStateChanged += DataGridView1_RowStateChanged;
-            datagrid.MouseClick += Datagrid_MouseClick;
-            datagrid.UserAddedRow += DataGridView1_UserAddedRow;
-            datagrid.UserDeletedRow += DataGridView1_UserDeletedRow;
-            datagrid.CellContentClick += DataGridView1_CellContentClick;
-            datagrid.KeyDown += DataGridView1_KeyDown;
+                //Eventos
+                datagrid.CellBeginEdit += DataGridView1_CellBeginEdit;
+                datagrid.RowValidated += DataGridView1_RowValidated;
+                datagrid.CellEndEdit += DataGridView1_CellEndEdit;
+                datagrid.CellValidating += DataGridView1_CellValidating;
+                datagrid.CellClick += DataGridView1_CellClick;
+                datagrid.DataError += DataGridView1_DataError;
+                datagrid.Leave += DataGridView1_Leave;
+                datagrid.CellValueChanged += DataGridView1_CellValueChanged;
+                datagrid.RowsAdded += DataGridView1_RowsAdded;
+                datagrid.CellDoubleClick += DataGridView1_CellDoubleClick;
+                datagrid.DefaultValuesNeeded += DataGridView1_DefaultValuesNeeded;
+                datagrid.UserDeletingRow += DataGridView1_UserDeletingRow;
+                datagrid.CellFormatting += DataGridView1_CellFormatting;
+                datagrid.ColumnHeaderMouseClick += Datagrid_ColumnHeaderMouseClick;
+                datagrid.RowEnter += DataGridView1_RowEnter;
+                datagrid.RowStateChanged += DataGridView1_RowStateChanged;
+                datagrid.MouseClick += Datagrid_MouseClick;
+                datagrid.UserAddedRow += DataGridView1_UserAddedRow;
+                datagrid.UserDeletedRow += DataGridView1_UserDeletedRow;
+                datagrid.CellContentClick += DataGridView1_CellContentClick;
+                datagrid.KeyDown += DataGridView1_KeyDown;
 
-            if (Columns == null)
-                Columns = new DBColumnCollection();
+                if (Columns == null)
+                    Columns = new DBColumnCollection();
 
-            // Propiedades y eventos control expand/collapse
-            datagrid.Scroll += DataGridView1_Scroll;
-            datagrid.RowPostPaint += DataGridView1_RowPostPaint;
-            datagrid.RowHeaderMouseClick += DataGridView1_RowHeaderMouseClick;
-            datagrid.SelectionChanged += DataGridView1_SelectionChanged;
+                // Propiedades y eventos control expand/collapse
+                datagrid.Scroll += DataGridView1_Scroll;
+                datagrid.RowPostPaint += DataGridView1_RowPostPaint;
+                datagrid.RowHeaderMouseClick += DataGridView1_RowHeaderMouseClick;
+                datagrid.SelectionChanged += DataGridView1_SelectionChanged;
 
-            // speedup paint
-            datagrid.RowHeadersVisible = true;
-            datagrid.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
-            DoubleBuffered = true;
-            datagrid.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+                // speedup paint
+                datagrid.RowHeadersVisible = true;
+                datagrid.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
+                DoubleBuffered = true;
+                datagrid.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.DisableResizing;
 
-            if(SortedColumns == null)
-                SortedColumns = new DBColumnCollection();
+                if (SortedColumns == null)
+                    SortedColumns = new DBColumnCollection();
+            }
         }
 
         private void DataGridView1_KeyDown(object sender, KeyEventArgs e)
@@ -248,7 +252,7 @@ namespace FSFormControls
                     //this.Rows.Remove(this.CurrentRow);
                     // Eliminamos el datarow actual del DataTable
                     DataTable data = this.DataSource as DataTable;
-                    if (this.CurrentRow.Index > data.Rows.Count)
+                    if (this.CurrentRow != null && this.CurrentRow.Index > data.Rows.Count)
                     {
                         data.Rows.RemoveAt(this.CurrentRow.Index);
                     }
@@ -352,6 +356,13 @@ namespace FSFormControls
             get { return m_DBControl; }
             set
             {
+                // Si estamos en el editor de Visual Studio, no hagas nada pesado
+                if (this.DesignMode)
+                {
+                    m_DBControl = value;
+                    return;
+                }
+
                 m_DBControl = value;
 
                 //DataSource = m_DBControl?.DataSet;
@@ -514,6 +525,8 @@ namespace FSFormControls
             datagrid.Sort(comparer);
         }
 
+        [Browsable(false)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public DataGridViewRow ActiveRow
         {
             get
@@ -547,6 +560,8 @@ namespace FSFormControls
         }
 
         //private DBGridViewBandCollection m_Bands = new DBGridViewBandCollection();
+        [Browsable(false)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public List<DBGridViewEx> Bands
         {
             get
@@ -670,6 +685,8 @@ namespace FSFormControls
             }
         }
 
+        [Browsable(false)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public DBGridViewCell ActiveCell
         {
             get { return (DBGridViewCell)datagrid.CurrentCell; }
@@ -708,7 +725,7 @@ namespace FSFormControls
         { 
             get { return datagrid.FirstDisplayedScrollingRowIndex; }
             set { 
-                if(value != -1)
+                if(value >= 0 && value < datagrid.RowCount)
                     datagrid.FirstDisplayedScrollingRowIndex = value; 
             } 
         }
@@ -779,10 +796,19 @@ namespace FSFormControls
         public int SummaryFooterSpacingBefore { get; set; }
         public object AllowRowSummaries { get; set; }
 
+        [Category("Appearance")]
+        [DefaultValue(false)] // Ayuda al diseñador a saber cuándo serializar
         public bool Hidden
         {
-            get { return !datagrid.Visible; }
-            set { datagrid.Visible = !value; }
+            get { return m_Hidden; }
+            set
+            {
+                m_Hidden = value;
+                if (datagrid != null)
+                {
+                    datagrid.Visible = !value;
+                }
+            }
         }
 
         public bool AllowUpdate

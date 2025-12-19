@@ -58,8 +58,6 @@ namespace FSFormControls
             this.SelectedValueChanged += DBCombo_SelectedValueChanged;
             this.LostFocus += DBCombo_LostFocus;
             this.GotFocus += DBCombo_GotFocus;
-
-            InitializeButtons();
         }
 
         private void DBCombo_GotFocus(object sender, EventArgs e)
@@ -83,43 +81,6 @@ namespace FSFormControls
 
                 if (ValueChanged != null)
                     ValueChanged(this, e);
-            }
-        }
-
-        private void InitializeButtons()
-        {
-            if (ButtonsRight != null && ButtonsRight.Count > 0)
-            {
-                foreach (DBButtonEx button in ButtonsRight)
-                {
-                    button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-                    button.Width = 16;
-                    button.Height = 16;
-                    button.Visible = true;
-                    button.Top = 0;
-                    button.Click += Button_Click;
-                    button.ToolTip = button.Text;
-                    button.MouseEnter += Button_MouseEnter;
-
-                    button.BringToFront();
-                }
-            }
-
-            if (ButtonsLeft != null && ButtonsLeft.Count > 0)
-            {
-                foreach (DBButtonEx button in ButtonsLeft)
-                {
-                    button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-                    button.Width = 16;
-                    button.Height = 16;
-                    button.Visible = true;
-                    button.Top = 0;
-                    button.Click += Button_Click;
-                    button.ToolTip = button.Text;
-                    button.MouseEnter += Button_MouseEnter;
-
-                    button.BringToFront();
-                }
             }
         }
 
@@ -289,26 +250,6 @@ namespace FSFormControls
 
         public void EndInit()
         {
-        }
-
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
-        public DBButtonCollection ButtonsRight { get; set; } = new DBButtonCollection();
-
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
-        public DBButtonCollection ButtonsLeft { get; set; } = new DBButtonCollection();
-
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
-        public DBButtonCollection ClickedItemsLeft
-        {
-            get { return ButtonsLeft; }
-            set { ButtonsLeft = value; }
-        }
-
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
-        public DBButtonCollection ClickedItemsRight
-        {
-            get { return ButtonsRight; }
-            set { ButtonsRight = value; }
         }
     }
 }

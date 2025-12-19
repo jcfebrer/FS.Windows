@@ -2,6 +2,7 @@
 using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 namespace FSFormControls
 {
@@ -24,11 +25,23 @@ namespace FSFormControls
 
         private void FillData()
         {
-            listBox1.Items.Clear();
+            dbGroupBox1.Controls.Clear();
+
+            FlowLayoutPanel verticalPanel = new FlowLayoutPanel();
+            verticalPanel.FlowDirection = FlowDirection.TopDown;
+            verticalPanel.AutoScroll = true;
+            verticalPanel.WrapContents = false;
+            verticalPanel.Dock = DockStyle.Fill;
+
             foreach (DBRadioButton item in Items)
             {
-                listBox1.Items.Add(item.DisplayText);
+                item.Width = dbGroupBox1.Width - 25;
+                item.Margin = new Padding(8);
+
+                verticalPanel.Controls.Add(item);
             }
+
+            dbGroupBox1.Controls.Add(verticalPanel);
         }
 
         DBRadioButtonCollection _Items = new DBRadioButtonCollection();
@@ -52,11 +65,8 @@ namespace FSFormControls
         public Point ItemOrigin { get; set; }
 
         public int CheckedIndex {
-            get { return listBox1.SelectedIndex; }
-            set { 
-                if(listBox1.Items.Count > 0)
-                    listBox1.SelectedIndex = value; 
-            }
+            get { return dbGroupBox1.SelectedIndex; }
+            set { dbGroupBox1.SelectedIndex = value; }
         }
 
         public void BeginInit()

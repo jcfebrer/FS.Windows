@@ -46,8 +46,12 @@ namespace FSFormControls
                     {
                         if (dbc.ColumnDBControl == null)
                             throw new ExceptionUtil("[" + dbc.FieldDB + "] DBColumn sin ColumnDBControl asociado.");
-                        dbc.Width = db.GetField(dbc.ComboListField, dbc.ColumnDBControl.TableName).Tamano *
+
+                        if (!String.IsNullOrEmpty(dbc.ColumnDBControl.TableName))
+                        {
+                            dbc.Width = db.GetField(dbc.ComboListField, dbc.ColumnDBControl.TableName).Tamano *
                                     Global.CARACTER_SIZE;
+                        }
                     }
 
                     if (dbc.Width < dbc.HeaderCaption.Length * Global.CARACTER_SIZE)

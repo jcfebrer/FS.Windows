@@ -17,21 +17,24 @@ namespace FSFormControls
     {
         public DBGridView()
         {
-            //Filas alternativas con diferente color
-            this.RowsDefaultCellStyle.BackColor = Color.White;
-            this.AlternatingRowsDefaultCellStyle.BackColor = Color.Aquamarine;
+            if (!DesignMode)
+            {
+                //Filas alternativas con diferente color
+                this.RowsDefaultCellStyle.BackColor = Color.White;
+                this.AlternatingRowsDefaultCellStyle.BackColor = Color.Aquamarine;
 
-            // Estilo de cabecera (quitar fondo azul al seleccionar una columna)
-            this.EnableHeadersVisualStyles = false;
-            this.ColumnHeadersDefaultCellStyle.SelectionBackColor = SystemColors.Control;
+                // Estilo de cabecera (quitar fondo azul al seleccionar una columna)
+                this.EnableHeadersVisualStyles = false;
+                this.ColumnHeadersDefaultCellStyle.SelectionBackColor = SystemColors.Control;
 
-            // Eventos
-            this.KeyDown += DBGridView_KeyDown;
-            this.RowPostPaint += DataGridView1_RowPostPaint;
-            this.CellDoubleClick += DBGridView_CellDoubleClick;
+                // Eventos
+                this.KeyDown += DBGridView_KeyDown;
+                this.RowPostPaint += DataGridView1_RowPostPaint;
+                this.CellDoubleClick += DBGridView_CellDoubleClick;
 
-            if (SortedColumns == null)
-                SortedColumns = new DataGridViewColumnCollection(this);
+                if (SortedColumns == null)
+                    SortedColumns = new DataGridViewColumnCollection(this);
+            }
         }
 
         private void DBGridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
@@ -49,7 +52,7 @@ namespace FSFormControls
                     //this.Rows.Remove(this.CurrentRow);
                     // Eliminamos el datarow actual del DataTable
                     DataTable data = this.DataSource as DataTable;
-                    if (this.CurrentRow.Index > data.Rows.Count)
+                    if (this.CurrentRow != null && this.CurrentRow.Index > data.Rows.Count)
                     {
                         data.Rows.RemoveAt(this.CurrentRow.Index);
                     }
@@ -91,6 +94,8 @@ namespace FSFormControls
         public delegate void DoubleClickRowEventHandler(object sender, DataGridViewCellEventArgs e);
 
         //private DBGridViewBandCollection m_Bands = new DBGridViewBandCollection();
+        [Browsable(false)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public List<DBGridView> Bands
         {
             get

@@ -1799,7 +1799,7 @@ namespace FSFormControls
             this.dbGridView1.HeaderAppearance = null;
             this.dbGridView1.HeaderClickAction = FSFormControls.DBGridViewDisplayLayout.DBHeaderClickAction.Default;
             this.dbGridView1.HeaderStyle = FSFormControls.DBGridViewDisplayLayout.DBHeaderStyle.Default;
-            this.dbGridView1.Hidden = true;
+            this.dbGridView1.Hidden = false;
             this.dbGridView1.Location = new System.Drawing.Point(80, 100);
             this.dbGridView1.MinRowHeight = 0;
             this.dbGridView1.Mode = FSFormControls.Global.AccessMode.ReadMode;
@@ -2090,7 +2090,7 @@ namespace FSFormControls
             this.dbGrid1.HeaderAppearance = null;
             this.dbGrid1.HeaderClickAction = FSFormControls.DBGridViewDisplayLayout.DBHeaderClickAction.Default;
             this.dbGrid1.HeaderStyle = FSFormControls.DBGridViewDisplayLayout.DBHeaderStyle.Default;
-            this.dbGrid1.Hidden = true;
+            this.dbGrid1.Hidden = false;
             this.dbGrid1.Location = new System.Drawing.Point(366, 6);
             this.dbGrid1.MinRowHeight = 0;
             this.dbGrid1.Mode = FSFormControls.Global.AccessMode.ReadMode;
