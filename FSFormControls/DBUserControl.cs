@@ -19,7 +19,6 @@ namespace FSFormControls
     [Designer(typeof(DBControlDesigner))]
     [DesignTimeVisible(true)]
     [ToolboxItem(false)]
-    [Serializable]
     public class DBUserControl : UserControl
     {
         public DBUserControl()
@@ -30,7 +29,7 @@ namespace FSFormControls
         [Editor(typeof(EditorAbout), typeof(UITypeEditor))]
         public string About { get; set; } = "";
 
-         private void InitializeComponent()
+        private void InitializeComponent()
         {
             SuspendLayout();
             // 
@@ -47,9 +46,24 @@ namespace FSFormControls
     {
         public override object EditValue(ITypeDescriptorContext context, IServiceProvider provider, object value)
         {
-            var about = new frmAbout();
-            about.Show();
-            return null;
+            //var about = new frmAbout();
+            //about.Show();
+            //return null;
+
+            if (provider != null)
+            {
+                // Obtenemos el servicio que permite mostrar diálogos en el diseñador
+                var edSvc = (IWindowsFormsEditorService)provider.GetService(typeof(IWindowsFormsEditorService));
+
+                if (edSvc != null)
+                {
+                    using (var about = new frmAbout())
+                    {
+                        edSvc.ShowDialog(about);
+                    }
+                }
+            }
+            return value; // Retornamos el valor original
         }
 
 

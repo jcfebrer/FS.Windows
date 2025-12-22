@@ -11,7 +11,6 @@ using System.Windows.Forms;
 namespace FSFormControls
 {
     [ToolboxItem(true)]
-    [Serializable]
     public class DBCalculator : DBUserControl
     {
         public bool blnClear;

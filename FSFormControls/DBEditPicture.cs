@@ -16,7 +16,6 @@ namespace FSFormControls
 {
     [ToolboxBitmap(typeof(resfinder), "FSFormControls.Resources.DBControl.bmp")]
     [ToolboxItem(true)]
-    [Serializable]
     public class DBEditPicture : DBUserControl
     {
         #region DrawObjectType enum

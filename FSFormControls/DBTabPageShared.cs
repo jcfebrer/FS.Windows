@@ -6,7 +6,6 @@ using System.Text;
 namespace FSFormControls
 {
     [ToolboxItem(true)]
-    [Serializable]
     public class DBTabPageShared : DBTabPage
     {
     }

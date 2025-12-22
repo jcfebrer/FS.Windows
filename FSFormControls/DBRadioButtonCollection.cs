@@ -6,7 +6,6 @@ using System.ComponentModel;
 namespace FSFormControls
 {
     [ToolboxItem(true)]
-    [Serializable]
     public class DBRadioButtonCollection : CollectionBase, IBindingList
     {
         private ListChangedEventHandler onListChanged;

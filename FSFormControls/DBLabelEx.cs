@@ -17,7 +17,6 @@ namespace FSFormControls
     [ToolboxBitmap(typeof(resfinder), "FSFormControls.Resources.DBLabelEx.bmp")]
     [DefaultEvent("Click")]
     [ToolboxItem(true)]
-    [Serializable]
     public class DBLabelEx : DBUserControl
     {
         private long m_angle;

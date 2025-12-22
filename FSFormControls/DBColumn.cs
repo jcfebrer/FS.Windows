@@ -12,7 +12,6 @@ namespace FSFormControls
 {
     [DesignTimeVisible(false)]
     [ToolboxItem(true)]
-    [Serializable]
     public class DBColumn : Component
     {
         public delegate void CellClickEventHandler(object sender, DataGridViewCellEventArgs e);
@@ -332,7 +331,7 @@ namespace FSFormControls
         public LogicalOperatorEnum LogicalOperator { get; set; }
 
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
-        public DBGridViewFilterCollection DBGridViewFilters { get; set; }
+        public DBGridViewFilterCollection DBGridViewFilters { get; set; } = new DBGridViewFilterCollection();
 
         public int Index { get; set; }
 

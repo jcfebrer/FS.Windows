@@ -9,7 +9,6 @@ using System.Windows.Forms;
 namespace FSFormControls
 {
     [ToolboxItem(true)]
-    [Serializable]
     public class DBGroupBox : GroupBox, ISupportInitialize
     {
         public DBGroupBox()

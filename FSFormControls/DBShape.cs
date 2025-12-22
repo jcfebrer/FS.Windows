@@ -50,7 +50,6 @@ namespace FSFormControls
     [DefaultProperty("Shape")]
     [ToolboxBitmap(typeof(resfinder), "FSFormControls.Resources.DBShape.bmp")]
     [ToolboxItem(true)]
-    [Serializable]
     public class DBShape : DBUserControl
     {
         private readonly IContainer components = null;

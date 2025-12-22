@@ -15,7 +15,6 @@ namespace FSFormControls
 {
     [ToolboxBitmap(typeof(resfinder), "FSFormControls.Resources.DBToolBar.bmp")]
     [ToolboxItem(true)]
-    [Serializable]
     public class DBToolBarEx : DBUserControl
     {
         private bool m_AllowAddNew = true;

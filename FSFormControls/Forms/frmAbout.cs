@@ -247,18 +247,11 @@ namespace FSFormControls
             LinkLabel1.TabStop = false;
 
             logoFebrerSoftware.Click += PictureBox2_Click;
-            logoNET.DoubleClick += LogoNET_DoubleClick;
             LinkLabel1.LinkClicked += LinkLabel1_LinkClicked;
             cmdClose.Click += cmdClose_Click;
             cmdInfo.Click += cmdInfo_Click;
             cmdEntorno.Click += cmdEntorno_Click;
             Load += frmAbout_Load;
-        }
-
-        private void LogoNET_DoubleClick(object sender, EventArgs e)
-        {
-            frmTest frm = new frmTest();
-            frm.Show();
         }
 
         protected override void Dispose(bool disposing)

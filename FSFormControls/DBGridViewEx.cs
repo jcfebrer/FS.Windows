@@ -24,7 +24,6 @@ namespace FSFormControls
     [ToolboxBitmap(typeof(resfinder), "FSFormControls.Resources.DBGridView.bmp")]
     [DefaultEvent("Click")]
     [ToolboxItem(true)]
-    [Serializable]
     public class DBGridViewEx : DBUserControl, ISupportInitialize
     {
         private readonly int m_columnMove = -1;
@@ -55,6 +54,7 @@ namespace FSFormControls
         private Global.AccessMode m_Mode = Global.AccessMode.WriteMode;
         private int m_RowsInCaption = 2;
         private bool m_ShowTotals = false;
+        private DBColumnCollection m_SortedColumns = new DBColumnCollection();
         internal PictureBox picRefrescar;
         private System.Drawing.Printing.PrintDocument printDocument1;
         private DBSummarieCollection m_Summaries = new DBSummarieCollection();
@@ -93,7 +93,14 @@ namespace FSFormControls
         public SummaryDisplayAreas SummaryDisplayArea { get; set; }
         public bool SummaryFooterCaptionVisible { get; set; }
         public int SummaryFooterSpacingAfter { get; set; }
-        public UpdateModeEnum UpdateMode { get; set; }
+
+        private UpdateModeEnum m_updateMode = UpdateModeEnum.OnCellChange;
+        public UpdateModeEnum UpdateMode 
+        { 
+            get {  return m_updateMode; }
+            set { m_updateMode = value; }
+        }
+
         public DBGridViewDisplayLayout DisplayLayout { get; set; } = new DBGridViewDisplayLayout();
         public bool AllowAddNew { get; set; } = true;
         public bool AllowDelete { get; set; } = true;
@@ -587,7 +594,11 @@ namespace FSFormControls
         }
 
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
-        public DBColumnCollection SortedColumns { get; set; }
+        public DBColumnCollection SortedColumns
+        { 
+            get { return m_SortedColumns; }
+            set { m_SortedColumns = value; }
+        }
 
         public bool ShowTotals
         {

@@ -15,7 +15,6 @@ namespace FSFormControls
 {
     [ToolboxBitmap(typeof(resfinder), "FSFormControls.Resources.DBToolbar.bmp")]
     [ToolboxItem(true)]
-    [Serializable]
     public class DBRecord : DBUserControl
     {
         #region t_date enum

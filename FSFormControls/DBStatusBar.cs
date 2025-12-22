@@ -12,7 +12,6 @@ namespace FSFormControls
 {
     [ToolboxBitmap(typeof(resfinder), "FSFormControls.Resources.DBStatusBar.bmp")]
     [ToolboxItem(true)]
-    [Serializable]
     public class DBStatusBar : StatusStrip, ISupportInitialize
     {
         //private DBStatusBarPanelCollection m_Panels = new DBStatusBarPanelCollection();

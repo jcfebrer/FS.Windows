@@ -16,7 +16,6 @@ namespace FSFormControls
 {
     [ToolboxBitmap(typeof(resfinder), "FSFormControls.Resources.DBListBox.bmp")]
     [ToolboxItem(true)]
-    [Serializable]
     public class DBListBox : DBUserControl
     {
         public bool isBinding;

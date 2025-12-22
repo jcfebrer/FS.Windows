@@ -7,7 +7,6 @@ namespace FSFormControls
 {
     [ToolboxBitmap(typeof(resfinder), "FSFormControls.Resources.DBToolBar.bmp")]
     [ToolboxItem(true)]
-    [Serializable]
     public class DBToolBar : ToolStrip, ISupportInitialize
     {
         public DBToolBar()

@@ -17,7 +17,6 @@ namespace FSFormControls
 {
     [ToolboxBitmap(typeof(resfinder), "FSFormControls.Resources.DBControl.bmp")]
     [ToolboxItem(true)]
-    [Serializable]
     public class DBComm : DBUserControl
     {
         #region DataParity enum

@@ -10,7 +10,6 @@ namespace FSFormControls
     [ToolboxBitmap(typeof(resfinder), "FSFormControls.Resources.DBLabel.bmp")]
     [DefaultEvent("Click")]
     [ToolboxItem(true)]
-    [Serializable]
     public class DBLabel : Label, ISupportInitialize
     {
         /* INICIO COMPATIBILIDAD INFRAGISTICS */

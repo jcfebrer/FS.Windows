@@ -6,7 +6,6 @@ using static System.Windows.Forms.TabControl;
 namespace FSFormControls
 {
     [ToolboxItem(true)]
-    [Serializable]
     public class DBTabPageCollection : TabPageCollection
     {
         public DBTabPageCollection() : base(new TabControl())

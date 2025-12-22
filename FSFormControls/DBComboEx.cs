@@ -21,7 +21,6 @@ namespace FSFormControls
     [DefaultEvent("SelectedValueChanged")]
     [Designer(typeof(DBComboExControlDesigner))]
     [ToolboxItem(true)]
-    [Serializable]
     public class DBComboEx : DBUserControl, ISupportInitialize
     {
         public enum SortStyleEnum
@@ -1233,16 +1232,26 @@ namespace FSFormControls
         {
             if (ButtonsRight != null && ButtonsRight.Count > 0)
             {
-                foreach (DBButtonEx button in ButtonsRight)
+                foreach (Control button in ButtonsRight)
                 {
-                    button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
                     button.Width = 16;
                     button.Height = 16;
                     button.Visible = true;
                     button.Top = 0;
                     button.Click += Button_Click;
-                    button.ToolTip = button.Text;
                     button.MouseEnter += Button_MouseEnter;
+
+                    if(button is DBButton)
+                    {
+                        ((DBButton)button).FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+                        ((DBButton)button).ToolTip = button.Text;
+                    }
+
+                    if (button is DBButtonEx)
+                    {
+                        ((DBButtonEx)button).FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+                        ((DBButtonEx)button).ToolTip = button.Text;
+                    }
 
                     button.BringToFront();
                 }
@@ -1250,16 +1259,26 @@ namespace FSFormControls
 
             if (ButtonsLeft != null && ButtonsLeft.Count > 0)
             {
-                foreach (DBButtonEx button in ButtonsLeft)
+                foreach (Control button in ButtonsLeft)
                 {
-                    button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
                     button.Width = 16;
                     button.Height = 16;
                     button.Visible = true;
                     button.Top = 0;
                     button.Click += Button_Click;
-                    button.ToolTip = button.Text;
                     button.MouseEnter += Button_MouseEnter;
+
+                    if (button is DBButton)
+                    {
+                        ((DBButton)button).FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+                        ((DBButton)button).ToolTip = button.Text;
+                    }
+
+                    if (button is DBButtonEx)
+                    {
+                        ((DBButtonEx)button).FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+                        ((DBButtonEx)button).ToolTip = button.Text;
+                    }
 
                     button.BringToFront();
                 }
@@ -1271,7 +1290,7 @@ namespace FSFormControls
             int r = 1;
             if (ButtonsRight != null && ButtonsRight.Count > 0)
             {
-                foreach (DBButtonEx button in ButtonsRight)
+                foreach (Control button in ButtonsRight)
                 {
                     button.Left = this.Width - 16 * r;
 
@@ -1283,7 +1302,7 @@ namespace FSFormControls
 
             if (ButtonsLeft != null && ButtonsLeft.Count > 0)
             {
-                foreach (DBButtonEx button in ButtonsLeft)
+                foreach (Control button in ButtonsLeft)
                 {
                     button.Left = l * 16;
 

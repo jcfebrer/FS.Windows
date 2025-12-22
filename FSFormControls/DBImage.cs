@@ -17,7 +17,6 @@ namespace FSFormControls
 {
     [ToolboxBitmap(typeof(resfinder), "FSFormControls.Resources.DBImage.bmp")]
     [ToolboxItem(true)]
-    [Serializable]
     public class DBImage
         : DBUserControl
     {

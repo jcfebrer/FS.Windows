@@ -8,7 +8,6 @@ namespace FSFormControls
     [DesignTimeVisibleAttribute(true)]
     [ToolboxBitmap(typeof(Splitter))]
     [ToolboxItem(true)]
-    [Serializable]
     public class DBSplitter : Splitter
     {
         /// <summary>

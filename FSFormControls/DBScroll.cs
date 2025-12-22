@@ -15,7 +15,6 @@ namespace FSFormControls
 {
     [ToolboxBitmap(typeof(resfinder), "FSFormControls.Resources.DBScroll.bmp")]
     [ToolboxItem(true)]
-    [Serializable]
     public class DBScroll : DBUserControl
     {
         public int Value

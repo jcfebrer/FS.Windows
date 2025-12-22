@@ -201,227 +201,224 @@ namespace FSFormControls
         [DebuggerStepThrough]
         private void InitializeComponent()
         {
-            var resources = new ComponentResourceManager(typeof(frmWizard));
-            panelStep = new Panel();
-            dbEtchedLine1 = new DBEtchedLine();
-            TabControl1 = new TabControl();
-            sidePanel = new Panel();
-            picWizard = new PictureBox();
-            wizardTop = new Panel();
-            PictureBox1 = new PictureBox();
-            stepDescription = new Label();
-            title = new Label();
-            bottomPanel = new Panel();
-            cmdFinish = new Button();
-            cmdNext = new Button();
-            cmdBack = new Button();
-            cmdCancel = new Button();
-            LinkLabel1 = new LinkLabel();
-            panelStep.SuspendLayout();
-            sidePanel.SuspendLayout();
-            ((ISupportInitialize) picWizard).BeginInit();
-            wizardTop.SuspendLayout();
-            ((ISupportInitialize) PictureBox1).BeginInit();
-            bottomPanel.SuspendLayout();
-            SuspendLayout();
-            // 
-            // mnuForm
-            // 
-            //mnuForm.OwnerDraw = true;
-            mnuForm.Visible = false;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmWizard));
+            this.panelStep = new System.Windows.Forms.Panel();
+            this.dbEtchedLine1 = new FSFormControls.DBEtchedLine();
+            this.TabControl1 = new System.Windows.Forms.TabControl();
+            this.sidePanel = new System.Windows.Forms.Panel();
+            this.picWizard = new System.Windows.Forms.PictureBox();
+            this.wizardTop = new System.Windows.Forms.Panel();
+            this.PictureBox1 = new System.Windows.Forms.PictureBox();
+            this.stepDescription = new System.Windows.Forms.Label();
+            this.title = new System.Windows.Forms.Label();
+            this.bottomPanel = new System.Windows.Forms.Panel();
+            this.cmdFinish = new System.Windows.Forms.Button();
+            this.cmdNext = new System.Windows.Forms.Button();
+            this.cmdBack = new System.Windows.Forms.Button();
+            this.cmdCancel = new System.Windows.Forms.Button();
+            this.LinkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.panelStep.SuspendLayout();
+            this.sidePanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picWizard)).BeginInit();
+            this.wizardTop.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
+            this.bottomPanel.SuspendLayout();
+            this.SuspendLayout();
             // 
             // panelStep
             // 
-            panelStep.Controls.Add(dbEtchedLine1);
-            panelStep.Controls.Add(TabControl1);
-            panelStep.Dock = DockStyle.Fill;
-            panelStep.Location = new Point(164, 64);
-            panelStep.Name = "panelStep";
-            panelStep.Padding = new System.Windows.Forms.Padding(8);
-            panelStep.Size = new Size(527, 85);
-            panelStep.TabIndex = 20;
+            this.panelStep.Controls.Add(this.dbEtchedLine1);
+            this.panelStep.Controls.Add(this.TabControl1);
+            this.panelStep.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelStep.Location = new System.Drawing.Point(164, 64);
+            this.panelStep.Name = "panelStep";
+            this.panelStep.Padding = new System.Windows.Forms.Padding(8);
+            this.panelStep.Size = new System.Drawing.Size(610, 399);
+            this.panelStep.TabIndex = 20;
             // 
             // dbEtchedLine1
             // 
-            dbEtchedLine1.BackColor = Color.Transparent;
-            dbEtchedLine1.Dock = DockStyle.Top;
-            dbEtchedLine1.LinePosition = DBEtchedLine.DrawPosition.Bottom;
-            dbEtchedLine1.Location = new Point(8, 8);
-            dbEtchedLine1.Name = "dbEtchedLine1";
-            dbEtchedLine1.Size = new Size(511, 21);
-            dbEtchedLine1.Sunken = DBEtchedLine.DrawType.White;
-            dbEtchedLine1.TabIndex = 9;
+            this.dbEtchedLine1.About = "";
+            this.dbEtchedLine1.BackColor = System.Drawing.Color.Transparent;
+            this.dbEtchedLine1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.dbEtchedLine1.LinePosition = FSFormControls.DBEtchedLine.DrawPosition.Bottom;
+            this.dbEtchedLine1.Location = new System.Drawing.Point(8, 8);
+            this.dbEtchedLine1.Name = "dbEtchedLine1";
+            this.dbEtchedLine1.Size = new System.Drawing.Size(594, 21);
+            this.dbEtchedLine1.Sunken = FSFormControls.DBEtchedLine.DrawType.White;
+            this.dbEtchedLine1.TabIndex = 9;
             // 
             // TabControl1
             // 
-            TabControl1.Dock = DockStyle.Fill;
-            TabControl1.Location = new Point(8, 8);
-            TabControl1.Name = "TabControl1";
-            TabControl1.SelectedIndex = 0;
-            TabControl1.Size = new Size(511, 69);
-            TabControl1.TabIndex = 0;
+            this.TabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TabControl1.Location = new System.Drawing.Point(8, 8);
+            this.TabControl1.Name = "TabControl1";
+            this.TabControl1.SelectedIndex = 0;
+            this.TabControl1.Size = new System.Drawing.Size(594, 383);
+            this.TabControl1.TabIndex = 0;
             // 
             // sidePanel
             // 
-            sidePanel.BackColor = Color.White;
-            sidePanel.Controls.Add(picWizard);
-            sidePanel.Dock = DockStyle.Left;
-            sidePanel.Location = new Point(0, 64);
-            sidePanel.Name = "sidePanel";
-            sidePanel.Size = new Size(164, 85);
-            sidePanel.TabIndex = 19;
+            this.sidePanel.BackColor = System.Drawing.Color.White;
+            this.sidePanel.Controls.Add(this.picWizard);
+            this.sidePanel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.sidePanel.Location = new System.Drawing.Point(0, 64);
+            this.sidePanel.Name = "sidePanel";
+            this.sidePanel.Size = new System.Drawing.Size(164, 399);
+            this.sidePanel.TabIndex = 19;
             // 
             // picWizard
             // 
-            picWizard.Dock = DockStyle.Fill;
-            picWizard.Image = (Image) resources.GetObject("picWizard.Image");
-            picWizard.Location = new Point(0, 0);
-            picWizard.Name = "picWizard";
-            picWizard.Size = new Size(164, 85);
-            picWizard.SizeMode = PictureBoxSizeMode.StretchImage;
-            picWizard.TabIndex = 0;
-            picWizard.TabStop = false;
+            this.picWizard.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.picWizard.Image = ((System.Drawing.Image)(resources.GetObject("picWizard.Image")));
+            this.picWizard.Location = new System.Drawing.Point(0, 0);
+            this.picWizard.Name = "picWizard";
+            this.picWizard.Size = new System.Drawing.Size(164, 399);
+            this.picWizard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picWizard.TabIndex = 0;
+            this.picWizard.TabStop = false;
             // 
             // wizardTop
             // 
-            wizardTop.BackColor = Color.White;
-            wizardTop.Controls.Add(PictureBox1);
-            wizardTop.Controls.Add(stepDescription);
-            wizardTop.Controls.Add(title);
-            wizardTop.Dock = DockStyle.Top;
-            wizardTop.Location = new Point(0, 0);
-            wizardTop.Name = "wizardTop";
-            wizardTop.Size = new Size(691, 64);
-            wizardTop.TabIndex = 18;
+            this.wizardTop.BackColor = System.Drawing.Color.White;
+            this.wizardTop.Controls.Add(this.PictureBox1);
+            this.wizardTop.Controls.Add(this.stepDescription);
+            this.wizardTop.Controls.Add(this.title);
+            this.wizardTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.wizardTop.Location = new System.Drawing.Point(0, 0);
+            this.wizardTop.Name = "wizardTop";
+            this.wizardTop.Size = new System.Drawing.Size(774, 64);
+            this.wizardTop.TabIndex = 18;
             // 
             // PictureBox1
             // 
-            PictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            PictureBox1.Cursor = Cursors.Hand;
-            PictureBox1.Image = (Image) resources.GetObject("PictureBox1.Image");
-            PictureBox1.Location = new Point(627, 0);
-            PictureBox1.Name = "PictureBox1";
-            PictureBox1.Size = new Size(57, 55);
-            PictureBox1.SizeMode = PictureBoxSizeMode.AutoSize;
-            PictureBox1.TabIndex = 5;
-            PictureBox1.TabStop = false;
+            this.PictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox1.Image")));
+            this.PictureBox1.Location = new System.Drawing.Point(710, 0);
+            this.PictureBox1.Name = "PictureBox1";
+            this.PictureBox1.Size = new System.Drawing.Size(57, 55);
+            this.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.PictureBox1.TabIndex = 5;
+            this.PictureBox1.TabStop = false;
             // 
             // stepDescription
             // 
-            stepDescription.Anchor = AnchorStyles.Top | AnchorStyles.Bottom
-                                                      | AnchorStyles.Left
-                                                      | AnchorStyles.Right;
-            stepDescription.AutoSize = true;
-            stepDescription.Location = new Point(16, 24);
-            stepDescription.Name = "stepDescription";
-            stepDescription.Size = new Size(312, 13);
-            stepDescription.TabIndex = 4;
-            stepDescription.Text = "Utiliza la propiedad \'Tag\' del TabPage para mostrar aquí el texto.";
+            this.stepDescription.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.stepDescription.AutoSize = true;
+            this.stepDescription.Location = new System.Drawing.Point(16, 24);
+            this.stepDescription.Name = "stepDescription";
+            this.stepDescription.Size = new System.Drawing.Size(312, 13);
+            this.stepDescription.TabIndex = 4;
+            this.stepDescription.Text = "Utiliza la propiedad \'Tag\' del TabPage para mostrar aquí el texto.";
             // 
             // title
             // 
-            title.Anchor = AnchorStyles.Top | AnchorStyles.Left
-                                            | AnchorStyles.Right;
-            title.AutoSize = true;
-            title.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            title.Location = new Point(8, 8);
-            title.Name = "title";
-            title.Size = new Size(381, 13);
-            title.TabIndex = 3;
-            title.Text = "Utiliza la propiedad \'Text\' del TabPage para mostrar aquí el texto.";
+            this.title.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.title.AutoSize = true;
+            this.title.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.title.Location = new System.Drawing.Point(8, 8);
+            this.title.Name = "title";
+            this.title.Size = new System.Drawing.Size(381, 13);
+            this.title.TabIndex = 3;
+            this.title.Text = "Utiliza la propiedad \'Text\' del TabPage para mostrar aquí el texto.";
             // 
             // bottomPanel
             // 
-            bottomPanel.Controls.Add(cmdFinish);
-            bottomPanel.Controls.Add(cmdNext);
-            bottomPanel.Controls.Add(cmdBack);
-            bottomPanel.Controls.Add(cmdCancel);
-            bottomPanel.Controls.Add(LinkLabel1);
-            bottomPanel.Dock = DockStyle.Bottom;
-            bottomPanel.Location = new Point(0, 149);
-            bottomPanel.Name = "bottomPanel";
-            bottomPanel.Size = new Size(691, 40);
-            bottomPanel.TabIndex = 17;
+            this.bottomPanel.Controls.Add(this.cmdFinish);
+            this.bottomPanel.Controls.Add(this.cmdNext);
+            this.bottomPanel.Controls.Add(this.cmdBack);
+            this.bottomPanel.Controls.Add(this.cmdCancel);
+            this.bottomPanel.Controls.Add(this.LinkLabel1);
+            this.bottomPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.bottomPanel.Location = new System.Drawing.Point(0, 463);
+            this.bottomPanel.Name = "bottomPanel";
+            this.bottomPanel.Size = new System.Drawing.Size(774, 40);
+            this.bottomPanel.TabIndex = 17;
             // 
             // cmdFinish
             // 
-            cmdFinish.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            cmdFinish.FlatStyle = FlatStyle.System;
-            cmdFinish.Location = new Point(595, 8);
-            cmdFinish.Name = "cmdFinish";
-            cmdFinish.Size = new Size(88, 23);
-            cmdFinish.TabIndex = 8;
-            cmdFinish.Text = "Fín";
+            this.cmdFinish.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cmdFinish.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.cmdFinish.Location = new System.Drawing.Point(678, 8);
+            this.cmdFinish.Name = "cmdFinish";
+            this.cmdFinish.Size = new System.Drawing.Size(88, 23);
+            this.cmdFinish.TabIndex = 8;
+            this.cmdFinish.Text = "Fín";
             // 
             // cmdNext
             // 
-            cmdNext.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            cmdNext.FlatStyle = FlatStyle.System;
-            cmdNext.Location = new Point(499, 8);
-            cmdNext.Name = "cmdNext";
-            cmdNext.Size = new Size(88, 23);
-            cmdNext.TabIndex = 5;
-            cmdNext.Text = "Adelante >";
+            this.cmdNext.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cmdNext.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.cmdNext.Location = new System.Drawing.Point(582, 8);
+            this.cmdNext.Name = "cmdNext";
+            this.cmdNext.Size = new System.Drawing.Size(88, 23);
+            this.cmdNext.TabIndex = 5;
+            this.cmdNext.Text = "Adelante >";
             // 
             // cmdBack
             // 
-            cmdBack.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            cmdBack.FlatStyle = FlatStyle.System;
-            cmdBack.Location = new Point(403, 8);
-            cmdBack.Name = "cmdBack";
-            cmdBack.Size = new Size(88, 23);
-            cmdBack.TabIndex = 4;
-            cmdBack.Text = "< Atras";
+            this.cmdBack.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cmdBack.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.cmdBack.Location = new System.Drawing.Point(486, 8);
+            this.cmdBack.Name = "cmdBack";
+            this.cmdBack.Size = new System.Drawing.Size(88, 23);
+            this.cmdBack.TabIndex = 4;
+            this.cmdBack.Text = "< Atras";
             // 
             // cmdCancel
             // 
-            cmdCancel.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            cmdCancel.DialogResult = DialogResult.Cancel;
-            cmdCancel.FlatStyle = FlatStyle.System;
-            cmdCancel.Location = new Point(307, 8);
-            cmdCancel.Name = "cmdCancel";
-            cmdCancel.Size = new Size(88, 23);
-            cmdCancel.TabIndex = 3;
-            cmdCancel.Text = "Cancelar";
+            this.cmdCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cmdCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.cmdCancel.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.cmdCancel.Location = new System.Drawing.Point(390, 8);
+            this.cmdCancel.Name = "cmdCancel";
+            this.cmdCancel.Size = new System.Drawing.Size(88, 23);
+            this.cmdCancel.TabIndex = 3;
+            this.cmdCancel.Text = "Cancelar";
             // 
             // LinkLabel1
             // 
-            LinkLabel1.AutoSize = true;
-            LinkLabel1.Cursor = Cursors.Hand;
-            LinkLabel1.LinkColor = Color.Blue;
-            LinkLabel1.Location = new Point(16, 16);
-            LinkLabel1.Name = "LinkLabel1";
-            LinkLabel1.Size = new Size(121, 13);
-            LinkLabel1.TabIndex = 6;
-            LinkLabel1.TabStop = true;
-            LinkLabel1.Text = "Febrer Software 2004(c)";
+            this.LinkLabel1.AutoSize = true;
+            this.LinkLabel1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.LinkLabel1.LinkColor = System.Drawing.Color.Blue;
+            this.LinkLabel1.Location = new System.Drawing.Point(16, 16);
+            this.LinkLabel1.Name = "LinkLabel1";
+            this.LinkLabel1.Size = new System.Drawing.Size(121, 13);
+            this.LinkLabel1.TabIndex = 6;
+            this.LinkLabel1.TabStop = true;
+            this.LinkLabel1.Text = "Febrer Software 2004(c)";
             // 
             // frmWizard
             // 
-            AutoScaleBaseSize = new Size(5, 13);
-            ClientSize = new Size(691, 189);
-            Controls.Add(panelStep);
-            Controls.Add(sidePanel);
-            Controls.Add(wizardTop);
-            Controls.Add(bottomPanel);
-            Name = "frmWizard";
-            ShowMenu = false;
-            //ShowStatusBar = false;
-            ShowToolBar = false;
-            Text = "frmWizard";
-            Controls.SetChildIndex(bottomPanel, 0);
-            Controls.SetChildIndex(wizardTop, 0);
-            Controls.SetChildIndex(sidePanel, 0);
-            Controls.SetChildIndex(panelStep, 0);
-            panelStep.ResumeLayout(false);
-            sidePanel.ResumeLayout(false);
-            ((ISupportInitialize) picWizard).EndInit();
-            wizardTop.ResumeLayout(false);
-            wizardTop.PerformLayout();
-            ((ISupportInitialize) PictureBox1).EndInit();
-            bottomPanel.ResumeLayout(false);
-            bottomPanel.PerformLayout();
-            ResumeLayout(false);
+            this.ClientSize = new System.Drawing.Size(774, 525);
+            this.Controls.Add(this.panelStep);
+            this.Controls.Add(this.sidePanel);
+            this.Controls.Add(this.wizardTop);
+            this.Controls.Add(this.bottomPanel);
+            this.Name = "frmWizard";
+            this.ShowMenu = false;
+            this.ShowToolBar = false;
+            this.Text = "frmWizard";
+            this.Controls.SetChildIndex(this.DbToolBar1, 0);
+            this.Controls.SetChildIndex(this.bottomPanel, 0);
+            this.Controls.SetChildIndex(this.wizardTop, 0);
+            this.Controls.SetChildIndex(this.sidePanel, 0);
+            this.Controls.SetChildIndex(this.panelStep, 0);
+            this.panelStep.ResumeLayout(false);
+            this.sidePanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picWizard)).EndInit();
+            this.wizardTop.ResumeLayout(false);
+            this.wizardTop.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
+            this.bottomPanel.ResumeLayout(false);
+            this.bottomPanel.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

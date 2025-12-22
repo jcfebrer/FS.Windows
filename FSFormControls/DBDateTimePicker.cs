@@ -12,7 +12,6 @@ namespace FSFormControls
 {
     [ToolboxBitmap(typeof(resfinder), "FSFormControls.Resources.DBDate.bmp")]
     [ToolboxItem(true)]
-    [Serializable]
     public class DBDateTimePicker : DateTimePicker
     {
         public DateTime Date

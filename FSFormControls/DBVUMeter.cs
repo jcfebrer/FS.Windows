@@ -63,7 +63,6 @@ namespace FSFormControls
 
     [ToolboxBitmap(typeof(resfinder), "FSFormControls.Resources.DBVuMeter.bmp")]
     [ToolboxItem(true)]
-    [Serializable]
     public class DBVuMeter : DBUserControl
     {
         public class IntEventArgs : EventArgs

@@ -5,7 +5,6 @@ using System.Windows.Forms;
 namespace FSFormControls
 {
     [ToolboxItem(true)]
-    [Serializable]
     public class DBToolBarButton : ToolStripButton
     {
         public DBToolBarButton()

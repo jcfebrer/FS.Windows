@@ -22,7 +22,6 @@ namespace FSFormControls
     /// 
     [ToolboxBitmapAttribute(typeof(FSFormControls.DBExplorerTree), "tree.gif"), DefaultEvent("PathChanged")]
     [ToolboxItem(true)]
-    [Serializable]
     public class DBExplorerTree : System.Windows.Forms.UserControl
     {
         private System.Windows.Forms.TreeView tvwMain;

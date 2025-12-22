@@ -11,7 +11,6 @@ namespace FSFormControls
 {
     [ToolboxBitmap(typeof(resfinder), "FSFormControls.Resources.DBTabControl.bmp")]
     [ToolboxItem(true)]
-    [Serializable]
     public class DBTabPage : TabPage
     {
         //protected override void OnTextChanged(EventArgs e)

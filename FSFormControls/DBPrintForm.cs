@@ -18,7 +18,6 @@ using Encoder = System.Drawing.Imaging.Encoder;
 namespace FSFormControls
 {
     [ToolboxItem(true)]
-    [Serializable]
     public class DBFormPrint
     {
         #region Delegates

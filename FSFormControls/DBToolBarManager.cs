@@ -8,7 +8,6 @@ namespace FSFormControls
 {
     [ToolboxBitmap(typeof(resfinder), "FSFormControls.Resources.DBToolBar.bmp")]
     [ToolboxItem(true)]
-    [Serializable]
     public class DBToolBarManager : DBToolBar
     {
         public DBToolBarManager()

@@ -76,6 +76,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Forms\frmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Update="Forms\frmAbout.resx">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
     <Compile Update="DBGauge.cs">
       <SubType>Component</SubType>
     </Compile>

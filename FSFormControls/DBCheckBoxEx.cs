@@ -16,7 +16,6 @@ namespace FSFormControls
     [ToolboxBitmap(typeof(resfinder), "FSFormControls.Resources.DBCheckBoxEx.bmp")]
     [DefaultEvent("CheckedChanged")]
     [ToolboxItem(true)]
-    [Serializable]
     public class DBCheckBoxEx : DBUserControl, ISupportInitialize
     {
         private CheckBox checkbox;

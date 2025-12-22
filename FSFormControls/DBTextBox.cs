@@ -7,7 +7,6 @@ namespace FSFormControls
 {
     [ToolboxBitmap(typeof(resfinder), "FSFormControls.Resources.DBTextBox.bmp")]
     [ToolboxItem(true)]
-    [Serializable]
     public class DBTextBox : System.Windows.Forms.TextBox, ISupportInitialize
     {
         public DBTextBox()

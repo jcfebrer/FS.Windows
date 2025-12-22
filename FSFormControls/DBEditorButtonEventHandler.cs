@@ -6,7 +6,6 @@ using System.Windows.Forms;
 namespace FSFormControls
 {
     [ToolboxItem(true)]
-    [Serializable]
     public delegate void DBEditorButtonEventHandler(object sender, DBEditorButtonEventArgs e);
 
     public class DBEditorButtonEventArgs : EventArgs

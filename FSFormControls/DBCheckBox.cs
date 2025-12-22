@@ -10,7 +10,6 @@ namespace FSFormControls
     [ToolboxBitmap(typeof(resfinder), "FSFormControls.Resources.DBCheckBox.bmp")]
     [DefaultEvent("CheckedChanged")]
     [ToolboxItem(true)]
-    [Serializable]
     public class DBCheckBox : CheckBox, ISupportInitialize
     {
         public new DBAppearance Appearance { get; set; }

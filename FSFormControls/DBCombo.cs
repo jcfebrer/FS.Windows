@@ -8,7 +8,6 @@ namespace FSFormControls
 {
     [ToolboxBitmap(typeof(resfinder), "FSFormControls.Resources.DBCombo.bmp")]
     [ToolboxItem(true)]
-    [Serializable]
     public class DBCombo : System.Windows.Forms.ComboBox, ISupportInitialize
     {
         /* INICIO COMPATIBILIDAD INFRAGISTICS */

@@ -19,7 +19,6 @@ namespace FSFormControls
     [DefaultEvent("KeyPress")]
     [Designer(typeof(DBTextBoxControlDesigner))]
     [ToolboxItem(true)]
-    [Serializable]
     public class DBTextBoxEx : DBUserControl, ISupportInitialize
     {
         internal Button cmdAmpliar;

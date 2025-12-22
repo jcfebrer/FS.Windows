@@ -12,7 +12,6 @@ namespace FSFormControls
 {
     [ToolboxBitmap(typeof(resfinder), "FSFormControls.Resources.DBGrid.bmp")]
     [ToolboxItem(true)]
-    [Serializable]
     public class DBGridView : DataGridView
     {
         public DBGridView()

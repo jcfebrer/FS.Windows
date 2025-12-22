@@ -13,7 +13,6 @@ namespace FSFormControls
 {
     [ToolboxBitmap(typeof(resfinder), "FSFormControls.Resources.DBComboEx.bmp")]
     [ToolboxItem(true)]
-    [Serializable]
     public class DBFontCombo : ComboBox
     {
         private bool Loading;
