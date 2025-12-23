@@ -32,12 +32,18 @@ namespace FSFormControls
             verticalPanel.WrapContents = false;
             verticalPanel.Dock = DockStyle.Fill;
 
+            int pos = 0;
             foreach (DBRadioButton item in Items)
             {
                 item.Width = dbGroupBox1.Width - 25;
-                item.Margin = new Padding(8);
+                item.Margin = new Padding(5);
+
+                if(pos == 0)
+                    item.Checked = true;
 
                 verticalPanel.Controls.Add(item);
+
+                pos++;
             }
 
             dbGroupBox1.Controls.Add(verticalPanel);
