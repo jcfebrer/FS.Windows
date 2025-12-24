@@ -408,6 +408,8 @@ namespace FSFormControls
 
         public DataGridView DataGridView { get { return datagrid; } }
 
+        public DataGridView DataGridViewTotal { get { return dataGridViewTotal; } }
+
         public int CurrentRowIndex => datagrid.CurrentRow.Index;
 
         public bool AutoSave { get; set; } = true;
