@@ -17,6 +17,9 @@ namespace FSFormControls
 
         public DBCheckBox()
         {
+            if (DesignMode)
+                return;
+
             Appearance = new DBAppearance();
         }
 

@@ -366,6 +366,9 @@ namespace FSFormControls
         {
             InitializeComponent();
 
+            if (DesignMode)
+                return;
+
             ListBox1.KeyDown += ListBox1_KeyDown;
             ListBox1.TextChanged += ListBox1_TextChanged;
             ListBox1.SelectedValueChanged += ListBox1_SelectedValueChanged;

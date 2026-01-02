@@ -182,6 +182,9 @@ namespace FSFormControls
         {
             InitializeComponent();
 
+            if (DesignMode)
+                return;
+
             MenuItem1.Click += MenuItem1_Click;
             PictureBox1.MouseDown += PictureBox1_MouseDown;
             PictureBox1.MouseUp += PictureBox1_MouseUp;

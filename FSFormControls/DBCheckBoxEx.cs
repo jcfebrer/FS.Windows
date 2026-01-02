@@ -24,6 +24,21 @@ namespace FSFormControls
         private Global.AccessMode m_Mode = Global.AccessMode.WriteMode;
         private string m_Text = "";
 
+        public DBCheckBoxEx()
+        {
+            InitializeComponent();
+
+            if(DesignMode)
+                return;
+
+            checkbox.Click += CheckBox1_Click;
+            checkbox.CheckedChanged += CheckBox1_CheckedChanged;
+            checkbox.MouseDown += CheckBox1_MouseDown;
+            checkbox.MouseUp += CheckBox1_MouseUp;
+
+            Appearance = new DBAppearance();
+        }
+
         [Browsable(true)]
         [EditorBrowsable(EditorBrowsableState.Always)]
         public override string Text
@@ -266,18 +281,6 @@ namespace FSFormControls
         #region '" Código generado por el Diseñador de Windows Forms "' 
 
         private readonly IContainer components = null;
-
-        public DBCheckBoxEx()
-        {
-            InitializeComponent();
-
-            checkbox.Click += CheckBox1_Click;
-            checkbox.CheckedChanged += CheckBox1_CheckedChanged;
-            checkbox.MouseDown += CheckBox1_MouseDown;
-            checkbox.MouseUp += CheckBox1_MouseUp;
-
-            Appearance = new DBAppearance();
-        }
 
         protected override void Dispose(bool disposing)
         {

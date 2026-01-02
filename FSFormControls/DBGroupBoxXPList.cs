@@ -48,6 +48,9 @@ namespace FSFormControls
         {
             InitializeComponent();
 
+            if(DesignMode)
+                return;
+
             SetStyle(ControlStyles.DoubleBuffer, true);
             SetStyle(ControlStyles.ResizeRedraw, false);
             SetStyle(ControlStyles.UserPaint, true);

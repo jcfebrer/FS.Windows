@@ -2348,6 +2348,8 @@ namespace FSFormControls
         {
             InitializeComponent();
 
+            if (DesignMode)
+                return;
 
             ToolBar1.ItemClicked += ToolBar1_ButtonClick;
             MenuItem1.Click += MenuItem1_Click;

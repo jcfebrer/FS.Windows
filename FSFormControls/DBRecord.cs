@@ -709,6 +709,9 @@ namespace FSFormControls
         {
             InitializeComponent();
 
+            if (DesignMode)
+                return;
+
             if (Columns == null) Columns = new DBColumnCollection();
 
             panelRecord.MouseDown += panelRecord_MouseDown;

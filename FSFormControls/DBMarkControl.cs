@@ -62,6 +62,9 @@ namespace FSFormControls
         {
             InitializeComponent();
 
+            if (DesignMode)
+                return;
+
             m_SizeX = sizeX;
             m_SizeY = sizeY;
             base.BackColor = Color.Black;

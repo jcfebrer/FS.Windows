@@ -16,24 +16,24 @@ namespace FSFormControls
     {
         public DBGridView()
         {
-            if (!DesignMode)
-            {
-                //Filas alternativas con diferente color
-                this.RowsDefaultCellStyle.BackColor = Color.White;
-                this.AlternatingRowsDefaultCellStyle.BackColor = Color.Aquamarine;
+            if (DesignMode)
+                return;
 
-                // Estilo de cabecera (quitar fondo azul al seleccionar una columna)
-                this.EnableHeadersVisualStyles = false;
-                this.ColumnHeadersDefaultCellStyle.SelectionBackColor = SystemColors.Control;
+            //Filas alternativas con diferente color
+            this.RowsDefaultCellStyle.BackColor = Color.White;
+            this.AlternatingRowsDefaultCellStyle.BackColor = Color.Aquamarine;
 
-                // Eventos
-                this.KeyDown += DBGridView_KeyDown;
-                this.RowPostPaint += DataGridView1_RowPostPaint;
-                this.CellDoubleClick += DBGridView_CellDoubleClick;
+            // Estilo de cabecera (quitar fondo azul al seleccionar una columna)
+            this.EnableHeadersVisualStyles = false;
+            this.ColumnHeadersDefaultCellStyle.SelectionBackColor = SystemColors.Control;
 
-                if (SortedColumns == null)
-                    SortedColumns = new DataGridViewColumnCollection(this);
-            }
+            // Eventos
+            this.KeyDown += DBGridView_KeyDown;
+            this.RowPostPaint += DataGridView1_RowPostPaint;
+            this.CellDoubleClick += DBGridView_CellDoubleClick;
+
+            if (SortedColumns == null)
+                SortedColumns = new DataGridViewColumnCollection(this);
         }
 
         private void DBGridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
@@ -240,6 +240,11 @@ namespace FSFormControls
         {
             this.DataSource = dataSource;
             this.DataMember = dataMember;
+        }
+
+        public DBGridViewRowCollection DBRows
+        {
+            get { return Rows as DBGridViewRowCollection; }
         }
     }
 }

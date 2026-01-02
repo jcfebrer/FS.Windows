@@ -82,6 +82,30 @@ namespace FSFormControls
 
         #endregion
 
+
+        ~DBControl()
+        {
+        }
+
+        public DBControl()
+        {
+            InitializeComponent();
+
+            if (DesignMode)
+                return;
+
+            Connected = false;
+
+            if (ColumnMapping == null)
+                ColumnMapping = new DBColumnCollection();
+
+            if (Parameters == null)
+                Parameters = new DBParamCollection();
+
+            Visible = false;
+            TabStop = false;
+        }
+
         private static string[] m_tables;
 
         public static string[] Tables
@@ -2896,26 +2920,6 @@ namespace FSFormControls
         internal ErrorProvider ErrorProvider1;
         private Label Label1;
 
-
-        ~DBControl()
-        {
-        }
-
-        public DBControl()
-        {
-            InitializeComponent();
-
-            Connected = false;
-
-            if (ColumnMapping == null)
-                ColumnMapping = new DBColumnCollection();
-
-            if (Parameters == null)
-                Parameters = new DBParamCollection();
-
-            Visible = false;
-            TabStop = false;
-        }
 
         public DBControl(object value) : this()
         {

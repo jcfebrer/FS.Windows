@@ -220,6 +220,9 @@ namespace FSFormControls
         {
             InitializeComponent();
 
+            if(DesignMode)
+                return;
+
             SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
         }
 

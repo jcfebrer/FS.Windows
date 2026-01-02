@@ -19,6 +19,15 @@ namespace FSFormControls
     {
         private Global.AccessMode m_Mode = Global.AccessMode.WriteMode;
 
+        public DBDocument()
+        {
+            InitializeComponent();
+
+            if(DesignMode)
+                return;
+
+            MenuItem1.Click += MenuItem1_Click;
+        }
 
         //[Description("DataBindings.")]
         //public new ControlBindingsCollection DataBindings
@@ -132,13 +141,6 @@ namespace FSFormControls
         internal Label Label1;
         internal ToolStripMenuItem MenuItem1;
         internal OpenFileDialog OpenFileDialog1;
-
-        public DBDocument()
-        {
-            InitializeComponent();
-
-            MenuItem1.Click += MenuItem1_Click;
-        }
 
         protected override void Dispose(bool disposing)
         {

@@ -106,6 +106,9 @@ namespace FSFormControls
         {
             InitializeComponent();
 
+            if (DesignMode)
+                return;
+
             TabStop = false;
 
             Resize += DBPicture_Resize;

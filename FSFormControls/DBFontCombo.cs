@@ -19,6 +19,9 @@ namespace FSFormControls
 
         public DBFontCombo()
         {
+            if(DesignMode)
+                return;
+
             Text = "";
             DropDownStyle = ComboBoxStyle.DropDownList;
             DrawMode = DrawMode.OwnerDrawFixed;

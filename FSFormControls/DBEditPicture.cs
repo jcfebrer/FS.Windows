@@ -49,6 +49,28 @@ namespace FSFormControls
 
         public int PointSizeY { get; set; } = 9;
 
+        public DBEditPicture()
+        {
+            InitializeComponent();
+
+            if (DesignMode)
+                return;
+
+            SetStyle(ControlStyles.DoubleBuffer, true);
+            SetStyle(ControlStyles.UserPaint, true);
+            SetStyle(ControlStyles.AllPaintingInWmPaint, true);
+
+            MenuItem1.Click += MenuItem1_Click;
+            ToolBar1.ItemClicked += ToolBar1_ButtonClick;
+            ToolBar2.ItemClicked += ToolBar2_ButtonClick;
+            PictureBox1.MouseMove += PictureBox1_MouseMove;
+            PictureBox1.MouseDown += PictureBox1_MouseDown;
+            PictureBox1.MouseUp += PictureBox1_MouseUp;
+            MenuItem2.Click += MenuItem2_Click;
+            MenuItem3.Click += MenuItem3_Click;
+            MenuItem4.Click += MenuItem4_Click;
+        }
+
         public new BorderStyle BorderStyle
         {
             get { return PictureBox1.BorderStyle; }
@@ -869,25 +891,6 @@ namespace FSFormControls
         internal ToolTip ToolTip1;
         private IContainer components;
         public ContextMenuStrip objectMenu;
-
-        public DBEditPicture()
-        {
-            InitializeComponent();
-
-            SetStyle(ControlStyles.DoubleBuffer, true);
-            SetStyle(ControlStyles.UserPaint, true);
-            SetStyle(ControlStyles.AllPaintingInWmPaint, true);
-
-            MenuItem1.Click += MenuItem1_Click;
-            ToolBar1.ItemClicked += ToolBar1_ButtonClick;
-            ToolBar2.ItemClicked += ToolBar2_ButtonClick;
-            PictureBox1.MouseMove += PictureBox1_MouseMove;
-            PictureBox1.MouseDown += PictureBox1_MouseDown;
-            PictureBox1.MouseUp += PictureBox1_MouseUp;
-            MenuItem2.Click += MenuItem2_Click;
-            MenuItem3.Click += MenuItem3_Click;
-            MenuItem4.Click += MenuItem4_Click;
-        }
 
         protected override void Dispose(bool disposing)
         {

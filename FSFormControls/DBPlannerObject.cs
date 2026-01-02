@@ -26,6 +26,10 @@ namespace FSFormControls
         public DBPlannerObject()
         {
             InitializeComponent();
+
+            if (DesignMode)
+                return;
+
             SetStyle(ControlStyles.UserPaint, true);
             SetStyle(ControlStyles.AllPaintingInWmPaint, true);
             SetStyle(ControlStyles.DoubleBuffer, true);

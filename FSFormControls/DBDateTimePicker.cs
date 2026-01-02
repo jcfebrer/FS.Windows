@@ -14,6 +14,11 @@ namespace FSFormControls
     [ToolboxItem(true)]
     public class DBDateTimePicker : DateTimePicker
     {
+        public DBDateTimePicker()
+        {
+            InitializeComponent();
+        }
+
         public DateTime Date
         {
             get { return base.Value; }
@@ -46,11 +51,6 @@ namespace FSFormControls
         #region '" Windows Form Designer generated code "' 
 
         private IContainer components;
-
-        public DBDateTimePicker()
-        {
-            InitializeComponent();
-        }
 
         protected override void Dispose(bool disposing)
         {

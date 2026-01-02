@@ -159,6 +159,9 @@ namespace FSFormControls
         {
             InitializeComponent();
 
+            if(DesignMode)
+                return;
+
             SetStyle(ControlStyles.ResizeRedraw, true);
             SetStyle(ControlStyles.AllPaintingInWmPaint, true);
             SetStyle(ControlStyles.UserPaint, true);

@@ -200,6 +200,9 @@ namespace FSFormControls
         {
             InitializeComponent();
 
+            if(DesignMode)
+                return;
+
             txtFileName.MouseUp += txtFileName_MouseUp;
             txtDateTime.MouseDown += txtDateTime_MouseDown;
             txtDateTime.MouseUp += txtDateTime_MouseUp;

@@ -342,6 +342,9 @@ namespace FSFormControls
         {
             InitializeComponent();
 
+            if (DesignMode)
+                return;
+
             SetStyle(ControlStyles.DoubleBuffer, true);
 
             button.Click += Button1_Click;

@@ -72,6 +72,7 @@ namespace FSFormControls
         {
             CellAppearance = new DBAppearance();
             HeaderAppearance = new DBAppearance();
+            DBGridViewFilters = new DBGridViewFilterCollection();
         }
 
         public DBColumn(string strFieldDB, string strHeaderCaption)
@@ -331,7 +332,7 @@ namespace FSFormControls
         public LogicalOperatorEnum LogicalOperator { get; set; }
 
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
-        public DBGridViewFilterCollection DBGridViewFilters { get; set; } = new DBGridViewFilterCollection();
+        public DBGridViewFilterCollection DBGridViewFilters { get; set; }
 
         public int Index { get; set; }
 

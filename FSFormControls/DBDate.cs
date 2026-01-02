@@ -31,6 +31,28 @@ namespace FSFormControls
         private string m_oldCustomFormat;
         private DateTimePickerFormat m_oldFormat;
 
+        public DBDate()
+        {
+            InitializeComponent();
+
+            if (DesignMode)
+                return;
+
+            SaveFormat();
+
+            Resize += Control_Resize;
+            DateTimePicker1.KeyDown += DateTimePicker1_KeyDown;
+            DateTimePicker1.ValueChanged += DateTimePicker1_ValueChanged;
+            DateTimePicker1.DropDown += DateTimePicker1_DropDown;
+            DateTimePicker1.MouseDown += DateTimePicker1_MouseDown;
+            DateTimePicker1.MouseUp += DateTimePicker1_MouseUp;
+            DateTimePicker1.Leave += DateTimePicker1_Leave;
+            DateTimePicker1.Enter += DateTimePicker1_Enter;
+            DateTimePicker1.LostFocus += DateTimePicker1_LostFocus;
+
+            Appearance = new DBAppearance();
+        }
+
         [Browsable(true)]
         [EditorBrowsable(EditorBrowsableState.Always)]
         public override string Text
@@ -410,26 +432,6 @@ namespace FSFormControls
         private readonly IContainer components = null;
 
         private DateTimePicker DateTimePicker1;
-
-        public DBDate()
-        {
-            InitializeComponent();
-
-
-            SaveFormat();
-
-            Resize += Control_Resize;
-            DateTimePicker1.KeyDown += DateTimePicker1_KeyDown;
-            DateTimePicker1.ValueChanged += DateTimePicker1_ValueChanged;
-            DateTimePicker1.DropDown += DateTimePicker1_DropDown;
-            DateTimePicker1.MouseDown += DateTimePicker1_MouseDown;
-            DateTimePicker1.MouseUp += DateTimePicker1_MouseUp;
-            DateTimePicker1.Leave += DateTimePicker1_Leave;
-            DateTimePicker1.Enter += DateTimePicker1_Enter;
-            DateTimePicker1.LostFocus += DateTimePicker1_LostFocus;
-
-            Appearance = new DBAppearance();
-        }
 
         private void DateTimePicker1_LostFocus(object sender, EventArgs e)
         {

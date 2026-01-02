@@ -283,6 +283,9 @@ namespace FSFormControls
         {
             InitializeComponent();
 
+            if(DesignMode)
+                return;
+
             cmdRegistry.Click += cmdRegistry_Click;
             HScroll1.ValueChanged += HScroll1_ValueChanged;
             cmdAdd.Click += cmdAdd_Click;

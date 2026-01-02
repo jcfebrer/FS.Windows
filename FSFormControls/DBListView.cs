@@ -27,6 +27,9 @@ namespace FSFormControls
         {
             InitializeComponent();
 
+            if (DesignMode)
+                return;
+
             m_CanDelete = true;
 
             ListView1.Clear();

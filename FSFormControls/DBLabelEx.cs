@@ -429,6 +429,9 @@ namespace FSFormControls
         {
             InitializeComponent();
 
+            if (DesignMode)
+                return;
+
             SetStyle(ControlStyles.DoubleBuffer, true);
 
             TabStop = false;

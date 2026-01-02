@@ -18,10 +18,15 @@ namespace FSFormControls
 
         public DBSplitter()
         {
+            InitializeComponent();
+
+            if (DesignMode)
+                return;
+
             //The System.Windows.Forms.Splitter doesn't suports a transparent backcolor
             //With this, the using of a transparent backcolor is possible
             SetStyle(ControlStyles.SupportsTransparentBackColor, true);
-            InitializeComponent();
+
             BackColor = Color.Transparent;
         }
 

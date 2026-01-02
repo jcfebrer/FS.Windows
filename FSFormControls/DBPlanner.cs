@@ -21,11 +21,13 @@ namespace FSFormControls
         {
             m_names = new string[4];
             InitializeComponent();
-            // events handled by DBPanel1_Scroll
 
+            if (DesignMode)
+                return;
+
+            // events handled by DBPanel1_Scroll
             DbPanel1.Scroll += DBPanel1_Scroll;
             // events handled by DBPanel2_Scroll
-
             DbPanel2.Scroll += DBPanel2_Scroll;
         }
 

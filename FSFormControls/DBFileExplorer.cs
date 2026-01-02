@@ -22,6 +22,9 @@ namespace FSFormControls
         {
             InitializeComponent();
 
+            if(DesignMode)
+                return;
+
             cmbDrives.DisplayMember = "Name";
             cmbDrives.DataSource = FileUtils.GetDrives();
             //cmbDrives.Items.AddRange(FileUtils.GetDrives());

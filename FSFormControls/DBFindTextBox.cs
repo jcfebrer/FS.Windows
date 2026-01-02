@@ -331,6 +331,9 @@ namespace FSFormControls
         {
             InitializeComponent();
 
+            if(DesignMode)
+                return;
+
             DbTextBox1.Multiline = false;
 
             DbTextBox1.DBField = m_DBField;

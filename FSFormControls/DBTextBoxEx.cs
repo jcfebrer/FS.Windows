@@ -1,14 +1,15 @@
 #region
 
+using FSException;
+using FSLibrary;
 using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Drawing;
 using System.Windows.Forms;
 using System.Windows.Forms.Design;
-using FSLibrary;
 using DateTimeUtil = FSLibrary.DateTimeUtil;
-using FSException;
 
 #endregion
 
@@ -42,6 +43,11 @@ namespace FSFormControls
         private string m_XMLName = "";
         private const int BUTTONWIDTH = 16;
         private const int BUTTONHEIGHT = 16;
+
+        private DBButtonCollection m_ButtonsRight = new DBButtonCollection();
+        private DBButtonCollection m_ButtonsLeft = new DBButtonCollection();
+        private DBButtonCollection m_ClickedItemsLeft = new DBButtonCollection();
+        private DBButtonCollection m_ClickedItemsRight = new DBButtonCollection();
 
         #region Delegates
 
@@ -130,6 +136,9 @@ namespace FSFormControls
         public DBTextBoxEx()
         {
             InitializeComponent();
+
+            if (DesignMode)
+                return;
 
             SetStyle(ControlStyles.DoubleBuffer, true);
 
@@ -270,10 +279,32 @@ namespace FSFormControls
         }
 
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
-        public DBButtonCollection ButtonsRight { get; set; } = new DBButtonCollection();
+        public DBButtonCollection ButtonsRight
+        {
+            get => m_ButtonsRight;
+            set { m_ButtonsRight = value; InitializeButtons(); }
+        }
 
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
-        public DBButtonCollection ButtonsLeft { get; set; } = new DBButtonCollection();
+        public DBButtonCollection ButtonsLeft
+        {
+            get => m_ButtonsLeft;
+            set { m_ButtonsLeft = value; InitializeButtons(); }
+        }
+
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
+        public DBButtonCollection ClickedItemsLeft
+        {
+            get { return m_ClickedItemsLeft; }
+            set { m_ClickedItemsLeft = value; }
+        }
+
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
+        public DBButtonCollection ClickedItemsRight
+        {
+            get { return m_ClickedItemsRight; }
+            set { m_ClickedItemsRight = value; }
+        }
 
         public bool ShowKeyboard
         {
@@ -739,111 +770,34 @@ namespace FSFormControls
 
         private bool CalcButton()
         {
-            var showb = false;
-            try
-            {
-                if ((m_DataType == TypeData.Numeric) | (m_DataType == TypeData.Money))
-                {
-                    if (Mode == Global.AccessMode.WriteMode)
-                        showb = Global.ShowCalc;
-                    else
-                        showb = false;
-                }
-                else
-                {
-                    showb = false;
-                }
+            cmdCalc.Visible = (m_DataType == TypeData.Numeric || m_DataType == TypeData.Money)
+                      && m_Mode == Global.AccessMode.WriteMode
+                      && Global.ShowCalc;
 
-                if (showb)
-                {
-                    cmdCalc.Visible = true;
-                    textbox.Width = Width - 16;
+            ResizeButtons();
 
-                    cmdCalc.Width = 16;
-                    //cmdCalc.Height = Height;
-                    cmdCalc.Left = Width - 16;
-                }
-                else
-                {
-                    cmdCalc.Visible = false;
-                    textbox.Width = Width;
-                }
-            }
-            catch (Exception e)
-            {
-                throw new ExceptionUtil(e);
-            }
-
-            return showb;
+            return cmdCalc.Visible;
         }
 
 
         private bool MemoButton()
         {
-            var showb = false;
-            try
-            {
-                if (m_DataType == TypeData.Memo)
-                {
-                    if (Mode == Global.AccessMode.WriteMode)
-                        showb = true;
-                    else
-                        showb = false;
-                }
-                else
-                {
-                    showb = false;
-                }
+            cmdAmpliar.Visible = (m_DataType == TypeData.Memo)
+                         && m_Mode == Global.AccessMode.WriteMode;
 
-                if (showb)
-                {
-                    cmdAmpliar.Visible = true;
-                    textbox.Width = Width - 16;
+            ResizeButtons();
 
-                    cmdAmpliar.Width = 16;
-                    //cmdAmpliar.Height = Height;
-                    cmdAmpliar.Left = Width - 16;
-                }
-                else
-                {
-                    cmdAmpliar.Visible = false;
-                    textbox.Width = Width;
-                }
-            }
-            catch (Exception e)
-            {
-                throw new ExceptionUtil(e);
-            }
-
-            return showb;
+            return cmdAmpliar.Visible;
         }
 
 
         private bool CalcKeyboard()
         {
-            try
-            {
-                if (ShowKeyboard)
-                {
-                    cmdKeyboard.Visible = true;
-                    textbox.Width = Width - 32;
+            cmdKeyboard.Visible = m_ShowKeyboard;
 
-                    cmdKeyboard.Width = 32;
-                    //cmdKeyboard.Height = Height;
-                    cmdKeyboard.Left = Width - 32;
-                }
-                else
-                {
-                    cmdKeyboard.Visible = false;
-                    textbox.Width = Width;
-                }
-            }
-            catch (Exception e)
-            {
-                throw new ExceptionUtil(e);
-            }
+            ResizeButtons();
 
-            return ShowKeyboard;
+            return m_ShowKeyboard;
         }
 
         //     private void ComboMode()
@@ -891,106 +845,138 @@ namespace FSFormControls
 
         private void InitializeButtons()
         {
-            if (ButtonsRight != null && ButtonsRight.Count > 0)
+            RemoveDuplicateControls();
+
+            SetupButtons(ButtonsRight);
+
+            SetupButtons(ButtonsLeft);
+        }
+
+        private void RemoveDuplicateControls()
+        {
+            List<Control> toRemove = new List<Control>();
+
+            foreach (Control c in this.Controls)
             {
-                foreach (Control button in ButtonsRight)
+                if (ButtonsRight.Contains(c) || ButtonsLeft.Contains(c))
                 {
-                    if (button is Button btn)
-                        btn.FlatStyle = FlatStyle.Flat;
-                    if (button is DBButton dbBtn)
-                    {
-                        dbBtn.ToolTip = button.Text;
-                        dbBtn.FlatStyle = FlatStyle.Flat;
-                    }
-                    if (button is DBButtonEx dbBtnEx)
-                    {
-                        dbBtnEx.ToolTip = button.Text;
-                        dbBtnEx.FlatStyle = FlatStyle.Flat;
-                    }
+                    toRemove.Add(c);
+                }
+            }
+
+            foreach (Control c in toRemove)
+            {
+                this.Controls.Remove(c);
+            }
+        }
+
+        private void SetupButtons(DBButtonCollection buttonsCollection)
+        {
+            if (buttonsCollection != null && buttonsCollection.Count > 0)
+            {
+                foreach (Control button in buttonsCollection)
+                {
+                    //if (button is Button btn)
+                    //    btn.FlatStyle = FlatStyle.Flat;
+                    //if (button is DBButton dbBtn)
+                    //{
+                    //    dbBtn.ToolTip = button.Text;
+                    //    dbBtn.FlatStyle = FlatStyle.Flat;
+                    //}
+                    //if (button is DBButtonEx dbBtnEx)
+                    //{
+                    //    dbBtnEx.ToolTip = button.Text;
+                    //    dbBtnEx.FlatStyle = FlatStyle.Flat;
+                    //}
 
                     button.Width = BUTTONWIDTH;
                     button.Height = BUTTONHEIGHT;
                     button.Visible = true;
                     button.Top = 0;
-                    button.Click += Button_Click;
-                    button.MouseEnter += Button_MouseEnter;
 
-                    this.Controls.Add(button);
-                    //button.BringToFront();
+                    if (!this.Controls.Contains(button))
+                    {
+                        this.Controls.Add(button);
+                    }
+
+                    button.BringToFront();
+
+                    button.Click -= Button_Click;
+                    button.Click += Button_Click;
+                    button.MouseEnter -= Button_MouseEnter;
+                    button.MouseEnter += Button_MouseEnter;
                 }
             }
 
-            if (ButtonsLeft != null && ButtonsLeft.Count > 0)
-            {
-                foreach (Control button in ButtonsLeft)
-                {
-                    if (button is Button btn)
-                        btn.FlatStyle = FlatStyle.Flat;
-                    if (button is DBButton dbBtn)
-                    {
-                        dbBtn.ToolTip = button.Text;
-                        dbBtn.FlatStyle = FlatStyle.Flat;
-                    }
-                    if (button is DBButtonEx dbBtnEx)
-                    {
-                        dbBtnEx.ToolTip = button.Text;
-                        dbBtnEx.FlatStyle = FlatStyle.Flat;
-                    }
-
-                    button.Width = BUTTONWIDTH;
-                    button.Height = BUTTONHEIGHT;
-                    button.Visible = true;
-                    button.Top = 0;
-                    button.Click += Button_Click;
-                    button.MouseEnter += Button_MouseEnter;
-
-                    this.Controls.Add(button);
-                    //button.BringToFront();
-                }
-            }
+            ResizeButtons();
         }
 
         private void ResizeButtons()
         {
-            // Cambiamos la dimesión del textbox y la posición dependiendo de los botones.
-            int newSize = this.Width;
-            int newLocation = 0;
+            SuspendLayout();
 
-            if (ButtonsRight != null)
-                newSize -= (BUTTONWIDTH * ButtonsRight.Count);
+            // 1. Inicializar contadores de espacio
+            int paddingLeft = 0;
+            int paddingRight = 0;
 
+            // 2. Posicionar botones de la COLECCIÓN IZQUIERDA
             if (ButtonsLeft != null)
             {
-                newSize -= (BUTTONWIDTH * ButtonsLeft.Count);
-                newLocation = (BUTTONWIDTH * ButtonsLeft.Count);
-            }
-
-            textbox.Location = new Point(newLocation, 0);
-            textbox.Size = new Size(newSize, this.Height);
-
-
-            //Posicionamos los botones.
-            int r = 1;
-            if (ButtonsRight != null && ButtonsRight.Count > 0)
-            {
-                foreach (Control button in ButtonsRight)
+                foreach (Control btn in ButtonsLeft)
                 {
-                    button.Left = this.Width - BUTTONWIDTH * r;
-
-                    r++;
+                    if (btn.Visible)
+                    {
+                        btn.Location = new Point(paddingLeft, 0);
+                        btn.Size = new Size(BUTTONWIDTH, BUTTONHEIGHT);
+                        paddingLeft += BUTTONWIDTH;
+                    }
                 }
             }
 
-            int l = 0;
-            if (ButtonsLeft != null && ButtonsLeft.Count > 0)
-            {
-                foreach (Control button in ButtonsLeft)
-                {
-                    button.Left = l * BUTTONWIDTH;
+            // 3. Posicionar botones INTERNOS DERECHOS (Calc, Ampliar, Keyboard)
+            // Primero calculamos el espacio necesario para los botones internos
+            // Estos botones suelen ir a la extrema derecha o antes de la colección derecha
 
-                    l++;
+            if (cmdKeyboard.Visible)
+            {
+                paddingRight += BUTTONWIDTH; // cmdKeyboard parece ser de 32px por tu código
+                cmdKeyboard.Location = new Point(this.Width - paddingRight, 0);
+            }
+
+            if (cmdCalc.Visible)
+            {
+                paddingRight += BUTTONWIDTH;
+                cmdCalc.Location = new Point(this.Width - paddingRight, 0);
+            }
+
+            if (cmdAmpliar.Visible)
+            {
+                paddingRight += BUTTONWIDTH;
+                cmdAmpliar.Location = new Point(this.Width - paddingRight, 0);
+            }
+
+            // 4. Posicionar botones de la COLECCIÓN DERECHA
+            if (ButtonsRight != null)
+            {
+                foreach (Control btn in ButtonsRight)
+                {
+                    if (btn.Visible)
+                    {
+                        paddingRight += BUTTONWIDTH;
+                        btn.Location = new Point(this.Width - paddingRight, 0);
+                        btn.Size = new Size(BUTTONWIDTH, BUTTONHEIGHT);
+                    }
                 }
             }
+
+            // 5. Ajustar el TextBox al espacio central restante
+            textbox.Location = new Point(paddingLeft, 0);
+            textbox.Width = this.Width - paddingLeft - paddingRight;
+
+            if (textbox.Multiline)
+                textbox.Height = this.Height;
+
+            ResumeLayout();
         }
 
         private void Button_MouseEnter(object sender, EventArgs e)
@@ -1757,7 +1743,7 @@ namespace FSFormControls
             // 
             this.textbox.Location = new System.Drawing.Point(0, 0);
             this.textbox.Name = "textbox";
-            this.textbox.Size = new System.Drawing.Size(266, 20);
+            this.textbox.Size = new System.Drawing.Size(141, 20);
             this.textbox.TabIndex = 0;
             // 
             // DBTextBoxEx

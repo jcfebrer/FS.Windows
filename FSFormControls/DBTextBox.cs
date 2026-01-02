@@ -11,6 +11,9 @@ namespace FSFormControls
     {
         public DBTextBox()
         {
+            if (DesignMode)
+                return;
+
             this.TextChanged += DBTextBox_TextChanged;
         }
 

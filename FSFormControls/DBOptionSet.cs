@@ -14,6 +14,9 @@ namespace FSFormControls
         {
             InitializeComponent();
 
+            if (DesignMode)
+                return;
+
             this.Load += DBOptionSet_Load;
         }
 
@@ -35,7 +38,7 @@ namespace FSFormControls
             int pos = 0;
             foreach (DBRadioButton item in Items)
             {
-                item.Width = dbGroupBox1.Width - 25;
+                item.AutoSize = true;
                 item.Margin = new Padding(5);
 
                 if(pos == 0)

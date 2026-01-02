@@ -99,6 +99,9 @@ namespace FSFormControls
 
         public DBLabel()
         {
+            if (DesignMode)
+                return;
+
             Editable = true;
             GridMode = false;
             ShowCode = false;

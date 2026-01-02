@@ -1,16 +1,17 @@
 #region
 
+using FSDatabase;
+using FSException;
+using FSLibrary;
 using System;
+using System.Collections;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
 using System.Windows.Forms;
 using System.Windows.Forms.Design;
-using System.Collections;
-using FSDatabase;
-using FSLibrary;
-using FSException;
 
 #endregion
 
@@ -43,7 +44,6 @@ namespace FSFormControls
         private DBControl m_DBControlList;
         private string m_DBFieldData = "";
         private string m_DBFieldList;
-        private ComboBoxStyle m_DropDownStyle = ComboBoxStyle.DropDownList;
         private bool m_Editable = true;
         //private bool m_FlatMode;
         private ImageList m_ImageList = new ImageList();
@@ -55,11 +55,13 @@ namespace FSFormControls
         private DBControl m_DataControl;
         private string m_DBField;
 
+        private const int BUTTONWIDTH = 16;
+        private const int BUTTONHEIGHT = 16;
+
         private DBButtonCollection m_ButtonsRight = new DBButtonCollection();
         private DBButtonCollection m_ButtonsLeft = new DBButtonCollection();
         private DBButtonCollection m_ClickedItemsLeft = new DBButtonCollection();
         private DBButtonCollection m_ClickedItemsRight = new DBButtonCollection();
-
 
         #region Delegates
 
@@ -104,14 +106,12 @@ namespace FSFormControls
 
         #endregion
 
-        #region '" Código generado por el Diseñador de Windows Forms "' 
-
-        private readonly IContainer components = null;
-        private ComboBox combobox;
-
         public DBComboEx()
         {
             InitializeComponent();
+
+            if(DesignMode)
+                return;
 
             SetStyle(ControlStyles.DoubleBuffer, true);
             //SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.UserPaint | ControlStyles.OptimizedDoubleBuffer, true);
@@ -144,6 +144,11 @@ namespace FSFormControls
 
             Appearance = new DBAppearance();
         }
+
+        #region '" Código generado por el Diseñador de Windows Forms "' 
+
+        private readonly IContainer components = null;
+        private ComboBox combobox;
 
         private void DBComboEx_Load(object sender, EventArgs e)
         {
@@ -309,11 +314,10 @@ namespace FSFormControls
 
         public ComboBoxStyle DropDownStyle
         {
-            get { return m_DropDownStyle; }
+            get { return combobox.DropDownStyle; }
             set
             {
-                m_DropDownStyle = value;
-                combobox.DropDownStyle = m_DropDownStyle;
+                combobox.DropDownStyle = value;
             }
         }
 
@@ -425,13 +429,23 @@ namespace FSFormControls
                     case Global.AccessMode.WriteMode:
                         combobox.Enabled = true;
                         combobox.BackColor = Global.WriteBackColor;
-                        cmdEdit.Visible = true;
+
+                        if (DataControlList != null)
+                            cmdEdit.Visible = true;
+                        else
+                            cmdEdit.Visible = false;
+
                         //Combo1.BringToFront();
                         break;
                     case Global.AccessMode.ProtectedMode:
                         combobox.Enabled = true;
                         combobox.BackColor = Global.ObligatoryBackColor;
-                        cmdEdit.Visible = true;
+
+                        if (DataControlList != null)
+                            cmdEdit.Visible = true;
+                        else
+                            cmdEdit.Visible = false;
+
                         //Combo1.BringToFront();
                         break;
                 }
@@ -625,15 +639,15 @@ namespace FSFormControls
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
         public DBButtonCollection ButtonsRight
         {
-            get { return m_ButtonsRight; }
-            set { m_ButtonsRight = value; }
+            get => m_ButtonsRight;
+            set { m_ButtonsRight = value; InitializeButtons(); }
         }
 
-            [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
-        public DBButtonCollection ButtonsLeft 
-        { 
-            get { return m_ButtonsLeft; }
-            set { m_ButtonsLeft = value; }
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
+        public DBButtonCollection ButtonsLeft
+        {
+            get => m_ButtonsLeft;
+            set { m_ButtonsLeft = value; InitializeButtons(); }
         }
 
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
@@ -762,6 +776,8 @@ namespace FSFormControls
                 //Combo1.SelectionLength = 0;
 
                 filled = true;
+
+                combobox.SelectedIndex = -1;
             }
             catch (Exception e)
             {
@@ -796,10 +812,6 @@ namespace FSFormControls
 
         private void Control_Resize(object sender, EventArgs e)
         {
-            combobox.Location = new Point(0, 0);
-            combobox.Size = new Size(this.Width - (16 * ButtonsRight.Count), combobox.Height);
-            this.Height = combobox.Height;
-
             ResizeButtons();
         }
 
@@ -1230,99 +1242,140 @@ namespace FSFormControls
 
         private void InitializeButtons()
         {
-            if (ButtonsRight != null && ButtonsRight.Count > 0)
+            RemoveDuplicateControls();
+
+            SetupButtons(ButtonsRight);
+
+            SetupButtons(ButtonsLeft);
+        }
+
+        private void RemoveDuplicateControls()
+        {
+            List<Control> toRemove = new List<Control>();
+
+            foreach (Control c in this.Controls)
             {
-                foreach (Control button in ButtonsRight)
+                if (ButtonsRight.Contains(c) || ButtonsLeft.Contains(c))
                 {
-                    button.Width = 16;
-                    button.Height = 16;
-                    button.Visible = true;
-                    button.Top = 0;
-                    button.Click += Button_Click;
-                    button.MouseEnter += Button_MouseEnter;
-
-                    if(button is DBButton)
-                    {
-                        ((DBButton)button).FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-                        ((DBButton)button).ToolTip = button.Text;
-                    }
-
-                    if (button is DBButtonEx)
-                    {
-                        ((DBButtonEx)button).FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-                        ((DBButtonEx)button).ToolTip = button.Text;
-                    }
-
-                    button.BringToFront();
+                    toRemove.Add(c);
                 }
             }
 
-            if (ButtonsLeft != null && ButtonsLeft.Count > 0)
+            foreach (Control c in toRemove)
             {
-                foreach (Control button in ButtonsLeft)
+                this.Controls.Remove(c);
+            }
+        }
+
+        private void SetupButtons(DBButtonCollection buttonsCollection)
+        {
+            if (buttonsCollection != null && buttonsCollection.Count > 0)
+            {
+                foreach (Control button in buttonsCollection)
                 {
-                    button.Width = 16;
-                    button.Height = 16;
+                    //if (button is Button btn)
+                    //    btn.FlatStyle = FlatStyle.Flat;
+                    //if (button is DBButton dbBtn)
+                    //{
+                    //    dbBtn.ToolTip = button.Text;
+                    //    dbBtn.FlatStyle = FlatStyle.Flat;
+                    //}
+                    //if (button is DBButtonEx dbBtnEx)
+                    //{
+                    //    dbBtnEx.ToolTip = button.Text;
+                    //    dbBtnEx.FlatStyle = FlatStyle.Flat;
+                    //}
+
+                    button.Width = BUTTONWIDTH;
+                    button.Height = BUTTONHEIGHT;
                     button.Visible = true;
                     button.Top = 0;
-                    button.Click += Button_Click;
-                    button.MouseEnter += Button_MouseEnter;
 
-                    if (button is DBButton)
+                    if (!this.Controls.Contains(button))
                     {
-                        ((DBButton)button).FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-                        ((DBButton)button).ToolTip = button.Text;
-                    }
-
-                    if (button is DBButtonEx)
-                    {
-                        ((DBButtonEx)button).FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-                        ((DBButtonEx)button).ToolTip = button.Text;
+                        this.Controls.Add(button);
                     }
 
                     button.BringToFront();
+
+                    button.Click -= Button_Click;
+                    button.Click += Button_Click;
+                    button.MouseEnter -= Button_MouseEnter;
+                    button.MouseEnter += Button_MouseEnter;
                 }
             }
+
+            ResizeButtons();
         }
 
         private void ResizeButtons()
         {
-            int r = 1;
-            if (ButtonsRight != null && ButtonsRight.Count > 0)
-            {
-                foreach (Control button in ButtonsRight)
-                {
-                    button.Left = this.Width - 16 * r;
+            SuspendLayout();
 
-                    r++;
+            // 1. Inicializar contadores de espacio
+            int paddingLeft = 0;
+            int paddingRight = 0;
+
+            // 2. Posicionar botones de la COLECCIÓN IZQUIERDA
+            if (ButtonsLeft != null)
+            {
+                foreach (Control btn in ButtonsLeft)
+                {
+                    if (btn.Visible)
+                    {
+                        btn.Location = new Point(paddingLeft, 0);
+                        btn.Size = new Size(BUTTONWIDTH, BUTTONHEIGHT);
+                        paddingLeft += BUTTONWIDTH;
+                    }
                 }
             }
 
-            int l = 0;
-
-            if (ButtonsLeft != null && ButtonsLeft.Count > 0)
+            // 3. Posicionar botones de la COLECCIÓN DERECHA
+            if (ButtonsRight != null)
             {
-                foreach (Control button in ButtonsLeft)
+                foreach (Control btn in ButtonsRight)
                 {
-                    button.Left = l * 16;
-
-                    l++;
+                    if (btn.Visible)
+                    {
+                        paddingRight += BUTTONWIDTH;
+                        btn.Location = new Point(this.Width - paddingRight, 0);
+                        btn.Size = new Size(BUTTONWIDTH, BUTTONHEIGHT);
+                    }
                 }
             }
+
+            // 4. Ajustar el TextBox al espacio central restante
+            combobox.Location = new Point(paddingLeft, 0);
+            combobox.Width = this.Width - paddingLeft - paddingRight;
+            combobox.Height = this.Height;
+
+            ResumeLayout();
         }
 
         private void Button_MouseEnter(object sender, EventArgs e)
         {
             if (null != MouseEnterElement)
-                MouseEnterElement(this, new DBEditorButtonEventArgs((DBButton)sender));
+            {
+                if (sender is DBButton dbb)
+                    MouseEnterElement(this, new DBEditorButtonEventArgs((DBButton)dbb));
+                if (sender is DBButtonEx dbbex)
+                    MouseEnterElement(this, new DBEditorButtonEventArgs((DBButtonEx)dbbex));
+                if (sender is Button db)
+                    MouseEnterElement(this, new DBEditorButtonEventArgs((Button)db));
+            }
         }
 
         private void Button_Click(object sender, EventArgs e)
         {
-            var button = (DBButtonEx) sender;
-
             if (EditorButtonClick != null)
-                EditorButtonClick(sender, new DBEditorButtonEventArgs(button));
+            {
+                if (sender is DBButton dbb)
+                    EditorButtonClick(sender, new DBEditorButtonEventArgs((DBButton)dbb));
+                if (sender is DBButtonEx dbbex)
+                    EditorButtonClick(sender, new DBEditorButtonEventArgs((DBButtonEx)dbbex));
+                if (sender is Button db)
+                    EditorButtonClick(sender, new DBEditorButtonEventArgs((Button)db));
+            }
         }
 
         public void SetDataBinding(ArrayList dataSource, string valueMember)
@@ -1333,6 +1386,8 @@ namespace FSFormControls
 
             combobox.DataSource = dataSource;
             doTextChanged = true;
+
+            SelectedIndex = -1;
         }
 
         public void SetDataBinding(ArrayList dataSource, string valueMember, string displayMember)
@@ -1346,6 +1401,8 @@ namespace FSFormControls
 
             combobox.DataSource = dataSource;
             doTextChanged = true;
+
+            SelectedIndex = -1;
         }
     }
 

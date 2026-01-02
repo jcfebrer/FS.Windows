@@ -799,6 +799,9 @@ namespace FSFormControls
         {
             InitializeComponent();
 
+            if (DesignMode)
+                return;
+
             TabStop = false;
 
             HScroll1.ValueChanged += HScroll1_ValueChanged;

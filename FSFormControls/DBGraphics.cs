@@ -49,6 +49,9 @@ namespace FSFormControls
         {
             InitializeComponent();
 
+            if (DesignMode)
+                return;
+
             // events handled by SplitContainer1_SizeChanged
 
             SplitContainer1.SizeChanged += SplitContainer1_SizeChanged;

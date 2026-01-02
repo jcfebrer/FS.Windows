@@ -54,6 +54,9 @@ namespace FSFormControls
 
         private void Init()
         {
+            if (DesignMode)
+                return;
+
             Appearance = new DBAppearance();
 
             this.Click += DBButton_Click;

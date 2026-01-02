@@ -31,6 +31,9 @@ namespace FSFormControls
         {
             InitializeComponent();
 
+            if(DesignMode)
+                return;
+
             ContextMenu1.Items[0].Visible = AllowSaveXML;
             ContextMenu1.Items[1].Visible = AllowLoadXML;
 

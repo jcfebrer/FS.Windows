@@ -229,6 +229,9 @@ namespace FSFormControls
         {
             base.OnSelectedIndexChanged(e);
 
+            if (DesignMode)
+                return;
+
             if (SelectedTabChanged != null)
                 SelectedTabChanged(this, new SelectedTabChangedEventArgs());
         }

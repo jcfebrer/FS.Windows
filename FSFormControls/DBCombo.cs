@@ -52,6 +52,9 @@ namespace FSFormControls
 
         public DBCombo()
         {
+            if (DesignMode)
+                return;
+
             Appearance = new DBAppearance();
 
             this.SelectedValueChanged += DBCombo_SelectedValueChanged;
@@ -102,7 +105,7 @@ namespace FSFormControls
         public object Value
         {
             get { 
-                return this.SelectedValue + "";
+                return this.SelectedValue;
             }
             set { this.SelectedValue = value; }
         }
@@ -223,6 +226,8 @@ namespace FSFormControls
 
             this.DataSource = dataSource;
             doTextChanged = true;
+
+            SelectedIndex = -1;
         }
 
         public void SetDataBinding(ArrayList dataSource, string valueMember, string displayMember)
@@ -236,6 +241,8 @@ namespace FSFormControls
 
             this.DataSource = dataSource;
             doTextChanged = true;
+
+            SelectedIndex = -1;
         }
 
         public bool IsItemInList()
