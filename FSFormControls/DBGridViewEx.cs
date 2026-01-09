@@ -196,7 +196,7 @@ namespace FSFormControls
 
             //Filas alternativas con diferente color
             datagrid.RowsDefaultCellStyle.BackColor = Color.White;
-            datagrid.AlternatingRowsDefaultCellStyle.BackColor = Color.Aquamarine;
+            //datagrid.AlternatingRowsDefaultCellStyle.BackColor = Color.Aquamarine;
 
             // Estilo de cabecera (quitar fondo azul al seleccionar una columna)
             datagrid.EnableHeadersVisualStyles = false;
@@ -205,7 +205,7 @@ namespace FSFormControls
             dataGridViewTotal.ColumnHeadersDefaultCellStyle.SelectionBackColor = SystemColors.Control;
 
             dataGridViewTotal.RowsDefaultCellStyle.BackColor = Color.White;
-            dataGridViewTotal.AlternatingRowsDefaultCellStyle.BackColor = Color.Aquamarine;
+            //dataGridViewTotal.AlternatingRowsDefaultCellStyle.BackColor = Color.Aquamarine;
             dataGridViewTotal.MouseClick += DataGridViewTotal_MouseClick;
 
             //Eventos
@@ -418,6 +418,21 @@ namespace FSFormControls
         {
             get { return datagrid.MultiSelect; }
             set { datagrid.MultiSelect = value; }
+        }
+
+        public bool VirtualMode
+        {
+            get { return datagrid.VirtualMode; }
+            set {  datagrid.VirtualMode = value; }
+        }
+
+        public int RowCount
+        {
+            get { return datagrid.RowCount; }
+            set { 
+                if(value > 0)
+                    datagrid.RowCount = value; 
+            }
         }
 
         public bool ShowExpand { get; set; }
@@ -2958,7 +2973,7 @@ namespace FSFormControls
 
         public void UpdateData()
         {
-            datagrid.Update();
+            datagrid.EndEdit();
         }
 
         //Variables para control de expand/collapse

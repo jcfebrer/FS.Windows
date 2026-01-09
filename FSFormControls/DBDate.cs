@@ -132,8 +132,6 @@ namespace FSFormControls
 
         public DBAppearance Appearance { get; set; }
 
-        public string MaskInput { get; set; }
-
         public bool AllowNullValue { get; set; } = true;
 
         public DateTime MinDate
@@ -171,6 +169,24 @@ namespace FSFormControls
             {
                 m_CustomFormat = value;
                 DateTimePicker1.CustomFormat = value;
+            }
+        }
+
+        public string MaskInput
+        {
+            get { return m_CustomFormat; }
+            set
+            {
+                string newValue = value;
+
+                //en infragistic el formato de mes es mm y en el datetimepicker es MM
+                newValue = newValue.Replace("/mm/", "/MM/");
+
+                //if(newValue.Contains("hh:mm"))
+                //    DateTimePicker1.ShowUpDown = true;
+
+                m_CustomFormat = newValue;
+                DateTimePicker1.CustomFormat = newValue;
             }
         }
 

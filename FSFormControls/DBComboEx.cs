@@ -47,7 +47,6 @@ namespace FSFormControls
         private bool m_Editable = true;
         //private bool m_FlatMode;
         private ImageList m_ImageList = new ImageList();
-        private DBComboExValues m_Items;
         private Global.AccessMode m_Mode = Global.AccessMode.WriteMode;
         private bool m_Obligatory;
         private object m_SelectedOption;
@@ -453,21 +452,11 @@ namespace FSFormControls
         }
 
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
-        public DBComboExValues Items
+        public ComboBox.ObjectCollection Items
         {
             get
             {
-                if (m_Items == null)
-                    m_Items = new DBComboExValues(combobox);
-
-                return m_Items;
-            }
-            set
-            {
-                m_Items = value;
-                if (value != null)
-                    foreach (DBComboExBoxItem v in value)
-                        combobox.Items.Add(v);
+                return combobox.Items;
             }
         }
 
@@ -538,15 +527,25 @@ namespace FSFormControls
         [EditorBrowsable(EditorBrowsableState.Always)]
         public object Value
         {
-            get { return combobox.SelectedValue; }
+            get {
+                if (combobox.SelectedValue == null)
+                    return "";
+                else
+                    return combobox.SelectedValue;
+            }
             set
             {
                 if (value == null)
                     return;
 
-                DBComboExBoxItem dbitem = FindByValue(value.ToString());
-                if (dbitem != null)
-                    combobox.Text = dbitem.Text;
+                //if(Items != null && Items.Count > 0 && DataSource == null)
+                //{
+                //    DBComboExBoxItem dbitem = FindByValue(value.ToString());
+                //    if (dbitem != null)
+                //        combobox.Text = dbitem.Text;
+                //}
+                //else
+                combobox.SelectedValue = value;
             }
         }
 
@@ -666,12 +665,28 @@ namespace FSFormControls
 
         public bool IsItemInList()
         {
-            if (this.Value != null && this.Items != null && this.Items.Count > 0)
+            if (this.Value == null || this.Items == null || this.Items.Count == 0)
+                return false;
+
+            foreach (var item in this.Items)
             {
-                if (combobox.Items.Contains(this.Value))
+                object itemValue = GetValueFromItem(item);
+
+                if (itemValue != null && itemValue.ToString() == this.Value.ToString())
+                {
                     return true;
+                }
             }
             return false;
+        }
+
+        private object GetValueFromItem(object item)
+        {
+            if (string.IsNullOrEmpty(this.ValueMember)) return item;
+
+            if (item is System.Data.DataRowView drv) return drv[this.ValueMember];
+
+            return item.GetType().GetProperty(this.ValueMember)?.GetValue(item, null);
         }
 
         public string NameControl()
@@ -838,31 +853,79 @@ namespace FSFormControls
             return combobox.FindStringExact(s);
         }
 
-        public DBComboExBoxItem FindByValue(string value)
+        //public DBComboItem FindByValue(string value)
+        //{
+        //    if (Items != null)
+        //    {
+        //        foreach (DBComboItem dbcol in Items)
+        //            if (Functions.Value(dbcol.Value).ToLower() == value.ToLower())
+        //                return dbcol;
+        //    }
+        //    else
+        //    {
+        //        if (m_DBControlList != null)
+        //            foreach (DataRow row in m_DBControlList.DataTable.Rows)
+        //                if (row[combobox.ValueMember].ToString().ToLower() == value.ToLower())
+        //                    return new DBComboItem(row[combobox.ValueMember].ToString(),
+        //                        row[combobox.DisplayMember].ToString());
+        //    }
+
+        //    return null;
+        //}
+
+        public void AddItem(object value, string displayText)
         {
+            if (this.Items.Count == 0)
+            {
+                this.DisplayMember = "DisplayText";
+                this.ValueMember = "Value";
+            }
+            this.Items.Add(new DBComboItem(value, displayText));
+        }
+
+        public string FindByValue(string value)
+        {
+            if (this.DataSource == null || value == null) return string.Empty;
+
             if (Items != null)
             {
-                foreach (DBComboExBoxItem dbcol in Items)
-                    if (Functions.Value(dbcol.Value).ToLower() == value.ToLower())
-                        return dbcol;
-            }
-            else
-            {
-                if (m_DBControlList != null)
-                    foreach (DataRow row in m_DBControlList.DataTable.Rows)
-                        if (row[combobox.ValueMember].ToString().ToLower() == value.ToLower())
-                            return new DBComboExBoxItem(row[combobox.ValueMember].ToString(),
-                                row[combobox.DisplayMember].ToString());
+                PropertyDescriptorCollection propiedades = this.BindingContext[this.DataSource].GetItemProperties();
+
+                PropertyDescriptor propValor = propiedades.Find(this.ValueMember, true);
+                PropertyDescriptor propTexto = propiedades.Find(this.DisplayMember, true);
+
+                if (propValor == null || propTexto == null) return string.Empty;
+
+                foreach (object item in this.Items)
+                {
+                    object valorActual = propValor.GetValue(item);
+
+                    if (valorActual != null && valorActual.ToString() == value.ToString())
+                    {
+                        return propTexto.GetValue(item)?.ToString() ?? string.Empty;
+                    }
+                }
+
+                return string.Empty;
             }
 
-            return null;
+            return string.Empty;
         }
 
         private void Combo1_TextChanged(object sender, EventArgs e)
         {
-            if (filled & doTextChanged)
+            if (DataControl != null)
+            {
+                if (!filled)
+                    return;
+                    
+            }
+
+            if (doTextChanged)
+            {
                 if (null != TextChanged)
                     TextChanged(this, e);
+            }
         }
 
 

@@ -83,6 +83,8 @@ namespace FSFormControls
 
                 if (ValueChanged != null)
                     ValueChanged(this, e);
+
+                base.OnTextChanged(e);
             }
         }
 
@@ -104,43 +106,89 @@ namespace FSFormControls
         [EditorBrowsable(EditorBrowsableState.Always)]
         public object Value
         {
-            get { 
-                return this.SelectedValue;
-            }
-            set { this.SelectedValue = value; }
-        }
-
-        private DBComboExValues m_Items;
-
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
-        public new DBComboExValues Items
-        {
             get
             {
-                if (m_Items == null)
-                    m_Items = new DBComboExValues(this);
-
-                return m_Items;
+                return this.SelectedValue;
             }
             set
             {
-                m_Items = value;
-                if (value != null)
-                    foreach (DBComboExBoxItem v in value)
-                        this.Items.Add(v);
+                if (value == null)
+                    return;
+
+                this.SelectedValue = value;
             }
         }
 
-        public DBComboExBoxItem FindByValue(string value)
+        //private DBComboExValues m_Items;
+
+        //[DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
+        //public new DBComboExValues Items
+        //{
+        //    get
+        //    {
+        //        if (m_Items == null)
+        //            m_Items = new DBComboExValues(this);
+
+        //        return m_Items;
+        //    }
+        //    set
+        //    {
+        //        m_Items = value;
+        //        if (value != null)
+        //            foreach (DBComboExBoxItem v in value)
+        //                this.Items.Add(v);
+        //    }
+        //}
+
+        //public DBComboExBoxItem FindByValue(string value)
+        //{
+        //    if (Items != null && Items.Count != 0)
+        //    {
+        //        foreach (DBComboExBoxItem dbcol in Items)
+        //            if (Functions.Value(dbcol.Value).ToLower() == value.ToLower())
+        //                return dbcol;
+        //    }
+
+        //    return null;
+        //}
+
+        public void AddItem(object value, string displayText)
         {
-            if (Items != null && Items.Count != 0)
+            if (this.Items.Count == 0)
             {
-                foreach (DBComboExBoxItem dbcol in Items)
-                    if (Functions.Value(dbcol.Value).ToLower() == value.ToLower())
-                        return dbcol;
+                this.DisplayMember = "DisplayText";
+                this.ValueMember = "Value";
+            }
+            this.Items.Add(new DBComboItem(value, displayText));
+        }
+
+        public string FindByValue(string value)
+        {
+            if (this.DataSource == null || value == null) return string.Empty;
+
+            if (Items != null)
+            {
+                PropertyDescriptorCollection propiedades = this.BindingContext[this.DataSource].GetItemProperties();
+
+                PropertyDescriptor propValor = propiedades.Find(this.ValueMember, true);
+                PropertyDescriptor propTexto = propiedades.Find(this.DisplayMember, true);
+
+                if (propValor == null || propTexto == null) return string.Empty;
+
+                foreach (object item in this.Items)
+                {
+                    object valorActual = propValor.GetValue(item);
+
+                    if (valorActual != null && valorActual.ToString() == value.ToString())
+                    {
+                        return propTexto.GetValue(item)?.ToString() ?? string.Empty;
+                    }
+                }
+
+                return string.Empty;
             }
 
-            return null;
+            return string.Empty;
         }
 
         private Global.AccessMode m_Mode = Global.AccessMode.ReadMode;
@@ -247,7 +295,28 @@ namespace FSFormControls
 
         public bool IsItemInList()
         {
-            return true;
+            if (this.Value == null || this.Items == null || this.Items.Count == 0)
+                return false;
+
+            foreach (var item in this.Items)
+            {
+                object itemValue = GetValueFromItem(item);
+
+                if (itemValue != null && itemValue.ToString() == this.Value.ToString())
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        private object GetValueFromItem(object item)
+        {
+            if (string.IsNullOrEmpty(this.ValueMember)) return item;
+
+            if (item is System.Data.DataRowView drv) return drv[this.ValueMember];
+
+            return item.GetType().GetProperty(this.ValueMember)?.GetValue(item, null);
         }
 
         public void BeginInit()

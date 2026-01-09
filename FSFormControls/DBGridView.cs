@@ -21,7 +21,7 @@ namespace FSFormControls
 
             //Filas alternativas con diferente color
             this.RowsDefaultCellStyle.BackColor = Color.White;
-            this.AlternatingRowsDefaultCellStyle.BackColor = Color.Aquamarine;
+            //this.AlternatingRowsDefaultCellStyle.BackColor = Color.Aquamarine;
 
             // Estilo de cabecera (quitar fondo azul al seleccionar una columna)
             this.EnableHeadersVisualStyles = false;
@@ -205,7 +205,7 @@ namespace FSFormControls
 
         public void UpdateData()
         {
-            this.Update();
+            this.EndEdit();
         }
 
         public new DataGridViewColumn SortedColumn
