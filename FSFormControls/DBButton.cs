@@ -27,7 +27,6 @@ namespace FSFormControls
         #endregion
 
         private ButtonStyleType m_ButtonStyle = ButtonStyleType.Normal;
-        public DBAppearance Appearance { get; set; }
         public ContextMenuStrip DropDownMenu { get; set; }
         public string About { get; set; }
 
@@ -48,7 +47,7 @@ namespace FSFormControls
 
         public DBButton(string text)
         {
-            this.Text = text;
+            this.Name = text;
             Init();
         }
 
@@ -56,8 +55,6 @@ namespace FSFormControls
         {
             if (DesignMode)
                 return;
-
-            Appearance = new DBAppearance();
 
             this.Click += DBButton_Click;
         }
@@ -106,6 +103,22 @@ namespace FSFormControls
                 }
 
                 this.Refresh();
+            }
+        }
+
+        private DBAppearance m_Appearance = new DBAppearance();
+        public DBAppearance Appearance
+        {
+            get { return m_Appearance; }
+            set
+            {
+
+                if (value != null)
+                {
+                    this.ForeColor = value.ForeColor;
+                    this.BackColor = value.BackColor;
+                    this.Image = value.Image;
+                }
             }
         }
 

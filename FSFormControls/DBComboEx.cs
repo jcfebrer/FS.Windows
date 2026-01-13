@@ -140,8 +140,6 @@ namespace FSFormControls
             cmdEdit.Click += cmdEdit_Click;
 
             Load += DBComboEx_Load;
-
-            Appearance = new DBAppearance();
         }
 
         #region '" Código generado por el Diseñador de Windows Forms "' 
@@ -240,7 +238,22 @@ namespace FSFormControls
 
         #endregion
 
-        
+
+        private DBAppearance m_Appearance = new DBAppearance();
+        public DBAppearance Appearance
+        {
+            get { return m_Appearance; }
+            set
+            {
+
+                if (value != null)
+                {
+                    this.ForeColor = value.ForeColor;
+                    this.BackColor = value.BackColor;
+                }
+            }
+        }
+
         /// <summary>
         /// Asignación del DBcontrol.
         /// </summary>
@@ -319,8 +332,6 @@ namespace FSFormControls
                 combobox.DropDownStyle = value;
             }
         }
-
-        public DBAppearance Appearance { get; set; }
 
         public bool IsInEditMode
         {
@@ -1336,21 +1347,43 @@ namespace FSFormControls
             {
                 foreach (Control button in buttonsCollection)
                 {
-                    //if (button is Button btn)
-                    //    btn.FlatStyle = FlatStyle.Flat;
-                    //if (button is DBButton dbBtn)
-                    //{
-                    //    dbBtn.ToolTip = button.Text;
-                    //    dbBtn.FlatStyle = FlatStyle.Flat;
-                    //}
-                    //if (button is DBButtonEx dbBtnEx)
-                    //{
-                    //    dbBtnEx.ToolTip = button.Text;
-                    //    dbBtnEx.FlatStyle = FlatStyle.Flat;
-                    //}
+                    if (button is Button btn)
+                    {
+                        button.Width = BUTTONWIDTH;
+                        button.Height = BUTTONHEIGHT;
+                        btn.FlatStyle = FlatStyle.Flat;
+                    }
+                    if (button is DBButton dbBtn)
+                    {
+                        if(dbBtn.Image == null)
+                        {
+                            button.Width = BUTTONWIDTH;
+                            button.Height = BUTTONHEIGHT;
+                        }
+                        else
+                        {
+                            button.Width = dbBtn.Image.Width + 2;
+                            button.Height = dbBtn.Image.Height + 2;
+                        }
+                        dbBtn.ToolTip = button.Text;
+                        dbBtn.FlatStyle = FlatStyle.Flat;
+                    }
+                    if (button is DBButtonEx dbBtnEx)
+                    {
+                        if (dbBtnEx.Image == null)
+                        {
+                            button.Width = BUTTONWIDTH;
+                            button.Height = BUTTONHEIGHT;
+                        }
+                        else
+                        {
+                            button.Width = dbBtnEx.Image.Width + 2;
+                            button.Height = dbBtnEx.Image.Height + 2;
+                        }
+                        dbBtnEx.ToolTip = button.Text;
+                        dbBtnEx.FlatStyle = FlatStyle.Flat;
+                    }
 
-                    button.Width = BUTTONWIDTH;
-                    button.Height = BUTTONHEIGHT;
                     button.Visible = true;
                     button.Top = 0;
 
@@ -1393,11 +1426,12 @@ namespace FSFormControls
                 }
             }
 
-            // 3. Posicionar botones de la COLECCIÓN DERECHA
+            // 3. Posicionar botones de la COLECCIÓN DERECHA (los posicionamos en orden inverso)
             if (ButtonsRight != null)
             {
-                foreach (Control btn in ButtonsRight)
+                for (int i = ButtonsRight.Count - 1; i >= 0; i--)
                 {
+                    Control btn = ButtonsRight[i];
                     if (btn.Visible)
                     {
                         paddingRight += BUTTONWIDTH;

@@ -3,6 +3,7 @@ using System;
 using System.Collections;
 using System.ComponentModel;
 using System.Drawing;
+using System.Windows.Forms;
 
 namespace FSFormControls
 {
@@ -30,7 +31,6 @@ namespace FSFormControls
         public event DBEditorButtonEventHandler EditorButtonClick;
         public event MouseEnterElementEventHandler MouseEnterElement;
 
-        public DBAppearance Appearance { get; set; }
         public bool BlankSelection { get; set; }
         public object DataControl { get; set; }
         public object DataControlList { get; set; }
@@ -55,11 +55,24 @@ namespace FSFormControls
             if (DesignMode)
                 return;
 
-            Appearance = new DBAppearance();
-
             this.SelectedValueChanged += DBCombo_SelectedValueChanged;
             this.LostFocus += DBCombo_LostFocus;
             this.GotFocus += DBCombo_GotFocus;
+        }
+
+        private DBAppearance m_Appearance = new DBAppearance();
+        public DBAppearance Appearance
+        {
+            get { return m_Appearance; }
+            set
+            {
+
+                if (value != null)
+                {
+                    this.ForeColor = value.ForeColor;
+                    this.BackColor = value.BackColor;
+                }
+            }
         }
 
         private void DBCombo_GotFocus(object sender, EventArgs e)

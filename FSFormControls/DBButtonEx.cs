@@ -50,6 +50,21 @@ namespace FSFormControls
 
         #endregion
 
+        private DBAppearance m_Appearance = new DBAppearance();
+        public DBAppearance Appearance
+        {
+            get { return m_Appearance; }
+            set
+            {
+
+                if (value != null)
+                {
+                    this.ForeColor = value.ForeColor;
+                    this.BackColor = value.BackColor;
+                    this.Image = value.Image;
+                }
+            }
+        }
 
         [Browsable(true)]
         [EditorBrowsable(EditorBrowsableState.Always)]
@@ -137,8 +152,6 @@ namespace FSFormControls
             get { return button.Font; }
             set { button.Font = value; }
         }
-
-        public DBAppearance Appearance { get; set; }
 
         public ContentAlignment TextAlign
         {
@@ -353,7 +366,6 @@ namespace FSFormControls
             button.MouseEnter += Button1_MouseEnter;
             button.MouseDown += Button1_MouseDown;
             button.MouseUp += Button1_MouseUp;
-            Appearance = new DBAppearance();
         }
 
         public DBButtonEx()
@@ -365,7 +377,7 @@ namespace FSFormControls
         {
             Init();
 
-            Text = text;
+            Name = text;
         }
 
         protected override void Dispose(bool disposing)
