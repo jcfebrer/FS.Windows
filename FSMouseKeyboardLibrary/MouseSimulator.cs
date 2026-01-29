@@ -199,9 +199,7 @@ namespace FSMouseKeyboardLibrary
         /// <param name="delta"></param>
         public static void MouseWheel(int delta)
         {
-
             Win32API.mouse_event(Win32APIEnums.MOUSEEVENTF_WHEEL, 0, 0, delta, 0);
-
         }
 
         /// <summary>

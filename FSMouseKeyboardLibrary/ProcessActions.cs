@@ -105,6 +105,11 @@ namespace FSMouseKeyboardLibrary
                             KeyboardSimulator.KeyPress(action.KeyCode);
                         }
                         break;
+                    case MouseActionEntry.EventType.MouseWheel:
+                        {
+                            MouseSimulator.MouseWheel(action.Delta);
+                        }
+                        break;
                     default:
                         break;
                 }

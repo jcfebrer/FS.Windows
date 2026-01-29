@@ -22,6 +22,7 @@ namespace FSMouseKeyboardLibrary
 
         int x;
         int y;
+        int delta;
         int interval;
         EventType type;
         string process;
@@ -31,10 +32,11 @@ namespace FSMouseKeyboardLibrary
         public MouseActionEntry()
         {
         }
-        public MouseActionEntry(int x, int y, int interval, EventType type, string process, System.Windows.Forms.MouseButtons button, Keys keyCode) //, System.EventArgs eventArgs)
+        public MouseActionEntry(int x, int y, int delta, int interval, EventType type, string process, System.Windows.Forms.MouseButtons button, Keys keyCode) //, System.EventArgs eventArgs)
         {
             this.x = x;
             this.y = y;
+            this.delta = delta;
             this.interval = interval;
             this.type = type;
             this.process = process;
@@ -53,11 +55,18 @@ namespace FSMouseKeyboardLibrary
             get { return y; }
         }
 
+        public int Delta
+        {
+            set { delta = value; }
+            get { return delta; }
+        }
+
         public int Interval
         {
             set { interval = value; }
             get { return interval; }
         }
+
         public EventType Type
         {
             set { type = value; }
