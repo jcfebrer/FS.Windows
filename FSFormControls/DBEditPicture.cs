@@ -798,7 +798,7 @@ namespace FSFormControls
             var drwobj = getObjectByMark(m);
             if (drwobj != null)
             {
-                DialogResult result = InputBox.ShowDialog("Editar información: ", "Información", drwobj.Info, InputBox.Icon.Information);
+                DialogResult result = InputBox.ShowDialog("Editar información: ", "Información", drwobj.Info, InputBox.Icon.Information, InputBox.Buttons.Ok, InputBox.Type.TextBox);
                 drwobj.Info = InputBox.ResultValue;
                 Redraw();
             }

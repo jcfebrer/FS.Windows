@@ -28,7 +28,7 @@ namespace FSFormControls
         {
             ComboBox,
             TextBox,
-            Nothing
+            MsgBox
         }
 
         public enum Buttons
@@ -75,7 +75,7 @@ namespace FSFormControls
         /// <param name="FormFont">Font in form (as System.Drawing.Font)</param>
         /// <returns></returns>
         /// 
-        public static DialogResult ShowDialog(string Message, string Title = "", string DefaulText = "", Icon icon = Icon.Information, Buttons buttons = Buttons.Ok, Type type = Type.Nothing, string[] ListItems = null, bool ShowInTaskBar = false, Font FormFont = null, bool password = false)
+        public static DialogResult ShowDialog(string Message, string Title = "", string DefaulText = "", Icon icon = Icon.Information, Buttons buttons = Buttons.Ok, Type type = Type.MsgBox, string[] ListItems = null, bool ShowInTaskBar = false, Font FormFont = null, bool password = false)
         {
             if (String.IsNullOrEmpty(buttonTextArray[0]))
                 SetLanguage(Language.Spanish);
@@ -120,7 +120,7 @@ namespace FSFormControls
             panel.Controls.Add(ctrl);
 
             //Get automaticly cursor to the TextBox
-            if (ctrl.Name == "textBox")
+            if (ctrl.Name.ToLower() == "textbox")
                 frm.ActiveControl = ctrl;
 
             //Set label font
@@ -132,7 +132,7 @@ namespace FSFormControls
             //Return text value
             switch (type)
             {
-                case Type.Nothing:
+                case Type.MsgBox:
                     break;
                 default:
                     if (DialogRes == DialogResult.OK || DialogRes == DialogResult.Yes)
