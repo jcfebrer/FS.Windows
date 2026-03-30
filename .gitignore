@@ -288,3 +288,5 @@ local.properties
 ehthumbs.db
 Thumbs.db
 *.bak
+*.config
+*.json
