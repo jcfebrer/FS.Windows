@@ -224,6 +224,18 @@ namespace FSSystemInfo
         }
 
         /// <summary>
+        /// Envia el proceso de Id indicado al frente.
+        /// </summary>
+        /// <param name="processId"></param>
+        public static void ActivateByProcessId(int processId)
+        {
+            Process process = Process.GetProcessById(processId);
+
+            if (process != null)
+                ActivateByProcess(process);
+        }
+
+        /// <summary>
         /// Activamos el proceso indicado en "windowName".
         /// </summary>
         /// <param name="windowName"></param>
@@ -334,7 +346,7 @@ namespace FSSystemInfo
         /// Devuelve un listado de los servicios activos
         /// </summary>
         /// <returns></returns>
-        public static List<ProcessData> GetProcesses()
+        public static List<ProcessData> GetProcessesList()
         {
             List<ProcessData> listProcess = new List<ProcessData>();
             foreach (Process process in Process.GetProcesses())
@@ -347,6 +359,45 @@ namespace FSSystemInfo
             }
 
             return listProcess;
+        }
+
+        /// <summary>
+        /// Devuelve un listado de los servicios activos
+        /// </summary>
+        /// /// <param name="processName"></param>
+        /// <returns></returns>
+        public static List<ProcessData> GetProcessesList(string processName)
+        {
+            List<ProcessData> listProcess = new List<ProcessData>();
+            foreach (Process process in Process.GetProcesses(processName))
+            {
+                ProcessData processData = new ProcessData();
+                processData.DisplayTitle = process.MainWindowTitle;
+                processData.Name = process.ProcessName;
+
+                listProcess.Add(processData);
+            }
+
+            return listProcess;
+        }
+
+        /// <summary>
+        /// Devuelve un listado de los servicios con el nombre processName
+        /// </summary>
+        /// <param name="processName"></param>
+        /// <returns></returns>
+        public static Process[] GetProcessByName(string processName)
+        {
+            return Process.GetProcessesByName(processName);
+        }
+
+        /// <summary>
+        /// Devuelve un listado de los servicios con el nombre processName
+        /// </summary>
+        /// <returns></returns>
+        public static Process[] GetProcesses()
+        {
+            return Process.GetProcesses();
         }
 
         /// <summary>
