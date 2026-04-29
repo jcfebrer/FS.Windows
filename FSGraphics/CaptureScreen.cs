@@ -268,5 +268,68 @@ namespace FSGraphics
             }
             return null;
         }
+
+        /// <summary>
+        /// Devuelve la captura de pantalla en Base64, pero con optimizaciones para reducir el tamaño del string resultante:
+        /// </summary>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
+        /// <param name="width"></param>
+        /// <param name="height"></param>
+        /// <returns></returns>
+        public static string CaptureScreenBase64(int x, int y, int width, int height, int quality = 100, bool halfSize = false)
+        {
+            // 1. Captura original a tamaño completo
+            using (Bitmap originalBitmap = new Bitmap(width, height))
+            {
+                using (Graphics g = Graphics.FromImage(originalBitmap))
+                {
+                    g.CopyFromScreen(x, y, 0, 0, originalBitmap.Size);
+                }
+
+                // 2. Calculamos el nuevo tamaño
+                if(halfSize)
+                {
+                    width = width / 2;
+                    height = height / 2;
+                }
+
+                // 3. Creamos el bitmap reducido
+                using (Bitmap resizedBitmap = new Bitmap(width, height))
+                {
+                    using (Graphics gResized = Graphics.FromImage(resizedBitmap))
+                    {
+                        // Ajustes de calidad para el redimensionado
+                        gResized.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
+                        gResized.DrawImage(originalBitmap, 0, 0, width, height);
+                    }
+
+                    // 4. Configurar la compresión JPEG al 60%
+                    ImageCodecInfo jpgEncoder = GetEncoder(ImageFormat.Jpeg);
+                    System.Drawing.Imaging.Encoder myEncoder = System.Drawing.Imaging.Encoder.Quality;
+                    EncoderParameters myEncoderParameters = new EncoderParameters(1);
+                    EncoderParameter myEncoderParameter = new EncoderParameter(myEncoder, quality);
+                    myEncoderParameters.Param[0] = myEncoderParameter;
+
+                    using (MemoryStream ms = new MemoryStream())
+                    {
+                        resizedBitmap.Save(ms, jpgEncoder, myEncoderParameters);
+                        byte[] byteImage = ms.ToArray();
+                        return Convert.ToBase64String(byteImage);
+                    }
+                }
+            }
+        }
+
+        // Función auxiliar para encontrar el encoder de JPEG
+        private static ImageCodecInfo GetEncoder(ImageFormat format)
+        {
+            ImageCodecInfo[] codecs = ImageCodecInfo.GetImageDecoders();
+            foreach (ImageCodecInfo codec in codecs)
+            {
+                if (codec.FormatID == format.Guid) return codec;
+            }
+            return null;
+        }
     }
 }
