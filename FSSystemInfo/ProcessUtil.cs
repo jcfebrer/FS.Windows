@@ -133,7 +133,7 @@ namespace FSSystemInfo
         /// <summary>
         /// Hides the active window.
         /// </summary>
-        public static void HideActiveWindow()
+        public static bool HideActiveWindow()
         {
             //ocultamos la ventana selecionada
             //leemos el caption de la ventana
@@ -145,9 +145,10 @@ namespace FSSystemInfo
 
                 if ((style & Win32APIEnums.WS_VISIBLE) != 0)
                 {
-                    Win32API.ShowWindow(handle, Win32APIEnums.SW_HIDE);
+                    return Win32API.ShowWindow(handle, Win32APIEnums.SW_HIDE);
                 }
             }
+            return false;
         }
 
         /// <summary>
@@ -166,21 +167,22 @@ namespace FSSystemInfo
         /// Shows the process by title.
         /// </summary>
         /// <param name="title">The title.</param>
-        public static void ShowProcessByTitle(string title)
+        public static bool ShowProcessByTitle(string title)
         {
             var handle = Win32API.FindWindow(null, title);
 
             if (handle != IntPtr.Zero)
             {
-                Win32API.ShowWindow(handle, Win32APIEnums.SW_SHOW);
+                return Win32API.ShowWindow(handle, Win32APIEnums.SW_SHOW);
             }
+            return false;
         }
 
         /// <summary>
         /// Hides the process by title.
         /// </summary>
         /// <param name="title">The title.</param>
-        public static void HideProcessByTitle(string title)
+        public static bool HideProcessByTitle(string title)
         {
             var handle = Win32API.FindWindow(null, title);
 
@@ -190,28 +192,29 @@ namespace FSSystemInfo
 
                 if ((style & Win32APIEnums.WS_VISIBLE) != 0)
                 {
-                    Win32API.ShowWindow(handle, Win32APIEnums.SW_HIDE);
+                    return Win32API.ShowWindow(handle, Win32APIEnums.SW_HIDE);
                 }
             }
+            return false;
         }
 
         /// <summary>
         /// Envia el proceso actual al frente.
         /// </summary>
-        public static void ActivateCurrentProcess()
+        public static bool ActivateCurrentProcess()
         {
             Process process = Process.GetCurrentProcess();
             if (process == null)
-                return;
+                return false;
 
-            ActivateByProcess(process);
+            return ActivateByProcess(process);
         }
 
         /// <summary>
         /// Envia el proceso 'processName' al frente.
         /// </summary>
         /// <param name="processName"></param>
-        public static void ActivateByProcessName(string processName)
+        public static bool ActivateByProcessName(string processName)
         {
             Process process = null;
             Process[] procesess = Process.GetProcessesByName(processName);
@@ -220,31 +223,34 @@ namespace FSSystemInfo
                     process = p;
 
             if(process != null)
-                ActivateByProcess(process);
+                return ActivateByProcess(process);
+
+            return false;
         }
 
         /// <summary>
         /// Envia el proceso de Id indicado al frente.
         /// </summary>
         /// <param name="processId"></param>
-        public static void ActivateByProcessId(int processId)
+        public static bool ActivateByProcessId(int processId)
         {
             Process process = Process.GetProcessById(processId);
 
             if (process != null)
-                ActivateByProcess(process);
+                return ActivateByProcess(process);
+            return false;
         }
 
         /// <summary>
         /// Activamos el proceso indicado en "windowName".
         /// </summary>
         /// <param name="windowName"></param>
-        public static void ActivateByWindowName(string windowName)
+        public static bool ActivateByWindowName(string windowName)
         {
             IntPtr hWnd = Win32API.FindWindow(null, windowName);
             if (Win32API.IsIconic(hWnd))
                 Win32API.ShowWindow(hWnd, Win32APIEnums.WindowShowStyle.Restore);
-            Win32API.SetForegroundWindow(hWnd);
+            return Win32API.SetForegroundWindow(hWnd);
         }
 
 
@@ -252,52 +258,52 @@ namespace FSSystemInfo
         /// Activamos el proceso indicado en "process".
         /// </summary>
         /// <param name="process"></param>
-        public static void ActivateByProcess(Process process)
+        public static bool ActivateByProcess(Process process)
         {
             IntPtr hWnd = process.MainWindowHandle;
             if (Win32API.IsIconic(hWnd))
                 Win32API.ShowWindow(hWnd, Win32APIEnums.WindowShowStyle.Restore);
-            Win32API.SetForegroundWindow(hWnd);
+            return Win32API.SetForegroundWindow(hWnd);
         }
 
         /// <summary>
         /// Ocultamos el proceso indicado en "process".
         /// </summary>
         /// <param name="process"></param>
-        public static void HideByProcess(Process process)
+        public static bool HideByProcess(Process process)
         {
             IntPtr hWnd = process.MainWindowHandle;
-            Win32API.ShowWindow(hWnd, Win32APIEnums.WindowShowStyle.Hide);
+            return Win32API.ShowWindow(hWnd, Win32APIEnums.WindowShowStyle.Hide);
         }
 
         /// <summary>
         /// Mostramos el proceso indicado en "process".
         /// </summary>
         /// <param name="process"></param>
-        public static void ShowByProcess(Process process)
+        public static bool ShowByProcess(Process process)
         {
             IntPtr hWnd = process.MainWindowHandle;
             Win32API.ShowWindow(hWnd, Win32APIEnums.WindowShowStyle.Show);
-            Win32API.SetForegroundWindow(hWnd);
+            return Win32API.SetForegroundWindow(hWnd);
         }
 
         /// <summary>
         /// Mostramos el proceso indicado en "handle".
         /// </summary>
         /// <param name="handle"></param>
-        public static void ShowByHandle(IntPtr hWnd)
+        public static bool ShowByHandle(IntPtr hWnd)
         {
             Win32API.ShowWindow(hWnd, Win32APIEnums.WindowShowStyle.Show);
-            Win32API.SetForegroundWindow(hWnd);
+            return Win32API.SetForegroundWindow(hWnd);
         }
 
         /// <summary>
         /// Ocultamos el proceso indicado en "handle".
         /// </summary>
         /// <param name="handle"></param>
-        public static void HideByHandle(IntPtr hWnd)
+        public static bool HideByHandle(IntPtr hWnd)
         {
-            Win32API.ShowWindow(hWnd, Win32APIEnums.WindowShowStyle.Hide);
+            return Win32API.ShowWindow(hWnd, Win32APIEnums.WindowShowStyle.Hide);
         }
 
         /// <summary>
@@ -316,7 +322,7 @@ namespace FSSystemInfo
         /// Desocultar un proceso por el nombre del proceso.
         /// </summary>
         /// <param name="processName"></param>
-        public static void UnhideProcess(Process process)
+        public static bool UnhideProcess(Process process)
         {
             int processId;
             IntPtr handle = Win32API.FindWindowEx(IntPtr.Zero, process.Handle, null, IntPtr.Zero);
@@ -324,7 +330,7 @@ namespace FSSystemInfo
             Win32API.GetWindowThreadProcessId(handle, out processId);
 
             IntPtr intPtr = new IntPtr(processId);
-            ShowByHandle(intPtr);
+            return ShowByHandle(intPtr);
         }
 
         /// <summary>
@@ -386,7 +392,7 @@ namespace FSSystemInfo
         /// </summary>
         /// <param name="processName"></param>
         /// <returns></returns>
-        public static Process[] GetProcessByName(string processName)
+        public static Process[] GetProcessesByName(string processName)
         {
             return Process.GetProcessesByName(processName);
         }
