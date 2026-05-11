@@ -229,7 +229,7 @@ namespace FSGraphics
                     {
                         gfxScreenshot.CopyFromScreen(Screen.PrimaryScreen.Bounds.X, Screen.PrimaryScreen.Bounds.Y, 0, 0, Screen.PrimaryScreen.Bounds.Size, CopyPixelOperation.SourceCopy);
 
-                        ImageCodecInfo codec = GetEncoderInfo("image/jpeg");
+                        ImageCodecInfo codec = GetEncoder("image/jpeg");
 
                         System.Drawing.Imaging.Encoder qualityEncoder = System.Drawing.Imaging.Encoder.Quality;
                         EncoderParameter ratio = new EncoderParameter(qualityEncoder, 10L); //calidad muy baja para jpg
@@ -255,20 +255,6 @@ namespace FSGraphics
             }
         }
 
-
-        private static ImageCodecInfo GetEncoderInfo(String mimeType)
-        {
-            int j;
-            ImageCodecInfo[] encoders;
-            encoders = ImageCodecInfo.GetImageEncoders();
-            for (j = 0; j < encoders.Length; ++j)
-            {
-                if (encoders[j].MimeType == mimeType)
-                    return encoders[j];
-            }
-            return null;
-        }
-
         /// <summary>
         /// Devuelve la captura de pantalla en Base64, pero con optimizaciones para reducir el tamaño del string resultante:
         /// </summary>
@@ -277,7 +263,7 @@ namespace FSGraphics
         /// <param name="width"></param>
         /// <param name="height"></param>
         /// <returns></returns>
-        public static string CaptureScreenBase64(int x, int y, int width, int height, int quality = 100, bool halfSize = false)
+        public static byte[] CaptureScreenBytes(int x, int y, int width, int height, int quality = 100, bool halfSize = false)
         {
             // 1. Captura original a tamaño completo
             using (Bitmap originalBitmap = new Bitmap(width, height))
@@ -288,7 +274,7 @@ namespace FSGraphics
                 }
 
                 // 2. Calculamos el nuevo tamaño
-                if(halfSize)
+                if (halfSize)
                 {
                     width = width / 2;
                     height = height / 2;
@@ -315,10 +301,24 @@ namespace FSGraphics
                     {
                         resizedBitmap.Save(ms, jpgEncoder, myEncoderParameters);
                         byte[] byteImage = ms.ToArray();
-                        return Convert.ToBase64String(byteImage);
+                        return byteImage;
                     }
                 }
             }
+        }
+
+        /// <summary>
+        /// Devuelve la captura de pantalla en Base64, pero con optimizaciones para reducir el tamaño del string resultante:
+        /// </summary>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
+        /// <param name="width"></param>
+        /// <param name="height"></param>
+        /// <returns></returns>
+        public static string CaptureScreenBase64(int x, int y, int width, int height, int quality = 100, bool halfSize = false)
+        {
+            byte[] byteImage = CaptureScreenBytes(x, y, width, height, quality, halfSize);
+            return Convert.ToBase64String(byteImage);
         }
 
         // Función auxiliar para encontrar el encoder de JPEG
@@ -328,6 +328,17 @@ namespace FSGraphics
             foreach (ImageCodecInfo codec in codecs)
             {
                 if (codec.FormatID == format.Guid) return codec;
+            }
+            return null;
+        }
+
+        private static ImageCodecInfo GetEncoder(String mimeType)
+        {
+            ImageCodecInfo[] codecs = ImageCodecInfo.GetImageEncoders();
+            foreach (ImageCodecInfo codec in codecs)
+            {
+                if (codec.MimeType == mimeType)
+                    return codec;
             }
             return null;
         }

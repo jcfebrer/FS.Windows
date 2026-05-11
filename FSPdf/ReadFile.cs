@@ -7,9 +7,9 @@ using iTextSharp.text.pdf.parser;
 
 namespace FSPdf
 {
-    class ReadFile
+    public class ReadFile
     {
-        private string CleanupContent(string text)
+        private static string CleanupContent(string text)
         {
             string[] patterns = { @"\\\(", @"\\\)", @"\\226", @"\\222", @"\\223", @"\\224", @"\\340", @"\\342", @"\\344", @"\\300", @"\\302", @"\\304", @"\\351", @"\\350", @"\\352", @"\\353", @"\\311", @"\\310", @"\\312", @"\\313", @"\\362", @"\\364", @"\\366", @"\\322", @"\\324", @"\\326", @"\\354", @"\\356", @"\\357", @"\\314", @"\\316", @"\\317", @"\\347", @"\\307", @"\\371", @"\\373", @"\\374", @"\\331", @"\\333", @"\\334", @"\\256", @"\\231", @"\\253", @"\\273", @"\\251", @"\\221" };
             string[] replace = { "(", ")", "-", "'", "\"", "\"", "à", "â", "ä", "À", "Â", "Ä", "é", "è", "ê", "ë", "É", "È", "Ê", "Ë", "ò", "ô", "ö", "Ò", "Ô", "Ö", "ì", "î", "ï", "Ì", "Î", "Ï", "ç", "Ç", "ù", "û", "ü", "Ù", "Û", "Ü", "®", "™", "«", "»", "©", "'" };
@@ -24,7 +24,7 @@ namespace FSPdf
             return text;
         }
 
-        public string ReadPdfFile(string Filename)
+        public static string ReadPdfFile(string Filename)
         {
             string strText = string.Empty;
             PdfReader reader = new PdfReader(Filename);
