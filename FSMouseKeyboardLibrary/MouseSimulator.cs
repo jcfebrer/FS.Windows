@@ -140,6 +140,7 @@ namespace FSMouseKeyboardLibrary
         public static void Click(MouseButton button)
         {
             MouseDown(button);
+            Thread.Sleep(50);
             MouseUp(button);
         }
 
@@ -170,6 +171,7 @@ namespace FSMouseKeyboardLibrary
         public static void DoubleClick(MouseButton button)
         {
             Click(button);
+            Thread.Sleep(100);
             Click(button);
         }
 
