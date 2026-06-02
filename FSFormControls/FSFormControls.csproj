@@ -284,7 +284,7 @@
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\FS.Windows\FSConvert\FSConvert.csproj" />
+    <ProjectReference Include="..\..\FS.Core\FSConvert\FSConvert.csproj" />
     <ProjectReference Include="..\..\FS.Core\FSDatabase\FSDatabase.csproj" />
     <ProjectReference Include="..\..\FS.Core\FSDisk\FSDisk.csproj" />
     <ProjectReference Include="..\..\FS.Windows\FSExcel\FSExcel.csproj" />
@@ -296,6 +296,7 @@
     <ProjectReference Include="..\..\FS.Core\FSQueryBuilder\FSQueryBuilder.csproj" />
     <ProjectReference Include="..\..\FS.Core\FSSecurity\FSSecurity.csproj" />
     <ProjectReference Include="..\..\FS.Windows\FSSystemInfo\FSSystemInfo.csproj" />
+    <ProjectReference Include="..\FSWinConvert\FSWinConvert.csproj" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Update="Forms\DBForm.resx">

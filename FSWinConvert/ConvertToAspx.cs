@@ -3,7 +3,7 @@ using System.CodeDom.Compiler;
 using System.Collections.Generic;
 using System.Text;
 
-namespace FSConvert
+namespace FSWinConvert
 {
 	/// <summary>
 	/// Class that converts a Windows Forms form or control to an ASP.NET Web Forms page or control.

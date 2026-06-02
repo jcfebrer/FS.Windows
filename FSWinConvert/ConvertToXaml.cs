@@ -18,7 +18,7 @@ using System.Text.RegularExpressions;
 using System.Linq;
 using System.Windows.Forms;
 
-namespace FSConvert
+namespace FSWinConvert
 {
     /// <summary> Converts <seealso cref="System.Windows.Forms.Control"/>s to WPF XAML. </summary>
     /// <seealso cref="T:System.Windows.Forms.UserControl"/>

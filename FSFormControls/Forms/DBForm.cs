@@ -13,6 +13,7 @@ using FSLibrary;
 using FSException;
 using FSGraphics;
 using FSSystemInfo;
+using FSWinConvert;
 using FSConvert;
 
 #endregion
