@@ -1,4 +1,6 @@
-﻿// // <fileheader>
+﻿#if NET461_OR_GREATER || NETCOREAPP
+
+// // <fileheader>
 // // <copyright file="SendPDF.cs" company="Febrer Software">
 // //     Fecha: 03/07/2015
 // //     Project: FSPortal
@@ -510,3 +512,5 @@ namespace FSPdf
 #endregion [funciones publicas]
 	}
 }
+
+#endif

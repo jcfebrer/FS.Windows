@@ -2,9 +2,9 @@
 
 using System;
 using System.Runtime.InteropServices;
-using mshtml;
-using SHDocVw;
-using WebBrowser = System.Windows.Forms.WebBrowser;
+using System.Windows.Forms;
+// using mshtml;
+// using SHDocVw;
 
 #endregion
 
@@ -83,7 +83,7 @@ namespace FSWebBrowser
                 // Get the document from IWebBrowser2.
                 IWebBrowser2 browser = (IWebBrowser2) (brws);
 
-                return (IHTMLDocument2) browser.Document;
+                return (HtmlDocument) browser.Document;
             }
             catch
             {

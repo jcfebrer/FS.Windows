@@ -6,7 +6,7 @@
     <UseWindowsForms>true</UseWindowsForms>
     <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
     <SignAssembly>True</SignAssembly>
-    <AssemblyOriginatorKeyFile>D:\FS\firma_FS_app.pfx</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>$(SolutionDir)firma_FS_app.pfx</AssemblyOriginatorKeyFile>
     <Platforms>AnyCPU;x86;x64</Platforms>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">

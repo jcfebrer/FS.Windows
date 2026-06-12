@@ -6,7 +6,7 @@
     <UseWindowsForms>true</UseWindowsForms>
     <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
     <SignAssembly>True</SignAssembly>
-    <AssemblyOriginatorKeyFile>D:\FS\firma_FS_app.pfx</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>$(SolutionDir)firma_FS_app.pfx</AssemblyOriginatorKeyFile>
     <Platforms>AnyCPU;x86;x64</Platforms>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -40,12 +40,6 @@
     <Reference Include="System.Web" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="itextsharp">
-      <HintPath>..\..\dll\itextsharp.dll</HintPath>
-    </Reference>
-    <Reference Include="itextsharp.xmlworker">
-      <HintPath>..\..\dll\itextsharp.xmlworker.dll</HintPath>
-    </Reference>
     <Reference Update="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
@@ -68,5 +62,29 @@
     <ProjectReference Include="..\..\FS.Core\FSLibrary\FSLibrary.csproj" />
     <ProjectReference Include="..\..\FS.Core\FSNetwork\FSNetwork.csproj" />
     <ProjectReference Include="..\..\FS.Core\FSException\FSException.csproj" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(TargetFramework)' == 'net461'">
+    <PackageReference Include="iTextSharp">
+      <Version>5.5.13.5</Version>
+    </PackageReference>
+    <PackageReference Include="itextsharp.xmlworker">
+      <Version>5.5.13.5</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup Condition="'$(TargetFramework)' == 'net48'">
+    <PackageReference Include="iTextSharp">
+      <Version>5.5.13.5</Version>
+    </PackageReference>
+    <PackageReference Include="itextsharp.xmlworker">
+      <Version>5.5.13.5</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup Condition="'$(TargetFramework)' == 'net8.0-windows'">
+    <PackageReference Include="iTextSharp">
+      <Version>5.5.13.5</Version>
+    </PackageReference>
+    <PackageReference Include="itextsharp.xmlworker">
+      <Version>5.5.13.5</Version>
+    </PackageReference>
   </ItemGroup>
 </Project>

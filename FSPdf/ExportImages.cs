@@ -1,4 +1,6 @@
-﻿using System;
+﻿#if NET461_OR_GREATER || NETCOREAPP
+
+using System;
 using System.IO;
 using iTextSharp.text;
 using iTextSharp.text.pdf;
@@ -99,3 +101,4 @@ namespace FSPdf
 	}
 }
 
+#endif

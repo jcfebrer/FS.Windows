@@ -11,7 +11,7 @@
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <FileVersion>1.0.0.0</FileVersion>
     <SignAssembly>True</SignAssembly>
-    <AssemblyOriginatorKeyFile>D:\FS\firma_FS_app.pfx</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>$(SolutionDir)firma_FS_app.pfx</AssemblyOriginatorKeyFile>
     <Platforms>AnyCPU;x86;x64</Platforms>
   </PropertyGroup>
   <ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))' != 'net'">

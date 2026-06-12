@@ -1,4 +1,6 @@
-﻿using FSException;
+﻿#if NET461_OR_GREATER || NETCOREAPP
+
+using FSException;
 using FSLibrary;
 using iTextSharp.text;
 using iTextSharp.text.pdf;
@@ -113,3 +115,5 @@ namespace FSPdf
         }
     }
 }
+
+#endif
