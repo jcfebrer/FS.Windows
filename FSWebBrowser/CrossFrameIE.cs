@@ -3,8 +3,8 @@
 using System;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
-// using mshtml;
-// using SHDocVw;
+using mshtml;
+using SHDocVw;
 
 #endregion
 
@@ -16,7 +16,7 @@ namespace FSWebBrowser
         private static Guid IID_IWebBrowserApp = new Guid("0002DF05-0000-0000-C000-000000000046");
         private static Guid IID_IWebBrowser2 = new Guid("D30C1661-CDAF-11D0-8A3E-00C04FC9E26E");
 
-        public static IHTMLDocument2 GetDocumentFromBrowser(WebBrowser browser)
+        public static IHTMLDocument2 GetDocumentFromBrowser(System.Windows.Forms.WebBrowser browser)
         {
             IHTMLDocument2 htmlDoc = null;
 
@@ -83,7 +83,7 @@ namespace FSWebBrowser
                 // Get the document from IWebBrowser2.
                 IWebBrowser2 browser = (IWebBrowser2) (brws);
 
-                return (HtmlDocument) browser.Document;
+                return (IHTMLDocument2) browser.Document;
             }
             catch
             {
