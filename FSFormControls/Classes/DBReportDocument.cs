@@ -14,7 +14,7 @@ using DateTimeUtil = FSLibrary.DateTimeUtil;
 
 namespace FSFormControls
 {
-    public class ReportDocument : System.Drawing.Printing.PrintDocument
+    public class DBReportDocument : System.Drawing.Printing.PrintDocument
     {
         #region '" GetField "' 
 
@@ -91,14 +91,14 @@ namespace FSFormControls
         private object mDataSource;
         private int mPageNumber;
 
-        public ReportDocument()
+        public DBReportDocument()
         {
             Font = new Font("Courier New", 10);
             Brush = Brushes.Black;
             FooterLines = 2;
         }
 
-        public ReportDocument(Font font, Brush brush)
+        public DBReportDocument(Font font, Brush brush)
         {
             Font = font;
             Brush = brush;
@@ -382,20 +382,19 @@ namespace FSFormControls
 
         private void PrintFooter(ReportPageEventArgs e)
         {
-            var transTemp5 = e;
-            transTemp5.CurrentY = e.PageBottom;
+            e.CurrentY = e.PageBottom;
 
-            transTemp5.HorizontalRule();
+            e.HorizontalRule();
 
             if (FooterLeft.Length > 0)
-                transTemp5.Write(FooterLeft);
+                e.Write(FooterLeft);
             else
-                transTemp5.Write(DateTimeUtil.ShortDate(System.DateTime.Now));
+                e.Write(DateTimeUtil.ShortDate(System.DateTime.Now));
 
             if (FooterRight.Length > 0)
-                transTemp5.WriteLine(FooterRight);
+                e.WriteLine(FooterRight);
             else
-                transTemp5.WriteLine("Page " + e.PageNumber, ReportLineJustification.Right);
+                e.WriteLine("Page " + e.PageNumber, ReportLineJustification.Right);
         }
 
         #endregion

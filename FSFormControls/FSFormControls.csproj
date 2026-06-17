@@ -190,10 +190,10 @@
     <Compile Update="DBTreeView.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="Classes\PrintDocument.cs">
+    <Compile Update="Classes\DBPrintDocument.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Update="Classes\ReportDocument.cs">
+    <Compile Update="Classes\DBReportDocument.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Update="Classes\TabOrderSchemaProvider.cs">

@@ -57,4 +57,15 @@
     <ProjectReference Include="..\..\FS.Core\FSLibrary\FSLibrary.csproj" />
     <ProjectReference Include="..\..\FS.Core\FSMultimedia\FSMultimedia.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine">
+      <HintPath>C:\WINDOWS\assembly\GAC_MSIL\CrystalDecisions.CrystalReports.Engine\13.0.3500.0__692fbea5521e1304\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared">
+      <HintPath>C:\WINDOWS\assembly\GAC_MSIL\CrystalDecisions.Shared\13.0.3500.0__692fbea5521e1304\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms">
+      <HintPath>C:\WINDOWS\assembly\GAC_MSIL\CrystalDecisions.Windows.Forms\13.0.3500.0__692fbea5521e1304\CrystalDecisions.Windows.Forms.dll</HintPath>
+    </Reference>
+  </ItemGroup>
 </Project>

@@ -13,7 +13,7 @@ using FSDatabase;
 namespace FSFormControls
 {
     [ToolboxItem(false)]
-    public class PrintDocument : System.Drawing.Printing.PrintDocument
+    public class DBPrintDocument : System.Drawing.Printing.PrintDocument
     {
         private readonly DBControl DBControlToPrint;
         private readonly DataView objView;
@@ -27,7 +27,7 @@ namespace FSFormControls
 
         //private CurrencyManager privCM; 
 
-        public PrintDocument(DBControl DBControlToPrint, DataView objView, DataTable objTable, int NP, string Question)
+        public DBPrintDocument(DBControl DBControlToPrint, DataView objView, DataTable objTable, int NP, string Question)
         {
             this.DBControlToPrint = DBControlToPrint;
             if (objView == null)

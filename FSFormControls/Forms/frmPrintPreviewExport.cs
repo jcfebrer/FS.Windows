@@ -61,7 +61,7 @@ namespace FSFormControls
             var TblDocument = TableDocument;
             DataTable tbl = null;
 
-            if (TblDocument is PrintDocument) tbl = ((PrintDocument) TblDocument).DataTable;
+            if (TblDocument is DBPrintDocument) tbl = ((DBPrintDocument) TblDocument).DataTable;
             if (TblDocument is DBGridViewPrintDocument) tbl = ((DBGridViewPrintDocument) TblDocument).DataTable;
 
             var ds = tbl.DataSet;

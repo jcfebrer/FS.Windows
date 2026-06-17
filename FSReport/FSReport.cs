@@ -1,3 +1,5 @@
+#if NET40_OR_GREATER
+
 #region
 
 using System;
@@ -5,6 +7,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Windows.Forms;
+using CrystalDecisions.CrystalReports.Engine;
 using CrystalDecisions.Shared;
 using CrystalDecisions.Windows.Forms;
 using FSException;
@@ -182,7 +185,7 @@ namespace FSReport
 
                 Cursor.Current = Cursors.WaitCursor;
 
-                CrystalDecisions.CrystalReports.Engine.ReportDocument crReportDocument = new CrystalDecisions.CrystalReports.Engine.ReportDocument();
+                ReportDocument crReportDocument = new ReportDocument();
                 crReportDocument.Load(m_ReportFile);
 
                 int intCounter = 0;
@@ -258,3 +261,5 @@ namespace FSReport
         }
     }
 }
+
+#endif

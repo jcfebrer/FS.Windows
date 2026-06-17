@@ -749,7 +749,7 @@ namespace FSFormControls
             PageSettings = PageSetup.PageSettings;
             try
             {
-                var pd = new PrintDocument(this, DataTable.DefaultView, DataTable, -1, "");
+                var pd = new DBPrintDocument(this, DataTable.DefaultView, DataTable, -1, "");
 
                 if (PageSettings != null) pd.DefaultPageSettings = PageSettings;
 
@@ -772,7 +772,7 @@ namespace FSFormControls
             PageSettings = PageSetup.PageSettings;
             try
             {
-                var pd = new PrintDocument(this, DataTable.DefaultView, DataTable, 25,
+                var pd = new DBPrintDocument(this, DataTable.DefaultView, DataTable, 25,
                     "Desea visualizar más p¨¢ginas antes de imprimir?");
 
                 if (PageSettings != null) pd.DefaultPageSettings = PageSettings;
@@ -2629,9 +2629,7 @@ namespace FSFormControls
 
         public void ShowReport()
         {
-            ReportDocument report = null;
-
-            report = new ReportDocument();
+            DBReportDocument report = new DBReportDocument();
 
             report.Title = Name;
             report.SubTitleLeft = Convert.ToString(DateTime.Now);
