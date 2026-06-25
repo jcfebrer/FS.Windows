@@ -182,11 +182,11 @@ namespace FSFormControls
             set { this.ReadOnly = !value; }
         }
 
-        public DataGridViewRow ActiveRow
+        public DBGridViewRow ActiveRow
         {
             get
             {
-                return this.CurrentRow;
+                return this.CurrentRow as DBGridViewRow;
             }
             set
             {
@@ -218,6 +218,21 @@ namespace FSFormControls
 /*
 * HASTA AQUI COMPATIBILIDAD CON INFRAGISTICS
 */
+
+        public void Print()
+        {
+            throw new NotImplementedException("Print method is not implemented yet.");
+        }
+
+        public void PrintPreview()
+        {
+            throw new NotImplementedException("PrintPreview method is not implemented yet.");
+        }
+
+        public void ExportToExcel(string filePath)
+        {
+            throw new NotImplementedException("ExportToExcel method is not implemented yet.");
+        }
 
         public new void Select()
         {

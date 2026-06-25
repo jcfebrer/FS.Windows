@@ -55,6 +55,8 @@ namespace FSFormControls
             get { return this; }
         }
 
+        public DBTabPage TabPage { get; set; }
+
         public DBAppearance Appearance { get; set; }
     }
 }
