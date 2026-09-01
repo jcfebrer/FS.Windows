@@ -91,6 +91,9 @@ namespace FSFormControls
         //EVENTS
         public event DoubleClickRowEventHandler DoubleClickRow;
         public delegate void DoubleClickRowEventHandler(object sender, DataGridViewCellEventArgs e);
+        public event EventHandler BeforeSortChange;
+        public event EventHandler AfterSortChange;
+        public event EventHandler<DataGridViewRowEventArgs> InitializeRow;
 
         //private DBGridViewBandCollection m_Bands = new DBGridViewBandCollection();
         [Browsable(false)]
