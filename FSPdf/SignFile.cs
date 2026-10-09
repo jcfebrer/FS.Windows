@@ -37,6 +37,12 @@ namespace FSPdf
             if (!certificate.HasPrivateKey)
                 throw new ExceptionUtil("Certificado sin clave privada");
 
+            // Verificar si el archivo existe antes de firmar para dar una excepción más descriptiva
+            if (addVisibleSign && !File.Exists(imageUrl))
+            {
+                throw new FileNotFoundException($"No se encontró la imagen de la firma visible en: {imageUrl}");
+            }
+
             try
             {
                 using (FileStream fsSource = new FileStream(sourcePdf, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
@@ -89,17 +95,16 @@ namespace FSPdf
                             }
 
 #if NETFRAMEWORK
-                    var privateKey = certificate.PrivateKey;
+                            var privateKey = certificate.PrivateKey;
 #else
                             var privateKey = certificate.GetRSAPrivateKey();
 #endif
-
                             var keyPair = Org.BouncyCastle.Security.DotNetUtilities.GetKeyPair(privateKey).Private;
                             Org.BouncyCastle.X509.X509Certificate bcCert = Org.BouncyCastle.Security.DotNetUtilities.FromX509Certificate(certificate);
                             var chain = new List<Org.BouncyCastle.X509.X509Certificate> { bcCert };
-                            IExternalSignature signature = new PrivateKeySignature(keyPair, "SHA-256");
+                            IExternalSignature externalSignature = new PrivateKeySignature(keyPair, "SHA-256");
 
-                            MakeSignature.SignDetached(signatureAppearance, signature, chain, null, null, null, 0, CryptoStandard.CMS);
+                            MakeSignature.SignDetached(signatureAppearance, externalSignature, chain, null, null, null, 0, CryptoStandard.CMS);
 
                             stamper.Close();
 
